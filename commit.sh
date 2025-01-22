@@ -4,6 +4,7 @@ git commit -m "$1"
 
 # Pousser vers GitHub
 echo "Pushing to GitHub..."
-git push github main
+git push github
+
 
 echo "Push completed successfully!"
