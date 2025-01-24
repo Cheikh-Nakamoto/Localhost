@@ -151,3 +151,15 @@
 [24-01-2025 06:21:59] - GET   200 -        0 kb - 71ae2d9c-d128-4873-befc-dfd6020bc687 - 127.0.0.10:8080/d/images/logo.png
 [24-01-2025 06:23:51] - GET   200 -        0 kb - b996a459-84b8-462a-80c2-a7aec6f67049 - 127.0.0.10:8080/d/g
 [24-01-2025 06:23:51] - GET   200 -        0 kb - 1f88785d-7f33-418d-832b-cee3be1a7334 - 127.0.0.10:8080/d/images/logo.png
+[24-01-2025 14:51:09] - GET   404 -        0 kb - 27a173c5-677b-4bb3-b3df-75dca93af765 - 127.0.0.10:8080/favicon.ico
+[24-01-2025 14:51:20] - POST  200 -        0 kb -  - 127.0.0.10:8080/d/g
+[24-01-2025 14:51:21] - GET   200 -        0 kb - f587e10f-8013-436a-8e78-f45d48211c20 - 127.0.0.10:8080/d/g
+[24-01-2025 14:51:21] - GET   200 -        0 kb - 1f81840c-6525-46cd-adc0-c27659e92366 - 127.0.0.10:8080/d/images/logo.png
+[24-01-2025 14:51:54] - POST  200 -        0 kb -  - 127.0.0.10:8080/d/g
+[24-01-2025 14:51:54] - GET   200 -        0 kb - f22353d9-61df-4bcf-9658-9501a936fa16 - 127.0.0.10:8080/d/g
+[24-01-2025 14:51:54] - GET   200 -        0 kb - ae336dea-38b0-47d0-b023-37bf260d6c1e - 127.0.0.10:8080/d/images/logo.png
+[24-01-2025 14:51:58] - GET   200 -        0 kb - 50eebe1e-d0c2-42ca-b6c7-8323b1f1d77f - 127.0.0.10:8080/d/g/MOUNIROU_DIOUF_genere_moi_un_logo_pour_mon_projet_de_server_que_j_4b99e968-33c4-46ea-b13a-4f1a5bc98ab9.png
+[24-01-2025 14:52:03] - GET   200 -        0 kb - 2671a09e-9caa-4be4-9b7c-4dccf7782a2f - 127.0.0.10:8080/d/g/MOUNIROU_DIOUF_genere_moi_un_logo_pour_mon_projet_de_server_que_j_f54e89d0-9b1e-4269-afaa-8bdc5d8c1e1f.png
+[24-01-2025 14:52:26] - POST  200 -        0 kb -  - 127.0.0.10:8080/d/g
+[24-01-2025 14:52:26] - GET   200 -        0 kb - 7528fcb7-5e48-4bfc-88d6-e5efa92389df - 127.0.0.10:8080/d/g
+[24-01-2025 14:52:26] - GET   200 -        0 kb - ca15ec55-027a-420f-95c9-ae1e1f10db12 - 127.0.0.10:8080/d/images/logo.png
