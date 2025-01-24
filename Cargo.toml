@@ -6,6 +6,7 @@ edition = "2021"
 [dependencies]
 chrono = "0.4.39"
 mio = { version = "1.0.3", features = ["net","os-poll"] }
+regex = "1.11.1"
 serde = { version = "1.0.217", features = ["derive"] }
 tera = "1.20.0"
 toml = "0.8.19"

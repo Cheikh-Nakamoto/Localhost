@@ -88,7 +88,7 @@ impl Router {
             server_tokens.insert(*token, listener.local_addr()?);
         }
 
-        let mut events = Events::with_capacity(128);
+        let mut events = Events::with_capacity(config.log_files.events_limit);
         loop {
             poll.poll(&mut events, None)?;
 
@@ -100,7 +100,7 @@ impl Router {
                 } else {
                     // Données reçues sur un TcpStream
                     let stream = (self.clients.get_mut(&event.token()))
-                        .expect("Erreur lors de la recupeartion du canal tcpstream");
+                        .expect("Erreur lors de la recupération du canal tcpstream");
                     let req = Request::read_request(stream, event.token());
                     let mut cookie = req.id_session.clone();
                     let client_token = Token(self.next_token);
@@ -148,7 +148,6 @@ impl Router {
                             session.expiration_time,
                         );
                     }
-                    //println!("All session : {:?}", self.sessions);
                     Self::route_request(self.servers.clone(), &req, stream, cookie, &config);
                 }
             }

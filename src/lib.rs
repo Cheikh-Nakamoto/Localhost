@@ -31,7 +31,7 @@ impl Config {
 pub struct LogFilesConfig {
     pub error_log: String,
     pub access_log: String,
-    pub events_limit: u32,
+    pub events_limit: usize,
 }
 
 #[derive(Debug, Deserialize, Clone)]
