@@ -747,7 +747,7 @@ impl Server {
         }
 
         // Vérifier si la taille du fichier est nulle
-        if request.length == 0 {
+        if request.body.len() == 0 {
             self.send_error_response(
                 stream,
                 &request.clone(),

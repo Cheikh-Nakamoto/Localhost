@@ -17,6 +17,7 @@ pub struct Request {
     pub host: String,
     pub port: u16,
     pub method: String,
+    pub head: String,
     pub body: String,
     pub body_byte: Vec<u8>,
     pub filename: String,
@@ -36,6 +37,7 @@ impl Request {
         host: String,
         port: u16,
         method: String,
+        head: String,
         body: String,
         body_byte: Vec<u8>,
         filename: String,
@@ -50,6 +52,7 @@ impl Request {
             host,
             port,
             method,
+            head,
             body,
             body_byte,
             filename,
@@ -69,6 +72,7 @@ impl Request {
             String::new(),
             String::new(),
             0,
+            String::new(),
             String::new(),
             String::new(),
             vec![],
@@ -117,16 +121,16 @@ impl Request {
         let (request_str, body_byte) = Self::stream_to_str(stream);
         let mut is_post = false;
 
-        request.body = request_str.clone();
-        request.body_byte = body_byte.clone();
-
         if request_str.starts_with("GET") {
             request.complete = true;
             request.method = String::from("GET");
+            request.head = request_str.clone();
         } else if request_str.starts_with("POST") {
             is_post = true;
             request.method = String::from("POST");
         } else {
+            request.body = request_str.clone();
+            request.body_byte = body_byte.clone();
             return request;
         }
 
@@ -146,6 +150,10 @@ impl Request {
                     let mut head = request_str.clone();
                     let mut body = head.split_off(header_limit);
                     body = body.strip_prefix(new_line_pattern).unwrap().to_string();
+
+                    request.head = head.clone();
+                    request.body = body.clone();
+                    request.body_byte = body_byte.clone();
 
                     if let Some(content_length_str) = get_content_length(&head) {
                         match content_length_str.parse::<usize>() {
@@ -312,8 +320,8 @@ impl Request {
                 let mut parts = line.splitn(2, ":");
                 if let (Some(key), Some(value)) = (parts.next(), parts.next()) {
                     let key = key.trim().trim_matches('"').to_string(); // Supprimer les espaces et les guillemets
-                    if key == "Cookie"{
-                     cookie = value.to_owned();
+                    if key == "Cookie" {
+                        cookie = value.to_owned();
                     }
                     let value = value.trim().to_string(); // Supprimer les espaces
                     if !key.is_empty() && !value.is_empty() {
@@ -327,7 +335,11 @@ impl Request {
         let referer = binding.split(":").nth(1).unwrap_or_default();
 
         request.location = location;
-        request.id_session = cookie.trim().strip_prefix("cookie_01=").unwrap_or_default().to_owned();
+        request.id_session = cookie
+            .trim()
+            .strip_prefix("cookie_01=")
+            .unwrap_or_default()
+            .to_owned();
         request.host = host;
         request.port = port;
         request.length = request.body.len();
@@ -364,9 +376,9 @@ impl Request {
         filename
     }
     /*
-        La fonction cherche sucessivement le paterne \r\n\r\n puis le bopundary 
-        et encore \r\n\r\n et separe a chaque fois ! 
-     */
+       La fonction cherche sucessivement le paterne \r\n\r\n puis le bopundary
+       et encore \r\n\r\n et separe a chaque fois !
+    */
     pub fn extract_values(body: &[u8], boundary: String) -> Vec<u8> {
         let new_line_pattern = b"\r\n\r\n";
         let start_boundary_pattern = format!("\r\n--{}", boundary).into_bytes();

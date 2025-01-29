@@ -20,7 +20,7 @@ pub struct Router {
     pub listeners: HashMap<Token, TcpListener>, // Associe un token à un TcpListener
     pub clients: HashMap<Token, TcpStream>,     // Associe un token à un TcpStream
     pub next_token: usize,
-    pub request_queue: Vec<Request>
+    pub request_queue: Vec<Request>,
 }
 
 impl Router {
@@ -31,7 +31,7 @@ impl Router {
             listeners: HashMap::new(),
             clients: HashMap::new(),
             next_token: CLIENT_START.0,
-            request_queue: vec![]
+            request_queue: vec![],
         }
     }
 
@@ -106,7 +106,7 @@ impl Router {
                         .expect("Erreur lors de la recupération du canal tcpstream");
                     let req = Request::read_request(stream);
                     let mut cookie = req.id_session.clone();
-                   // println!("cookie extract: {}",cookie);
+                    // println!("cookie extract: {}",cookie);
                     let client_token = Token(self.next_token);
                     self.next_token += 1;
                     // Tentative de récupération du cookie
@@ -147,19 +147,25 @@ impl Router {
                     }
 
                     if req.method == "GET" || req.method == "POST" {
-                        self.request_queue.push(req);                        
+                        self.request_queue.push(req);
                     } else {
-                        for (i, rq) in self.request_queue.clone().iter().enumerate() {
-                            if rq.method == "POST" {
-                                if let Some(content_length) = rq.content_length {
-                                    if content_length > rq.body.len() {
-                                        if let Some(boundary) = rq.boundary.clone() {
+                        for (i, waiting_req) in self.request_queue.clone().iter().enumerate() {
+                            if waiting_req.method == "POST" {
+                                if let Some(content_length) = waiting_req.content_length {
+                                    println!("content-length: {} <======> body len: {}", content_length, req.body.len());
+                                    if content_length > waiting_req.body.len()  {
+                                        if let Some(boundary) = waiting_req.boundary.clone() {
                                             if req.body.contains(&boundary) {
                                                 self.request_queue[i].body.push_str(&req.body);
-                                                self.request_queue[i].body_byte.extend_from_slice(&req.body_byte);
-                                               
-                                                if let Some(content_length) = self.request_queue[i].content_length {
-                                                    if self.request_queue[i].body.len() >= content_length {
+                                                self.request_queue[i]
+                                                    .body_byte
+                                                    .extend_from_slice(&req.body_byte);
+                                                if let Some(content_length) =
+                                                    self.request_queue[i].content_length
+                                                {
+                                                    if self.request_queue[i].body.len()
+                                                        >= content_length
+                                                    {
                                                         self.request_queue[i].complete = true;
                                                     }
                                                 }
@@ -170,7 +176,13 @@ impl Router {
                             }
                         }
                     }
-                    Self::route_request(&mut self.request_queue,self.servers.clone(), stream, cookie, &config);
+                    Self::route_request(
+                        &mut self.request_queue,
+                        self.servers.clone(),
+                        stream,
+                        cookie,
+                        &config,
+                    );
                 }
             }
         }
@@ -195,20 +207,18 @@ impl Router {
         servers: Vec<Server>,
         stream: &mut TcpStream,
         cookie: String,
-        config: &Config
+        config: &Config,
     ) {
         // On récupère le hostname, l'adresse ip et le port de la requête
         // On parcoure la liste des serveurs et on vérifie lequel a le hostname, le port et l'ip correspondant
         for (i, req) in request_queue.clone().into_iter().enumerate() {
             for server in servers.iter() {
                 if server.ip_addr == req.host && server.ports.contains(&req.port) {
-                    println!("request {:?}",req);
                     if req.method == "GET" {
                         server.handle_request(stream, req.clone(), cookie.clone(), config);
                         request_queue.remove(i);
                         break;
-                    }
-                    else if req.complete {
+                    } else if req.complete {
                         println!("arret possible");
                         server.handle_request(stream, req.clone(), cookie.clone(), config);
                         request_queue.remove(i);
