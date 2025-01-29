@@ -1,7 +1,7 @@
-use chrono::{ DateTime, Duration, Utc };
+use chrono::{DateTime, Duration, Utc};
 use mio::net::TcpStream;
 use std::collections::HashMap;
-use std::io::{ BufReader, Read };
+use std::io::{BufReader, Read};
 use uuid::Uuid;
 
 // -------------------------------------------------------------------------------------
@@ -15,7 +15,7 @@ pub struct Session {
 }
 
 impl Session {
-    pub(crate) const SESSION_LIFETIME: i64 = 60 * 60 * (1000 / 16);
+    pub(crate) const SESSION_LIFETIME: i64 = 60 * 60 * 1000;
 
     pub fn new() -> Self {
         let expires_duration = Duration::milliseconds(Self::SESSION_LIFETIME);
@@ -28,6 +28,7 @@ impl Session {
     }
 
     pub fn is_expired(&self) -> bool {
+        println!("verification {}   != {}", Utc::now(), self.validity_time);
         Utc::now() > self.validity_time
     }
 
@@ -100,9 +101,7 @@ impl Session {
         // Construire l'en-tête Set-Cookie
         let cookie_header = format!(
             "Set-Cookie: {}={}; Path=/; HttpOnly; Expires={}\r\n",
-            cookie_name,
-            cookie_value,
-            expires
+            cookie_name, cookie_value, expires
         );
 
         cookie_header
@@ -118,7 +117,10 @@ mod tests {
     #[test]
     fn test_session_not_expired() {
         let session = Session::new();
-        assert!(!session.is_expired(), "La session ne devrait pas être expirée.");
+        assert!(
+            !session.is_expired(),
+            "La session ne devrait pas être expirée."
+        );
     }
 
     #[test]
@@ -132,6 +134,9 @@ mod tests {
     fn test_session_expired_after_delay() {
         let session = Session::new();
         thread::sleep(Duration::from_secs(2)); // Attendre 2 secondes
-        assert!(session.is_expired(), "La session devrait être expirée après le délai.");
+        assert!(
+            session.is_expired(),
+            "La session devrait être expirée après le délai."
+        );
     }
 }

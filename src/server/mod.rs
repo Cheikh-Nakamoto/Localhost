@@ -4,11 +4,11 @@ use mio::net::TcpStream;
 use regex::RegexSet;
 pub use request::*;
 use std::collections::HashMap;
-use std::fs::{ OpenOptions, ReadDir };
+use std::fs::{OpenOptions, ReadDir};
 // use std::io::{Error, Read};
 pub use std::string::String;
 // use std::time::{Duration, Instant};
-use std::{ fs, io, io::Write, path::Path };
+use std::{fs, io, io::Write, path::Path};
 
 pub mod response;
 pub use response::*;
@@ -17,14 +17,14 @@ pub mod router;
 pub use router::*;
 pub mod session;
 pub use session::*;
-use tera::{ Context, Tera };
+use tera::{Context, Tera};
 pub mod cgi;
 pub mod rendering_page;
 
 pub use cgi::*;
 pub use rendering_page::*;
 
-use crate::{ remove_prefix, remove_suffix, Config, Redirection };
+use crate::{remove_prefix, remove_suffix, Config, Redirection};
 
 #[derive(Debug)]
 pub enum ServerError<'a> {
@@ -66,7 +66,7 @@ impl Server {
         accepted_methods: Vec<String>,
         directory_listing: bool,
         redirections: Vec<Redirection>,
-        exclusion: Vec<String>
+        exclusion: Vec<String>,
     ) -> Self {
         Self {
             ip_addr,
@@ -89,7 +89,7 @@ impl Server {
         request: &Request,
         config: &Config,
         status_code: u16,
-        cookie: &String
+        cookie: &String,
     ) {
         // Log request
         let mut tera = Tera::default();
@@ -101,7 +101,7 @@ impl Server {
                 "access_log",
                 file!(),
                 line!(),
-                ServerError::TeraError(&res.err().unwrap())
+                ServerError::TeraError(&res.err().unwrap()),
             );
             return;
         }
@@ -122,25 +122,33 @@ impl Server {
         let addr = format!("{}:{}{}", &request.host, &request.port, &request.location);
         context.insert("remote_addr", &addr);
         context.insert("remote_user", id_session);
-        context.insert("time_local", &format!("{}", Utc::now().format("%d-%m-%Y %H:%M:%S")));
+        context.insert(
+            "time_local",
+            &format!("{}", Utc::now().format("%d-%m-%Y %H:%M:%S")),
+        );
         context.insert("method", &format!("{: <6}", &request.method));
         context.insert("status", &status_code);
-        context.insert("bytes_sent", &format!("{: >8}", (request.length as f64) / 1000.0));
+        context.insert(
+            "bytes_sent",
+            &format!("{: >8}", (request.length as f64) / 1000.0),
+        );
 
         if let Ok(str) = tera.render("access_log", &context) {
-            match OpenOptions::new().append(true).open(&config.log_files.access_log) {
+            match OpenOptions::new()
+                .append(true)
+                .open(&config.log_files.access_log)
+            {
                 Ok(mut log_file) => {
                     let log_result = log_file.write((str + "\n").as_bytes());
                     match log_result {
-                        Err(e) =>
-                            Self::error_log(
-                                &request,
-                                config,
-                                "access_log",
-                                file!(),
-                                line!(),
-                                ServerError::IOError(&e)
-                            ),
+                        Err(e) => Self::error_log(
+                            &request,
+                            config,
+                            "access_log",
+                            file!(),
+                            line!(),
+                            ServerError::IOError(&e),
+                        ),
                         Ok(_) => (),
                     }
                 }
@@ -155,7 +163,7 @@ impl Server {
         func_name: &str,
         filename: &str,
         line_number: u32,
-        error: ServerError
+        error: ServerError,
     ) {
         let str = format!(
             "[{}]: {} - {}:{} - Func: {} at {}:{} - Error: {:?}\n",
@@ -169,7 +177,10 @@ impl Server {
             error
         );
 
-        match OpenOptions::new().append(true).open(&config.log_files.error_log) {
+        match OpenOptions::new()
+            .append(true)
+            .open(&config.log_files.error_log)
+        {
             Ok(mut log_file) => {
                 let log_result = log_file.write((str + "\n").as_bytes());
                 match log_result {
@@ -186,23 +197,26 @@ impl Server {
         request: &Request,
         stream: &mut TcpStream,
         config: &Config,
-        cookie: &String
+        cookie: &String,
     ) {
         let mut redirects = self.redirections.clone();
         redirects.retain(|r| r.source == request.location);
 
         if redirects.len() > 0 {
-            match self.redirections.iter().any(|r| r.target == request.location) {
-                true =>
-                    Self::send_error_response(
-                        &self,
-                        stream,
-                        &request,
-                        config,
-                        508,
-                        "Loop Detected",
-                        &cookie
-                    ),
+            match self
+                .redirections
+                .iter()
+                .any(|r| r.target == request.location)
+            {
+                true => Self::send_error_response(
+                    &self,
+                    stream,
+                    &request,
+                    config,
+                    508,
+                    "Loop Detected",
+                    &cookie,
+                ),
                 false => {
                     // Construire la réponse de redirection
                     let response = format!(
@@ -227,10 +241,16 @@ impl Server {
         mut stream: &mut TcpStream,
         mut request: Request,
         cookie: String,
-        config: &Config
+        config: &Config,
     ) {
+ 
+
         // Vérification de la méthode
-        if !self.accepted_methods.iter().any(|m| m.to_uppercase() == request.method.to_uppercase()) {
+        if !self
+            .accepted_methods
+            .iter()
+            .any(|m| m.to_uppercase() == request.method.to_uppercase())
+        {
             Self::send_error_response(
                 &self,
                 &mut stream,
@@ -238,7 +258,7 @@ impl Server {
                 config,
                 405,
                 "Method Not Allowed",
-                &cookie
+                &cookie,
             );
             return;
         }
@@ -252,7 +272,7 @@ impl Server {
                 config,
                 413,
                 "Content Too Large",
-                &cookie
+                &cookie,
             );
             return;
         }
@@ -270,10 +290,9 @@ impl Server {
         let entries: ReadDir;
         let all;
         let mut dir_path;
-        if
-            !request.location.contains(".") &&
-            !request.location.contains("?") &&
-            request.method == "GET"
+        if !request.location.contains(".")
+            && !request.location.contains("?")
+            && request.method == "GET"
         {
             if !Path::new(&location.trim_end_matches("/")).exists() {
                 Self::send_error_response(
@@ -283,7 +302,7 @@ impl Server {
                     config,
                     404,
                     "Not Found x",
-                    &cookie
+                    &cookie,
                 );
                 return;
             }
@@ -309,7 +328,12 @@ impl Server {
             all = entries
                 .filter_map(|entry| {
                     let el = entry.unwrap().path();
-                    let name = el.to_str().unwrap().strip_prefix(&location).unwrap().to_string();
+                    let name = el
+                        .to_str()
+                        .unwrap()
+                        .strip_prefix(&location)
+                        .unwrap()
+                        .to_string();
                     let re_init = RegexSet::new(&self.exclusion);
                     if re_init.is_err() {
                         Self::error_log(
@@ -318,16 +342,15 @@ impl Server {
                             "handle_request",
                             file!(),
                             line!(),
-                            ServerError::RegexError(&re_init.err().unwrap())
+                            ServerError::RegexError(&re_init.err().unwrap()),
                         );
                         return None;
                     }
 
                     let re = re_init.unwrap();
 
-                    match
-                        (el.is_file() && !re.is_match(&name)) ||
-                        (el.is_dir() && self.directory_listing && !re.is_match(&name))
+                    match (el.is_file() && !re.is_match(&name))
+                        || (el.is_dir() && self.directory_listing && !re.is_match(&name))
                     {
                         true => {
                             let entry_name = remove_prefix(name.clone(), "/");
@@ -337,16 +360,13 @@ impl Server {
                                 entry_type: match el.is_dir() {
                                     true => "folder".to_string(),
                                     _ => {
-                                        let filename_parts = entry_name
-                                            .split(".")
-                                            .collect::<Vec<&str>>();
+                                        let filename_parts =
+                                            entry_name.split(".").collect::<Vec<&str>>();
                                         match filename_parts.len() {
                                             2 => {
                                                 let ext = format!("{}{}", ".", filename_parts[1]);
-                                                let mut file_formats: HashMap<
-                                                    &str,
-                                                    &str
-                                                > = HashMap::new();
+                                                let mut file_formats: HashMap<&str, &str> =
+                                                    HashMap::new();
                                                 file_formats.insert(".rb", "ruby");
                                                 file_formats.insert(".jpg", "image");
                                                 file_formats.insert(".jpeg", "image");
@@ -376,6 +396,7 @@ impl Server {
         }
 
         let fieldname = Request::extract_field(&request, "name");
+        println!("arret possible");
 
         if request.clone().location.contains("?") {
             let _ = self.create_folder(stream, &request.clone(), &*cookie.clone(), config);
@@ -395,7 +416,7 @@ impl Server {
                 config,
                 404,
                 "Not Found",
-                &cookie
+                &cookie,
             );
         }
     }
@@ -405,7 +426,7 @@ impl Server {
         stream: &mut TcpStream,
         request: &Request,
         cookie: &str,
-        config: &Config
+        config: &Config,
     ) -> Result<(), Box<dyn std::error::Error>> {
         // 1. Construire le chemin du dossier
         let folder_path = format!(
@@ -423,7 +444,7 @@ impl Server {
                 config,
                 409, // Code HTTP 409 Conflict
                 "Le dossier existe déjà",
-                &cookie.to_string()
+                &cookie.to_string(),
             );
             return Ok(());
         }
@@ -443,7 +464,7 @@ impl Server {
                     "create_folder",
                     file!(),
                     line!(),
-                    ServerError::IOError(&e)
+                    ServerError::IOError(&e),
                 );
                 Self::send_error_response(
                     self,
@@ -452,7 +473,7 @@ impl Server {
                     config,
                     500, // Code HTTP 500 Internal Server Error
                     "Erreur interne du serveur",
-                    &cookie.to_string()
+                    &cookie.to_string(),
                 );
             }
         }
@@ -465,7 +486,7 @@ impl Server {
         stream: &mut TcpStream,
         request: &Request,
         cookie: &str,
-        config: &Config
+        config: &Config,
     ) {
         // 1. Construire le chemin du dossier
         let folder_path = format!(
@@ -488,7 +509,7 @@ impl Server {
                 config,
                 400, // Code HTTP 400 Not Found
                 "Bad Request :l'element choisit n'existe pas",
-                &cookie.to_string()
+                &cookie.to_string(),
             );
 
             return;
@@ -512,15 +533,11 @@ impl Server {
         config: &Config,
         stream: &mut TcpStream,
         path: &str,
-        cookie: String
+        cookie: String,
     ) {
         // Déterminer le type de contenu en fonction de l'extension du fichier
         let mut to_cgi = false;
-        let content_type = match
-            Path::new(path)
-                .extension()
-                .and_then(|ext| ext.to_str())
-        {
+        let content_type = match Path::new(path).extension().and_then(|ext| ext.to_str()) {
             Some("html") => "text/html",
             Some("css") => "text/css",
             Some("js") => "application/javascript",
@@ -556,7 +573,7 @@ impl Server {
                         "handle_static_file",
                         file!(),
                         line!(),
-                        ServerError::IOError(&e)
+                        ServerError::IOError(&e),
                     );
                 } else {
                     // Log request
@@ -570,7 +587,7 @@ impl Server {
                         "handle_static_file",
                         file!(),
                         line!(),
-                        ServerError::IOError(&e)
+                        ServerError::IOError(&e),
                     );
                 }
             }
@@ -581,7 +598,7 @@ impl Server {
                     "handle_static_file",
                     file!(),
                     line!(),
-                    ServerError::IOError(&e)
+                    ServerError::IOError(&e),
                 );
                 Self::send_error_response(
                     &self,
@@ -590,7 +607,7 @@ impl Server {
                     config,
                     500,
                     "Internal Server Error",
-                    &cookie
+                    &cookie,
                 );
             }
         }
@@ -603,7 +620,7 @@ impl Server {
         all: Vec<DirectoryElement>,
         cookie: String,
         request: Request,
-        config: &Config
+        config: &Config,
     ) {
         // Chargement du template
         let tera = Tera::new("src/**/*.html").unwrap();
@@ -628,7 +645,7 @@ impl Server {
                         "handle_listing_directory",
                         file!(),
                         line!(),
-                        ServerError::IOError(&e)
+                        ServerError::IOError(&e),
                     );
                 } else {
                     // Log request
@@ -643,7 +660,7 @@ impl Server {
                     "handle_listing_directory",
                     file!(),
                     line!(),
-                    ServerError::TeraError(&e)
+                    ServerError::TeraError(&e),
                 );
                 Self::send_error_response(
                     &self,
@@ -652,7 +669,7 @@ impl Server {
                     config,
                     500,
                     "Internal Server Error",
-                    &cookie
+                    &cookie,
                 );
             }
         }
@@ -666,7 +683,7 @@ impl Server {
         config: &Config,
         status_code: u16,
         status_message: &str,
-        cookie: &String
+        cookie: &String,
     ) {
         // Chargement du template
         let tera = Tera::new("src/**/*.html").unwrap();
@@ -676,7 +693,7 @@ impl Server {
             &(HTMLError {
                 code: status_code,
                 status: status_message.to_string(),
-            })
+            }),
         );
 
         match tera.render(&self.error_path.strip_prefix("src/").unwrap(), &context) {
@@ -695,7 +712,7 @@ impl Server {
                         "send_error_response",
                         file!(),
                         line!(),
-                        ServerError::IOError(&e)
+                        ServerError::IOError(&e),
                     );
                 } else {
                     self.access_log(&request, config, status_code, &cookie);
@@ -709,7 +726,7 @@ impl Server {
                     "send_error_response",
                     file!(),
                     line!(),
-                    ServerError::TeraError(&e)
+                    ServerError::TeraError(&e),
                 );
             }
         }
@@ -724,20 +741,20 @@ impl Server {
                 config,
                 400,
                 "Bad Request: No file uploaded",
-                &request.id_session
+                &request.id_session,
             );
             return;
         }
 
         // Vérifier si la taille du fichier est nulle
-        if request.length == 0 {
+        if request.body.len() == 0 {
             self.send_error_response(
                 stream,
                 &request.clone(),
                 config,
                 400,
                 "Bad Request: File size is zero",
-                &request.id_session
+                &request.id_session,
             );
             return;
         }
@@ -758,7 +775,7 @@ impl Server {
                     "upload_file",
                     file!(),
                     line!(),
-                    ServerError::IOError(&err)
+                    ServerError::IOError(&err),
                 );
                 self.send_error_response(
                     stream,
@@ -766,13 +783,14 @@ impl Server {
                     config,
                     500,
                     &format!("Internal Server Error: Failed to open file - {}", err),
-                    &request.id_session
+                    &request.id_session,
                 );
                 return;
             }
         };
 
-        //let file_content = Request::extract_field(request, "value");
+      //  let file_content = Request::extract_field(request, "value");
+        println!("content-type{}", request.content_type);
         let file_content = Request::extract_values(&request.body_byte,request.boundary.clone().unwrap_or_default());
         // Écrire le contenu du fichier
         if let Err(err) = file.write_all(&file_content) {
@@ -782,7 +800,7 @@ impl Server {
                 "upload_file",
                 file!(),
                 line!(),
-                ServerError::IOError(&err)
+                ServerError::IOError(&err),
             );
             self.send_error_response(
                 stream,
@@ -790,7 +808,7 @@ impl Server {
                 config,
                 500,
                 "Internal Server Error: Failed to write to file",
-                &request.id_session
+                &request.id_session,
             );
             return;
         }
@@ -808,7 +826,7 @@ impl Server {
                     "upload_file",
                     file!(),
                     line!(),
-                    ServerError::IOError(&e)
+                    ServerError::IOError(&e),
                 );
                 self.send_error_response(
                     stream,
@@ -816,7 +834,7 @@ impl Server {
                     config,
                     500,
                     &format!("Internal Server Error: Failed to send redirect - {}", e),
-                    &request.id_session
+                    &request.id_session,
                 );
                 return;
             }
@@ -825,15 +843,17 @@ impl Server {
 
     fn extract_folder_name(loaction: &str) -> String {
         let location = loaction.split('?').nth(0).unwrap();
-        if
-            let Some(folder_name_part) = loaction
-                .split('?')
-                .nth(1)
-                .unwrap_or_default()
-                .split("foldername=")
-                .nth(1)
+        if let Some(folder_name_part) = loaction
+            .split('?')
+            .nth(1)
+            .unwrap_or_default()
+            .split("foldername=")
+            .nth(1)
         {
-            let folder_name = folder_name_part.trim_matches(&['"', '+']).trim().to_string();
+            let folder_name = folder_name_part
+                .trim_matches(&['"', '+'])
+                .trim()
+                .to_string();
             return format!("{}/{}", location, folder_name);
         }
         String::new()
@@ -841,14 +861,16 @@ impl Server {
 
     pub fn send_redirect_response(&self, stream: &mut TcpStream, location: &str) -> io::Result<()> {
         // Construire la réponse HTTP
-        let response =
-            format!("HTTP/1.1 302 Found\r\n\
+        let response = format!(
+            "HTTP/1.1 302 Found\r\n\
              Location: {}\r\n\
              Content-Length: 0\r\n\
              Cache-Control: no-cache, no-store, must-revalidate\r\n\
              Pragma: no-cache\r\n\
              Expires: 0\r\n\
-             \r\n", location);
+             \r\n",
+            location
+        );
         match stream.write_all(response.as_bytes()) {
             Ok(_) => println!("Response sent successfully."),
             Err(e) => println!("Failed to send response: {}", e),
