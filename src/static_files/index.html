@@ -26,7 +26,11 @@
           class="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-6 lg:grid-cols-12 gap-4 overflow-auto"
         >
           <!-- File Items -->
-          {% for el in elements %}
+          {% if size == 0 %}
+          <div class="relative group">
+            <span class="text-white">Empty</span>
+          </div>
+          {% else %} {% for el in elements %}
           <div class="relative group">
             <a
               href="{{el.link}}"
@@ -36,18 +40,25 @@
               <i class="fas fa-folder text-4xl text-yellow-400 mb-2"></i>
               {% elif el.entry_type == "ruby" %}
               <i class="fas fa-gem text-4xl text-red-500 mb-2"></i>
+              {% elif el.entry_type == "image" %}
+              <i class="fas fa-file-image text-4xl text-green-200 mb-2"></i>
+              {% elif el.entry_type == "text" %}
+              <i class="fas fa-file-lines text-4xl text-gray-200 mb-2"></i>
               {% else %}
               <i class="fas fa-file text-4xl text-gray-200 mb-2"></i>
               {% endif %}
-              <span class="text-white text-sm">{{el.entry}}</span>
+              <span
+                class="filename text-white text-sm text-center overflow-hidden truncate w-full"
+                >{{el.entry}}</span
+              >
               <button
-                class="absolute top-1 right-1 p-1 bg-transparent hover:bg-[#724444] rounded-full invisible group-hover:visible"
+                class="delete_file absolute top-1 right-1 p-1 bg-transparent hover:bg-[#724444] rounded-full invisible group-hover:visible"
               >
                 <i class="fas fa-times text-white text-sm"></i>
               </button>
             </a>
           </div>
-          {% endfor %}
+          {% endfor %} {% endif %}
         </div>
       </div>
       <!-- Bottom Actions -->
@@ -93,7 +104,7 @@
                 <span class="tracking-wider font-bold">Valider</span>
                 <i class="fas fa-circle-check"></i>
             </button>
-            <span id="close-modal" class="absolute -top-3 -right-2 bg-black hover:bg-red-500 text-white w-6 cursor-pointer rounded-full text-center transition-all duration-200">&times;</span>
+            <span class="close-modal absolute -top-3 -right-2 bg-black hover:bg-red-500 text-white w-6 cursor-pointer rounded-full text-center transition-all duration-200">&times;</span>
         </form>
         `;
       let addFileHTML = `
@@ -111,7 +122,23 @@
                 <i class="fas fa-circle-check"></i>
             </button>
 
-            <span id="close-modal" class="absolute -top-3 -right-2 bg-black hover:bg-red-500 text-white w-6 cursor-pointer rounded-full text-center transition-all duration-200">&times;</span>
+            <span class="close-modal absolute -top-3 -right-2 bg-black hover:bg-red-500 text-white w-6 cursor-pointer rounded-full text-center transition-all duration-200">&times;</span>
+        </form>
+        `;
+      let confirmDeleteHTML = `
+        <form method="POST" enctype="multipart/form-data" class="bg-white rounded-lg p-8 m-auto shadow-md">
+            <p class="text-center text-gray-800 font-medium mb-6">Do you want delete this: <span id="modal_filename"></span></p>
+            <input id="file_to_delete" type="text" name="file_to_delete" hidden>
+            <div class="flex justify-center gap-4">
+                <!-- Bouton Oui bleu -->
+                <button type="submit" class="px-6 py-2 bg-teal-500 text-white rounded-lg hover:bg-teal-600 shadow-md flex items-center gap-2">
+                    Yes
+                </button>
+                <!-- Bouton Non rouge -->
+                <button class="close-modal px-6 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 shadow-md flex items-center gap-2">
+                    No
+                </button>
+            </div>
         </form>
         `;
       let modalContainer = document.querySelector("#modal-container");
@@ -122,6 +149,15 @@
       document.querySelector("#create-folder").onclick = () => {
         openModal("create-folder");
       };
+      document.querySelectorAll(".delete_file").forEach((el) => {
+        el.addEventListener("click", (e) => {
+          e.preventDefault();
+          let filename = el.parentNode.querySelector(".filename").textContent;
+          openModal("confirm-delete");
+          document.querySelector("#modal_filename").textContent = filename;
+          document.querySelector("#file_to_delete").value = filename;
+        });
+      });
 
       modalContainer.addEventListener("click", (e) => {
         if (e.target === modalContainer) {
@@ -137,15 +173,19 @@
               e.target.value;
             document.querySelector("#selected-file").classList.remove("hidden");
           };
-        } else {
+        } else if (action === "create-folder") {
           modalContainer.innerHTML = createFolderHTML;
+        } else {
+          modalContainer.innerHTML = confirmDeleteHTML;
         }
         modalContainer.classList.remove("hidden");
         setTimeout(() => {
           modalContainer.classList.add("opacity-100");
-          document.querySelector("#close-modal").onclick = () => {
-            closeModal();
-          };
+          document.querySelectorAll(".close-modal").forEach((el) => {
+            el.onclick = () => {
+              closeModal();
+            };
+          });
         }, 1);
       }
       function closeModal() {

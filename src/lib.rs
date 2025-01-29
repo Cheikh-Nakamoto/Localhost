@@ -1,6 +1,7 @@
 pub mod server;
 use std::{ collections::HashMap, fs };
 
+use regex::Regex;
 pub use server::*;
 
 #[derive(Debug, Deserialize, Clone)]
@@ -38,14 +39,14 @@ pub struct LogFilesConfig {
 pub struct HttpConfig {
     pub access_log_format: String,
     pub timeout: u64,
-    pub size_limit: u64,
+    pub size_limit: usize,
     pub servers: HashMap<String, Server>,
 }
 
 #[derive(Debug, Deserialize, Clone)]
 pub struct Redirection {
     pub source: String,
-    pub target: String
+    pub target: String,
 }
 
 pub fn load_config() -> Config {
@@ -64,5 +65,23 @@ pub fn remove_prefix(str: String, prefix: &str) -> String {
     match str.strip_prefix(prefix) {
         Some(txt) => txt.to_string(),
         None => str,
+    }
+}
+
+pub fn get_boundary(req: &String) -> Option<String> {
+    let re = Regex::new(r"boundary=(?<var_limit>[-_a-zA-Z0-9]+)\r").unwrap();
+    if let Some(caps) = re.captures(&req) {
+        Some(caps["var_limit"].to_string())
+    } else {
+        return None;
+    }
+}
+
+pub fn get_content_length(req: &String) -> Option<String> {
+    let re = Regex::new(r"Content-Length:\s*(?<content_type>\d+)").unwrap();
+    if let Some(caps) = re.captures(&req) {
+        Some(caps["content_type"].to_string())
+    } else {
+        return None;
     }
 }

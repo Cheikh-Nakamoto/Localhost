@@ -5,8 +5,8 @@ events_limit = 128
 
 [http]
 access_log_format = "[{{time_local}}] - {{method}} {{status}} - {{bytes_sent}} kb - {{remote_user}} - {{remote_addr}}"
-timeout = 3000                                                                                                         # seconds
-size_limit = 5000                                                                                                      # kb
+timeout = 1000                                                                                                      # milliseconds
+size_limit = 10000                                                                                                   # kb
 
 [http.servers]
 
@@ -25,7 +25,7 @@ redirections = [
     { source = "/mouton", target = "/" },
     { source = "/chevre", target = "/" },
 ]
-exclusion = ["a.txt"]
+exclusion = [""]
 
 [http.servers.server2]
 ip_addr = "127.0.0.10"
@@ -44,4 +44,4 @@ redirections = [
     { source = "/a", target = "/b" },
     { source = "/b", target = "/a" },
 ]
-exclusion = [".rb"]
+exclusion = []
