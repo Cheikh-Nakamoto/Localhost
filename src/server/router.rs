@@ -1,11 +1,11 @@
-use crate::Config;
+use crate::{Config, ServerError};
 
 use super::Request;
 pub use super::{Server, Session};
 use mio::net::{TcpListener, TcpStream};
 use mio::{Events, Interest, Poll, Token};
 use std::collections::HashMap;
-use std::io::{self};
+use std::io::{self, ErrorKind};
 use std::net::ToSocketAddrs;
 
 // -------------------------------------------------------------------------------------
@@ -96,6 +96,30 @@ impl Router {
             poll.poll(&mut events, None)?;
 
             for event in events.iter() {
+
+                if event.is_error() || event.is_read_closed() {
+                    // Nettoyer les tokens inactifs
+                    if let Some(mut stream) = self.clients.remove(&event.token()) {
+                        poll.registry().deregister(&mut stream)?;
+                        let addr = stream.peer_addr()?;
+                        let mut err_req = Request::default();
+                        err_req.host = addr.to_string();
+
+                        Server::error_log(
+                            &err_req,
+                            config,
+                            "access_log",
+                            file!(),
+                            line!(),
+                            ServerError::IOError(&io::Error::new(
+                                ErrorKind::BrokenPipe,
+                                format!("Stream fermé pour le client {}", addr),
+                            )),
+                        );
+                        stream.shutdown(std::net::Shutdown::Both)?;
+                    };
+                    continue;
+                }
                 if let Some(_) = server_tokens.get(&event.token()) {
                     // Nouvelle connexion sur un TcpListener
                     self.accept_connection(event.token(), &poll)?;
