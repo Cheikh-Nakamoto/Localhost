@@ -172,11 +172,6 @@ impl Request {
 
                     Self::extract_form_data(&body, boundary, &mut form_data);
 
-                    // A partir d'ici tu peux placer la fonction qui permet d'utiliser les données collectées
-                    // Par exemple enregistrer l'image, pour le cas de la création de dossier tu auras ici
-                    // Le nom du dossier à créer
-                    // Tu sauras comment mettre à jour la variable request avec ces données collectées.
-
                     if let Some(hashmap) = form_data.get(0) {
                         if let Some(Some(file)) = hashmap.get("filename") {
                             request.filename = file.to_string();
@@ -189,44 +184,6 @@ impl Request {
                 request
             }
         }
-
-        // ----------------------------------------------------------------------------------------
-        // Ancien bloc `if is_post {...}`
-        // ----------------------------------------------------------------------------------------
-        //     if is_post {
-        //         let body_start = headers_end + 4;
-        //         let body_already_not_read = request.length - body_start;
-
-        //         let mut body = vec![0; request.length];
-
-        //         if body_already_not_read > 0 {
-        //             body = request_str.as_bytes()[body_start..].to_vec();
-        //             if let Some(pos) = body.windows(4).position(|elem| elem == b"\r\n\r\n") {
-        //                 // println!("trouvé dexieme delimiteur a l'index : {}", pos);
-        //                 let sec_header = String::from_utf8_lossy(&body[..pos]).into_owned();
-        //                 body = body[pos + 4..].to_vec();
-        //                 let liste = sec_header.lines().collect::<Vec<&str>>();
-        //                 let filename = Self::extract_header_value(&liste, "Content-Disposition");
-        //                 println!("filename1 {} \n\n", filename);
-        //                 request.filename = filename.replace('"', "").to_string();
-        //             }
-        //             if request.filename.is_empty() {
-        //                 let liste = headers.lines().collect::<Vec<&str>>();
-        //                 let filename = Self::extract_header_value(&liste, "Content-Disposition");
-        //                 println!("filename2 {} \n\n", filename);
-        //                 request.filename = filename.replace('"', "").to_string();
-        //             }
-        //         }
-
-        //         let tmp = String::from_utf8_lossy(&body);
-        //         // let liste = &tmp.to_owned().lines().collect::<Vec<&str>>();
-        //         // let content_disposition = Self::extract_header_value(liste, "Content-Disposition");
-        //         // println!("value {}", content_disposition);
-        //         //    println!("body {} \n\n",tmp);
-
-        //         request.body = tmp.to_string();
-        //     }
-        // ----------------------------------------------------------------------------------------
     }
 
     pub fn extract_form_data(

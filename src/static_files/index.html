@@ -87,11 +87,12 @@
 
     <script>
       let createFolderHTML = `
-        <form method="GET" class="bg-white rounded-lg p-4 m-auto flex flex-col gap-4 relative">
+        <form method="POST" enctype="multipart/form-data" class="bg-white rounded-lg p-4 m-auto flex flex-col gap-4 relative">
             <div class="flex justify-between mx-auto">
                 <div class="flex flex-col gap-1">
                     <label class="block text-black text-sm font-medium tracking-wider">Folder name</label>
                     <input
+                    required
                     type="text"
                     name="foldername"
                     placeholder="Folder xyz..."
@@ -114,7 +115,7 @@
                 <span class="tracking-wider font-bold">Select file</span>
                 <i class="fas fa-upload"></i>
             </label>
-            <input id="add_file" name="file" type="file" hidden>
+            <input id="add_file" name="file" type="file" required hidden>
             <span id="selected-file" class="hidden"></span>
 
             <button type="submit" class="w-auto px-6 py-2 bg-teal-500 text-white rounded-lg hover:bg-teal-600 shadow-md flex items-center gap-2 mr-auto mt-2">

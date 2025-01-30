@@ -165,7 +165,7 @@ impl Router {
                     if let Some(session) = self.sessions.get_mut(&client_token) {
                         cookie = Session::make_cookie(
                             "cookie_01",
-                            &*session.id,
+                            &session.id,
                             session.expiration_time,
                         );
                     }
@@ -176,7 +176,6 @@ impl Router {
                         for (i, waiting_req) in self.request_queue.clone().iter().enumerate() {
                             if waiting_req.method == "POST" {
                                 if let Some(content_length) = waiting_req.content_length {
-                                    println!("content-length: {} <======> body len: {}", content_length, req.body.len());
                                     if content_length > waiting_req.body.len()  {
                                         if let Some(boundary) = waiting_req.boundary.clone() {
                                             if req.body.contains(&boundary) {
@@ -238,12 +237,7 @@ impl Router {
         for (i, req) in request_queue.clone().into_iter().enumerate() {
             for server in servers.iter() {
                 if server.ip_addr == req.host && server.ports.contains(&req.port) {
-                    if req.method == "GET" {
-                        server.handle_request(stream, req.clone(), cookie.clone(), config);
-                        request_queue.remove(i);
-                        break;
-                    } else if req.complete {
-                        println!("arret possible");
+                    if req.method == "GET" || req.complete {
                         server.handle_request(stream, req.clone(), cookie.clone(), config);
                         request_queue.remove(i);
                         break;

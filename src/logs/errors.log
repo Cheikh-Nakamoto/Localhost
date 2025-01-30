@@ -2,3 +2,21 @@
 
 [30-01-2025 12:44:18]:       - 127.0.0.1:60864:0 - Func: access_log at src/server/router.rs:113 - Error: IOError(Kind(BrokenPipe))
 
+[30-01-2025 18:24:32]:       - 127.0.0.1:42166:0 - Func: access_log at src/server/router.rs:113 - Error: IOError(Custom { kind: BrokenPipe, error: "Stream fermé pour le client 127.0.0.1:42166" })
+
+[30-01-2025 18:25:25]: GET   - 127.0.0.10:8081 - Func: handle_static_file at src/server/mod.rs:586 - Error: IOError(Os { code: 11, kind: WouldBlock, message: "Resource temporarily unavailable" })
+
+[30-01-2025 18:25:52]:       - 127.0.0.1:32782:0 - Func: access_log at src/server/router.rs:113 - Error: IOError(Custom { kind: BrokenPipe, error: "Stream fermé pour le client 127.0.0.1:32782" })
+
+[30-01-2025 18:37:19]:       - 127.0.0.1:48610:0 - Func: access_log at src/server/router.rs:113 - Error: IOError(Custom { kind: BrokenPipe, error: "Stream fermé pour le client 127.0.0.1:48610" })
+
+[30-01-2025 20:57:50]:       - 127.0.0.1:54954:0 - Func: access_log at src/server/router.rs:113 - Error: IOError(Custom { kind: BrokenPipe, error: "Stream fermé pour le client 127.0.0.1:54954" })
+
+[30-01-2025 21:17:40]: POST  - 127.0.0.10:8081 - Func: upload_file at src/server/mod.rs:780 - Error: IOError(Os { code: 21, kind: IsADirectory, message: "Is a directory" })
+
+[30-01-2025 21:18:43]: POST  - 127.0.0.10:8081 - Func: upload_file at src/server/mod.rs:780 - Error: IOError(Os { code: 21, kind: IsADirectory, message: "Is a directory" })
+
+[30-01-2025 21:40:29]: GET   - 127.0.0.10:8081 - Func: handle_static_file at src/server/mod.rs:584 - Error: IOError(Os { code: 11, kind: WouldBlock, message: "Resource temporarily unavailable" })
+
+[30-01-2025 21:40:37]:       - 127.0.0.1:34200:0 - Func: access_log at src/server/router.rs:113 - Error: IOError(Custom { kind: BrokenPipe, error: "Stream fermé pour le client 127.0.0.1:34200" })
+
