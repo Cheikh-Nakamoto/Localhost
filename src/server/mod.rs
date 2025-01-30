@@ -45,7 +45,6 @@ pub struct Server {
     pub root_directory: String,
     pub error_path: String,
     pub default_file: String,
-    pub cgi_file_format: String,
     pub upload_limit: u32,
     pub accepted_methods: Vec<String>,
     pub directory_listing: bool,
@@ -61,7 +60,6 @@ impl Server {
         root_directory: String,
         error_path: String,
         default_file: String,
-        cgi_file_format: String,
         upload_limit: u32,
         accepted_methods: Vec<String>,
         directory_listing: bool,
@@ -75,7 +73,6 @@ impl Server {
             root_directory,
             error_path,
             default_file,
-            cgi_file_format,
             upload_limit,
             accepted_methods,
             directory_listing,
@@ -747,7 +744,7 @@ impl Server {
         }
 
         // Vérifier si la taille du fichier est nulle
-        if request.length == 0 {
+        if request.body.len() == 0 {
             self.send_error_response(
                 stream,
                 &request.clone(),
