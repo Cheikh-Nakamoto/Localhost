@@ -160,6 +160,21 @@
         </form>
         `;
 
+      let failureDeleteHTML = (error) => `
+        <form id="delete_form" enctype="multipart/form-data" class="relative bg-white rounded-lg p-8 m-auto shadow-md flex flex-col items-center justify-center">
+          <dotlottie-player
+            src="https://lottie.host/a9fe2b11-69b4-4f3f-b174-d905b530d7f9/s9V5E7sKqq.lottie"
+            background="transparent"
+            speed="1"
+            style="width: 300px; height: 300px"
+            loop
+            autoplay
+          ></dotlottie-player>
+          <h2 class="text-center text-red-500 text-4xl font-medium mb-6">${error}</h2>
+          <span class="close-modal absolute -top-3 -right-2 bg-black hover:bg-red-500 text-white w-6 cursor-pointer rounded-full text-center transition-all duration-200">&times;</span>
+        </form>
+        `;
+
       var modalContainer = document.querySelector("#modal-container");
 
       document.querySelector("#add-file").onclick = () => {
@@ -201,11 +216,13 @@
                   setTimeout(() => {
                     window.location.reload();
                   }, 1500);
+                } else {
+                  modalContainer.innerHTML = failureDeleteHTML(`${data.status} ${data.statusText}`);
+                  closeModalEventListeners();
                 }
               })
               .catch((e) => {
                 console.log(e);
-                alert("Échec de la suppression.");
               });
           });
       }
@@ -226,11 +243,7 @@
         modalContainer.classList.remove("hidden");
         setTimeout(() => {
           modalContainer.classList.add("opacity-100");
-          document.querySelectorAll(".close-modal").forEach((el) => {
-            el.onclick = () => {
-              closeModal();
-            };
-          });
+          closeModalEventListeners();
         }, 1);
       }
       function closeModal() {
@@ -239,6 +252,13 @@
           modalContainer.classList.add("hidden");
           modalContainer.innerHTML = "";
         }, 500);
+      }
+      function closeModalEventListeners() {
+        document.querySelectorAll(".close-modal").forEach((el) => {
+            el.onclick = () => {
+              closeModal();
+            };
+          });
       }
     </script>
   </body>
