@@ -1,22 +1,228 @@
-[30-01-2025 12:40:33]:       - 127.0.0.1:60856:0 - Func: access_log at src/server/router.rs:113 - Error: IOError(Kind(BrokenPipe))
+[31-01-2025 00:17:06]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:583 - Error: IOError(Os { code: 11, kind: WouldBlock, message: "Resource temporarily unavailable" })
 
-[30-01-2025 12:44:18]:       - 127.0.0.1:60864:0 - Func: access_log at src/server/router.rs:113 - Error: IOError(Kind(BrokenPipe))
+[31-01-2025 01:58:02]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:611 - Error: IOError(Os { code: 104, kind: ConnectionReset, message: "Connection reset by peer" })
 
-[30-01-2025 18:24:32]:       - 127.0.0.1:42166:0 - Func: access_log at src/server/router.rs:113 - Error: IOError(Custom { kind: BrokenPipe, error: "Stream fermé pour le client 127.0.0.1:42166" })
+[31-01-2025 02:03:18]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:611 - Error: IOError(Os { code: 104, kind: ConnectionReset, message: "Connection reset by peer" })
 
-[30-01-2025 18:25:25]: GET   - 127.0.0.10:8081 - Func: handle_static_file at src/server/mod.rs:586 - Error: IOError(Os { code: 11, kind: WouldBlock, message: "Resource temporarily unavailable" })
+[31-01-2025 02:07:02]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:611 - Error: IOError(Os { code: 104, kind: ConnectionReset, message: "Connection reset by peer" })
 
-[30-01-2025 18:25:52]:       - 127.0.0.1:32782:0 - Func: access_log at src/server/router.rs:113 - Error: IOError(Custom { kind: BrokenPipe, error: "Stream fermé pour le client 127.0.0.1:32782" })
+[31-01-2025 02:48:07]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:599 - Error: IOError(Os { code: 104, kind: ConnectionReset, message: "Connection reset by peer" })
 
-[30-01-2025 18:37:19]:       - 127.0.0.1:48610:0 - Func: access_log at src/server/router.rs:113 - Error: IOError(Custom { kind: BrokenPipe, error: "Stream fermé pour le client 127.0.0.1:48610" })
+[31-01-2025 02:55:48]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:599 - Error: IOError(Os { code: 104, kind: ConnectionReset, message: "Connection reset by peer" })
 
-[30-01-2025 20:57:50]:       - 127.0.0.1:54954:0 - Func: access_log at src/server/router.rs:113 - Error: IOError(Custom { kind: BrokenPipe, error: "Stream fermé pour le client 127.0.0.1:54954" })
+[31-01-2025 02:57:01]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:599 - Error: IOError(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })
 
-[30-01-2025 21:17:40]: POST  - 127.0.0.10:8081 - Func: upload_file at src/server/mod.rs:780 - Error: IOError(Os { code: 21, kind: IsADirectory, message: "Is a directory" })
+[31-01-2025 02:57:01]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:599 - Error: IOError(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })
 
-[30-01-2025 21:18:43]: POST  - 127.0.0.10:8081 - Func: upload_file at src/server/mod.rs:780 - Error: IOError(Os { code: 21, kind: IsADirectory, message: "Is a directory" })
+[31-01-2025 02:57:01]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:599 - Error: IOError(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })
 
-[30-01-2025 21:40:29]: GET   - 127.0.0.10:8081 - Func: handle_static_file at src/server/mod.rs:584 - Error: IOError(Os { code: 11, kind: WouldBlock, message: "Resource temporarily unavailable" })
+[31-01-2025 02:57:01]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:599 - Error: IOError(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })
 
-[30-01-2025 21:40:37]:       - 127.0.0.1:34200:0 - Func: access_log at src/server/router.rs:113 - Error: IOError(Custom { kind: BrokenPipe, error: "Stream fermé pour le client 127.0.0.1:34200" })
+[31-01-2025 02:57:01]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:599 - Error: IOError(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })
+
+[31-01-2025 02:57:01]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:599 - Error: IOError(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })
+
+[31-01-2025 02:57:01]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:599 - Error: IOError(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })
+
+[31-01-2025 02:57:01]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:599 - Error: IOError(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })
+
+[31-01-2025 02:57:01]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:599 - Error: IOError(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })
+
+[31-01-2025 02:57:01]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:599 - Error: IOError(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })
+
+[31-01-2025 02:57:01]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:599 - Error: IOError(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })
+
+[31-01-2025 02:57:01]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:599 - Error: IOError(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })
+
+[31-01-2025 02:57:01]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:599 - Error: IOError(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })
+
+[31-01-2025 02:57:01]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:599 - Error: IOError(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })
+
+[31-01-2025 02:57:01]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:599 - Error: IOError(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })
+
+[31-01-2025 02:57:01]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:599 - Error: IOError(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })
+
+[31-01-2025 02:57:01]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:599 - Error: IOError(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })
+
+[31-01-2025 02:57:01]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:599 - Error: IOError(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })
+
+[31-01-2025 02:57:01]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:599 - Error: IOError(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })
+
+[31-01-2025 02:57:01]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:599 - Error: IOError(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })
+
+[31-01-2025 02:57:01]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:599 - Error: IOError(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })
+
+[31-01-2025 02:57:01]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:599 - Error: IOError(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })
+
+[31-01-2025 02:57:01]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:599 - Error: IOError(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })
+
+[31-01-2025 02:57:01]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:599 - Error: IOError(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })
+
+[31-01-2025 02:57:01]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:599 - Error: IOError(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })
+
+[31-01-2025 02:57:11]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:599 - Error: IOError(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })
+
+[31-01-2025 02:57:11]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:599 - Error: IOError(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })
+
+[31-01-2025 02:57:11]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:599 - Error: IOError(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })
+
+[31-01-2025 02:57:11]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:599 - Error: IOError(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })
+
+[31-01-2025 02:57:11]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:599 - Error: IOError(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })
+
+[31-01-2025 02:57:11]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:599 - Error: IOError(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })
+
+[31-01-2025 02:57:11]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:599 - Error: IOError(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })
+
+[31-01-2025 02:57:11]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:599 - Error: IOError(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })
+
+[31-01-2025 02:57:11]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:599 - Error: IOError(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })
+
+[31-01-2025 02:57:11]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:599 - Error: IOError(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })
+
+[31-01-2025 02:57:11]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:599 - Error: IOError(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })
+
+[31-01-2025 02:57:11]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:599 - Error: IOError(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })
+
+[31-01-2025 02:57:12]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:599 - Error: IOError(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })
+
+[31-01-2025 02:57:12]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:599 - Error: IOError(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })
+
+[31-01-2025 02:57:12]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:599 - Error: IOError(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })
+
+[31-01-2025 02:57:12]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:599 - Error: IOError(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })
+
+[31-01-2025 02:57:12]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:599 - Error: IOError(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })
+
+[31-01-2025 02:57:12]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:599 - Error: IOError(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })
+
+[31-01-2025 02:57:12]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:599 - Error: IOError(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })
+
+[31-01-2025 02:57:12]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:599 - Error: IOError(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })
+
+[31-01-2025 02:57:12]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:599 - Error: IOError(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })
+
+[31-01-2025 02:57:12]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:599 - Error: IOError(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })
+
+[31-01-2025 02:57:12]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:599 - Error: IOError(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })
+
+[31-01-2025 02:57:12]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:599 - Error: IOError(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })
+
+[31-01-2025 02:57:12]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:599 - Error: IOError(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })
+
+[31-01-2025 03:02:03]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:599 - Error: IOError(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })
+
+[31-01-2025 03:09:49]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:596 - Error: IOError(Os { code: 104, kind: ConnectionReset, message: "Connection reset by peer" })
+
+[31-01-2025 03:14:30]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:596 - Error: IOError(Os { code: 104, kind: ConnectionReset, message: "Connection reset by peer" })
+
+[31-01-2025 03:23:05]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:596 - Error: IOError(Os { code: 104, kind: ConnectionReset, message: "Connection reset by peer" })
+
+[31-01-2025 03:24:42]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:596 - Error: IOError(Os { code: 104, kind: ConnectionReset, message: "Connection reset by peer" })
+
+[31-01-2025 03:33:08]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:596 - Error: IOError(Os { code: 104, kind: ConnectionReset, message: "Connection reset by peer" })
+
+[31-01-2025 03:35:01]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:596 - Error: IOError(Os { code: 104, kind: ConnectionReset, message: "Connection reset by peer" })
+
+[31-01-2025 03:35:10]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:596 - Error: IOError(Os { code: 104, kind: ConnectionReset, message: "Connection reset by peer" })
+
+[31-01-2025 03:55:06]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:596 - Error: IOError(Os { code: 104, kind: ConnectionReset, message: "Connection reset by peer" })
+
+[31-01-2025 03:55:06]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:596 - Error: IOError(Os { code: 104, kind: ConnectionReset, message: "Connection reset by peer" })
+
+[31-01-2025 03:55:09]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:596 - Error: IOError(Os { code: 104, kind: ConnectionReset, message: "Connection reset by peer" })
+
+[31-01-2025 03:55:11]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:596 - Error: IOError(Os { code: 104, kind: ConnectionReset, message: "Connection reset by peer" })
+
+[31-01-2025 03:55:13]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:596 - Error: IOError(Os { code: 104, kind: ConnectionReset, message: "Connection reset by peer" })
+
+[31-01-2025 03:59:45]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:596 - Error: IOError(Os { code: 104, kind: ConnectionReset, message: "Connection reset by peer" })
+
+[31-01-2025 03:59:48]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:596 - Error: IOError(Os { code: 104, kind: ConnectionReset, message: "Connection reset by peer" })
+
+[31-01-2025 04:01:28]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:596 - Error: IOError(Os { code: 104, kind: ConnectionReset, message: "Connection reset by peer" })
+
+[31-01-2025 04:04:28]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:596 - Error: IOError(Os { code: 104, kind: ConnectionReset, message: "Connection reset by peer" })
+
+[31-01-2025 04:15:44]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:595 - Error: IOError(Os { code: 104, kind: ConnectionReset, message: "Connection reset by peer" })
+
+[31-01-2025 11:41:40]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:595 - Error: IOError(Os { code: 11, kind: WouldBlock, message: "Resource temporarily unavailable" })
+
+[31-01-2025 11:43:25]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:595 - Error: IOError(Os { code: 104, kind: ConnectionReset, message: "Connection reset by peer" })
+
+[31-01-2025 11:44:09]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:595 - Error: IOError(Os { code: 104, kind: ConnectionReset, message: "Connection reset by peer" })
+
+[31-01-2025 11:44:17]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:595 - Error: IOError(Os { code: 104, kind: ConnectionReset, message: "Connection reset by peer" })
+
+[31-01-2025 11:56:22]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:579 - Error: IOError(Os { code: 104, kind: ConnectionReset, message: "Connection reset by peer" })
+
+[31-01-2025 11:56:22]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:579 - Error: IOError(Os { code: 104, kind: ConnectionReset, message: "Connection reset by peer" })
+
+[31-01-2025 11:56:23]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:579 - Error: IOError(Os { code: 104, kind: ConnectionReset, message: "Connection reset by peer" })
+
+[31-01-2025 11:56:23]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:579 - Error: IOError(Os { code: 104, kind: ConnectionReset, message: "Connection reset by peer" })
+
+[31-01-2025 11:56:25]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:579 - Error: IOError(Os { code: 104, kind: ConnectionReset, message: "Connection reset by peer" })
+
+[31-01-2025 11:56:25]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:579 - Error: IOError(Os { code: 104, kind: ConnectionReset, message: "Connection reset by peer" })
+
+[31-01-2025 11:56:25]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:579 - Error: IOError(Os { code: 104, kind: ConnectionReset, message: "Connection reset by peer" })
+
+[31-01-2025 11:56:25]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:579 - Error: IOError(Os { code: 104, kind: ConnectionReset, message: "Connection reset by peer" })
+
+[31-01-2025 11:56:32]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:579 - Error: IOError(Os { code: 104, kind: ConnectionReset, message: "Connection reset by peer" })
+
+[31-01-2025 11:56:32]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:579 - Error: IOError(Os { code: 104, kind: ConnectionReset, message: "Connection reset by peer" })
+
+[31-01-2025 11:56:33]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:579 - Error: IOError(Os { code: 104, kind: ConnectionReset, message: "Connection reset by peer" })
+
+[31-01-2025 11:56:33]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:579 - Error: IOError(Os { code: 104, kind: ConnectionReset, message: "Connection reset by peer" })
+
+[31-01-2025 11:56:35]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:579 - Error: IOError(Os { code: 104, kind: ConnectionReset, message: "Connection reset by peer" })
+
+[31-01-2025 11:56:35]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:579 - Error: IOError(Os { code: 104, kind: ConnectionReset, message: "Connection reset by peer" })
+
+[31-01-2025 11:56:36]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:579 - Error: IOError(Os { code: 104, kind: ConnectionReset, message: "Connection reset by peer" })
+
+[31-01-2025 11:56:36]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:579 - Error: IOError(Os { code: 104, kind: ConnectionReset, message: "Connection reset by peer" })
+
+[31-01-2025 11:56:37]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:579 - Error: IOError(Os { code: 104, kind: ConnectionReset, message: "Connection reset by peer" })
+
+[31-01-2025 11:56:37]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:579 - Error: IOError(Os { code: 104, kind: ConnectionReset, message: "Connection reset by peer" })
+
+[31-01-2025 11:59:36]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:579 - Error: IOError(Os { code: 104, kind: ConnectionReset, message: "Connection reset by peer" })
+
+[31-01-2025 11:59:36]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:579 - Error: IOError(Os { code: 104, kind: ConnectionReset, message: "Connection reset by peer" })
+
+[31-01-2025 11:59:39]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:579 - Error: IOError(Os { code: 104, kind: ConnectionReset, message: "Connection reset by peer" })
+
+[31-01-2025 11:59:45]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:579 - Error: IOError(Os { code: 104, kind: ConnectionReset, message: "Connection reset by peer" })
+
+[31-01-2025 12:00:54]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:595 - Error: IOError(Os { code: 104, kind: ConnectionReset, message: "Connection reset by peer" })
+
+[31-01-2025 12:03:24]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:595 - Error: IOError(Os { code: 104, kind: ConnectionReset, message: "Connection reset by peer" })
+
+[31-01-2025 12:04:20]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:595 - Error: IOError(Os { code: 104, kind: ConnectionReset, message: "Connection reset by peer" })
+
+[31-01-2025 12:27:25]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:595 - Error: IOError(Os { code: 104, kind: ConnectionReset, message: "Connection reset by peer" })
+
+[31-01-2025 12:42:00]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:595 - Error: IOError(Os { code: 104, kind: ConnectionReset, message: "Connection reset by peer" })
+
+[31-01-2025 12:43:36]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:595 - Error: IOError(Os { code: 104, kind: ConnectionReset, message: "Connection reset by peer" })
+
+[31-01-2025 12:45:26]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:595 - Error: IOError(Os { code: 104, kind: ConnectionReset, message: "Connection reset by peer" })
+
+[31-01-2025 12:47:23]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:595 - Error: IOError(Os { code: 104, kind: ConnectionReset, message: "Connection reset by peer" })
+
+[31-01-2025 12:47:28]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:595 - Error: IOError(Os { code: 104, kind: ConnectionReset, message: "Connection reset by peer" })
+
+[31-01-2025 13:01:20]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:595 - Error: IOError(Os { code: 104, kind: ConnectionReset, message: "Connection reset by peer" })
+
+[31-01-2025 13:04:37]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:595 - Error: IOError(Os { code: 104, kind: ConnectionReset, message: "Connection reset by peer" })
+
+[31-01-2025 13:05:19]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:595 - Error: IOError(Os { code: 104, kind: ConnectionReset, message: "Connection reset by peer" })
+
+[31-01-2025 13:13:54]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:595 - Error: IOError(Os { code: 104, kind: ConnectionReset, message: "Connection reset by peer" })
+
+[31-01-2025 13:32:52]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:595 - Error: IOError(Os { code: 104, kind: ConnectionReset, message: "Connection reset by peer" })
 

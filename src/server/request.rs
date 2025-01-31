@@ -1,9 +1,9 @@
+use crate::{get_boundary, get_content_length, remove_prefix, remove_suffix};
 use chrono::Utc;
 use mio::net::TcpStream;
+use mio::{Poll, Token};
 use regex::Regex;
-use std::{collections::HashMap, io::Read};
-
-use crate::{get_boundary, get_content_length, remove_prefix, remove_suffix};
+use std::{collections::HashMap, io, io::Read};
 
 // -------------------------------------------------------------------------------------
 // REQUEST
@@ -82,44 +82,54 @@ impl Request {
         )
     }
 
-    pub fn stream_to_str(stream: &mut TcpStream) -> (String, Vec<u8>) {
+    pub fn stream_to_str(stream: &mut TcpStream) -> (String, Vec<u8>, bool) {
         let mut buffer = [0; 8192]; // Buffer de 8 Ko
         let mut request_str = String::new();
         let mut buff_complete = vec![];
 
-        // ---------------------------------------------
-        // Autre manière de lire à tester après
-        // ---------------------------------------------
-        // let mut reader = BufReader::new(stream);
-        // let mut data = Vec::new();
-        // reader.read_to_end(&mut data);
-        // request_str.push_str(&String::from_utf8_lossy(&data));
-        // ---------------------------------------------
-
         loop {
             match stream.read(&mut buffer) {
+                Ok(0) => {
+                    return (String::new(), vec![], true);
+                }
                 Ok(n) => {
                     let buff = String::from_utf8_lossy(&buffer[..n]);
                     request_str.push_str(&buff);
                     buff_complete.extend_from_slice(&buffer[..n]);
-
-                    // if let Some(pos) = request_str.find(&new_line_pattern) {
-                    //     headers_end = Some(pos);
-                    // }
                 }
-                Err(_) => {
+
+                Err(e) if e.kind() == std::io::ErrorKind::WouldBlock => {
+                    // Wait for more data
                     break;
+                }
+                Err(e) if e.kind() == std::io::ErrorKind::Interrupted => {
+                    // Wait for more data
+                    continue;
+                }
+                Err(e) => {
+                    // Handle read error
+                    return (String::new(), vec![], true);
                 }
             }
         }
-        (request_str, buff_complete)
+        (request_str, buff_complete, false)
     }
 
-    pub fn read_request(stream: &mut TcpStream) -> Self {
+    pub fn read_request(
+        stream: &mut TcpStream,
+        poll: &mut Poll,
+        token: Token,
+    ) -> Result<Self, String> {
         let new_line_pattern = "\r\n\r\n";
         let mut request = Request::default();
-        let (request_str, body_byte) = Self::stream_to_str(stream);
+        let (request_str, body_byte, err) = Self::stream_to_str(stream);
         let mut is_post = false;
+        if err {
+            println!("error reading request: {:?}", request_str);
+            poll.registry()
+                .deregister(stream)
+                .map_err(|e| e.to_string())?;
+        }
 
         if request_str.starts_with("GET") {
             request.complete = true;
@@ -131,14 +141,12 @@ impl Request {
         } else {
             request.body = request_str.clone();
             request.body_byte = body_byte.clone();
-            return request;
+            return Ok(request);
         }
 
         // Vérification de la présence des 2 parties de la requête
         match request_str.find(new_line_pattern) {
-            None => {
-                return request;
-            }
+            None => Ok(request),
             Some(header_limit) => {
                 let headers = &request_str[..header_limit];
 
@@ -181,7 +189,7 @@ impl Request {
                         }
                     }
                 }
-                request
+                Ok(request)
             }
         }
     }
