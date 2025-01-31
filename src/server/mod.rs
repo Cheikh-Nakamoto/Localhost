@@ -3,7 +3,7 @@ pub mod request;
 use chrono::Utc;
 use core::error;
 use mio::net::TcpStream;
-use regex::RegexSet;
+use regex::{Regex, RegexSet};
 pub use request::*;
 use std::collections::HashMap;
 use std::fs::{OpenOptions, ReadDir};
@@ -196,7 +196,7 @@ impl Server {
 
     pub fn handle_redirection(
         &self,
-        request: &Request,
+        request: &mut Request,
         stream: &mut TcpStream,
         config: &Config,
         cookie: &String,
@@ -229,6 +229,10 @@ Connection: keep-alive\r\n\
                     redirects[0].target.clone()
                 );
 
+                request.location = redirects[0].target.clone();
+                let re = Regex::new(r"^(?<method>[A-Z]+) /(?<location>\S+)").unwrap();
+                request.head = re.replace_all(&request.head, format!("$method {}", redirects[0].target.clone())).to_string();
+
                 // Envoyer la réponse via le TcpStream
                 stream.write_all(response.as_bytes())?;
                 stream.flush()?;
@@ -245,7 +249,8 @@ Connection: keep-alive\r\n\
         cookie: String,
         config: &Config,
     ) -> Result<(), std::io::Error> {
-        self.handle_redirection(&request, stream, config, &cookie)?;
+        self.handle_redirection(&mut request, stream, config, &cookie)?;
+        println!("{:#?}", request);
 
         // Vérification de la méthode
         if !self

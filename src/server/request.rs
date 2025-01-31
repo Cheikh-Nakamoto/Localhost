@@ -142,6 +142,7 @@ impl Request {
                 poll.registry()
                     .deregister(stream)
                     .map_err(|e| e.to_string())?;
+                return Err(e.to_string())
             }
         }
 
