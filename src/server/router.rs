@@ -160,11 +160,11 @@ impl Router {
                             Session::make_cookie("cookie_01", &session.id, session.expiration_time);
                     }
 
-                    if req.method == "GET" || req.method == "POST" {
+                    if ["GET", "POST", "DELETE"].contains(&req.method.as_str()) {
                         self.request_queue.push(req);
                     } else {
                         for (i, waiting_req) in self.request_queue.clone().iter().enumerate() {
-                            if waiting_req.method == "POST" {
+                            if ["POST", "DELETE"].contains(&waiting_req.method.as_str()) {
                                 if let Some(content_length) = waiting_req.content_length {
                                     if content_length > waiting_req.body.len() {
                                         if let Some(boundary) = waiting_req.boundary.clone() {
@@ -189,6 +189,7 @@ impl Router {
                             }
                         }
                     }
+                    
                     let clien_would_delete = Self::route_request(
                         &mut self.request_queue,
                         self.servers.clone(),

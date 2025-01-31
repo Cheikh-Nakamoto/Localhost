@@ -248,3 +248,21 @@
 
 [31-01-2025 15:46:40]: GET   - 127.0.0.10:8081 - Func: handle_static_file at src/server/mod.rs:600 - Error: IOError(Os { code: 104, kind: ConnectionReset, message: "Connection reset by peer" })
 
+[31-01-2025 17:46:17]: GET   - 127.0.0.10:8081 - Func: handle_static_file at src/server/mod.rs:599 - Error: IOError(Os { code: 104, kind: ConnectionReset, message: "Connection reset by peer" })
+
+[31-01-2025 18:13:03]: POST  - 127.0.0.10:8081 - Func: upload_file at src/server/mod.rs:802 - Error: IOError(Os { code: 21, kind: IsADirectory, message: "Is a directory" })
+
+[31-01-2025 18:59:45]: DELETE - 127.0.0.10:8081 - Func: handle_static_file at src/server/mod.rs:598 - Error: IOError(Os { code: 21, kind: IsADirectory, message: "Is a directory" })
+
+[31-01-2025 19:02:42]: DELETE - 127.0.0.10:8081 - Func: handle_static_file at src/server/mod.rs:600 - Error: IOError(Os { code: 21, kind: IsADirectory, message: "Is a directory" })
+
+[31-01-2025 19:18:38]: GET   - 127.0.0.10:8081 - Func: handle_static_file at src/server/mod.rs:586 - Error: IOError(Os { code: 104, kind: ConnectionReset, message: "Connection reset by peer" })
+
+[31-01-2025 19:46:45]: GET   - 127.0.0.10:8081 - Func: handle_static_file at src/server/mod.rs:586 - Error: IOError(Os { code: 104, kind: ConnectionReset, message: "Connection reset by peer" })
+
+[31-01-2025 19:46:49]: GET   - 127.0.0.10:8081 - Func: handle_static_file at src/server/mod.rs:586 - Error: IOError(Os { code: 104, kind: ConnectionReset, message: "Connection reset by peer" })
+
+[31-01-2025 19:50:27]: GET   - 127.0.0.10:8081 - Func: handle_static_file at src/server/mod.rs:586 - Error: IOError(Os { code: 104, kind: ConnectionReset, message: "Connection reset by peer" })
+
+[31-01-2025 20:04:17]: GET   - 127.0.0.10:8081 - Func: handle_static_file at src/server/mod.rs:584 - Error: IOError(Os { code: 104, kind: ConnectionReset, message: "Connection reset by peer" })
+

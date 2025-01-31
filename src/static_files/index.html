@@ -85,6 +85,10 @@
       class="fixed flex flex-col w-screen h-screen transition-all duration-500 bg-black/30 backdrop-blur-sm hidden opacity-0"
     ></div>
 
+    <script
+      src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
     <script>
       let createFolderHTML = `
         <form method="POST" enctype="multipart/form-data" class="bg-white rounded-lg p-4 m-auto flex flex-col gap-4 relative">
@@ -127,12 +131,12 @@
         </form>
         `;
       let confirmDeleteHTML = `
-        <form method="POST" enctype="multipart/form-data" class="bg-white rounded-lg p-8 m-auto shadow-md">
+        <form id="delete_form" enctype="multipart/form-data" class="bg-white rounded-lg p-8 m-auto shadow-md">
             <p class="text-center text-gray-800 font-medium mb-6">Do you want delete this: <span id="modal_filename"></span></p>
             <input id="file_to_delete" type="text" name="file_to_delete" hidden>
             <div class="flex justify-center gap-4">
                 <!-- Bouton Oui bleu -->
-                <button type="submit" class="px-6 py-2 bg-teal-500 text-white rounded-lg hover:bg-teal-600 shadow-md flex items-center gap-2">
+                <button id="delete_submit" type="submit" class="px-6 py-2 bg-teal-500 text-white rounded-lg hover:bg-teal-600 shadow-md flex items-center gap-2">
                     Yes
                 </button>
                 <!-- Bouton Non rouge -->
@@ -142,7 +146,21 @@
             </div>
         </form>
         `;
-      let modalContainer = document.querySelector("#modal-container");
+      let successDeleteHTML = `
+        <form id="delete_form" enctype="multipart/form-data" class="bg-white rounded-lg p-8 m-auto shadow-md flex flex-col items-center justify-center">
+          <dotlottie-player
+            src="https://lottie.host/435464a8-e742-4110-9ea8-377170628178/FJ2AEVakF0.lottie"
+            background="transparent"
+            speed="1"
+            style="width: 200px; height: 200px"
+            loop
+            autoplay
+          ></dotlottie-player>
+          <h2 class="text-center text-green-500 text-4xl font-medium mb-6">Suppression réussie !</h2>
+        </form>
+        `;
+
+      var modalContainer = document.querySelector("#modal-container");
 
       document.querySelector("#add-file").onclick = () => {
         openModal("add-file");
@@ -157,6 +175,7 @@
           openModal("confirm-delete");
           document.querySelector("#modal_filename").textContent = filename;
           document.querySelector("#file_to_delete").value = filename;
+          deleteFormHandle();
         });
       });
 
@@ -165,6 +184,31 @@
           closeModal();
         }
       });
+
+      function deleteFormHandle() {
+        document
+          .querySelector("#delete_form")
+          .addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            fetch(window.location.pathname, {
+              method: "DELETE",
+              body: new FormData(e.target),
+            })
+              .then((data) => {
+                if (data.ok) {
+                  modalContainer.innerHTML = successDeleteHTML;
+                  setTimeout(() => {
+                    window.location.reload();
+                  }, 1500);
+                }
+              })
+              .catch((e) => {
+                console.log(e);
+                alert("Échec de la suppression.");
+              });
+          });
+      }
 
       function openModal(action) {
         if (action === "add-file") {

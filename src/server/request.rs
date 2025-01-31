@@ -146,9 +146,13 @@ impl Request {
             }
         }
 
-        if request_str.starts_with("GET") {
+        let [is_get, is_delete] = [request_str.starts_with("GET"), request_str.starts_with("DELETE")];
+        if is_get || is_delete {
             request.complete = true;
-            request.method = String::from("GET");
+            request.method = match is_get {
+                true => String::from("GET"),
+                false => String::from("DELETE")
+            };
             request.head = request_str.clone();
         } else if request_str.starts_with("POST") {
             is_post = true;
@@ -169,7 +173,7 @@ impl Request {
 
                 let mut form_data: Vec<HashMap<&str, Option<String>>> = vec![]; // Chaque HashMap représente un champ du formulaire.
 
-                if is_post {
+                if is_post || is_delete {
                     let mut head = request_str.clone();
                     let mut body = head.split_off(header_limit);
                     body = body.strip_prefix(new_line_pattern).unwrap().to_string();

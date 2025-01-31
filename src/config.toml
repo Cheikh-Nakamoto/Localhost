@@ -34,7 +34,7 @@ root_directory = "src/www/fifanela"
 error_path = "src/static_files/error.html"
 default_file = "src/static_files/index.html"
 upload_limit = 5000
-accepted_methods = ["GET", "POST","PUT"]
+accepted_methods = ["GET", "POST","DELETE"]
 directory_listing = true
 redirections = [
     { source = "/mouton", target = "/" },
