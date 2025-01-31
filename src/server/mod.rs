@@ -224,7 +224,7 @@ impl Server {
                 let response = format!(
                     "HTTP/1.1 302 Found\r\n\
                  Location: {}\r\n\
-Connection: keep-\r\n\
+Connection: keep-alive\r\n\
                  Content-Length: 0\r\n\r\n",
                     redirects[0].target.clone()
                 );
@@ -564,7 +564,7 @@ Connection: keep-\r\n\
                 }
 
                 let response = format!(
-                    "HTTP/1.1 200 OK\r\nContent-Type: {}\r\nConnection: keep-\r\ncontent-Length: {}\r\n{}\r\n",
+                    "HTTP/1.1 200 OK\r\nContent-Type: {}\r\nConnection: keep-alive\r\ncontent-Length: {}\r\n{}\r\n",
                     content_type,
                     content.len(),
                     cookie
@@ -642,7 +642,7 @@ Connection: keep-\r\n\
         match tera.render(&self.default_file.strip_prefix("src/").unwrap(), &context) {
             Ok(content) => {
                 let response = format!(
-                    "HTTP/1.1 200 OK\r\nContent-Type: text/html\r\nConnection: keep-\r\nContent-Length: {}\r\n{}\r\n{}",
+                    "HTTP/1.1 200 OK\r\nContent-Type: text/html\r\nConnection: keep-alive\r\nContent-Length: {}\r\n{}\r\n{}",
                     content.len(),
                     cookie,
                     content
@@ -711,7 +711,7 @@ Connection: keep-\r\n\
         match tera.render(&self.error_path.strip_prefix("src/").unwrap(), &context) {
             Ok(content) => {
                 let response = format!(
-                    "HTTP/1.1 {} {}\r\nContent-Type: text/html\r\nConnection: keep-\r\nContent-Length: {}\r\n\r\n{}",
+                    "HTTP/1.1 {} {}\r\nContent-Type: text/html\r\nConnection: keep-alive\r\nContent-Length: {}\r\n\r\n{}",
                     status_code,
                     status_message,
                     content.len(),
@@ -873,7 +873,7 @@ Connection: keep-\r\n\
             "HTTP/1.1 302 Found\r\n\
              Location: {}\r\n\
              Content-Length: 0\r\n\
-Connection: keep-\r\n
+Connection: keep-alive\r\n
              Cache-Control: no-cache, no-store, must-revalidate\r\n\
              Pragma: no-cache\r\n\
              Expires: 0\r\n\

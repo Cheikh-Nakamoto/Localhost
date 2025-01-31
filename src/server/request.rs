@@ -3,6 +3,7 @@ use chrono::Utc;
 use mio::net::TcpStream;
 use mio::{Poll, Token};
 use regex::Regex;
+use std::io::{Error, ErrorKind};
 use std::{collections::HashMap, io, io::Read};
 
 // -------------------------------------------------------------------------------------
@@ -82,7 +83,7 @@ impl Request {
         )
     }
 
-    pub fn stream_to_str(stream: &mut TcpStream) -> (String, Vec<u8>, bool) {
+    pub fn stream_to_str(stream: &mut TcpStream) -> Result<(String, Vec<u8>), Error> {
         let mut buffer = [0; 8192]; // Buffer de 8 Ko
         let mut request_str = String::new();
         let mut buff_complete = vec![];
@@ -90,7 +91,10 @@ impl Request {
         loop {
             match stream.read(&mut buffer) {
                 Ok(0) => {
-                    return (String::new(), vec![], true);
+                    return Err(Error::new(
+                        ErrorKind::ConnectionReset,
+                        "Connexion fermer par le paire",
+                    ));
                 }
                 Ok(n) => {
                     let buff = String::from_utf8_lossy(&buffer[..n]);
@@ -108,11 +112,14 @@ impl Request {
                 }
                 Err(e) => {
                     // Handle read error
-                    return (String::new(), vec![], true);
+                    return Err(Error::new(
+                        ErrorKind::ConnectionReset,
+                        "Connexion fermer par le paire",
+                    ));
                 }
             }
         }
-        (request_str, buff_complete, false)
+        Ok((request_str, buff_complete))
     }
 
     pub fn read_request(
@@ -122,13 +129,20 @@ impl Request {
     ) -> Result<Self, String> {
         let new_line_pattern = "\r\n\r\n";
         let mut request = Request::default();
-        let (request_str, body_byte, err) = Self::stream_to_str(stream);
         let mut is_post = false;
-        if err {
-            println!("error reading request: {:?}", request_str);
-            poll.registry()
-                .deregister(stream)
-                .map_err(|e| e.to_string())?;
+
+        let (mut request_str, mut body_byte) = (String::new(), Vec::new());
+        match Self::stream_to_str(stream) {
+            Ok((req, req_byte)) => {
+                request_str = req;
+                body_byte = req_byte;
+            }
+            Err(e) => {
+                println!("error reading request: {:?}", request_str);
+                poll.registry()
+                    .deregister(stream)
+                    .map_err(|e| e.to_string())?;
+            }
         }
 
         if request_str.starts_with("GET") {

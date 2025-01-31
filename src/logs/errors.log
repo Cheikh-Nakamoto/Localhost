@@ -226,3 +226,7 @@
 
 [31-01-2025 13:32:52]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:595 - Error: IOError(Os { code: 104, kind: ConnectionReset, message: "Connection reset by peer" })
 
+[31-01-2025 13:46:32]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:595 - Error: IOError(Os { code: 104, kind: ConnectionReset, message: "Connection reset by peer" })
+
+[31-01-2025 13:46:44]: GET   - 127.0.0.10:8080 - Func: handle_static_file at src/server/mod.rs:595 - Error: IOError(Os { code: 104, kind: ConnectionReset, message: "Connection reset by peer" })
+
