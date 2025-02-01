@@ -1,9 +1,11 @@
+use crate::{ get_boundary, get_content_length, remove_prefix, remove_suffix };
 use chrono::Utc;
 use mio::net::TcpStream;
+use mio::{ Poll, Token };
 use regex::Regex;
-use std::{collections::HashMap, io::Read};
-
-use crate::{get_boundary, get_content_length, remove_prefix, remove_suffix};
+use urlencoding::decode;
+use std::io::{ Error, ErrorKind };
+use std::{ collections::HashMap, io, io::Read };
 
 // -------------------------------------------------------------------------------------
 // REQUEST
@@ -42,7 +44,7 @@ impl Request {
         body_byte: Vec<u8>,
         filename: String,
         length: usize,
-        reference: String,
+        reference: String
     ) -> Self {
         Self {
             id_session,
@@ -78,52 +80,82 @@ impl Request {
             vec![],
             String::new(),
             0,
-            String::new(),
+            String::new()
         )
     }
 
-    pub fn stream_to_str(stream: &mut TcpStream) -> (String, Vec<u8>) {
+    pub fn stream_to_str(stream: &mut TcpStream) -> Result<(String, Vec<u8>), Error> {
         let mut buffer = [0; 8192]; // Buffer de 8 Ko
         let mut request_str = String::new();
         let mut buff_complete = vec![];
 
-        // ---------------------------------------------
-        // Autre manière de lire à tester après
-        // ---------------------------------------------
-        // let mut reader = BufReader::new(stream);
-        // let mut data = Vec::new();
-        // reader.read_to_end(&mut data);
-        // request_str.push_str(&String::from_utf8_lossy(&data));
-        // ---------------------------------------------
-
         loop {
             match stream.read(&mut buffer) {
+                Ok(0) => {
+                    return Err(
+                        Error::new(ErrorKind::ConnectionReset, "Connexion fermer par le paire")
+                    );
+                }
                 Ok(n) => {
                     let buff = String::from_utf8_lossy(&buffer[..n]);
                     request_str.push_str(&buff);
                     buff_complete.extend_from_slice(&buffer[..n]);
-
-                    // if let Some(pos) = request_str.find(&new_line_pattern) {
-                    //     headers_end = Some(pos);
-                    // }
                 }
-                Err(_) => {
+
+                Err(e) if e.kind() == std::io::ErrorKind::WouldBlock => {
+                    // Wait for more data
                     break;
+                }
+                Err(e) if e.kind() == std::io::ErrorKind::Interrupted => {
+                    // Wait for more data
+                    continue;
+                }
+                Err(e) => {
+                    // Handle read error
+                    return Err(
+                        Error::new(ErrorKind::ConnectionReset, "Connexion fermer par le paire")
+                    );
                 }
             }
         }
-        (request_str, buff_complete)
+        Ok((request_str, buff_complete))
     }
 
-    pub fn read_request(stream: &mut TcpStream) -> Self {
+    pub fn read_request(
+        stream: &mut TcpStream,
+        poll: &mut Poll,
+        token: Token
+    ) -> Result<Self, String> {
         let new_line_pattern = "\r\n\r\n";
         let mut request = Request::default();
-        let (request_str, body_byte) = Self::stream_to_str(stream);
         let mut is_post = false;
 
-        if request_str.starts_with("GET") {
+        let (mut request_str, mut body_byte) = (String::new(), Vec::new());
+        match Self::stream_to_str(stream) {
+            Ok((req, req_byte)) => {
+                request_str = req;
+                body_byte = req_byte;
+            }
+            Err(e) => {
+                println!("error reading request: {:?}", request_str);
+                poll
+                    .registry()
+                    .deregister(stream)
+                    .map_err(|e| e.to_string())?;
+                return Err(e.to_string());
+            }
+        }
+
+        let [is_get, is_delete] = [
+            request_str.starts_with("GET"),
+            request_str.starts_with("DELETE"),
+        ];
+        if is_get || is_delete {
             request.complete = true;
-            request.method = String::from("GET");
+            request.method = match is_get {
+                true => String::from("GET"),
+                false => String::from("DELETE"),
+            };
             request.head = request_str.clone();
         } else if request_str.starts_with("POST") {
             is_post = true;
@@ -131,14 +163,12 @@ impl Request {
         } else {
             request.body = request_str.clone();
             request.body_byte = body_byte.clone();
-            return request;
+            return Ok(request);
         }
 
         // Vérification de la présence des 2 parties de la requête
         match request_str.find(new_line_pattern) {
-            None => {
-                return request;
-            }
+            None => Ok(request),
             Some(header_limit) => {
                 let headers = &request_str[..header_limit];
 
@@ -146,7 +176,7 @@ impl Request {
 
                 let mut form_data: Vec<HashMap<&str, Option<String>>> = vec![]; // Chaque HashMap représente un champ du formulaire.
 
-                if is_post {
+                if is_post || is_delete {
                     let mut head = request_str.clone();
                     let mut body = head.split_off(header_limit);
                     body = body.strip_prefix(new_line_pattern).unwrap().to_string();
@@ -172,11 +202,6 @@ impl Request {
 
                     Self::extract_form_data(&body, boundary, &mut form_data);
 
-                    // A partir d'ici tu peux placer la fonction qui permet d'utiliser les données collectées
-                    // Par exemple enregistrer l'image, pour le cas de la création de dossier tu auras ici
-                    // Le nom du dossier à créer
-                    // Tu sauras comment mettre à jour la variable request avec ces données collectées.
-
                     if let Some(hashmap) = form_data.get(0) {
                         if let Some(Some(file)) = hashmap.get("filename") {
                             request.filename = file.to_string();
@@ -186,60 +211,24 @@ impl Request {
                         }
                     }
                 }
-                request
+                Ok(request)
             }
         }
-
-        // ----------------------------------------------------------------------------------------
-        // Ancien bloc `if is_post {...}`
-        // ----------------------------------------------------------------------------------------
-        //     if is_post {
-        //         let body_start = headers_end + 4;
-        //         let body_already_not_read = request.length - body_start;
-
-        //         let mut body = vec![0; request.length];
-
-        //         if body_already_not_read > 0 {
-        //             body = request_str.as_bytes()[body_start..].to_vec();
-        //             if let Some(pos) = body.windows(4).position(|elem| elem == b"\r\n\r\n") {
-        //                 // println!("trouvé dexieme delimiteur a l'index : {}", pos);
-        //                 let sec_header = String::from_utf8_lossy(&body[..pos]).into_owned();
-        //                 body = body[pos + 4..].to_vec();
-        //                 let liste = sec_header.lines().collect::<Vec<&str>>();
-        //                 let filename = Self::extract_header_value(&liste, "Content-Disposition");
-        //                 println!("filename1 {} \n\n", filename);
-        //                 request.filename = filename.replace('"', "").to_string();
-        //             }
-        //             if request.filename.is_empty() {
-        //                 let liste = headers.lines().collect::<Vec<&str>>();
-        //                 let filename = Self::extract_header_value(&liste, "Content-Disposition");
-        //                 println!("filename2 {} \n\n", filename);
-        //                 request.filename = filename.replace('"', "").to_string();
-        //             }
-        //         }
-
-        //         let tmp = String::from_utf8_lossy(&body);
-        //         // let liste = &tmp.to_owned().lines().collect::<Vec<&str>>();
-        //         // let content_disposition = Self::extract_header_value(liste, "Content-Disposition");
-        //         // println!("value {}", content_disposition);
-        //         //    println!("body {} \n\n",tmp);
-
-        //         request.body = tmp.to_string();
-        //     }
-        // ----------------------------------------------------------------------------------------
     }
 
     pub fn extract_form_data(
         body: &String,
         boundary: String,
-        form_data: &mut Vec<HashMap<&str, Option<String>>>,
+        form_data: &mut Vec<HashMap<&str, Option<String>>>
     ) {
         let new_line_pattern = "\r\n\r\n";
         let body_parts = body
             .split(boundary.as_str())
             .map(|s| {
-                remove_suffix(remove_prefix(s.to_string(), "\r\n"), "\r\n--")
-                    .replace(new_line_pattern, "; value=")
+                remove_suffix(remove_prefix(s.to_string(), "\r\n"), "\r\n--").replace(
+                    new_line_pattern,
+                    "; value="
+                )
             })
             .collect::<Vec<String>>();
 
@@ -256,34 +245,27 @@ impl Request {
                         (?:Content-Type:\s*(?<content_type>[^;]+)\s*)?
                     )*
                     ;\s*value=(?<value>.*)?
-                    "#,
-        )
-        .unwrap();
+                    "#
+        ).unwrap();
 
         // Ici on parcourt les différentes parties du body pour voir si les champs recherchés sont là
         body_parts.iter().for_each(|s| {
             if let Some(caps) = re.captures(&s) {
                 let mut values = HashMap::new();
-                values.insert(
-                    "content_disposition",
-                    Some(caps["content_disposition"].to_string()),
-                );
+                values.insert("content_disposition", Some(caps["content_disposition"].to_string()));
 
                 values.insert("name", Some(caps["name"].to_string()));
                 values.insert(
                     "filename",
-                    caps.name("filename")
-                        .map_or(None, |m| Some(m.as_str().to_string())),
+                    caps.name("filename").map_or(None, |m| Some(m.as_str().to_string()))
                 );
                 values.insert(
                     "content_type",
-                    caps.name("content_type")
-                        .map_or(None, |m| Some(m.as_str().to_string())),
+                    caps.name("content_type").map_or(None, |m| Some(m.as_str().to_string()))
                 );
                 values.insert(
                     "file_to_delete",
-                    caps.name("file_to_delete")
-                        .map_or(None, |m| Some(m.as_str().to_string())),
+                    caps.name("file_to_delete").map_or(None, |m| Some(m.as_str().to_string()))
                 );
                 values.insert("value", Some(caps["value"].to_string()));
                 form_data.push(values);
@@ -400,5 +382,15 @@ impl Request {
             .position(|window| window == new_line_pattern)
             .unwrap_or_default();
         tmp[fist + 4..].to_vec()
+    }
+
+    pub fn uri_decode(&mut self) {
+        self.location = match decode(&self.location) {
+            Ok(loc) => loc.to_string(),
+            Err(_) => self.location.clone(),
+        };
+
+        let re = Regex::new(r"^(?<method>[A-Z]+) /(?<location>\S+)").unwrap();
+        self.head = re.replace_all(&self.head, format!("$method {}", self.location)).to_string();
     }
 }

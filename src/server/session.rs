@@ -28,7 +28,6 @@ impl Session {
     }
 
     pub fn is_expired(&self) -> bool {
-        println!("verification {}   != {}", Utc::now(), self.validity_time);
         Utc::now() > self.validity_time
     }
 

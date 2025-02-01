@@ -1,3 +1,5 @@
+extern crate core;
+
 pub mod server;
 use std::{ collections::HashMap, fs };
 
