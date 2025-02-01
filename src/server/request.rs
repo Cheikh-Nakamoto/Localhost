@@ -1,10 +1,11 @@
-use crate::{get_boundary, get_content_length, remove_prefix, remove_suffix};
+use crate::{ get_boundary, get_content_length, remove_prefix, remove_suffix };
 use chrono::Utc;
 use mio::net::TcpStream;
-use mio::{Poll, Token};
+use mio::{ Poll, Token };
 use regex::Regex;
-use std::io::{Error, ErrorKind};
-use std::{collections::HashMap, io, io::Read};
+use urlencoding::decode;
+use std::io::{ Error, ErrorKind };
+use std::{ collections::HashMap, io, io::Read };
 
 // -------------------------------------------------------------------------------------
 // REQUEST
@@ -43,7 +44,7 @@ impl Request {
         body_byte: Vec<u8>,
         filename: String,
         length: usize,
-        reference: String,
+        reference: String
     ) -> Self {
         Self {
             id_session,
@@ -79,7 +80,7 @@ impl Request {
             vec![],
             String::new(),
             0,
-            String::new(),
+            String::new()
         )
     }
 
@@ -91,10 +92,9 @@ impl Request {
         loop {
             match stream.read(&mut buffer) {
                 Ok(0) => {
-                    return Err(Error::new(
-                        ErrorKind::ConnectionReset,
-                        "Connexion fermer par le paire",
-                    ));
+                    return Err(
+                        Error::new(ErrorKind::ConnectionReset, "Connexion fermer par le paire")
+                    );
                 }
                 Ok(n) => {
                     let buff = String::from_utf8_lossy(&buffer[..n]);
@@ -112,10 +112,9 @@ impl Request {
                 }
                 Err(e) => {
                     // Handle read error
-                    return Err(Error::new(
-                        ErrorKind::ConnectionReset,
-                        "Connexion fermer par le paire",
-                    ));
+                    return Err(
+                        Error::new(ErrorKind::ConnectionReset, "Connexion fermer par le paire")
+                    );
                 }
             }
         }
@@ -125,7 +124,7 @@ impl Request {
     pub fn read_request(
         stream: &mut TcpStream,
         poll: &mut Poll,
-        token: Token,
+        token: Token
     ) -> Result<Self, String> {
         let new_line_pattern = "\r\n\r\n";
         let mut request = Request::default();
@@ -139,19 +138,23 @@ impl Request {
             }
             Err(e) => {
                 println!("error reading request: {:?}", request_str);
-                poll.registry()
+                poll
+                    .registry()
                     .deregister(stream)
                     .map_err(|e| e.to_string())?;
-                return Err(e.to_string())
+                return Err(e.to_string());
             }
         }
 
-        let [is_get, is_delete] = [request_str.starts_with("GET"), request_str.starts_with("DELETE")];
+        let [is_get, is_delete] = [
+            request_str.starts_with("GET"),
+            request_str.starts_with("DELETE"),
+        ];
         if is_get || is_delete {
             request.complete = true;
             request.method = match is_get {
                 true => String::from("GET"),
-                false => String::from("DELETE")
+                false => String::from("DELETE"),
             };
             request.head = request_str.clone();
         } else if request_str.starts_with("POST") {
@@ -216,14 +219,16 @@ impl Request {
     pub fn extract_form_data(
         body: &String,
         boundary: String,
-        form_data: &mut Vec<HashMap<&str, Option<String>>>,
+        form_data: &mut Vec<HashMap<&str, Option<String>>>
     ) {
         let new_line_pattern = "\r\n\r\n";
         let body_parts = body
             .split(boundary.as_str())
             .map(|s| {
-                remove_suffix(remove_prefix(s.to_string(), "\r\n"), "\r\n--")
-                    .replace(new_line_pattern, "; value=")
+                remove_suffix(remove_prefix(s.to_string(), "\r\n"), "\r\n--").replace(
+                    new_line_pattern,
+                    "; value="
+                )
             })
             .collect::<Vec<String>>();
 
@@ -240,34 +245,27 @@ impl Request {
                         (?:Content-Type:\s*(?<content_type>[^;]+)\s*)?
                     )*
                     ;\s*value=(?<value>.*)?
-                    "#,
-        )
-        .unwrap();
+                    "#
+        ).unwrap();
 
         // Ici on parcourt les différentes parties du body pour voir si les champs recherchés sont là
         body_parts.iter().for_each(|s| {
             if let Some(caps) = re.captures(&s) {
                 let mut values = HashMap::new();
-                values.insert(
-                    "content_disposition",
-                    Some(caps["content_disposition"].to_string()),
-                );
+                values.insert("content_disposition", Some(caps["content_disposition"].to_string()));
 
                 values.insert("name", Some(caps["name"].to_string()));
                 values.insert(
                     "filename",
-                    caps.name("filename")
-                        .map_or(None, |m| Some(m.as_str().to_string())),
+                    caps.name("filename").map_or(None, |m| Some(m.as_str().to_string()))
                 );
                 values.insert(
                     "content_type",
-                    caps.name("content_type")
-                        .map_or(None, |m| Some(m.as_str().to_string())),
+                    caps.name("content_type").map_or(None, |m| Some(m.as_str().to_string()))
                 );
                 values.insert(
                     "file_to_delete",
-                    caps.name("file_to_delete")
-                        .map_or(None, |m| Some(m.as_str().to_string())),
+                    caps.name("file_to_delete").map_or(None, |m| Some(m.as_str().to_string()))
                 );
                 values.insert("value", Some(caps["value"].to_string()));
                 form_data.push(values);
@@ -384,5 +382,15 @@ impl Request {
             .position(|window| window == new_line_pattern)
             .unwrap_or_default();
         tmp[fist + 4..].to_vec()
+    }
+
+    pub fn uri_decode(&mut self) {
+        self.location = match decode(&self.location) {
+            Ok(loc) => loc.to_string(),
+            Err(_) => self.location.clone(),
+        };
+
+        let re = Regex::new(r"^(?<method>[A-Z]+) /(?<location>\S+)").unwrap();
+        self.head = re.replace_all(&self.head, format!("$method {}", self.location)).to_string();
     }
 }

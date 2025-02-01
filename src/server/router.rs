@@ -122,6 +122,9 @@ impl Router {
                         }
                     };
 
+                    req.uri_decode();
+                    println!("{:#?}", req);
+
                     let mut cookie = req.id_session.clone();
                     // println!("cookie extract: {}",cookie);
                     let client_token = Token(self.next_token);
