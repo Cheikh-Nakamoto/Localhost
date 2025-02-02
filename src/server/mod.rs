@@ -1,7 +1,6 @@
 pub mod request;
 
 use chrono::Utc;
-use core::error;
 use mio::net::TcpStream;
 use regex::{ Regex, RegexSet };
 pub use request::*;
@@ -10,10 +9,7 @@ use std::fs::{ OpenOptions, ReadDir };
 // use std::io::{Error, Read};
 pub use std::string::String;
 // use std::time::{Duration, Instant};
-use serde::__private::de::Content;
-use std::error::Error;
-use std::io::{ ErrorKind, Read };
-use std::{ fs, io, io::Write, path::Path };
+use std::{ fs, io::Write, path::Path };
 
 pub mod response;
 pub use response::*;

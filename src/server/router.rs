@@ -7,7 +7,7 @@ use mio::{Events, Interest, Poll, Token};
 use std::collections::HashMap;
 use std::io::{self};
 use std::net::ToSocketAddrs;
-use std::time::{Duration, Instant};
+use std::time::Instant;
 
 // -------------------------------------------------------------------------------------
 // ROUTER
@@ -109,12 +109,12 @@ impl Router {
                         .clients
                         .get_mut(&event.token())
                         .expect("Erreur lors de la recupération du canal tcpstream");
-                    let mut req = Request::default();
-                    match Request::read_request(stream, &mut poll, event.token()) {
+                    let mut req;
+                    match Request::read_request(stream, &mut poll) {
                         Ok(request) => {
                             req = request;
                         }
-                        Err(e) => {
+                        Err(_) => {
                             // dbg!("suppresion du client dans self.client");
                             // dbg!("Error found", e);
                             // Fermer le stream proprement
@@ -261,7 +261,7 @@ impl Router {
     ) -> bool {
         // On récupère le hostname, l'adresse ip et le port de la requête
         // On parcoure la liste des serveurs et on vérifie lequel a le hostname, le port et l'ip correspondant
-        let mut i = 0;
+        let mut i= 0;
         while i < request_queue.len() {
             let req = request_queue[i].clone();
             for server in servers.iter() {

@@ -1,11 +1,11 @@
 use crate::{ get_boundary, get_content_length, remove_prefix, remove_suffix };
 use chrono::Utc;
 use mio::net::TcpStream;
-use mio::{ Poll, Token };
+use mio::Poll;
 use regex::Regex;
 use urlencoding::decode;
 use std::io::{ Error, ErrorKind };
-use std::{ collections::HashMap, io, io::Read };
+use std::{ collections::HashMap, io::Read };
 
 // -------------------------------------------------------------------------------------
 // REQUEST
@@ -110,7 +110,7 @@ impl Request {
                     // Wait for more data
                     continue;
                 }
-                Err(e) => {
+                Err(_) => {
                     // Handle read error
                     return Err(
                         Error::new(ErrorKind::ConnectionReset, "Connexion fermer par le paire")
@@ -123,14 +123,14 @@ impl Request {
 
     pub fn read_request(
         stream: &mut TcpStream,
-        poll: &mut Poll,
-        token: Token
+        poll: &mut Poll
     ) -> Result<Self, String> {
         let new_line_pattern = "\r\n\r\n";
         let mut request = Request::default();
         let mut is_post = false;
 
-        let (mut request_str, mut body_byte) = (String::new(), Vec::new());
+        let mut request_str= String::new();
+        let body_byte;
         match Self::stream_to_str(stream) {
             Ok((req, req_byte)) => {
                 request_str = req;
