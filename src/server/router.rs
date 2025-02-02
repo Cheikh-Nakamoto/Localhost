@@ -115,8 +115,8 @@ impl Router {
                             req = request;
                         }
                         Err(e) => {
-                            dbg!("suppresion du client dans self.client");
-                            dbg!("Error found", e);
+                            // dbg!("suppresion du client dans self.client");
+                            // dbg!("Error found", e);
                             // Fermer le stream proprement
                             if let Err(e) = stream.shutdown(std::net::Shutdown::Both) {
                                 eprintln!("Erreur lors de la fermeture du stream: {}", e);
@@ -127,7 +127,6 @@ impl Router {
                     };
 
                     req.uri_decode();
-                    // println!("{:#?}", req);
 
                     let mut cookie = req.id_session.clone();
                     // println!("cookie extract: {}",cookie);
@@ -168,7 +167,7 @@ impl Router {
                     }
 
                     if ["GET", "POST", "DELETE"].contains(&req.method.as_str()) {
-                        self.request_queue.push(req);
+                        self.request_queue.push(req.clone());
                     } else {
                         for (i, waiting_req) in self.request_queue.clone().iter().enumerate() {
                             if ["POST", "DELETE"].contains(&waiting_req.method.as_str()) {
@@ -208,6 +207,7 @@ impl Router {
                     if clien_would_delete {
                         if let Err(e) = stream.shutdown(std::net::Shutdown::Both) {
                             eprintln!("Erreur lors de la fermeture du stream: {}", e);
+                            Server::error_log(&req, config, "Router::run", file!(), line!(), crate::ServerError::IOError(&e));
                         }
                         self.clients.remove(&event.token());
                     };

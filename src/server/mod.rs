@@ -192,38 +192,42 @@ impl Server {
     ) -> Result<(), std::io::Error> {
         let mut redirects = self.redirections.clone();
         redirects.retain(|r| r.source == request.location);
+        let mut code = 302;
+        let mut status = "Loop Detected";
 
         if !redirects.is_empty() {
             if self.redirections.iter().any(|r| r.target == request.location) {
+                code = 508;
                 Self::send_error_response(
                     &self,
                     stream,
                     &request,
                     config,
-                    508,
-                    "Loop Detected",
+                    code,
+                    status,
                     &cookie
                 )?;
             } else {
-                // Construire la réponse de redirection
-                let response = format!(
-                    "HTTP/1.1 302 Found\r\n\
-                 Location: {}\r\n\
-Connection: keep-alive\r\n\
-                 Content-Length: 0\r\n\r\n",
-                    redirects[0].target.clone()
-                );
-
+                status = "Found";
                 request.location = redirects[0].target.clone();
                 let re = Regex::new(r"^(?<method>[A-Z]+) /(?<location>\S+)").unwrap();
                 request.head = re
                     .replace_all(&request.head, format!("$method {}", redirects[0].target.clone()))
                     .to_string();
-
-                // Envoyer la réponse via le TcpStream
-                stream.write_all(response.as_bytes())?;
-                stream.flush()?;
             }
+
+            // Construire la réponse de redirection
+            let response = format!(
+                "HTTP/1.1 {code} {status}\r\n\
+                Location: {}\r\n\
+                Connection: keep-alive\r\n\
+                Content-Length: 0\r\n\r\n",
+                request.location
+            );
+
+            // Envoyer la réponse via le TcpStream
+            stream.write_all(response.as_bytes())?;
+            stream.flush()?;
         }
 
         Ok(())
@@ -344,6 +348,7 @@ Connection: keep-alive\r\n\
                                                 file_formats.insert(".jpeg", "image");
                                                 file_formats.insert(".png", "image");
                                                 file_formats.insert(".txt", "text");
+                                                file_formats.insert(".pdf", "pdf");
 
                                                 match file_formats.get(ext.as_str()) {
                                                     Some(filetype) => filetype.to_string(),
@@ -527,6 +532,7 @@ Connection: keep-alive\r\n\
     ) -> Result<(), std::io::Error> {
         // Déterminer le type de contenu en fonction de l'extension du fichier
         let mut to_cgi = false;
+        let mut content_disposition = "";
         let content_type = match
             Path::new(path)
                 .extension()
@@ -539,12 +545,16 @@ Connection: keep-alive\r\n\
             Some("jpg") | Some("jpeg") => "image/jpeg",
             Some("gif") => "image/gif",
             Some("json") => "application/json",
+            Some("pdf") => {
+                content_disposition = "\r\nContent-Disposition: inline";
+                "application/pdf" },
             Some("rb") => {
                 to_cgi = true;
                 "text/plain"
             }
             _ => "text/plain", // Type par défaut
         };
+
         // Lire le fichier
         match fs::read(path) {
             Ok(mut content) => {
@@ -553,8 +563,9 @@ Connection: keep-alive\r\n\
                 }
 
                 let response = format!(
-                    "HTTP/1.1 200 OK\r\nContent-Type: {}\r\nConnection: keep-alive\r\ncontent-Length: {}\r\n{}\r\n",
+                    "HTTP/1.1 200 OK\r\nContent-Type: {}{}\r\nConnection: keep-alive\r\ncontent-Length: {}\r\n{}\r\n",
                     content_type,
+                    content_disposition,
                     content.len(),
                     cookie
                 );
