@@ -527,6 +527,7 @@ Connection: keep-alive\r\n\
     ) -> Result<(), std::io::Error> {
         // Déterminer le type de contenu en fonction de l'extension du fichier
         let mut to_cgi = false;
+        let mut content_disposition = "";
         let content_type = match
             Path::new(path)
                 .extension()
@@ -539,12 +540,16 @@ Connection: keep-alive\r\n\
             Some("jpg") | Some("jpeg") => "image/jpeg",
             Some("gif") => "image/gif",
             Some("json") => "application/json",
+            Some("pdf") => {
+                content_disposition = "\r\nContent-Disposition: inline";
+                "application/pdf" },
             Some("rb") => {
                 to_cgi = true;
                 "text/plain"
             }
             _ => "text/plain", // Type par défaut
         };
+
         // Lire le fichier
         match fs::read(path) {
             Ok(mut content) => {
@@ -553,8 +558,9 @@ Connection: keep-alive\r\n\
                 }
 
                 let response = format!(
-                    "HTTP/1.1 200 OK\r\nContent-Type: {}\r\nConnection: keep-alive\r\ncontent-Length: {}\r\n{}\r\n",
+                    "HTTP/1.1 200 OK\r\nContent-Type: {}{}\r\nConnection: keep-alive\r\ncontent-Length: {}\r\n{}\r\n",
                     content_type,
+                    content_disposition,
                     content.len(),
                     cookie
                 );
