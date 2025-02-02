@@ -12,7 +12,6 @@ fn main() -> std::io::Result<()> {
         router.add_server(s.clone())?;        
     }
     // Démarre le routeur
-    println!("Serveur en écoute sur les ports 8080 et 8081...");
     router.run(&config)?;
 
     Ok(())

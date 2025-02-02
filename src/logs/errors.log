@@ -294,3 +294,69 @@
 
 [02-02-2025 15:37:34]: GET   - 127.0.0.10:8081 - Func: handle_static_file at src/server/mod.rs:595 - Error: IOError(Os { code: 104, kind: ConnectionReset, message: "Connection reset by peer" })
 
+[02-02-2025 16:50:57]: GET   - 127.0.0.2:8082 - Func: handle_static_file at src/server/mod.rs:591 - Error: IOError(Os { code: 104, kind: ConnectionReset, message: "Connection reset by peer" })
+
+[02-02-2025 16:51:52]: GET   - 127.0.0.2:8082 - Func: handle_static_file at src/server/mod.rs:591 - Error: IOError(Os { code: 104, kind: ConnectionReset, message: "Connection reset by peer" })
+
+[02-02-2025 17:04:53]: GET   - 127.0.0.2:8082 - Func: handle_listing_directory at src/server/mod.rs:653 - Error: IOError(Os { code: 104, kind: ConnectionReset, message: "Connection reset by peer" })
+
+[02-02-2025 17:05:59]: GET   - 127.0.0.2:8082 - Func: handle_listing_directory at src/server/mod.rs:653 - Error: IOError(Os { code: 104, kind: ConnectionReset, message: "Connection reset by peer" })
+
+[02-02-2025 17:07:38]: GET   - 127.0.0.2:8082 - Func: handle_static_file at src/server/mod.rs:591 - Error: IOError(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })
+
+[02-02-2025 17:23:48]: GET   - 127.0.0.2:8082 - Func: handle_static_file at src/server/mod.rs:591 - Error: IOError(Os { code: 104, kind: ConnectionReset, message: "Connection reset by peer" })
+
+[02-02-2025 17:24:45]: GET   - 127.0.0.2:8082 - Func: handle_static_file at src/server/mod.rs:591 - Error: IOError(Os { code: 104, kind: ConnectionReset, message: "Connection reset by peer" })
+
+[02-02-2025 17:24:56]: GET   - 127.0.0.2:8082 - Func: handle_static_file at src/server/mod.rs:591 - Error: IOError(Os { code: 104, kind: ConnectionReset, message: "Connection reset by peer" })
+
+[02-02-2025 17:26:07]: GET   - 127.0.0.2:8082 - Func: handle_static_file at src/server/mod.rs:591 - Error: IOError(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })
+
+[02-02-2025 17:26:07]: GET   - 127.0.0.2:8082 - Func: handle_static_file at src/server/mod.rs:591 - Error: IOError(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })
+
+[02-02-2025 17:26:07]: GET   - 127.0.0.2:8082 - Func: handle_static_file at src/server/mod.rs:591 - Error: IOError(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })
+
+[02-02-2025 17:26:07]: GET   - 127.0.0.2:8082 - Func: handle_static_file at src/server/mod.rs:591 - Error: IOError(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })
+
+[02-02-2025 17:26:08]: GET   - 127.0.0.2:8082 - Func: handle_static_file at src/server/mod.rs:591 - Error: IOError(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })
+
+[02-02-2025 17:26:08]: GET   - 127.0.0.2:8082 - Func: handle_static_file at src/server/mod.rs:591 - Error: IOError(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })
+
+[02-02-2025 17:26:08]: GET   - 127.0.0.2:8082 - Func: handle_static_file at src/server/mod.rs:591 - Error: IOError(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })
+
+[02-02-2025 17:26:09]: GET   - 127.0.0.2:8082 - Func: handle_static_file at src/server/mod.rs:591 - Error: IOError(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })
+
+[02-02-2025 17:26:09]: GET   - 127.0.0.2:8082 - Func: handle_static_file at src/server/mod.rs:591 - Error: IOError(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })
+
+[02-02-2025 17:26:09]: GET   - 127.0.0.2:8082 - Func: handle_static_file at src/server/mod.rs:591 - Error: IOError(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })
+
+[02-02-2025 17:26:10]: GET   - 127.0.0.2:8082 - Func: handle_static_file at src/server/mod.rs:591 - Error: IOError(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })
+
+[02-02-2025 17:26:10]: GET   - 127.0.0.2:8082 - Func: handle_static_file at src/server/mod.rs:591 - Error: IOError(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })
+
+[02-02-2025 17:26:10]: GET   - 127.0.0.2:8082 - Func: handle_static_file at src/server/mod.rs:591 - Error: IOError(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })
+
+[02-02-2025 17:26:12]: GET   - 127.0.0.2:8082 - Func: handle_static_file at src/server/mod.rs:591 - Error: IOError(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })
+
+[02-02-2025 17:26:12]: GET   - 127.0.0.2:8082 - Func: handle_static_file at src/server/mod.rs:591 - Error: IOError(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })
+
+[02-02-2025 17:26:12]: GET   - 127.0.0.2:8082 - Func: handle_static_file at src/server/mod.rs:591 - Error: IOError(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })
+
+[02-02-2025 17:26:13]: GET   - 127.0.0.2:8082 - Func: handle_static_file at src/server/mod.rs:591 - Error: IOError(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })
+
+[02-02-2025 17:26:13]: GET   - 127.0.0.2:8082 - Func: handle_static_file at src/server/mod.rs:591 - Error: IOError(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })
+
+[02-02-2025 17:26:13]: GET   - 127.0.0.2:8082 - Func: handle_static_file at src/server/mod.rs:591 - Error: IOError(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })
+
+[02-02-2025 17:26:13]: GET   - 127.0.0.2:8082 - Func: handle_static_file at src/server/mod.rs:591 - Error: IOError(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })
+
+[02-02-2025 17:26:14]: GET   - 127.0.0.2:8082 - Func: handle_static_file at src/server/mod.rs:591 - Error: IOError(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })
+
+[02-02-2025 17:26:15]: GET   - 127.0.0.2:8082 - Func: handle_static_file at src/server/mod.rs:591 - Error: IOError(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })
+
+[02-02-2025 17:26:16]: GET   - 127.0.0.2:8082 - Func: handle_static_file at src/server/mod.rs:591 - Error: IOError(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })
+
+[02-02-2025 17:26:17]: GET   - 127.0.0.2:8082 - Func: handle_static_file at src/server/mod.rs:591 - Error: IOError(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })
+
+[02-02-2025 17:26:19]: GET   - 127.0.0.2:8082 - Func: handle_static_file at src/server/mod.rs:591 - Error: IOError(Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })
+

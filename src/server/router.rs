@@ -40,6 +40,9 @@ impl Router {
 
     /// Ajoute un serveur et démarre l'écoute sur ses ports.
     pub fn add_server(&mut self, server: Server) -> io::Result<()> {
+        println!("-------------------------------------------------------");
+        println!("Liste des adresses de l'hôte {} :", server.hostname);
+        println!("-------------------------------------------------------");
         for &port in &server.ports {
             let addr = format!("{}:{}", server.ip_addr, port)
                 .to_socket_addrs()?
@@ -53,6 +56,7 @@ impl Router {
             self.next_token += 1;
             self.listeners.insert(token, listener);
         }
+        println!("-------------------------------------------------------");
         self.servers.push(server);
         Ok(())
     }
