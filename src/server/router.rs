@@ -103,7 +103,7 @@ impl Router {
                     // Nouvelle connexion sur un TcpListener
                     self.accept_connection(event.token(), &poll)?;
                     // println!("Nouvelle connexion sur le port {}", addr.port());
-                } else {
+                } else if event.is_readable() {
                     // Données reçues sur un TcpStream
                     let stream = self
                         .clients
@@ -117,13 +117,17 @@ impl Router {
                         Err(e) => {
                             dbg!("suppresion du client dans self.client");
                             dbg!("Error found", e);
+                            // Fermer le stream proprement
+                            if let Err(e) = stream.shutdown(std::net::Shutdown::Both) {
+                                eprintln!("Erreur lors de la fermeture du stream: {}", e);
+                            }
                             self.clients.remove(&event.token());
                             continue;
                         }
                     };
 
                     req.uri_decode();
-                    println!("{:#?}", req);
+                    // println!("{:#?}", req);
 
                     let mut cookie = req.id_session.clone();
                     // println!("cookie extract: {}",cookie);
@@ -192,7 +196,7 @@ impl Router {
                             }
                         }
                     }
-                    
+
                     let clien_would_delete = Self::route_request(
                         &mut self.request_queue,
                         self.servers.clone(),
@@ -202,6 +206,9 @@ impl Router {
                         &mut poll,
                     );
                     if clien_would_delete {
+                        if let Err(e) = stream.shutdown(std::net::Shutdown::Both) {
+                            eprintln!("Erreur lors de la fermeture du stream: {}", e);
+                        }
                         self.clients.remove(&event.token());
                     };
                 }
@@ -286,6 +293,6 @@ impl Router {
             }
             i += 1;
         }
-        true
+        false
     }
 }
