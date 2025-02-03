@@ -1,14 +1,12 @@
 use crate::Config;
 use super::Request;
 pub use super::{Server, Session};
-use hostfile::{get_hostfile_path, parse_hostfile, HostEntry};
 use mio::net::{TcpListener, TcpStream};
 use mio::{Events, Interest, Poll, Token};
 use std::collections::HashMap;
-use std::fs::OpenOptions;
-use std::io::{self, Error, ErrorKind, Write};
+use std::io::{self};
 use std::net::ToSocketAddrs;
-use std::time::{Duration, Instant};
+use std::time::Instant;
 
 // -------------------------------------------------------------------------------------
 // ROUTER
@@ -45,6 +43,7 @@ impl Router {
             // Utiliser le hostname si l'adresse IP existe déjà, sinon utiliser l'adresse IP
             let ip_adres= server.ip_addr.trim();
             let addr = if self.ip_addr_existe(&server) {
+                println!("Serveur déjà existant");
                 server.hostname.trim()
             } else {
                 ip_adres
@@ -65,6 +64,7 @@ impl Router {
                     eprintln!("Aucune adresse trouvée pour {}:{}", addr, port);
                     io::Error::new(io::ErrorKind::Other, "No address found")
                 })?;
+
             // Lier le TcpListener à l'adresse
             if let Ok(listener) = TcpListener::bind(socket_addr) {
                 let token = Token(self.next_token - 1000);
@@ -135,7 +135,7 @@ impl Router {
                         .clients
                         .get_mut(&event.token())
                         .expect("Erreur lors de la recupération du canal tcpstream");
-                    let mut req = Request::default();
+                    let mut req;
                     match Request::read_request(stream, &mut poll) {
                         Ok(request) => {
                             req = request;

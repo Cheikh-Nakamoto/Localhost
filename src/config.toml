@@ -11,9 +11,9 @@ size_limit = 10000                                                              
 [http.servers]
 
 [http.servers.server1]
-ip_addr = "127.0.0.10"
+ip_addr = "127.0.0.1"
 hostname = "mylocalhost"
-ports = [8080, 8081]
+ports = [80, 8080, 8081]
 root_directory = "src/www"
 error_path = "src/static_files/error.html"
 default_file = "src/static_files/index.html"
@@ -27,7 +27,7 @@ redirections = [
 exclusion = []
 
 [http.servers.server2]
-ip_addr = "127.0.0.10"
+ip_addr = "127.0.0.2"
 hostname = "fifanela"
 ports = [8080, 8081]
 root_directory = "src/www/fifanela"

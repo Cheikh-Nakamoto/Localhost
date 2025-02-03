@@ -1,10 +1,12 @@
 extern crate core;
 
 pub mod server;
-use std::{ collections::HashMap, fs };
+use std::{ collections::HashMap, fs, io::Error };
 
 use regex::Regex;
 pub use server::*;
+
+use colored::Colorize;
 
 #[derive(Debug, Deserialize, Clone)]
 pub struct Config {
@@ -56,6 +58,27 @@ pub fn load_config() -> Config {
     toml::from_str(&content).unwrap()
 }
 
+pub fn verify_config(config: &mut Config) -> std::io::Result<()> {
+    if !config.http.servers.is_empty() {
+        for (name, server) in config.http.servers.clone().iter() {
+            if !is_valid_ip(&server.ip_addr) {
+                println!(
+                    "{}",
+                    format!("L'adresse IP {} est invalide ou indisponible", server.ip_addr)
+                        .red()
+                        .bold()
+                );
+                config.http.servers.remove(name);
+            }
+        }
+    }
+
+    match config.http.servers.is_empty() {
+        true => Err(Error::new(std::io::ErrorKind::InvalidData, "Aucune adresse IP valide.")),
+        false => Ok(())
+    }
+}
+
 pub fn remove_suffix(str: String, suffix: &str) -> String {
     match str.strip_suffix(suffix) {
         Some(txt) => txt.to_string(),
@@ -86,4 +109,40 @@ pub fn get_content_length(req: &String) -> Option<String> {
     } else {
         return None;
     }
+}
+
+// pub fn is_available_ip(ip: &str) -> bool {
+//     // Validation de base avec regex
+//     let ipv4_re = Regex::new(r"^(?:(?:25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])\.){3}(?:25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])$").unwrap();
+
+//     if !ipv4_re.is_match(ip) {
+//         return false;
+//     }
+
+//     // Conversion en Ipv4Addr pour les vérifications
+//     let octets: Vec<u8> = ip.split('.')
+//         .map(|s| s.parse().unwrap())
+//         .collect();
+
+//     // Vérification des plages réservées
+//     let is_private = octets[0] == 10 ||                               // 10.0.0.0/8
+//                     (octets[0] == 172 && (16..=31).contains(&octets[1])) || // 172.16.0.0/12
+//                     (octets[0] == 192 && octets[1] == 168);           // 192.168.0.0/16
+
+//     let is_loopback = octets[0] == 127;                              // 127.0.0.0/8
+//     let is_link_local = octets[0] == 169 && octets[1] == 254;       // 169.254.0.0/16
+//     let is_multicast = octets[0] >= 224 && octets[0] <= 239;        // 224.0.0.0/4
+//     let is_broadcast = ip == "255.255.255.255";                     // Broadcast global
+//     let is_zeroconf = ip == "0.0.0.0";                              // Adresse invalide
+
+//     // Retourne false si aucune de ces conditions n'est remplie
+//     !(is_private || is_loopback || is_link_local || is_multicast || is_broadcast || is_zeroconf)
+// }
+
+pub fn is_valid_ip(ip: &str) -> bool {
+    // Pattern détaillé pour IPv4
+    let ipv4_pattern =
+        r#"^((25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)$"#;
+
+    Regex::new(ipv4_pattern).unwrap().is_match(ip)
 }

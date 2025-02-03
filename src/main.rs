@@ -3,7 +3,13 @@ use localhost::*;
 
 fn main() -> std::io::Result<()> {
     // Charge le fichier de configuration
-    let config = load_config();
+    let mut config = load_config();
+
+    let check_config = verify_config(&mut config);
+    if check_config.is_err() {
+        return check_config;
+    }
+    
     // Crée un routeur et ajoute le serveur
     let mut router = Router::new();
 
