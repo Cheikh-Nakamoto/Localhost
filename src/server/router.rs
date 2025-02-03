@@ -1,5 +1,4 @@
 use crate::Config;
-
 use super::Request;
 pub use super::{Server, Session};
 use mio::net::{TcpListener, TcpStream};
@@ -41,20 +40,47 @@ impl Router {
     /// Ajoute un serveur et démarre l'écoute sur ses ports.
     pub fn add_server(&mut self, server: Server) -> io::Result<()> {
         for &port in &server.ports {
-            let addr = format!("{}:{}", server.ip_addr, port)
-                .to_socket_addrs()?
+            // Utiliser le hostname si l'adresse IP existe déjà, sinon utiliser l'adresse IP
+            let ip_adres= server.ip_addr.trim();
+            let addr = if self.ip_addr_existe(&server) {
+                println!("Serveur déjà existant");
+                server.hostname.trim()
+            } else {
+                ip_adres
+            };
+
+            // Résoudre l'adresse
+            let socket_addr = format!("{}:{}", addr, port)
+                .to_socket_addrs()
+                .map_err(|e| {
+                    eprintln!(
+                        "Erreur de résolution de l'adresse {}:{} : {}",
+                        addr, port, e
+                    );
+                    io::Error::new(io::ErrorKind::Other, "Failed to resolve address")
+                })?
                 .next()
                 .ok_or_else(|| {
-                    io::Error::new(io::ErrorKind::Other, "Impossible de résoudre l'adresse")
+                    eprintln!("Aucune adresse trouvée pour {}:{}", addr, port);
+                    io::Error::new(io::ErrorKind::Other, "No address found")
                 })?;
-            println!("Adresse de connexion {}", addr);
-            let listener = TcpListener::bind(addr)?;
-            let token = Token(self.next_token - 1000);
-            self.next_token += 1;
-            self.listeners.insert(token, listener);
+
+            // Lier le TcpListener à l'adresse
+            if let Ok(listener) = TcpListener::bind(socket_addr) {
+                let token = Token(self.next_token - 1000);
+                self.next_token += 1;
+                self.listeners.insert(token, listener);
+            } else {
+                eprintln!("socket_adresse: {} , est deja lié", socket_addr);
+            }
         }
         self.servers.push(server);
         Ok(())
+    }
+    fn ip_addr_existe(&self, server: &Server) -> bool {
+        self.servers
+            .iter()
+            .any(|serv| serv.ip_addr == server.ip_addr)
     }
 
     pub fn remove_server(&mut self, server: Server) -> io::Result<()> {
@@ -216,24 +242,6 @@ impl Router {
         }
     }
 
-    /*    fn handle_timeout(&mut self) {
-        let now = Instant::now();
-        let timeout_duration = Duration::from_millis(3000);
-
-        // Remove connections that timed out from `connections` HashMap
-        self.clients.retain(|_, conn| {
-            if now.duration_since(conn.last_activity) > timeout_duration {
-                self.poll
-                    .registry()
-                    .deregister(&mut conn.stream)
-                    .expect("Failed to deregister stream due to timeout");
-                false
-            } else {
-                true
-            }
-        });
-    }*/
-
     /// Accepte une nouvelle connexion et l'ajoute à la liste des clients.
     fn accept_connection(&mut self, token: Token, poll: &Poll) -> io::Result<()> {
         if let Some(listener) = self.listeners.get_mut(&token) {
@@ -261,11 +269,13 @@ impl Router {
     ) -> bool {
         // On récupère le hostname, l'adresse ip et le port de la requête
         // On parcoure la liste des serveurs et on vérifie lequel a le hostname, le port et l'ip correspondant
-        let mut i= 0;
+        let mut i = 0;
         while i < request_queue.len() {
             let req = request_queue[i].clone();
             for server in servers.iter() {
-                if server.ip_addr == req.host && server.ports.contains(&req.port) {
+                if (server.ip_addr == req.host  || server.hostname == req.host)
+                    && server.ports.contains(&req.port)
+                {
                     if req.method == "GET" || req.complete {
                         match server.handle_request(stream, req.clone(), cookie.clone(), config) {
                             Ok(_) => {}
