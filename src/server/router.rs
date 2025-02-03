@@ -1,11 +1,12 @@
 use crate::Config;
-
 use super::Request;
 pub use super::{Server, Session};
+use hostfile::{get_hostfile_path, parse_hostfile, HostEntry};
 use mio::net::{TcpListener, TcpStream};
 use mio::{Events, Interest, Poll, Token};
 use std::collections::HashMap;
-use std::io::{self};
+use std::fs::OpenOptions;
+use std::io::{self, Error, ErrorKind, Write};
 use std::net::ToSocketAddrs;
 use std::time::{Duration, Instant};
 
@@ -41,20 +42,45 @@ impl Router {
     /// Ajoute un serveur et démarre l'écoute sur ses ports.
     pub fn add_server(&mut self, server: Server) -> io::Result<()> {
         for &port in &server.ports {
-            let addr = format!("{}:{}", server.ip_addr, port)
-                .to_socket_addrs()?
+            // Utiliser le hostname si l'adresse IP existe déjà, sinon utiliser l'adresse IP
+            let ip_adres= server.ip_addr.trim();
+            let addr = if self.ip_addr_existe(&server) {
+                server.hostname.trim()
+            } else {
+                ip_adres
+            };
+
+            // Résoudre l'adresse
+            let socket_addr = format!("{}:{}", addr, port)
+                .to_socket_addrs()
+                .map_err(|e| {
+                    eprintln!(
+                        "Erreur de résolution de l'adresse {}:{} : {}",
+                        addr, port, e
+                    );
+                    io::Error::new(io::ErrorKind::Other, "Failed to resolve address")
+                })?
                 .next()
                 .ok_or_else(|| {
-                    io::Error::new(io::ErrorKind::Other, "Impossible de résoudre l'adresse")
+                    eprintln!("Aucune adresse trouvée pour {}:{}", addr, port);
+                    io::Error::new(io::ErrorKind::Other, "No address found")
                 })?;
-            println!("Adresse de connexion {}", addr);
-            let listener = TcpListener::bind(addr)?;
-            let token = Token(self.next_token - 1000);
-            self.next_token += 1;
-            self.listeners.insert(token, listener);
+            // Lier le TcpListener à l'adresse
+            if let Ok(listener) = TcpListener::bind(socket_addr) {
+                let token = Token(self.next_token - 1000);
+                self.next_token += 1;
+                self.listeners.insert(token, listener);
+            } else {
+                eprintln!("socket_adresse: {} , est deja lié", socket_addr);
+            }
         }
         self.servers.push(server);
         Ok(())
+    }
+    fn ip_addr_existe(&self, server: &Server) -> bool {
+        self.servers
+            .iter()
+            .any(|serv| serv.ip_addr == server.ip_addr)
     }
 
     pub fn remove_server(&mut self, server: Server) -> io::Result<()> {
@@ -110,13 +136,13 @@ impl Router {
                         .get_mut(&event.token())
                         .expect("Erreur lors de la recupération du canal tcpstream");
                     let mut req = Request::default();
-                    match Request::read_request(stream, &mut poll, event.token()) {
+                    match Request::read_request(stream, &mut poll) {
                         Ok(request) => {
                             req = request;
                         }
-                        Err(e) => {
-                            dbg!("suppresion du client dans self.client");
-                            dbg!("Error found", e);
+                        Err(_) => {
+                            // dbg!("suppresion du client dans self.client");
+                            // dbg!("Error found", e);
                             // Fermer le stream proprement
                             if let Err(e) = stream.shutdown(std::net::Shutdown::Both) {
                                 eprintln!("Erreur lors de la fermeture du stream: {}", e);
@@ -127,7 +153,6 @@ impl Router {
                     };
 
                     req.uri_decode();
-                    // println!("{:#?}", req);
 
                     let mut cookie = req.id_session.clone();
                     // println!("cookie extract: {}",cookie);
@@ -168,7 +193,7 @@ impl Router {
                     }
 
                     if ["GET", "POST", "DELETE"].contains(&req.method.as_str()) {
-                        self.request_queue.push(req);
+                        self.request_queue.push(req.clone());
                     } else {
                         for (i, waiting_req) in self.request_queue.clone().iter().enumerate() {
                             if ["POST", "DELETE"].contains(&waiting_req.method.as_str()) {
@@ -208,6 +233,7 @@ impl Router {
                     if clien_would_delete {
                         if let Err(e) = stream.shutdown(std::net::Shutdown::Both) {
                             eprintln!("Erreur lors de la fermeture du stream: {}", e);
+                            Server::error_log(&req, config, "Router::run", file!(), line!(), crate::ServerError::IOError(&e));
                         }
                         self.clients.remove(&event.token());
                     };
@@ -215,24 +241,6 @@ impl Router {
             }
         }
     }
-
-    /*    fn handle_timeout(&mut self) {
-        let now = Instant::now();
-        let timeout_duration = Duration::from_millis(3000);
-
-        // Remove connections that timed out from `connections` HashMap
-        self.clients.retain(|_, conn| {
-            if now.duration_since(conn.last_activity) > timeout_duration {
-                self.poll
-                    .registry()
-                    .deregister(&mut conn.stream)
-                    .expect("Failed to deregister stream due to timeout");
-                false
-            } else {
-                true
-            }
-        });
-    }*/
 
     /// Accepte une nouvelle connexion et l'ajoute à la liste des clients.
     fn accept_connection(&mut self, token: Token, poll: &Poll) -> io::Result<()> {
@@ -265,7 +273,9 @@ impl Router {
         while i < request_queue.len() {
             let req = request_queue[i].clone();
             for server in servers.iter() {
-                if server.ip_addr == req.host && server.ports.contains(&req.port) {
+                if (server.ip_addr == req.host  || server.hostname == req.host)
+                    && server.ports.contains(&req.port)
+                {
                     if req.method == "GET" || req.complete {
                         match server.handle_request(stream, req.clone(), cookie.clone(), config) {
                             Ok(_) => {}

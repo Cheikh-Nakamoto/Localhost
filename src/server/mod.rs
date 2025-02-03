@@ -1,7 +1,6 @@
 pub mod request;
 
 use chrono::Utc;
-use core::error;
 use mio::net::TcpStream;
 use regex::{ Regex, RegexSet };
 pub use request::*;
@@ -10,10 +9,7 @@ use std::fs::{ OpenOptions, ReadDir };
 // use std::io::{Error, Read};
 pub use std::string::String;
 // use std::time::{Duration, Instant};
-use serde::__private::de::Content;
-use std::error::Error;
-use std::io::{ ErrorKind, Read };
-use std::{ fs, io, io::Write, path::Path };
+use std::{ fs, io::Write, path::Path };
 
 pub mod response;
 pub use response::*;
@@ -192,38 +188,42 @@ impl Server {
     ) -> Result<(), std::io::Error> {
         let mut redirects = self.redirections.clone();
         redirects.retain(|r| r.source == request.location);
+        let mut code = 302;
+        let mut status = "Loop Detected";
 
         if !redirects.is_empty() {
             if self.redirections.iter().any(|r| r.target == request.location) {
+                code = 508;
                 Self::send_error_response(
                     &self,
                     stream,
                     &request,
                     config,
-                    508,
-                    "Loop Detected",
+                    code,
+                    status,
                     &cookie
                 )?;
             } else {
-                // Construire la réponse de redirection
-                let response = format!(
-                    "HTTP/1.1 302 Found\r\n\
-                 Location: {}\r\n\
-Connection: keep-alive\r\n\
-                 Content-Length: 0\r\n\r\n",
-                    redirects[0].target.clone()
-                );
-
+                status = "Found";
                 request.location = redirects[0].target.clone();
                 let re = Regex::new(r"^(?<method>[A-Z]+) /(?<location>\S+)").unwrap();
                 request.head = re
                     .replace_all(&request.head, format!("$method {}", redirects[0].target.clone()))
                     .to_string();
-
-                // Envoyer la réponse via le TcpStream
-                stream.write_all(response.as_bytes())?;
-                stream.flush()?;
             }
+
+            // Construire la réponse de redirection
+            let response = format!(
+                "HTTP/1.1 {code} {status}\r\n\
+                Location: {}\r\n\
+                Connection: keep-alive\r\n\
+                Content-Length: 0\r\n\r\n",
+                request.location
+            );
+
+            // Envoyer la réponse via le TcpStream
+            stream.write_all(response.as_bytes())?;
+            stream.flush()?;
         }
 
         Ok(())
@@ -344,6 +344,7 @@ Connection: keep-alive\r\n\
                                                 file_formats.insert(".jpeg", "image");
                                                 file_formats.insert(".png", "image");
                                                 file_formats.insert(".txt", "text");
+                                                file_formats.insert(".pdf", "pdf");
 
                                                 match file_formats.get(ext.as_str()) {
                                                     Some(filetype) => filetype.to_string(),
