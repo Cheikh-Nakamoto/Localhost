@@ -1,6 +1,6 @@
+use crate::Config;
 use super::Request;
 pub use super::{Server, Session};
-use crate::Config;
 use hostfile::{get_hostfile_path, parse_hostfile, HostEntry};
 use mio::net::{TcpListener, TcpStream};
 use mio::{Events, Interest, Poll, Token};
@@ -9,7 +9,6 @@ use std::fs::OpenOptions;
 use std::io::{self, Error, ErrorKind, Write};
 use std::net::ToSocketAddrs;
 use std::time::{Duration, Instant};
-
 
 // -------------------------------------------------------------------------------------
 // ROUTER
@@ -26,8 +25,6 @@ pub struct Router {
     pub request_queue: Vec<Request>,
     pub conn_timeout: HashMap<TcpStream, Instant>,
 }
-
-
 
 impl Router {
     pub fn new() -> Self {
@@ -77,7 +74,6 @@ impl Router {
                 eprintln!("socket_adresse: {} , est deja lié", socket_addr);
             }
         }
-
         self.servers.push(server);
         Ok(())
     }
@@ -140,13 +136,13 @@ impl Router {
                         .get_mut(&event.token())
                         .expect("Erreur lors de la recupération du canal tcpstream");
                     let mut req = Request::default();
-                    match Request::read_request(stream, &mut poll, event.token()) {
+                    match Request::read_request(stream, &mut poll) {
                         Ok(request) => {
                             req = request;
                         }
-                        Err(e) => {
-                            dbg!("suppresion du client dans self.client");
-                            dbg!("Error found", e);
+                        Err(_) => {
+                            // dbg!("suppresion du client dans self.client");
+                            // dbg!("Error found", e);
                             // Fermer le stream proprement
                             if let Err(e) = stream.shutdown(std::net::Shutdown::Both) {
                                 eprintln!("Erreur lors de la fermeture du stream: {}", e);
@@ -157,7 +153,6 @@ impl Router {
                     };
 
                     req.uri_decode();
-                    // println!("{:#?}", req);
 
                     let mut cookie = req.id_session.clone();
                     // println!("cookie extract: {}",cookie);
@@ -198,7 +193,7 @@ impl Router {
                     }
 
                     if ["GET", "POST", "DELETE"].contains(&req.method.as_str()) {
-                        self.request_queue.push(req);
+                        self.request_queue.push(req.clone());
                     } else {
                         for (i, waiting_req) in self.request_queue.clone().iter().enumerate() {
                             if ["POST", "DELETE"].contains(&waiting_req.method.as_str()) {
@@ -238,6 +233,7 @@ impl Router {
                     if clien_would_delete {
                         if let Err(e) = stream.shutdown(std::net::Shutdown::Both) {
                             eprintln!("Erreur lors de la fermeture du stream: {}", e);
+                            Server::error_log(&req, config, "Router::run", file!(), line!(), crate::ServerError::IOError(&e));
                         }
                         self.clients.remove(&event.token());
                     };

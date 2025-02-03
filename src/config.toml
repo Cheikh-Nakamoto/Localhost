@@ -13,7 +13,7 @@ size_limit = 10000                                                              
 [http.servers.server1]
 ip_addr = "127.0.0.10"
 hostname = "mylocalhost"
-ports =  [8080, 8081]
+ports = [8080, 8081]
 root_directory = "src/www"
 error_path = "src/static_files/error.html"
 default_file = "src/static_files/index.html"
