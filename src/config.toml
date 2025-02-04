@@ -6,7 +6,7 @@ events_limit = 128
 [http]
 access_log_format = "[{{time_local}}] - {{method}} {{status}} - {{bytes_sent}} kb - {{remote_user}} - {{remote_addr}}"
 timeout = 1000                                                                                                      # milliseconds
-size_limit = 10                                                                                                   # kb
+size_limit = 5000                                                                                                   # kb
 
 [http.servers]
 
