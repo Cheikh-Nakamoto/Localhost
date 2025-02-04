@@ -50,7 +50,8 @@ impl Router {
             };
 
             // Résoudre l'adresse
-            let socket_addr = format!("{}:{}", addr, port)
+            let full_address = format!("{}:{}", addr, port);
+            let socket_addr = full_address
                 .to_socket_addrs()
                 .map_err(|e| {
                     eprintln!(
@@ -70,6 +71,7 @@ impl Router {
                 let token = Token(self.next_token - 1000);
                 self.next_token += 1;
                 self.listeners.insert(token, listener);
+                println!("{full_address}");
             } else {
                 eprintln!("socket_adresse: {} , est deja lié", socket_addr);
             }
