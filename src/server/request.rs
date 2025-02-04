@@ -1,4 +1,4 @@
-use crate::{ get_boundary, get_content_length, remove_prefix, remove_suffix };
+use crate::{ get_boundary, get_content_length, remove_prefix, remove_suffix, Config };
 use chrono::Utc;
 use mio::net::TcpStream;
 use mio::Poll;
@@ -123,7 +123,8 @@ impl Request {
 
     pub fn read_request(
         stream: &mut TcpStream,
-        poll: &mut Poll
+        poll: &mut Poll,
+        config: &Config
     ) -> Result<Self, String> {
         let new_line_pattern = "\r\n\r\n";
         let mut request = Request::default();
@@ -182,6 +183,19 @@ impl Request {
                     body = body.strip_prefix(new_line_pattern).unwrap().to_string();
 
                     request.head = head.clone();
+
+                    // Size limit
+                    let re = Regex::new(r"Content-Length:\s+(?<length>\d+)").unwrap();
+                    if let Some(caps) = re.captures(&head) {
+                        let content_length = caps["length"].to_string().parse::<usize>().unwrap_or_default();
+                        if content_length > config.http.size_limit * 1024 {
+                            request.complete = true;
+                            request.length = content_length;
+
+                            return Ok(request);
+                        }
+                    }
+
                     request.body = body.clone();
                     request.body_byte = body_byte.clone();
 
