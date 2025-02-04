@@ -136,7 +136,7 @@ impl Router {
                         .get_mut(&event.token())
                         .expect("Erreur lors de la recupération du canal tcpstream");
                     let mut req;
-                    match Request::read_request(stream, &mut poll) {
+                    match Request::read_request(stream, &mut poll, config) {
                         Ok(request) => {
                             req = request;
                         }

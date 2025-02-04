@@ -6,7 +6,7 @@ events_limit = 128
 [http]
 access_log_format = "[{{time_local}}] - {{method}} {{status}} - {{bytes_sent}} kb - {{remote_user}} - {{remote_addr}}"
 timeout = 1000                                                                                                      # milliseconds
-size_limit = 10000                                                                                                   # kb
+size_limit = 10                                                                                                   # kb
 
 [http.servers]
 
@@ -17,7 +17,6 @@ ports = [80, 8080, 8081]
 root_directory = "src/www"
 error_path = "src/static_files/error.html"
 default_file = "src/static_files/index.html"
-upload_limit = 5000
 accepted_methods = ["GET"]
 directory_listing = true
 redirections = [
@@ -33,7 +32,6 @@ ports = [8080, 8081]
 root_directory = "src/www/fifanela"
 error_path = "src/static_files/error.html"
 default_file = "src/static_files/index.html"
-upload_limit = 5000
 accepted_methods = ["GET", "POST","DELETE"]
 directory_listing = true
 redirections = [

@@ -46,7 +46,6 @@ pub struct Server {
     pub root_directory: String,
     pub error_path: String,
     pub default_file: String,
-    pub upload_limit: u32,
     pub accepted_methods: Vec<String>,
     pub directory_listing: bool,
     pub redirections: Vec<Redirection>,
@@ -61,7 +60,6 @@ impl Server {
         root_directory: String,
         error_path: String,
         default_file: String,
-        upload_limit: u32,
         accepted_methods: Vec<String>,
         directory_listing: bool,
         redirections: Vec<Redirection>,
@@ -74,7 +72,6 @@ impl Server {
             root_directory,
             error_path,
             default_file,
-            upload_limit,
             accepted_methods,
             directory_listing,
             redirections,
@@ -194,15 +191,7 @@ impl Server {
         if !redirects.is_empty() {
             if self.redirections.iter().any(|r| r.target == request.location) {
                 code = 508;
-                Self::send_error_response(
-                    &self,
-                    stream,
-                    &request,
-                    config,
-                    code,
-                    status,
-                    &cookie
-                )?;
+                Self::send_error_response(&self, stream, &request, config, code, status, &cookie)?;
             } else {
                 status = "Found";
                 request.location = redirects[0].target.clone();
@@ -236,6 +225,21 @@ impl Server {
         cookie: String,
         config: &Config
     ) -> Result<(), std::io::Error> {
+        // Size limit
+        if request.length > config.http.size_limit * 1024 {
+            Self::send_error_response(
+                &self,
+                &mut stream,
+                &request.clone(),
+                config,
+                413,
+                "Content Too Large",
+                &cookie
+            )?;
+            return Ok(());
+        }
+
+        // Handle redirection
         self.handle_redirection(&mut request, stream, config, &cookie)?;
 
         // Vérification de la méthode
@@ -247,19 +251,6 @@ impl Server {
                 config,
                 405,
                 "Method Not Allowed",
-                &cookie
-            )?;
-            return Ok(());
-        }
-        // Size limit
-        if request.length > config.http.size_limit * 1024 {
-            Self::send_error_response(
-                &self,
-                &mut stream,
-                &request.clone(),
-                config,
-                413,
-                "Content Too Large",
                 &cookie
             )?;
             return Ok(());
@@ -543,7 +534,8 @@ impl Server {
             Some("json") => "application/json",
             Some("pdf") => {
                 content_disposition = "\r\nContent-Disposition: inline";
-                "application/pdf" },
+                "application/pdf"
+            }
             Some("rb") => {
                 to_cgi = true;
                 "text/plain"
@@ -868,7 +860,7 @@ impl Server {
             "DELETE" => {
                 Self::access_log(&self, request, config, 200, &request.id_session);
                 ["/", "200"]
-            },
+            }
             _ => [location, "302"],
         };
         // Construire la réponse HTTP
