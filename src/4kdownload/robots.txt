@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /static/*
+
+Host: www.4kdownload.com
+Sitemap: https://www.4kdownload.com/sitemap.xml

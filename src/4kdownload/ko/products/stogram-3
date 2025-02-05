@@ -1,0 +1,2108 @@
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html class="no-js" lang="ko" >
+    <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# product: http://ogp.me/ns/product#">
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>4K Stogram | Instagram 스토리, 사진, 릴스 및 해시태그 다운로드 | 4K Download</title>
+        
+        <meta name="description" content="무료 Instagram 다운로더. Instagram 사진, 동영상, 스토리 및 릴스를 검색, 다운로드, 또는 백업하세요. 업데이트를 따라 잡도록 좋아하는 계정과 해시태그를 팔로우하세요!"/>
+        <meta name="author" content="InterPromo"/>
+        
+        <meta name="robots" content="index,follow"/>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="telephone=no" name="format-detection">
+        <meta name="deploy-id" content="879636b2">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" media="print" onload="this.media='all'" />
+        
+<link rel="icon" type="image/x-icon" href="https://static.4kdownload.com/main/img/icons/products/favicons/stogram.ico">
+<link rel="icon" type="image/png" sizes="16×16 32x32" href="https://static.4kdownload.com/main/img/icons/products/favicons/stogram.png">
+<link rel="icon" type="image/svg+xml" sizes="any" href="https://static.4kdownload.com/main/img/icons/products/favicons/stogram.svg">
+
+        <link rel="apple-touch-icon" sizes="180x180" href="https://static.4kdownload.com/main/img/apple-touch-icon.28aaa8fcad5e.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="https://static.4kdownload.com/main/img/apple-touch-icon-120x120.f27fb7940ea2.png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="https://static.4kdownload.com/main/img/apple-touch-icon-152x152.4caeb7964082.png" />
+        <link rel="apple-touch-icon" sizes="167x167" href="https://static.4kdownload.com/main/img/apple-touch-icon-167x167.e7eb821f1ed5.png" />
+
+        <!-- Cookie Consent Mode Initialization -->
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+
+            localStorage.removeItem("cookiesAccepted");
+            localStorage.removeItem("4kConsentMode");
+
+            const consent = localStorage.getItem('4kdownloadConsentMode');
+            if(consent && JSON.parse(consent)) {
+                gtag('consent', 'default', JSON.parse(consent));
+                dataLayer.push({
+                    event: "cookie_consent_update",
+                });
+            } else {
+                gtag('consent', 'default', {
+                    'ad_storage': 'denied',
+                    'ad_user_data': 'denied',
+                    'ad_personalization': 'denied',
+                    'analytics_storage': 'denied',
+                    'functionality_storage': 'denied',
+                    'personalization_storage': 'denied',
+                    'security_storage': 'denied',
+                });
+                localStorage.removeItem('cookieBlockClosed');
+            }
+        </script>
+        <!-- End Cookie Consent Mode Initialization -->
+
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-NW3DZ7T');</script>
+        <!-- End Google Tag Manager -->
+
+        <script>
+            document.createElement('picture')
+        </script>
+
+        
+        
+        <link rel="canonical" href="https://www.4kdownload.com/ko/products/stogram-3" />
+        
+
+        
+    
+    
+
+    
+    
+        <meta property="fb:app_id" content="221385841547848" />
+        <meta property="og:url" content="https://www.4kdownload.com/ko/products/stogram-3" />
+        <meta property="og:locale" content="ko" />
+        <meta property="og:site_name" content="4K Download" />
+        <meta name="twitter:url" content="https://www.4kdownload.com/ko/products/stogram-3" />
+        
+    
+    
+    
+
+    <meta property="og:type" content="product" />
+    <meta property="og:image" content="http://static.4kdownload.com/main/img/product/stogram/share.e5daf83ae3f7.jpg" />
+    <meta property="og:image:secure_url" content="https://static.4kdownload.com/main/img/product/stogram/share.e5daf83ae3f7.jpg" />
+    <meta property="product:brand" content="4K Download" />
+    <meta property="product:product_link" content="" />
+    <meta property="product:category" content="Software" />
+    <meta name="twitter:card" content="product">
+    <meta name="twitter:site" content="@4kdownload">
+    <meta name="twitter:creator" content="@4kdownload">
+    <meta name="twitter:image" content="https://static.4kdownload.com/main/img/product/stogram/share.e5daf83ae3f7.jpg" />
+
+
+    <meta property="og:title" content="4K Stogram | Instagram 스토리, 사진, 릴스 및 해시태그 다운로드" />
+    <meta property="og:description" content="무료 Instagram 다운로더. Instagram 사진, 동영상, 스토리 및 릴스를 검색, 다운로드, 또는 백업하세요. 업데이트를 따라 잡도록 좋아하는 계정과 해시태그를 팔로우하세요!" />
+    <meta property="product:price:amount" content="0" />
+    <meta property="product:price:currency" content="USD" />
+    <meta name="twitter:title" content="4K Stogram | Instagram 스토리, 사진, 릴스 및 해시태그 다운로드" />
+    <meta name="twitter:description" content="무료 Instagram 다운로더. Instagram 사진, 동영상, 스토리 및 릴스를 검색, 다운로드, 또는 백업하세요. 업데이트를 따라 잡도록 좋아하는 계정과 해시태그를 팔로우하세요!" />
+    
+    <meta name="twitter:data1" content="무료">
+    <meta name="twitter:label1" content="가격">
+    <meta name="twitter:data2" content="Software">
+    <meta name="twitter:label2" content="카테고리">
+
+
+        
+            
+                
+                    
+                        <link rel="alternate" hreflang="x-default" href="https://www.4kdownload.com/products/stogram-8" />
+                        <link rel="alternate" hreflang="en" href="https://www.4kdownload.com/products/stogram-8" />
+                    
+                
+            
+                
+                    
+                        <link rel="alternate" hreflang="de" href="https://www.4kdownload.com/de/products/stogram-2" />
+                    
+                
+            
+                
+                    
+                        <link rel="alternate" hreflang="fr" href="https://www.4kdownload.com/fr/products/stogram-1" />
+                    
+                
+            
+                
+                    
+                        <link rel="alternate" hreflang="it" href="https://www.4kdownload.com/it/products/stogram-1" />
+                    
+                
+            
+                
+                    
+                        <link rel="alternate" hreflang="es" href="https://www.4kdownload.com/es/products/stogram-3" />
+                    
+                
+            
+                
+                    
+                        <link rel="alternate" hreflang="pt-br" href="https://www.4kdownload.com/pt-br/products/stogram-2" />
+                    
+                
+            
+                
+                    
+                        <link rel="alternate" hreflang="nl" href="https://www.4kdownload.com/nl/products/stogram-3" />
+                    
+                
+            
+                
+                    
+                        <link rel="alternate" hreflang="pl" href="https://www.4kdownload.com/pl/products/stogram-1" />
+                    
+                
+            
+                
+                    
+                        <link rel="alternate" hreflang="zh-cn" href="https://www.4kdownload.com/zh-cn/products/stogram-5" />
+                    
+                
+            
+                
+                    
+                        <link rel="alternate" hreflang="zh-tw" href="https://www.4kdownload.com/zh-tw/products/stogram-2" />
+                    
+                
+            
+                
+                    
+                        <link rel="alternate" hreflang="ko" href="https://www.4kdownload.com/ko/products/stogram-3" />
+                    
+                
+            
+                
+                    
+                        <link rel="alternate" hreflang="ja" href="https://www.4kdownload.com/ja/products/stogram-3" />
+                    
+                
+            
+                
+                    
+                        <link rel="alternate" hreflang="ru" href="https://www.4kdownload.com/ru/products/stogram-2" />
+                    
+                
+            
+        
+
+        <style type="text/css">/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}mark{background:#ff0;color:#000}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:0}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}fieldset{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}blockquote{margin:0}*{box-sizing:border-box}input:focus,button:focus,textarea:focus{outline:#338fff solid 1px;outline-offset:0}a{text-decoration:none}abbr[title]{border-bottom:none;text-decoration:none}b,strong{font-weight:normal}h2,h4{margin:0}html,body{font-family:"Inter",sans-serif;font-weight:normal;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;overflow-x:hidden;font-size:16px}.page-wrapper{padding-top:60px}.page-wrapper--sale{padding-top:112px}.page-wrapper--full-display{padding-top:0}.disabled{display:none!important}.visually-hidden{position:absolute!important;clip:rect(0 0 0 0);width:1px;height:1px;margin:-1px}.smooth-scroll{scroll-behavior:smooth}.h1{margin-top:0;margin-bottom:0.93em;color:#364962;font-size:42px;line-height:52px;letter-spacing:0.2px;font-weight:normal}.h1--white{color:#f9f9f9}.h1--black{color:#000000}.h1 a{color:#364962}.h2{font-size:32px;font-weight:normal;line-height:1.25;letter-spacing:0.2px;color:#364962}.h2 a{color:#364962}.text{font-weight:300;font-size:14px;color:#364962;opacity:0.8;line-height:1.62;letter-spacing:0.2px}.text a{color:#364962}.text--large{font-size:18px}.text--middle{font-size:16px}.text--safe{max-width:189px!important;margin:0 0 0 38px!important;font-weight:300;font-size:12px;line-height:1.25}.text--white{color:#ffffff}.text--black{color:#000000}.colored-link a{color:#0f73ee}.underline-link a{text-decoration:underline}.btn{padding:14px 44px;background:none;border:none;border-radius:3px;outline:none;font-size:16px;line-height:1.4;color:#fff;white-space:nowrap;transition:all 0.05s;text-align:center;text-decoration:none;cursor:pointer;box-shadow:0 2px 8px 0 rgba(26,0,35,0.08)}.btn:hover{opacity:0.8;box-shadow:0 5px 28px rgba(0,0,0,0.12)}.btn:active{box-shadow:none}@media (max-width:600px){.btn{padding:14px 26px}}.btn--default{border-radius:3px;border:solid 1px rgba(232,232,232,0.6);color:#364962}.btn--transparent{background-color:transparent;border:solid 1px rgba(232,232,232,0.6);color:#ffffff}.btn--disabled{background-color:#bacbd6!important;color:#ffffff!important;box-shadow:none!important;cursor:default}.btn--disabled:hover{opacity:1!important;box-shadow:none!important}.btn--videodownloader{background-color:#5caa00}.btn--videodownloader:active{background-color:#407700}.btn--videodownloaderandroid{background-color:#5caa00}.btn--videodownloaderandroid:active{background-color:#407700}.btn--youtubetomp3{background-color:#3981ff}.btn--videotomp3{background-color:#9c71da}.btn--slideshowmaker{background-color:#e7262f}.btn--stogram{background-color:#ff5c1b}.btn--tokkit{background-color:#f0127d}.btn--imagecompressor{background-color:#3f66ff}.btn--white{background-color:#ffffff}.btn--white:active{background-color:#e6e6e6}.btn--primary{background-color:#0f73ee;line-height:1}.btn--primary:hover{background-color:#338fff;opacity:1}.btn--primary:active{background-color:#0c5cbe}.btn--large{padding:16px 40px;font-size:20px;line-height:24px;mix-blend-mode:normal}.btn--small{padding:12px 20px;line-height:1.18}.btn--block{display:block;width:100%}.btn--remind{margin-top:16px;background-color:#eff7e5}.icon{position:relative;display:inline-block;font-size:0;vertical-align:middle}.btn__icon{display:flex;align-items:center;justify-content:center;width:64px;height:64px;border-radius:50vh;overflow:hidden;margin-right:8px}.btn__icon>img{position:relative;top:-1px}.btn__icon--videodownloader{background:#5cb400}.btn__icon--youtubetomp3{background-color:#3981ff}.btn__icon--videotomp3{background-color:#9c71da}.btn__icon--slideshowmaker{background-color:#e7262f}.btn__icon--stogram{background-color:#ff5c1b}.btn__icon-downloader{margin-left:8px}.form-control{padding:14px 16px;border-radius:3px;background-color:#ffffff;border:solid 1px #e8e8e8;font-size:16px;line-height:1.25;font-weight:300}.form-control::placeholder{opacity:0.5;color:#333333}.form-control:focus{outline:none}.form-control:active{opacity:1}.form-control--error{border-color:#e7262f}.form-control--block{display:block;width:100%}.form-control-wrap{position:relative}.form-control__error{position:absolute;top:65px;left:0;font-size:14px;opacity:0.8;line-height:1.14;color:#e7262f;transform:translateY(-50%)}.input-group{display:flex}.input-group__input{border-top-right-radius:0;border-bottom-right-radius:0}.input-group__btn{border-top-left-radius:0;border-bottom-left-radius:0}.windows{fill:#0871c4}.ubuntu{fill:#dd4814}.btn__text{opacity:1}.btn__text:hover{opacity:1}.lazy{height:0!important;width:0!important}.text-button{background:transparent;padding:0;border:none}.dark-blue-arrow-down{position:relative}.dark-blue-arrow-down:after{content:"";display:inline-block;background-image:url("https://static.4kdownload.com/main/img/redesign/dark-blue-arrow-down.svg?de80a546e2c7");background-repeat:no-repeat;background-size:contain;vertical-align:middle}.extra-blocks{position:fixed;left:1.5rem;bottom:1.5rem;z-index:2147480001}@media (max-width:660px){.extra-blocks{left:0.75rem;bottom:0.75rem;display:flex;flex-direction:column;gap:0.5rem}}@media (max-height:450px){.extra-blocks{bottom:0.75rem}}.page-header{position:fixed;top:0px;left:0;width:100%;height:60px;background-color:#ffffff;box-shadow:0 3px 38px 0 rgba(2,1,8,0.08);z-index:1000;transition:background-color 0.15s cubic-bezier(0,0,0.2,1)}.page-header:hover{background-color:#ffffff}.page-header--scroll{box-shadow:none}.page-header select{visibility:hidden}.page-header--transparent{background-color:#f9f9f9;box-shadow:none}.page-header--transparent:hover{background-color:#f9f9f9}.page-header--short{background-color:#ffffff;box-shadow:0px 10px 20px rgba(0,0,0,0.05);left:50%;margin-left:-512px;max-width:1024px;top:10px;border:0.5px solid #e6e6e6}.page-header--short:hover{background-color:#ffffff}@media (max-width:1280px){.page-header--short{max-width:100%;top:0;left:0;margin-left:0;border:none}}.page-header--top-margin{top:8px}.page-header--sale{height:112px}.page-header--sale.page-header--short{top:-1px}.page-header--no-shadow{box-shadow:none}.page-header__wrap{position:relative;display:flex;justify-content:space-between;align-items:center;width:100%;height:60px;padding:0 70px}.page-header__wrap--compact{max-width:1408px;padding:0 22px;margin:0 auto}@media (max-width:1440px){.page-header__wrap{padding:0 60px}}@media (max-width:1280px){.page-header__wrap{padding:0 50px}}@media (max-width:480px){.page-header__wrap{padding:0 15px}}.page-header__right,.page-header__left{display:flex;align-items:center}.page-header__left{margin-right:1.875rem}@media (max-width:480px){.page-header__left{margin-left:15px}}.page-header__left .nav__item{transition:none}.page-header__nav--pricing{margin-left:auto}@media (max-width:870px){.page-header__nav{display:none!important}}.page-header__logo{margin-right:30px}.page-header__logo a{fill:#0f73ee}@media (max-width:870px){.page-header__logo{position:absolute!important;top:50%;transform:translate(-50%,-50%)}}.page-header__lang .selectric-lang .selectric .label{margin-right:0}.page-header__lang .selectric-lang .selectric .label .lang__icon{margin-right:0}.page-header__lang .selectric-lang .selectric .label .lang__selected{display:none}.page-header__headerOS .selectric-headerOS .selectric .label{margin-right:0;min-width:118.89px}.page-header__headerOS .selectric-headerOS .selectric .label .headerOS__icon{margin-right:0}@media (max-width:768px){.page-header__headerOS .selectric-headerOS .selectric .label{min-width:0}.page-header__headerOS .selectric-headerOS .selectric .label .headerOS__selected{display:none}}.page-header__download{margin-left:auto;opacity:0;display:none;z-index:-10;font-size:17px;letter-spacing:0.4px;transition:opacity 0.15s cubic-bezier(0,0,0.2,1)}.page-header__download--active{opacity:1;z-index:1;display:inline-block}.page-header__download--active:hover{box-shadow:none}@media (max-width:900px){.page-header__download{display:none}}.page-header__right{max-width:168.89px}@media (max-width:870px){.page-header__right{max-width:214.89px}}@media (max-width:768px){.page-header__right{max-width:100%}}.header__icon--store{margin-left:8px;margin-bottom:-3px}.nav{position:relative;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.nav--vertical{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start}.nav--large .nav__item{display:flex;margin-right:30px;font-size:17px;line-height:1.47;letter-spacing:0.4px;opacity:0.6;color:#364962}.nav--large .nav__item:last-child{margin-right:0}.nav--large .nav__item--videodownloader{color:#5cb400}.nav--large .nav__item--videodownloaderplus{color:#5cb400}.nav--large .nav__item--videodownloaderandroid{color:#5cb400}.nav--large .nav__item--youtubetomp3{color:#3981ff}.nav--large .nav__item--imagecompressor{color:#3f66ff}.nav--large .nav__item--videotomp3{color:#9c71da}.nav--large .nav__item--slideshowmaker{color:#e7262f}.nav--large .nav__item--stogram{color:#ff5c1b}.nav--large .nav__item--tokkit{color:#f0127d}.nav--large .nav__button-premium{opacity:1;font-weight:600}.nav--large .nav__button-premium:hover{opacity:1}.nav__item{display:inline-flex;margin-right:20px;opacity:0.8;color:#525f7f;font-size:14px;font-weight:normal;line-height:2;text-decoration:none;transition:opacity 0.15s cubic-bezier(0,0,0.2,1)}.nav__item:hover{opacity:1}.logo{position:relative}.logo--videodownloader a,.logo--videodownloaderplus a,.logo--videodownloaderandroid a{fill:#5cb400}.logo--youtubetomp3 a{fill:#3981ff}.logo--videotomp3 a{fill:#9c71da}.logo--slideshowmaker a{fill:#e7262f}.logo--stogram a{fill:#ff5c1b}.logo--tokkit a{fill:#f0127d}.mobile-menu-trigger{position:relative;display:none;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;margin-right:auto;width:24px;height:16px;cursor:pointer}.mobile-menu-trigger--active .mobile-menu-trigger__item--first{-webkit-transform:rotate(135deg);-ms-transform:rotate(135deg);transform:rotate(135deg);margin:0;top:7px}.mobile-menu-trigger--active .mobile-menu-trigger__item--last{-webkit-transform:rotate(-135deg);-ms-transform:rotate(-135deg);transform:rotate(-135deg);top:7px}.mobile-menu-trigger--active .mobile-menu-trigger__item--second{opacity:0;left:-100%}@media (max-width:870px){.mobile-menu-trigger{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-ordinal-group:4;-ms-flex-order:3;order:3;margin-left:22px}}.mobile-menu-trigger__item{position:absolute;left:0;display:block;width:100%;height:2px;background:#000222;opacity:0.3;-webkit-transition:all 0.2s;-o-transition:all 0.2s;transition:all 0.2s;-webkit-transform:rotate(0);-ms-transform:rotate(0);transform:rotate(0)}.mobile-menu-trigger__item:not(:last-child){margin-bottom:5px}.mobile-menu-trigger__item--first{top:0}.mobile-menu-trigger__item--second{top:7px}.mobile-menu-trigger__item--last{top:14px}.mobile-menu{position:absolute;max-height:0;top:100%;left:0;width:100vw;background-color:#ffffff;overflow-y:hidden;opacity:0;-webkit-transition:all 0.2s;-o-transition:all 0.2s;transition:all 0.2s}.mobile-menu--active{max-height:none;height:100vh;opacity:1;overflow-y:auto;border-top:1px solid #e8e8e8}.mobile-menu__nav{margin-bottom:40px}.mobile-menu__nav .nav__item{width:100%;margin:0;padding:15px}.mobile-menu__nav .nav__item:hover,.mobile-menu__nav .nav__item--active{background-color:#f9f9f9}.mobile-menu__subscribe,.mobile-menu__community{padding-left:15px;padding-right:15px}.mobile-menu__community{margin-bottom:15px}.mobile-menu__community .mobile-menu__heading{margin-bottom:20px}.mobile-menu__subscribe{padding-top:30px;padding-bottom:44px;border-top:1px solid #e8e8e8}.mobile-menu__subscribe .mobile-menu__heading{margin-bottom:10px}.mobile-menu__heading{font-size:16px;font-weight:600;line-height:1.6;color:#364962}.cookies{opacity:0;visibility:hidden;transition:opacity 0.2s ease-out 0.2s,visibility 0.2s ease-out 0.2s}.cookies--shown{opacity:1;visibility:visible;transition:opacity 0.2s ease-out,visibility 0.2s ease-out}.cookies__content{max-width:18rem;padding:0.75rem;border-radius:0.5rem;background:#1c77eb}.cookies__content--center{position:fixed;top:50%;left:50%;bottom:unset;transform:translate(-50%,-50%)}@media (max-width:480px){.cookies__content{min-width:13.75rem;width:100%}}.cookies__header-wrapper{margin-bottom:3.5rem;animation:content-appearance 0.1s ease-in-out}.cookies__header-block{display:flex;align-items:center;justify-content:flex-start}.cookies__header{margin-left:0.25rem;font-weight:600;font-size:1.75rem;line-height:120%}.cookies__description{margin-top:0.25rem;color:#a4c9f7}.cookies__description a{color:#ffffff}.cookies__description a:hover{text-decoration:underline}.cookies__description,.cookies__button-label,.cookies__element-title{font-size:1.25rem;line-height:120%;letter-spacing:0.01em}.cookies__manage-button{padding:0.5rem;pointer-events:none;background:#4992ef}.cookies__submit-button{padding:1.5rem;margin-top:0.25rem;background-color:#ffffff;color:#1c77eb}.cookies__submit-button:hover{background-color:#f3f3f3}.cookies__manage-button,.cookies__submit-button{width:100%;border:none;border-radius:0.375rem}.cookies__manage-button:disabled,.cookies__submit-button:disabled{opacity:0.4;cursor:not-allowed}.cookies__button-label{user-select:none}.cookies__button-label--demonstrative{display:none}.cookies__button-label,.cookies__element-title{font-weight:600}.cookies__selection-element{display:flex;align-items:flex-start;user-select:none}.cookies__selection-list{display:none;flex-direction:column;gap:1.5rem;animation:content-disappearing 0.2s ease-in-out;scrollbar-color:#4992ef #1c77eb;scrollbar-width:thin;align-items:flex-start;user-select:none}@media (max-height:780px){.cookies__selection-list{max-height:15rem;overflow:scroll}}@media (max-height:450px){.cookies__selection-list{max-height:11rem}}.cookies__selection-label{cursor:pointer;display:flex;align-items:center;justify-content:center;min-width:1.5rem;height:1.5rem;border-radius:0.25rem;background-color:#4992ef}.cookies__selection-label--locked{cursor:not-allowed}.cookies__selection-label--full-width{cursor:pointer;display:block;width:100%}.cookies__label-icon,.cookies__checkbox{display:none}.cookies__element-wrapper{display:flex;flex-direction:column;justify-content:start;margin-left:0.5rem;gap:0.125rem}.cookies__element-description{font-size:0.875rem;line-height:120%;letter-spacing:0.01em;color:#a4c9f7}.cookies__element-title,.cookies__element-description{margin:0}#selection-list-display-checkbox:checked ~ .cookies__selection-label--full-width .cookies__button-label--demonstrative,#selection-list-display-checkbox:checked ~ .cookies__submit-button .cookies__button-label--demonstrative{display:block}#selection-list-display-checkbox:checked ~ .cookies__selection-label--full-width .cookies__button-label--default,#selection-list-display-checkbox:checked ~ .cookies__submit-button .cookies__button-label--default{display:none}#selection-list-display-checkbox:checked ~ .cookies__header-wrapper{display:none;animation:content-disappearing 0.1s ease-in-out;margin-bottom:0}#selection-list-display-checkbox:checked ~ .cookies__selection-list{display:flex;animation:content-appearance 0.1s ease-in-out;margin-bottom:2.5rem}.cookies__checkbox:checked ~ .cookies__selection-label .cookies__label-icon{display:block}@keyframes content-appearance{0%{opacity:0;visibility:hidden}100%{opacity:1;visibility:visible}}@keyframes content-disappearing{0%{opacity:1;visibility:visible}100%{opacity:0;visibility:hidden}}.overlay{position:fixed;top:0;left:0;display:block;width:100vw;height:100vh;background-color:rgba(43,46,56,0.9)}.announcement-line{top:0;height:3.25rem;width:100%;z-index:999}.announcement-line__first-img{margin:0 1.25rem}.cross{margin-bottom:4px}.sale-line,.promo-line{background-color:#ff2f2f;display:flex;align-items:center;overflow:hidden;height:52px;width:100%}.sale-line--all{background-color:#ff2f2f}.sale-line--korea{background-color:#ff2f2f}.sale-line--china{background-color:#ff2f2f}.sale-line__text{font-size:2rem;line-height:125%;font-weight:600;margin:0 0.625rem;text-transform:uppercase}@media (hover:hover){.sale-line:hover .part-line{animation-play-state:paused}}.sale-line--hide{display:none}.part-line{display:flex;flex-direction:row;align-items:center;position:absolute;top:0;right:0;user-select:none;white-space:nowrap;height:56px}.part-line--first{transform:translate(-2%,0);animation:marquee-first 60s infinite linear forwards}.part-line--second{transform:translate(98%,0);animation:marquee-second 60s infinite linear forwards}@keyframes marquee-first{0%{transform:translate(-2%,0)}100%{transform:translate(-102%,0)}}@keyframes marquee-second{0%{transform:translate(98%,0)}100%{transform:translate(-2%,0)}}.text--white{color:#ffffff}.text--yellow{color:#f3d037}.promo-line{background:#79c32c}.promo-line__wrapper{display:flex;justify-content:center;align-items:center;gap:0.5rem;height:100%;margin:0 auto;padding:0 0.5rem}@media screen and (max-width:768px){.promo-line__wrapper{gap:0.25rem}}.promo-line__img{display:flex}@media screen and (max-width:768px){.promo-line__img{width:2.5rem;height:2.5rem}}.promo-line__text{font-size:1.25rem;font-weight:600;line-height:120%;letter-spacing:-0.03125rem}.promo-line__text--mobile{display:none}@media screen and (max-width:768px){.promo-line__text--mobile{display:initial}}@media screen and (max-width:768px){.promo-line__text--desktop{display:none}}@media screen and (max-width:768px){.promo-line__text{font-size:1.15rem}}@media screen and (max-width:360px){.promo-line__text{font-size:1rem}}.promo-line__button{height:1.75rem;padding:0.25rem 0.75rem;border:none;border-radius:61.25rem;background:#f9f9f9;color:#000000;font-size:0.75rem;line-height:1rem;letter-spacing:-0.00625rem;flex-shrink:0}.promo-line__button:focus{outline:none}@media screen and (max-width:768px){.promo-line__button{display:none}}.mascot{position:fixed;top:13.5rem;right:3.5rem;z-index:99;animation:inimate__one 2s infinite}@keyframes inimate__one{0%{transform:rotate(0deg)}50%{transform:rotate(3deg)}100%{transform:rotate(0deg)}}.mascot--home{top:13.5rem}.mascot--download{position:absolute;top:13.5rem}@media (max-width:1150px){.mascot{display:none}}.mascot:hover{animation-play-state:paused;cursor:pointer}.page-header__product-menu{margin-right:30px}.product-menu--wrapper{position:relative;cursor:pointer;opacity:0;visibility:hidden}.product-menu--out-delay{transition:opacity 0.2s ease-out 0.2s,visibility 0.2s ease-out 0.2s}.product-menu--items{position:absolute;top:calc(100% + 27px);left:-10px;width:47.7rem!important;padding:0.75rem;border-radius:1.125rem;background-color:#ffffff;-webkit-box-shadow:0 7px 28px 0 rgba(0,0,0,0.07);box-shadow:0 7px 28px 0 rgba(0,0,0,0.07);z-index:-1}.product-menu--items ul,.product-menu--items li{list-style:none;margin:0;font-size:17px;line-height:20px;padding:0}.product-menu--items ul{display:flex;flex-direction:row;flex-wrap:wrap}.product-menu--items li{list-style-type:none;display:block;width:100%}.product-menu--items li:nth-child(odd){max-width:21.75rem}.product-menu--items li:nth-child(even){max-width:24.438rem}.product-menu--items li:hover{background:#f9f9f9;color:#364962;border-radius:0.375rem}.product-menu--items li:hover .product-menu__text{opacity:1}.product-menu--items:before{content:"";position:absolute;top:-8px;left:26px;width:0;height:0;border-style:solid;border-width:0 8.5px 8px 8.5px;border-color:transparent transparent #ffffff transparent}@media (max-width:600px){.product-menu--items{right:-17vw;padding:20px 10px}.product-menu--items:before{right:calc(17vw - 6px)}}.product-menu.product-menu--open .product-menu--items{display:-webkit-box;display:-ms-flexbox;display:flex}.product-menu__item{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;position:relative;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;padding:0.75rem}.product-menu__item:active{background-color:#f3f3f3;border-radius:0.375rem}.product-menu__item--imagecompressor>.product-menu__description{max-width:14.625rem}.product-menu__item--imagecompressor::after{content:url(https://static.4kdownload.com/main/img/icons/products/budges/new-yellow.svg?de80a546e2c7);position:absolute;top:0.75rem;right:0.75rem}.product-menu__description{margin-left:0.5rem}.product-menu__description--right{max-width:19.313rem}.product-menu__description--left{max-width:16.625rem}.product-menu__title{font-size:1.25rem;line-height:120%;font-weight:600;color:#1d1d1f;letter-spacing:-0.0313em;opacity:1;margin:0}.product-menu__subtitle{font-weight:400;color:#6e6e73;opacity:1;margin:0;font-size:0.75rem;line-height:133%;letter-spacing:-0.025em}.product-menu__icon{display:block;background-size:50px 50px;width:50px;height:50px}.product-menu__icon--videodownloader{background-image:url("https://static.4kdownload.com/main/img/icons/products/videodownloaderplus.svg?de80a546e2c7")}.product-menu__icon--imagecompressor{background-image:url("https://static.4kdownload.com/main/img/icons/products/imagecompressor.svg?de80a546e2c7")}.product-menu__icon--videodownloaderandroid{background-image:url("https://static.4kdownload.com/main/img/icons/products/videodownloaderandroid.svg?de80a546e2c7")}.product-menu__icon--tokkit{background-image:url("https://static.4kdownload.com/main/img/icons/products/tokkit.svg?de80a546e2c7")}.product-menu__icon--stogram{background-image:url("https://static.4kdownload.com/main/img/icons/products/stogram.svg?de80a546e2c7")}.product-menu__icon--youtubetomp3{background-image:url("https://static.4kdownload.com/main/img/icons/products/youtubetomp3.svg?de80a546e2c7")}.product-menu__icon--videotomp3{background-image:url("https://static.4kdownload.com/main/img/icons/products/videotomp3.svg?de80a546e2c7")}.product-menu__icon--slideshowmaker{background-image:url("https://static.4kdownload.com/main/img/icons/products/slideshowmaker.svg?de80a546e2c7")}.product-menu__text-wrapper--sale{display:flex;width:84%;justify-content:space-between}.product-menu__text{font-style:normal;font-stretch:normal;letter-spacing:0.4px;opacity:0.8;font-size:14px;font-weight:300;line-height:1.14;text-align:left;color:#525f7f;margin-top:3px;margin-bottom:0;max-width:260px}.product-menu__new{background-color:#f3d037;padding:4px 13px;color:#262626;font-size:1rem;line-height:140%;font-weight:400;letter-spacing:0.2px;margin:auto 0}.product-menu__selected{font-size:17px;font-weight:normal;color:#364962;letter-spacing:0.4px;opacity:0.6;margin-left:10px}.page-header__product-menu:hover .product-menu--wrapper{z-index:9999;opacity:1;visibility:visible;transition:opacity 0.2s ease-out,visibility 0.2s ease-out}.safe{position:absolute;opacity:0.8;cursor:pointer;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;background:url(https://static.4kdownload.com/main/img/redesign/ic-safe.svg?de80a546e2c7);background-repeat:no-repeat;background-position:left center}.safe--white{background:url(https://static.4kdownload.com/main/img/redesign/ic-safe-white.svg?de80a546e2c7);background-repeat:no-repeat;background-position:left center}.safe__text{color:#364962}.products-section{display:flex;align-items:center;flex-direction:column;padding-top:120px;width:100%;max-width:1408px;margin:0 auto}@media (max-width:1440px){.products-section{max-width:97.78%}}@media (max-width:768px){.products-section{padding-top:70px}}@media (max-width:500px){.products-section{padding-top:60px;padding-left:1.69%;padding-right:1.69%;padding-bottom:0}}.products-section:first-of-type{padding-top:0}.products-section:last-child{padding-bottom:126px}.products-section--margin{margin:60px auto 0;border-top:1px solid #e8e8e8}@media (max-width:960px){.products-section--margin{margin:0 auto}}.products-section--wiht-padding{padding-left:20px;padding-right:20px}.products-section__title{width:100%;max-width:1260px;text-align:left;margin-top:0}.products-section__title--main{text-align:center;margin-bottom:60px}@media (max-width:768px){.products-section__title--main{margin-bottom:40px}}@media (max-width:768px){.products-section__title{font-size:32px}}@media (max-width:500px){.products-section__title{text-align:center}}.promo{position:relative;width:100%;padding-top:60px;margin:0 auto;z-index:1}@media (max-width:835px){.promo{padding-top:60px}}.promo__banner-wrapper{display:flex;align-items:center;justify-content:flex-end;align-self:center;padding-right:65px;width:100%;max-height:570px}@media (max-width:1280px){.promo__banner-wrapper{padding-right:0;justify-content:center}}@media (max-width:1280px){.promo__banner-wrapper--videodownloaderandroid{max-height:610px;margin-bottom:30px}}@media (max-width:768px){.promo__banner-wrapper--videodownloaderandroid{margin-bottom:0}}@media (max-width:600px){.promo__banner-wrapper--videodownloaderandroid{margin-top:0px}}@media (max-width:480px){.promo__banner-wrapper--videodownloaderandroid{margin-bottom:-40px}}.promo__banner-img{width:100%;height:100%;max-height:630px;-o-object-fit:contain;object-fit:contain;-o-object-position:center;object-position:center}@media (max-width:1280px){.promo__banner-img{max-height:530px;margin:60px 0}}@media (max-width:768px){.promo__banner-img{max-height:430px;margin:0 0 60px;padding:0 16px}}@media (max-width:600px){.promo__banner-img{display:none}}.promo__banner-img--youtubetomp3{max-height:500px}.promo__banner-img--videodownloaderandroid{max-height:610px;margin-bottom:-110px}@media (max-width:1280px){.promo__banner-img--videodownloaderandroid{margin-bottom:0px}}@media (max-width:600px){.promo__banner-img--videodownloaderandroid{display:block;max-height:530px;padding:0}}@media (max-width:600px){.promo__banner-img--videodownloaderandroid{max-height:380px}}.mac__bg{max-width:100%;height:auto;z-index:1}.promo__image{width:100%;height:auto;max-width:600px}.promo__image--android{height:100%}@media (max-width:600px){.promo__image--vertical{margin-bottom:-12%}}@media (max-width:600px){.promo__image--horisontal{margin-bottom:-15%}.promo__image--tokkit{margin-left:0}.promo__image--android{margin-bottom:-30%;margin-left:0}}.promo__mac-placeholder{background-size:cover;background-color:#ccc}.promo__bg{position:absolute;top:0;left:0;width:100%;max-height:100%;z-index:1;overflow:hidden;height:100%;background-size:cover}.promo__bg--videodownloader{background-image:url(https://static.4kdownload.com/main/img/redesign/product-backgrounds/videodownloader.svg?73236a8a61eb);background-color:#eff7e6}.promo__bg--youtubetomp3{background-image:url(https://static.4kdownload.com/main/img/redesign/product-backgrounds/youtubetomp3.svg?73236a8a61eb);background-color:#58bfff}.promo__bg--videotomp3{background-image:url(https://static.4kdownload.com/main/img/redesign/product-backgrounds/videotomp3.svg?73236a8a61eb);background-color:#f1edf8}.promo__bg--slideshowmaker{background-image:url(https://static.4kdownload.com/main/img/redesign/product-backgrounds/slideshowmaker.svg?73236a8a61eb);background-color:#ee2f2d}.promo__bg--stogram{background-image:url(https://static.4kdownload.com/main/img/redesign/product-backgrounds/stogram.svg?73236a8a61eb);background-color:#ffdbcd}.promo__bg svg{display:block;height:100%}@media (max-width:960px){.promo__bg svg{position:absolute;width:auto}}@media (max-width:768px){.promo__bg{position:absolute;top:0;left:0;width:auto;min-width:100%;height:100%;min-height:100%}}@media (max-width:600px){.promo__bg{background-position:right top}}.promo__content{position:relative;width:100%;max-width:1408px;height:720px;margin:0 auto;background-color:#fff;z-index:2}@media (max-width:1280px){.promo__content{height:unset}}@media (max-width:480px){.promo__content{padding:24px 20px 40px}}.promo__inside_grid{display:grid;grid-template-columns:610px auto;-moz-column-gap:23px;column-gap:23px;width:100%;height:100%}@media (max-width:1280px){.promo__inside_grid{display:flex;flex-direction:column;align-items:center}}.promo__inside_grid--mobile{padding:0 20px}.promo__info{position:relative;width:100%;z-index:7;padding:180px 0 0 80px}@media (max-width:1280px){.promo__info{padding:60px 0 0 0;display:flex;flex-direction:column;align-items:center}}.promo__title{max-width:530px;font-size:42px;line-height:52px;letter-spacing:0.2px;padding-right:25px;margin-bottom:40px}.promo__title--blue{color:#364962}.promo__title--white{color:#ffffff}.promo__title--mobile{line-height:40px}@media (max-width:1280px){.promo__title{font-size:3.28vw;text-align:center;padding-right:0}}@media (max-width:960px){.promo__title{max-width:388px;font-size:32px}}.promo__mobile-img{margin-top:29px}.promo__text{max-width:530px;margin:20px 0 40px;font-weight:300;opacity:1}.promo__text--blue{color:#364962}.promo__text--white{color:#ffffff}.promo__text--mobile{margin-bottom:0}@media (max-width:768px){.promo__text--reminder{display:none}}@media (max-width:960px){.promo__text{max-width:none;margin-right:0;font-size:16px}}@media (max-width:768px){.promo__text{margin-bottom:20px;margin-top:15px}}@media (max-width:480px){.promo__text{margin-bottom:0}}.promo__actions{display:flex;align-items:flex-start;flex-direction:column}@media (max-width:1280px){.promo__actions{align-items:center}}@media (max-width:768px){.promo__actions--reminder{display:flex}}@media (max-width:960px){.promo__actions{align-items:center;width:100%;max-width:374px}}.promo__btn{display:flex;align-items:center;height:80px;border-radius:50vh;margin:0;padding:8px 26px 8px 8px;transition:box-shadow 0.05s,opacity 0.05s}.promo__btn a{color:#fff}.promo__btn--active{position:fixed;bottom:-80px;left:50%;transform:translate(-50%,0);z-index:20;box-shadow:0px 2px 8px rgba(26,0,35,0.08),0px 20px 40px rgba(0,0,0,0.15);transition:box-shadow 0.05s,opacity 0.05s,transform 0.05s}.promo__btn--bottom{transform:translate(-50%,-110px)}.promo__btn--remind{justify-content:center;padding:8px}.promo__description{display:flex;align-items:center;margin-top:141px}@media (max-width:1280px){.promo__description{margin:40px 0 30px}}.promo__description--mobile{flex-direction:column;justify-content:center;align-items:stretch;margin:0 0 40px 0}@media (max-width:1280px){.promo__description--videodownloaderandroid{margin-bottom:10px}}@media (max-width:768px){.promo__description--videodownloaderandroid{margin-bottom:40px}}@media (max-width:600px){.promo__description--videodownloaderandroid{flex-direction:column;align-items:flex-start}}@media (max-width:1530px){.promo__select .selectric-select .selectric{max-width:200px}}@media (max-width:1250px){.promo__select{width:100%;max-width:278px}.promo__select .selectric-select .selectric{width:100%;max-width:none}}.promo__safe{bottom:90px;left:137px;min-height:40px}.promo__safe--white{background:url(https://static.4kdownload.com/main/img/redesign/ic-safe-white.svg?de80a546e2c7);background-repeat:no-repeat;background-position:left center}.promo__safe:hover{opacity:1}.is-windows .promo__safe{display:block}@media (max-width:1440px){.promo__safe{left:90px}}@media (max-width:1280px){.promo__safe{bottom:40px;left:75px}}@media (max-width:1100px){.promo__safe{display:none!important}}.promo__safe--margin{left:273px}@media (max-width:1440px){.promo__safe--margin{left:226px}}@media (max-width:1280px){.promo__safe--margin{left:211px}}.promo__down{position:absolute;bottom:40px;left:50%;transform:translateX(-50%);opacity:0.8}.promo__down:hover{opacity:1}@media (max-width:768px){.promo__down{display:none}}.promo__os-text{font-size:12px;font-weight:normal;font-style:normal;font-stretch:normal;line-height:1.33;letter-spacing:normal;text-align:left;color:#364962;margin:0 0 0 8px;opacity:0.5}.promo__os-text a{border-bottom:1px solid #979797;color:#364962}.promo__os-text--white{color:#ffffff}.promo__os-text--white a{color:#ffffff;border-color:#ffffff}.promo__os-text:hover + .promo__virus-info-wrapper{opacity:1;visibility:visible}.promo__os-text--remind{text-align:center;max-width:300px;margin:0}.promo__os-text--mobile{max-width:179px}.promo__description-item{position:relative;display:flex;align-items:center}.promo__description-item--small{max-width:135px}.promo__description-item--last{margin-left:20px}.promo__description-item--mobile{margin-bottom:28px}.promo__description-item--none{display:none}.promo__description-icon--android{margin-left:5px}.promo__mark-image{position:absolute;bottom:67px;right:65px}@media (max-width:1440px){.promo__mark-image{right:90px}}@media (max-width:1280px){.promo__mark-image{bottom:30px;right:75px}}@media (max-width:1100px){.promo__mark-image{display:none!important}}.promo__virus-info{position:relative}.promo__virus-info-img{position:relative;width:14px;height:14px;left:3px;top:3px;-o-object-fit:contain;object-fit:contain;-o-object-position:center;object-position:center}.promo__virus-info-wrapper{position:relative;opacity:0;visibility:hidden;transition:opacity 0.2s,visibility 0.2s}.promo__virus-info-wrapper:hover{opacity:1;visibility:visible}.promo__virus-text{position:absolute;left:-55px;bottom:-76px;width:165px;background-color:#ffffff;box-shadow:0px 10px 20px rgba(0,0,0,0.15);border-radius:2px;padding:8px 12px 12px;font-size:12px;line-height:16px;color:#364962;margin:0}.promo__virus-text:after{content:"";position:absolute;top:-4px;left:29px;width:0;height:0;box-shadow:-2px 2px 2px rgba(0,0,0,0.025);transform:rotate(135deg);border-style:solid;border-width:0 12px 12px 0;border-color:#fff transparent #fff transparent}.discover{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding-left:30px;padding-right:30px;padding-top:10.1%;padding-bottom:10.1%}@media (max-width:768px){.discover{padding:200px 40px 60px!important}}@media (max-width:480px){.discover{padding:200px 15px 60px!important}}.discover__title,.discover__text{text-align:center}.discover__title{margin-bottom:20px}@media (max-width:768px){.discover__title{font-size:32px}}.discover__text{max-width:833px;margin-top:0;color:#525f7f;opacity:1}@media (max-width:768px){.discover__text{font-size:16px;padding:0 16px}}.discover__video-preview{position:relative;width:100%;max-width:886px;margin-top:61px;overflow:hidden}@media (max-width:768px){.discover__video-preview{position:relative;top:auto;right:auto;width:88%;margin:0 auto}}@media (max-width:480px){.discover__video-preview{width:90%;margin-top:30px}}</style>
+        <link rel="preload" href="https://static.4kdownload.com/CACHE/css/output.0611c3a555ca.css" as="style" onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://static.4kdownload.com/CACHE/css/output.0611c3a555ca.css" type="text/css"></noscript>
+        
+        <link rel="preload" href="https://static.4kdownload.com/CACHE/css/output.7759fc681494.css" as="style" onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://static.4kdownload.com/CACHE/css/output.7759fc681494.css" type="text/css"></noscript>
+        
+        
+
+<link rel="preload" href="https://static.4kdownload.com/CACHE/css/output.528c9e21e5c1.css" as="style" onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://static.4kdownload.com/CACHE/css/output.528c9e21e5c1.css" type="text/css"></noscript>
+
+<link rel="preload" href="https://static.4kdownload.com/CACHE/css/output.55fde1400d81.css" as="style" onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://static.4kdownload.com/CACHE/css/output.55fde1400d81.css" type="text/css"></noscript>
+
+
+<link rel="preload" href="https://static.4kdownload.com/CACHE/css/output.891dae40fb57.css" as="style" onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://static.4kdownload.com/CACHE/css/output.891dae40fb57.css" type="text/css"></noscript>
+
+
+<link rel="preload" href="https://static.4kdownload.com/CACHE/css/output.9fb81dab6260.css" as="style" onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://static.4kdownload.com/CACHE/css/output.9fb81dab6260.css" type="text/css"></noscript>
+
+        <script src="https://static.4kdownload.com/main/js/affiliate.05e41b90db35.js"></script>
+
+        
+    </head>
+    <body >
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NW3DZ7T"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <svg xmlns="http://www.w3.org/2000/svg" style="border: 0 !important; clip: rect(0 0 0 0) !important; height: 1px !important; margin: -1px !important; overflow: hidden !important; padding: 0 !important; position: absolute !important; width: 1px !important;" class="root-svg-symbols-element">
+        <symbol id="caret" width="11" height="6" viewBox="0 0 11 6" xmlns="http://www.w3.org/2000/svg"><path d="M.274 1.013L5.061 5.85a.617.617 0 0 0 .878 0l4.787-4.836a.316.316 0 0 0 0-.444l-.44-.444a.309.309 0 0 0-.44 0L5.72 4.295a.309.309 0 0 1-.44 0L1.153.126a.309.309 0 0 0-.44 0L.275.57a.316.316 0 0 0 0 .444" fill="#FFFFFFF" fill-rule="evenodd"/></symbol>
+        <symbol id="logo" width="25" height="22" viewBox="0 0 25 22" xmlns="http://www.w3.org/2000/svg"><path d="M0 21.667h3.6V.4H0zM19.819.4L17.4 15.344h3.156L24 .4zM5.4 21.667H9V11.32H5.4zm5.4 0h3.6V11.32h-3.6zm9.6-2.299c0 1.27-1.075 2.299-2.4 2.299s-2.4-1.03-2.4-2.3c0-1.27 1.075-2.299 2.4-2.299s2.4 1.03 2.4 2.3" fill-rule="evenodd"/></symbol>
+        <symbol id="update" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path id="a" d="M4.995 13.187C4.374 12.186 4 11.049 4 10a6 6 0 0 1 6-6V3a7 7 0 0 0-7 7c0 1.35.504 2.779 1.326 3.992H3V15h3v-3H4.995v1.187zM15 6.682V8h-1V5h3v1h-1.255A7 7 0 0 1 10 17v-1a6 6 0 0 0 5-9.318zm0-.664L15.023 6H15v.018z" fill-rule="evenodd"/></symbol>
+        <symbol id="apple-logo" width="14" height="16" viewBox="0 0 14 16" xmlns="http://www.w3.org/2000/svg"><path class="apple-icon" d="M9.28 2.597c.534-.673.939-1.625.792-2.597-.873.06-1.894.605-2.49 1.316-.543.645-.99 1.603-.816 2.534.956.029 1.941-.53 2.513-1.253zM14 11.74c-.382.832-.566 1.203-1.059 1.94-.686 1.028-1.655 2.309-2.856 2.318-1.066.011-1.341-.682-2.789-.674-1.447.008-1.749.687-2.817.677-1.2-.01-2.118-1.166-2.805-2.194C-.248 10.933-.45 7.56.735 5.766c.843-1.274 2.173-2.019 3.422-2.019 1.271 0 2.071.685 3.124.685 1.021 0 1.643-.687 3.113-.687 1.113 0 2.293.596 3.132 1.623-2.751 1.48-2.306 5.339.474 6.371z" fill-rule="evenodd"/></symbol>
+        <symbol id="windows-logo" viewBox="0 0 79 79" xmlns="http://www.w3.org/2000/svg"><title>77EEF0E5-0BD5-4389-9FED-3A516652DCFC</title><path d="M.5 11.543l31.876-4.327.014 30.652-31.86.18L.5 11.544zM32.361 41.4l.025 30.68-31.86-4.368-.003-26.517 31.838.205zm3.864-34.75L78.49.5v36.978l-42.265.335V6.65zM78.5 41.688L78.49 78.5l-42.265-5.947-.06-30.933 42.335.068z" fill-rule="evenodd" opacity=".897"/></symbol>
+        <symbol id="ubuntu-logo" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg"><title>EFD94688-37A7-4E25-BF1A-C4F3304D48DA</title><path d="M80 40c0 22.09-17.908 40-40 40S0 62.09 0 40 17.908 0 40 0s40 17.909 40 40zm-66.628-5.36A5.365 5.365 0 0 0 8 40.001c0 2.96 2.404 5.36 5.372 5.36 2.965 0 5.37-2.4 5.37-5.36a5.365 5.365 0 0 0-5.37-5.36zM51.716 59a5.35 5.35 0 0 0-1.966 7.319 5.372 5.372 0 0 0 7.334 1.962 5.35 5.35 0 0 0 1.965-7.32 5.376 5.376 0 0 0-7.333-1.96zm-26.68-18.999c0-5.296 2.637-9.976 6.67-12.81L27.78 20.63c-4.698 3.134-8.194 7.924-9.647 13.534A7.512 7.512 0 0 1 20.913 40a7.51 7.51 0 0 1-2.78 5.837c1.45 5.611 4.947 10.401 9.647 13.536l3.927-6.565c-4.034-2.832-6.67-7.511-6.67-12.808zm15.687-15.656c8.195 0 14.919 6.27 15.624 14.267L64 38.5c-.377-5.904-2.961-11.204-6.932-15.102-2.042.77-4.4.652-6.44-.52a7.504 7.504 0 0 1-3.672-5.314 23.439 23.439 0 0 0-6.233-.846c-3.713 0-7.223.87-10.34 2.41l3.732 6.673a15.65 15.65 0 0 1 6.608-1.456zm0 31.311c-2.36 0-4.6-.524-6.607-1.456l-3.732 6.673a23.369 23.369 0 0 0 16.572 1.564 7.51 7.51 0 0 1 3.673-5.314 7.538 7.538 0 0 1 6.44-.52c3.97-3.898 6.554-9.198 6.931-15.102l-7.654-.113c-.704 8-7.428 14.268-15.623 14.268zM51.714 21a5.372 5.372 0 0 0 7.334-1.96 5.352 5.352 0 0 0-1.964-7.32 5.377 5.377 0 0 0-7.336 1.962A5.352 5.352 0 0 0 51.714 21z" fill-rule="evenodd"/></symbol></svg>
+            
+            
+
+
+
+
+
+<header class="page-header js-header   page-header--transparent page-header--sale">
+   
+    
+
+
+
+
+
+<div class="announcement-line">
+    
+    <a class="sale-line sale-line--korea" href="/ko/buy/bundle/5?utm_source=korea_runningline&amp;utm_medium=website&amp;utm_campaign=korea_runningline">
+      <div class="part-line part-line--first">
+          <picture>
+            <source type="image/webp" srcset="https://static.4kdownload.com/main/img/redesign-v2/sale/running-line/korea/first-part.webp 1x, https://static.4kdownload.com/main/img/redesign-v2/sale/running-line/korea/first-part@2x.webp 2x"> 
+            <img src="https://static.4kdownload.com/main/img/redesign-v2/sale/running-line/korea/first-part.png" srcset="https://static.4kdownload.com/main/img/redesign-v2/sale/running-line/korea/first-part.png 1x, https://static.4kdownload.com/main/img/redesign-v2/sale/running-line/korea/first-part@2x.png 2x" alt="" height="52"/>
+          </picture>
+          <picture>
+            <source type="image/webp" srcset="https://static.4kdownload.com/main/img/redesign-v2/sale/running-line/korea/second-part.webp 1x, https://static.4kdownload.com/main/img/redesign-v2/sale/running-line/korea/second-part@2x.webp 2x"> 
+            <img src="https://static.4kdownload.com/main/img/redesign-v2/sale/running-line/korea/second-part.png" srcset="https://static.4kdownload.com/main/img/redesign-v2/sale/running-line/korea/second-part.png 1x, https://static.4kdownload.com/main/img/redesign-v2/sale/running-line/korea/second-part@2x.png 2x" alt="" height="52"/>
+          </picture>
+      </div>
+      <div class="part-line part-line--second">
+          <picture>
+            <source type="image/webp" srcset="https://static.4kdownload.com/main/img/redesign-v2/sale/running-line/korea/first-part.webp 1x, https://static.4kdownload.com/main/img/redesign-v2/sale/running-line/korea/first-part@2x.webp 2x"> 
+            <img src="https://static.4kdownload.com/main/img/redesign-v2/sale/running-line/korea/first-part.png" srcset="https://static.4kdownload.com/main/img/redesign-v2/sale/running-line/korea/first-part.png 1x, https://static.4kdownload.com/main/img/redesign-v2/sale/running-line/korea/first-part@2x.png 2x" alt="" height="52"/>
+          </picture>
+          <picture>
+            <source type="image/webp" srcset="https://static.4kdownload.com/main/img/redesign-v2/sale/running-line/korea/second-part.webp 1x, https://static.4kdownload.com/main/img/redesign-v2/sale/running-line/korea/second-part@2x.webp 2x"> 
+            <img src="https://static.4kdownload.com/main/img/redesign-v2/sale/running-line/korea/second-part.png" srcset="https://static.4kdownload.com/main/img/redesign-v2/sale/running-line/korea/second-part.png 1x, https://static.4kdownload.com/main/img/redesign-v2/sale/running-line/korea/second-part@2x.png 2x" alt="" height="52"/>
+          </picture>
+      </div>
+    </a> 
+    
+    
+</div>
+  
+  <div class="page-header__wrap page-header__wrap--compact">
+    <div class="page-header__left">
+      <div class="logo logo--stogram page-header__logo">
+        <a href="/ko/8" title="Home page">
+          <svg class="icon__logo" width="24px" height="22px">
+              <use xlink:href="#logo"></use>
+          </svg>
+        </a>
+      </div>
+      
+      <nav class="nav nav--large page-header__nav" itemscope itemtype="http://schema.org/SiteNavigationElement" aria-label="제품">
+        <div class="page-header__product-menu">
+           <div class="product-menu--wrapper js-product-menu">
+            <div class="product-menu--items">
+              <ul>
+                <li>
+                  <a class="product-menu__item" href="/ko/products/videodownloader-1">
+                    <div class="product-menu__icon product-menu__icon--videodownloader"></div>
+                    <div class="product-menu__description product-menu__description--left"><span class="product-menu__title">4K Video Downloader Plus</span><p class="product-menu__subtitle">YouTube 및 기타 사이트에서 동영상을 다운로드합니다</p></div>
+                  </a>
+                </li>
+                <li>
+                  <a class="product-menu__item product-menu__item--imagecompressor" href="/ko/products/imagecompressor">
+                    <div class="product-menu__icon product-menu__icon--imagecompressor"></div>
+                    <div class="product-menu__description product-menu__description--right"><span class="product-menu__title">4K Image Compressor</span><p class="product-menu__subtitle">JPG, PNG 등의 파일 크기를 줄이기</p></div>
+                  </a>
+                </li>
+                <li>
+                  <a class="product-menu__item" href="/ko/products/tokkit/8">
+                    <div class="product-menu__icon product-menu__icon--tokkit"></div>
+                    <div class="product-menu__text-wrapper--sale">
+                      <div class="product-menu__description product-menu__description--left"><span class="product-menu__title">4K Tokkit</span><p class="product-menu__subtitle">TikTok 동영상 및 계정을 다운로드합니다</p></div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a class="product-menu__item" href="/ko/products/videotomp3/6">
+                    <div class="product-menu__icon product-menu__icon--videotomp3"></div>
+                    <div class="product-menu__description product-menu__description--right"><span class="product-menu__title">4K Video to MP3</span><p class="product-menu__subtitle">동영상에서 오디오 추출</p></div>
+                  </a>
+                </li>
+                <li>
+                  <a class="product-menu__item" href="/ko/products/stogram-3">
+                    <div class="product-menu__icon product-menu__icon--stogram"></div>
+                    <div class="product-menu__description product-menu__description--left"><span class="product-menu__title">4K Stogram</span><p class="product-menu__subtitle">Instagram 사진, 스토리 및 릴스를 다운로드합니다</p></div>
+                  </a>
+                </li>
+                <li>
+                  <a class="product-menu__item" href="/ko/products/slideshowmaker">
+                    <div class="product-menu__icon product-menu__icon--slideshowmaker"></div>
+                    <div class="product-menu__description product-menu__description--right"><span class="product-menu__title">4K Slideshow Maker</span><p class="product-menu__subtitle">환상적인 슬라이드쇼를 만드세요</p></div>
+                  </a>
+                </li>
+                <li>
+                  <a class="product-menu__item" href="/ko/products/youtubetomp3-9">
+                    <div class="product-menu__icon product-menu__icon--youtubetomp3"></div>
+                    <div class="product-menu__description product-menu__description--left"><span class="product-menu__title">4K YouTube to MP3</span><p class="product-menu__subtitle">YouTube를 MP3로 변환</p></div>
+                  </a>
+                </li>
+                <li>
+                  <a class="product-menu__item" href="/ko/products/videodownloaderandroid/4">
+                    <div class="product-menu__icon product-menu__icon--videodownloaderandroid"></div>
+                    <div class="product-menu__description product-menu__description--right"><span class="product-menu__title">4K Video Downloader for Android</span><p class="product-menu__subtitle">Android 기기에서 비디오와 오디오를 다운로드하세요</p></div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          
+          <a itemprop="url" id="header-nav-products" href="/ko/8" class="nav__item nav__item--products dark-blue-arrow-down"><span itemprop="name">제품</span></a>
+
+        </div>
+
+        
+        <a itemprop="url" id="header-nav-download" href="/ko/downloads/9" class="nav__item"><span itemprop="name">다운로드</span></a><a itemprop="url" id="header-nav-help" href="/ko/help/4" class="nav__item"><span itemprop="name">도움말</span></a><a itemprop="url" id="header-nav-blog" href="/blog/" class="nav__item"><span itemprop="name">블로그</span></a><a itemprop="url" id="header-nav-store" href="/ko/store/1" class="nav__item"><span itemprop="name">상점</span><img class="header__icon--store" src="https://static.4kdownload.com/main/img/store/store-icon.0e526cee4d6f.svg" width="20" height="20" alt=""/></a>
+      </nav>
+      
+    </div>
+    
+    <div class="page-header__right">
+      <a href="#" class="mobile-menu-trigger js-mobile-menu-trigger" title="Open menu"><span class="mobile-menu-trigger__item mobile-menu-trigger__item--first"></span><span class="mobile-menu-trigger__item mobile-menu-trigger__item--second"></span><span class="mobile-menu-trigger__item mobile-menu-trigger__item--last"></span></a>
+          
+      
+
+       
+      <div class="page-header__headerOS">
+          <select class="headerOS js-headerOS flags">
+            <option value="windows" data-icon="windows-logo" data-arc="x86" selected data-select="selected">Windows</option>
+            <option value="osx" data-icon="apple-logo" data-arc="x86" >macOS</option>
+            <option value="ubuntu" data-icon="ubuntu-logo" data-arc="x86" >Ubuntu</option>
+          </select>
+      </div>
+      
+      <div class="page-header__lang">
+        <select class="lang js-lang flags">
+          
+              
+              
+              <option value="en" data-icon="en" data-href="/products/stogram-8" >English</option>
+              
+          
+              
+              
+              <option value="de" data-icon="de" data-href="/de/products/stogram-2" >Deutsch</option>
+              
+          
+              
+              
+              <option value="fr" data-icon="fr" data-href="/fr/products/stogram-1" >français</option>
+              
+          
+              
+              
+              <option value="it" data-icon="it" data-href="/it/products/stogram-1" >italiano</option>
+              
+          
+              
+              
+              <option value="es" data-icon="es" data-href="/es/products/stogram-3" >español</option>
+              
+          
+              
+              
+              <option value="pt-br" data-icon="pt-br" data-href="/pt-br/products/stogram-2" >Português Brasileiro</option>
+              
+          
+              
+              
+              <option value="nl" data-icon="nl" data-href="/nl/products/stogram-3" >Nederlands</option>
+              
+          
+              
+              
+              <option value="pl" data-icon="pl" data-href="/pl/products/stogram-1" >polski</option>
+              
+          
+              
+              
+              <option value="zh-cn" data-icon="zh-cn" data-href="/zh-cn/products/stogram-5" >简体中文</option>
+              
+          
+              
+              
+              <option value="zh-tw" data-icon="zh-tw" data-href="/zh-tw/products/stogram-2" >繁體中文</option>
+              
+          
+              
+              
+              <option value="ko" data-icon="ko" data-href="/ko/products/stogram-3" selected>한국어</option>
+              
+          
+              
+              
+              <option value="ja" data-icon="ja" data-href="/ja/products/stogram-3" >日本語</option>
+              
+          
+              
+              
+              <option value="ru" data-icon="ru" data-href="/ru/products/stogram-2" >Русский</option>
+              
+          
+        </select>
+      </div>
+    </div> 
+    <div class="mobile-menu js-mobile-menu">
+        
+        <nav class="nav nav--large nav--vertical mobile-menu__nav" aria-label="모바일 메뉴">
+          <a href="/ko/8" class="nav__item">제품</a>
+          <a href="/ko/downloads/9" class="nav__item">다운로드</a>
+          <a href="/ko/store/1" class="nav__item">상점</a>
+          <a href="/ko/help/4" class="nav__item">도움말</a>
+          <a href="/blog/" class="nav__item">블로그</a>
+          
+        </nav>
+      <div class="mobile-menu__community">
+        <div class="mobile-menu__heading">커뮤니티</div>
+          <div class="community community--mobile">
+          <a href="https://twitter.com/4kdownload" rel="noopener noreferrer" target="_blank" class="community__item">
+            <img class="icon__ic-twitter" src="https://static.4kdownload.com/main/img/redesign/ic-x-grey.3d28e08a8e92.svg" width="30" height="25" alt="twitter logo">
+          </a>
+          <a href="https://www.reddit.com/r/4kdownloadapps/" rel="noopener noreferrer" target="_blank" class="community__item">
+              <img class="icon__ic-reddit" src="https://static.4kdownload.com/main/img/redesign/ic-reddit-dark.eb0623b9985b.svg" width="26" height="23" alt="reddit logo">
+          </a>
+        </div>
+      </div>
+      <div class="mobile-menu__subscribe">
+        
+        <div class="mobile-menu__heading">제품 업데이트 받기</div>
+        
+
+
+<form class="subscribe input-group js-subscribe " action="/api/newsletter/subscribe/">
+    <div class="form-control-wrap">
+        <input placeholder="이메일" name="email" class="input-with-captcha subscribe__input form-control input-group__input">
+    </div>
+    <button aria-label="Validate email" type="submit" class="subscribe__submit subscribe__submit--next btn btn--primary input-group__btn button--stogram">
+        <span class="subscribe__submit-icon"></span>
+        <span class="subscribe__submit-text" id="text-send">다음</span>
+    </button>
+    <div class="subscribe__agreement subscribe-agreement-js">
+        <label class="subscribe__checkbox agreement-check agreement-checkbox-js">
+                <input class="agreement-check__input" type="checkbox">
+                <span class="agreement-check__checkmark"></span>
+                
+                <p class="agreement-check__text subscribe__agreement-text subscribe__agreement-text--update">4천 다운로드 달성 소식, 특가 및 업데이트 소식을 받아보고 싶습니다.</p>
+        </label>
+        <div class="subscribe__submit-wrapper">
+            <p class="agreement-check__text subscribe__agreement-text subscribe__agreement-text--privacy"><strong>전송하기</strong> 버튼을 눌러서 <a href="/ko/privacy">개인정보보호정책</a>에 동의해 주세요.</p>
+            <button aria-label="Submit subscribing on product updates" type="submit" disabled class="subscribe__submit subscribe__submit--send btn btn--disabled btn--primary input-group__btn button--stogram">
+                <span class="subscribe__submit-icon"></span>
+                <span class="subscribe__submit-text" id="text-send">보내기</span>
+            </button>
+        </div>
+    </div>
+</form>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+
+            
+            
+
+            <div class="page-wrapper page-wrapper--sale">
+                
+<div class="product-content" itemscope itemtype="http://schema.org/SoftwareApplication">
+  <meta itemprop="name" content="4K Stogram">
+  
+<meta itemprop="alternateName" content="Instagram Downloader">
+<meta itemprop="description" content="무료 Instagram 다운로더. Instagram 사진, 동영상, 스토리 및 릴스를 검색, 다운로드, 또는 백업하세요. 업데이트를 따라 잡도록 좋아하는 계정과 해시태그를 팔로우하세요!">
+<meta itemprop="applicationCategory" content="Multimedia">
+<meta itemprop="applicationSubCategory" content="Downloader">
+<meta itemprop="featureList" content="Photo downloader">
+<meta itemprop="featureList" content="Video Downloader">
+<meta itemprop="featureList" content="Reel Downloader">
+<meta itemprop="featureList" content="IGTV Downloader">
+<meta itemprop="featureList" content="Gallery Downloader">
+<meta itemprop="featureList" content="Story Downloader">
+<meta itemprop="featureList" content="Highlights Downloader">
+
+  
+    <section class="products-section promo js-check-height">
+      <div class="promo__content js-promo-actions">
+        <div class="promo__inside_grid">
+          <div class="promo__info promo__info--desktop">
+            <h1 class="promo__title promo__title--blue h1">
+Instagram 사진, 스토리 릴스 및 해시태그를 다운로드합니다
+</h1>
+            <div class="promo__actions">
+              
+              
+                
+
+
+
+<a class="promo__button promo__button--stogram download-button-js js-button-download" 
+    href="/ko/thanks-for-downloading?source=stogram" target="_blank">
+     
+          <em class="promo__button-icon promo__button-icon--stogram">
+               <img src="https://static.4kdownload.com/main/img/icons/products/stogram.f3771332930c.svg" alt="4K Stogram" width="64" height="64" />
+          </em>
+     
+     <p class="backgroundcliptext text-gradient promo__button-text">4K Stogram 다운로드</p>
+     
+          <img src="https://static.4kdownload.com/main/img/redesign-v2/products-page/icons/ic_download.2400dcfc4577.svg" alt="4K Stogram" class="promo__button-downloader"/>
+     
+</a>
+                
+
+              <div class="promo__description ">
+                
+
+
+
+
+<div class="promo__description-item ">
+    
+        <img id="target-os-logo" src="https://static.4kdownload.com/main/img/redesign-v2/products-page/icons/windows.626d84cbf59f.svg" width="40" height="40" alt="windows logo" />
+    
+<div>
+
+<p class="text text--caption text--center">
+    <span id="target-os-info">
+        Microsoft Windows 
+        
+        온라인 설치기 
+        
+    </span>
+    &nbsp;(<span id="application-size-info">0.7 Mb</span>)
+<br>
+다른 버전을 <a href="/ko/downloads/9#stogram" class="text text--caption text--underline">다른 버전</a>?</p> 
+              </div>
+                </div>
+                
+                <div class="promo__description-item promo__description-item--small promo__description-item--last">
+                  <img src="https://static.4kdownload.com/main/img/redesign-v2/products-page/icons/protect.e139727795ba.svg" width="40" height="40" alt="safe logo" />
+                  <a href="https://www.virustotal.com/latest-scan/https%3A//dl.4kdownload.com/app/4kstogram_4.9.0_online.exe%3Fsource%3Dwebsite" target="_blank" rel="noopener noreferrer" class="promo__os-text">
+                    <span>100% antivirus protection</span>
+                      <img class="promo__virus-info-img " src="https://static.4kdownload.com/main/img/redesign-v2/products-page/icons/info-icon.60e597cccef0.svg" alt="virus-info"/>
+                  </a>
+                  <div class="promo__virus-info-wrapper">
+                    <a href="https://www.virustotal.com/latest-scan/https%3A//dl.4kdownload.com/app/4kstogram_4.9.0_online.exe%3Fsource%3Dwebsite" target="_blank" rel="noopener noreferrer" class="promo__virus-text">52가지 바이러스 백신 검사로 100% 안전한 소프트웨어</a>
+                  </div>
+                </div>
+                
+              </div>
+              
+          </div>   
+        </div>
+
+        
+        <div class="promo__banner-wrapper ">
+          <img src="https://static.4kdownload.com/main/img/redesign-v2/products-page/stogram/promo-main.png" srcset="https://static.4kdownload.com/main/img/redesign-v2/products-page/stogram/promo-main.png 1x, https://static.4kdownload.com/main/img/redesign-v2/products-page/stogram/promo-main@2x.png 2x" class="promo__banner-img  " alt="4K Stogram">
+        </div>
+        
+        </div>
+      </div>
+    </section>
+  
+  
+  
+
+
+
+
+<section
+    class="trustpilot js-check-height 
+    
+    trustpilot--product-padding trustpilot-section
+     
+    
+    
+    
+    
+    "
+>
+
+    
+        <!-- TrustBox widget - Micro Combo -->
+        
+        <div class="trustpilot-widget" data-locale="ko" data-template-id="5419b6ffb0d04a076446a9af" data-businessunit-id="5ae8df7f3a0c3500018d4479" data-style-height="20px" data-style-width="100%" data-theme="light" data-font-family="Roboto">
+            <a href="https://www.trustpilot.com/review/4kdownload.com" target="_blank"><div class="skeleton rounded wave" >Trustpilot</div></a>
+        </div>
+        
+        <!-- End TrustBox widget -->
+        <div class="trustpilot__logos">
+            <img width="39" height="39" src="https://static.4kdownload.com/main/img/redesign/references/digital_trends.313e203148de.svg" alt="">
+            <img width="114" height="39" src="https://static.4kdownload.com/main/img/redesign/references/peoples_choice.343c3907b499.svg" alt="">
+            <img width="82" height="39" src="https://static.4kdownload.com/main/img/redesign/references/tech_radar_editors_choice.49f0fbfaa1ba.svg" alt="">
+        </div>
+    
+</section>
+
+  <section class="products-section products-section--wiht-padding lazy-background js-check-height">
+    <h2 class="discover__title h1">
+Instagram에서 쉽게 다운로드하는 한 가지 방법
+</h2>
+    <p class="discover__text text text--large">
+Instagram 사용자의 이름, 해시태그 또는 위치를 애플리케이션에 입력하고 다운로드 버튼을 클릭하기만 하면 됩니다. 원본 캡션과 함께 Instagram 사진과 비디오를 저장하세요. 단일 Instagram 게시물 또는 여러 게시물을 한 번에 다운로드하세요. Instagram 콘텐츠를 모두 가져오거나 특정 유형의 콘텐츠를 선택하세요.
+</p>
+
+    <div class="discover__video-preview">
+      <div class="card card--video lazy-script">
+        <picture>
+          <source srcset="https://static.4kdownload.com/main/img/redesign/product-screenshots/cards/mobile-cards/stogram-card-mobile@1x.png 1x, https://static.4kdownload.com/main/img/redesign/product-screenshots/cards/mobile-cards/stogram-card-mobile@2x.png 2x" media="(max-width: 600px)"/>
+          <source type="image/webp" srcset="https://static.4kdownload.com/main/img/redesign/product-screenshots/cards/mobile-cards/stogram-card-mobile@1x.webp 1x, https://static.4kdownload.com/main/img/redesign/product-screenshots/cards/mobile-cards/stogram-card-mobile@2x.webp 2x" media="(max-width: 600px)">
+          <source type="image/webp" srcset="https://static.4kdownload.com/main/img/redesign/product-screenshots/cards/new-cards/stogram-card@1x.webp 1x, https://static.4kdownload.com/main/img/redesign/product-screenshots/cards/new-cards/stogram-card@2x.webp 2x"> 
+          <img class="mac__bg" src="https://static.4kdownload.com/main/img/redesign/product-screenshots/cards/new-cards/stogram-card@1x.png" srcset="https://static.4kdownload.com/main/img/redesign/product-screenshots/cards/new-cards/stogram-card@1x.png 1x, https://static.4kdownload.com/main/img/redesign/product-screenshots/cards/new-cards/stogram-card@2x.png 2x" alt="" loading="lazy"/>
+        </picture>
+      </div>
+    </div>
+  </section>
+
+  <section class="products-section lazy-background features--stogram js-check-height">
+    <div class="features-grid">
+
+      <div class="features-grid__item features-grid__item--vertical-padding lazy-background">
+        
+        <div class="feature__cnt">
+          <h3 class="feature__title underline-link h1">
+워터마크 없는 Instagram Reels 다운로드하세요
+</h3>
+          <p class="feature__text text colored-link">
+
+
+더욱 깨끗한 시청 경험을 위해 <a href="/ko/howto/howto-download-instagram-reels-without-watermark" target="_blank"> Instagram 워터마크를 제거</a>하세요. 워터마크 없이 간단한 클릭만으로 좋아하는 릴을 얻을 수 있습니다. Reels를 개별적으로 다운로드하거나 한 번에 여러 비디오를 가져와 시간을 절약하세요.
+</p>
+        </div>
+        <div class="feature__mac feature__mac--stogram mac">
+          
+<picture>
+    <source srcset="https://static.4kdownload.com/main/img/redesign-v2/products-page/stogram/mobile/instagram-reels.png 1x, https://static.4kdownload.com/main/img/redesign-v2/products-page/stogram/mobile/instagram-reels@2x.png 2x" media="(max-width: 600px)"/>
+    <source type="image/webp" srcset="https://static.4kdownload.com/main/img/redesign-v2/products-page/stogram/mobile/instagram-reels.webp 1x, https://static.4kdownload.com/main/img/redesign-v2/products-page/stogram/mobile/instagram-reels@2x.webp 2x" media="(max-width: 600px)">
+    <source type="image/webp" srcset="https://static.4kdownload.com/main/img/redesign-v2/products-page/stogram/instagram-reels.webp 1x, https://static.4kdownload.com/main/img/redesign-v2/products-page/stogram/instagram-reels@2x.webp 2x"> 
+    <img class="promo__image promo__image--horisontal" src="https://static.4kdownload.com/main/img/redesign-v2/products-page/stogram/instagram-reels.png" srcset="https://static.4kdownload.com/main/img/redesign-v2/products-page/stogram/instagram-reels.png 1x, https://static.4kdownload.com/main/img/redesign-v2/products-page/stogram/instagram-reels@2x.png 2x" alt="" loading="lazy"/>
+</picture>
+
+        </div>
+        
+      </div>
+
+      <div class="features-grid__item features-grid__item--padding-top">
+        
+        <div class="feature__cnt feature__cnt--inner">
+          <h3 class="feature__title underline-link h2">
+개인 Instagram 게시물 및 계정 저장
+</h3>
+          <p class="text text--middle colored-link">
+
+
+팔로우하는 비공개 Instagram 사용자의 사진 및 동영상 게시물을 <a href="/ko/howto/howto-save-private-photos-from-instagram" target="_blank">다운로드</a>하세요. 영구적인 오프라인 액세스를 위해 원본 품질과 해상도로 저장하세요.
+</p>
+        </div>
+        
+<picture>
+    
+    <source type="image/webp" srcset="https://static.4kdownload.com/main/img/redesign-v2/products-page/stogram/feature-download-private-photos.e2a947ea7dc3.webp 1x, https://static.4kdownload.com/main/img/redesign-v2/products-page/stogram/feature-download-private-photos@2x.51cfceb8754d.webp 2x"> 
+    <img class="promo__image  promo__image--vertical" src="https://static.4kdownload.com/main/img/redesign-v2/products-page/stogram/feature-download-private-photos.08c1bd879c10.png" srcset="https://static.4kdownload.com/main/img/redesign-v2/products-page/stogram/feature-download-private-photos.08c1bd879c10.png 1x, https://static.4kdownload.com/main/img/redesign-v2/products-page/stogram/feature-download-private-photos@2x.10217617b41e.png 2x" alt="" loading="lazy"/>
+</picture>
+
+        
+      </div>
+
+      <div class="features-grid__item features-grid__item--padding-top">
+        
+        <div class="feature__cnt feature__cnt--inner">
+          <h3 class="feature__title underline-link h2">
+인스타그램 스토리와 하이라이트 다운로드
+</h3>
+          <p class="text text--middle colored-link">
+
+
+스토리의 수명을 24시간에서 영원히 연장하고 컴퓨터에 다운로드하세요. 표지를 포함한 <a href="/ko/howto/howto-download-instagram-story-highlights" target="_blank">Instagram 하이라이트를 저장</a>하여 각 하이라이트에 대한 편리한 별도의 하위 폴더에 저장하세요.
+</p>
+        </div>
+        
+<picture>
+    
+    <source type="image/webp" srcset="https://static.4kdownload.com/main/img/redesign-v2/products-page/stogram/feature-download-stories.4b15d296aa7e.webp 1x, https://static.4kdownload.com/main/img/redesign-v2/products-page/stogram/feature-download-stories@2x.ee106e668237.webp 2x"> 
+    <img class="promo__image  promo__image--vertical" src="https://static.4kdownload.com/main/img/redesign-v2/products-page/stogram/feature-download-stories.89d8123b63b4.png" srcset="https://static.4kdownload.com/main/img/redesign-v2/products-page/stogram/feature-download-stories.89d8123b63b4.png 1x, https://static.4kdownload.com/main/img/redesign-v2/products-page/stogram/feature-download-stories@2x.614310e77126.png 2x" alt="" loading="lazy"/>
+</picture>
+
+        
+      </div>
+
+      
+      <div class="features-grid__item features-grid__item--last features-grid__item--vertical-padding lazy-background">
+        <div class="feature__cnt">
+          <h3 class="feature__title underline-link h1">
+
+
+
+
+<a href="/ko/howto/howto-download-instagram-photos" target="_blank">사용자 이름으로 인스타그램 다운로드</a>,<a href="/ko/howto/how-to-download-instagram-photos-by-hashtag" target="_blank">해시태그</a>또는 <a href="/ko/howto/how-to-download-instagram-photos-by-location" target="_blank">로케이션</a>
+</h3>
+          <p class="feature__text text colored-link">
+인앱에서 다양한 유형의 Instagram 사진 및 동영상 콘텐츠를 탐색하세요. 몇 번의 클릭만으로 전체 Instagram 계정, 해시태그 및 위치를 대량 다운로드할 수 있습니다.
+</p>
+        </div>
+        <div class="feature__mac feature__mac--stogram mac">
+          
+<picture>
+    <source srcset="https://static.4kdownload.com/main/img/redesign-v2/products-page/stogram/mobile/download@1x.png 1x, https://static.4kdownload.com/main/img/redesign-v2/products-page/stogram/mobile/download@2x.png 2x" media="(max-width: 600px)"/>
+    <source type="image/webp" srcset="https://static.4kdownload.com/main/img/redesign-v2/products-page/stogram/mobile/download@1x.webp 1x, https://static.4kdownload.com/main/img/redesign-v2/products-page/stogram/mobile/download@2x.webp 2x" media="(max-width: 600px)">
+    <source type="image/webp" srcset="https://static.4kdownload.com/main/img/redesign-v2/products-page/stogram/download@1x.webp 1x, https://static.4kdownload.com/main/img/redesign-v2/products-page/stogram/download@2x.webp 2x"> 
+    <img class="promo__image promo__image--horisontal" src="https://static.4kdownload.com/main/img/redesign-v2/products-page/stogram/download@1x.png" srcset="https://static.4kdownload.com/main/img/redesign-v2/products-page/stogram/download@1x.png 1x, https://static.4kdownload.com/main/img/redesign-v2/products-page/stogram/download@2x.png 2x" alt="" loading="lazy"/>
+</picture>
+
+        </div>
+      </div>
+      
+
+    </div>
+  </section>
+
+  <section class="products-section features-list js-check-height">
+      <h2 class="features-list__heading h1">경탄할 만한 기타 기능 확인해 보기</h2>
+      <ul class="features-list__wrap">
+        
+<li class="features-list__item">
+    <div class="features-list__icon">
+        <img class="lazy" data-src="https://static.4kdownload.com/main/img/redesign/features-icons/ig-feed.1184e36e64ff.svg" alt="Instagram stories icon">
+    </div>
+    <div class="features-list__content">
+        <h3 class="features-list__title h2">다른 인스타그램 피드를 내 것처럼 살펴보기</h3>
+        
+        
+        <p class="features-list__text text colored-link"><a href="/ko/howto/howto-view-friends-instagram-feed-as-your-own" target="_blank">친구나 다른 Instagram 사용자가 따라가는 Instagram 계정 다운로드를 구독하세요</a>. Instagram 피드인 것처럼 실시간으로 인터페이스에 나타나는 새 게시물을 확인하세요.</p>
+    </div>
+</li>
+
+        
+<li class="features-list__item">
+    <div class="features-list__icon">
+        <img class="lazy" data-src="https://static.4kdownload.com/main/img/redesign/features-icons/feed-post.6288efc37a09.svg" alt="">
+    </div>
+    <div class="features-list__content">
+        <h3 class="features-list__title h2">단일 Instagram 사진, 비디오 및 회전식 게시물 받으세요</h3>
+        <p class="features-list__text text">Instagram 게시물을 한 번에 하나씩 간편하게 저장하세요. 피드 게시물, 워터마크 없는 릴, IGTV, 단일 사진 게시물, 슬라이드 사진 게시물, 비디오 게시물을 포함한 모든 종류의 Instagram 게시물을 다운로드하세요.</p>
+    </div>
+</li>
+
+        
+<li class="features-list__item">
+    <div class="features-list__icon">
+        <img class="lazy" data-src="https://static.4kdownload.com/main/img/redesign/features-icons/auto-download-new-instagram-posts.c155b5fa2993.svg" alt="">
+    </div>
+    <div class="features-list__content">
+        <h3 class="features-list__title h2">새로운 Instagram 게시물 자동 다운로드</h3>
+        <p class="features-list__text text">좋아하는 Instagram 계정, 해시태그 및 위치의 모든 업데이트를 계속 확인하세요. 새 게시물, 스토리, 하이라이트, 릴 및 태그가 지정된 게시물을 자동으로 다운로드하세요.</p>
+    </div>
+</li>
+
+        
+<li class="features-list__item">
+    <div class="features-list__icon">
+        <img class="lazy" data-src="https://static.4kdownload.com/main/img/redesign/features-icons/view-instagram-stories-anonymously.eb500e1a63f9.svg" alt="">
+    </div>
+    <div class="features-list__content">
+        <h3 class="features-list__title h2">Instagram 스토리를 익명으로 보기</h3>
+        
+        
+        <p class="features-list__text text colored-link">Instagram 계정의 스토리를 신중하게 시청하세요. <a href="/ko/howto/howto-download-instagram-stories" target="_blank">Instagram Stories를 다운로드</a>하고 인앱이나 컴퓨터에서 찾아보세요  – Instagram 사용자 이름은 Story 뷰어 목록에 표시되지 않습니다.</p>
+    </div>
+</li>
+
+        
+<li class="features-list__item">
+    <div class="features-list__icon">
+        <img class="lazy" data-src="https://static.4kdownload.com/main/img/redesign/features-icons/backup.9d0fbd0ca856.svg" alt="backup icon">
+    </div>
+    <div class="features-list__content">
+        <h3 class="features-list__title h2">Instagram 계정 백업</h3>
+        
+        
+        <p class="features-list__text text colored-link"><a href="/ko/howto/howto-backup-instagram-account-with-4k-stogram" target="_blank">프로필의 전체 백업을 만드세요</a>. 모든 Instagram 게시물, 하이라이트, 현재 스토리를 다운로드하세요. 게시물 캡션과 댓글을 사진 메타데이터에 자동으로 저장하세요.</p>
+    </div>
+</li>
+
+        
+<li class="features-list__item">
+    <div class="features-list__icon">
+        <img class="lazy" data-src="https://static.4kdownload.com/main/img/redesign/features-icons/follow.d7669241cb82.svg" alt="follow subscriptions icon">
+    </div>
+    <div class="features-list__content">
+        <h3 class="features-list__title h2">날짜 별로 인스타그램 포스트 저장</h3>
+        <p class="features-list__text text">각각의 시간대별로 인스타그램 포스트를 다운로드하세요. 인앱 달력에서 시작하는 날과 끝나는 날을 선택하세요. 선택한 시간대에서 생성된 인스타그램 포스트를 저장하세요.</p>
+    </div>
+</li>
+
+        
+<li class="features-list__item">
+    <div class="features-list__icon">
+        <img class="lazy" data-src="https://static.4kdownload.com/main/img/redesign/features-icons/metadata.f18a41b17178.svg" alt="meta data icon">
+    </div>
+    <div class="features-list__content">
+        <h3 class="features-list__title h2">Instagram의 저장된 게시물 및 태그된 게시물 다운로드</h3>
+        
+        
+        
+        <p class="features-list__text text colored-link"><a href="/ko/howto/how-to-download-instagram-tagged-posts" target="_blank">귀하가 태그된 Instagram 게시물을 저장</a>하고 <a href="/ko/howto/how-to-download-saved-posts-from-instagram" target="_blank">귀하의 계정에서 Instagram에 저장된 모든 게시물을 다운로드</a>하세요. 한 번의 클릭으로 모든 최신 콘텐츠를 가져오고 새 게시물을 자동으로 다운로드하세요.</p>
+    </div>
+</li>
+
+        
+<li class="features-list__item">
+    <div class="features-list__icon">
+        <img class="lazy" data-src="https://static.4kdownload.com/main/img/redesign/features-icons/subscriptions.6471e375890e.svg" alt="subscriptions icon">
+    </div>
+    <div class="features-list__content">
+        <h3 class="features-list__title h2">구독 내보내기와 가져오기</h3>
+        <p class="features-list__text text">다운로드 데이터베이스를 안전하게 유지하십시오. 주요 소프트웨어 및 하드웨어 재설치 후 사진, 비디오나 구독이 손실되지 않도록 내보내고 가져오세요.</p>
+    </div>
+</li>
+
+        
+        
+        
+        
+      </ul>
+  </section>
+
+  
+  <section class="products-section product-reviews__section js-check-height">
+  
+    <h2 class="features-list__heading product-reviews__heading h1">11백만 명 이상의 사용자들이 우리와 함께 다운로드를 즐깁니다.</h2>
+    <div class="comments-section__socials">
+      
+
+
+
+
+
+
+
+
+    
+
+    <div class="social social-line ">
+        
+
+        
+
+        
+
+            
+                
+            
+
+            
+            
+
+            
+                
+            
+
+            <div data-id="twitter-social-script" class="social__item social__item--twitter  lazy-script">
+                <a href="https://twitter.com/share" class="twitter-share-button" data-via="4kdownload"
+                   data-count="none"
+                   data-size="large"
+                   
+                   >Tweet</a>
+            </div>
+
+            
+            <div class="social__item social__item--wechat" >
+                <img width="43" height="29" src="https://static.4kdownload.com/main/img/redesign/ic-wechat-social-line.5531b0e23042.svg" alt="" loading="lazy"/>
+                <div class="social__wechat-qrcode">
+                    <picture>
+                        <source srcset="https://static.4kdownload.com/main/img/redesign/qr-code-wechat.9e0d7bd7007e.webp" type="image/webp"> 
+                        <img src="https://static.4kdownload.com/main/img/redesign/qr-code-wechat.1bff5c2e2972.jpg" alt="" />
+                    </picture>
+                </div>
+            </div>
+
+            
+            
+            <a href="https://www.reddit.com/r/4kdownloadapps/" class="social__item social__item--reddit" target="_blank" rel="noopener noreferrer">
+                <img width="40" height="28" src="https://static.4kdownload.com/main/img/redesign/ic-reddit-square.42645315a044.svg" alt="Submit to reddit">
+            </a>
+            
+
+            
+            
+            
+    </div>
+
+
+    </div>
+    <div class="product-reviews__wrapper">
+      <div class="product-reviews__grid">
+
+        
+        
+
+
+
+
+
+    
+
+
+
+
+<div class="product-reviews__item" data-comment-id=83228 itemprop="review" itemscope itemtype="http://schema.org/Review">
+  <div class="product-reviews__review-block">
+    <p class="product-reviews__review-text" itemprop="reviewBody">BEST SERVICE EVER!</p>
+    
+        <div class="product-reviews__rating-stars" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating" >
+            <div class="product-reviews__rating-stars" data-read-only="true" itemprop="ratingValue" content="5" data-score='5'>
+                <meta itemprop="worstRating" content="1">
+                
+                  
+                    <img alt="1" class="reviews__form-stars-design-item" width="15" height="14" loading="lazy" src=https://static.4kdownload.com/main/img/redesign/star-on.3154f85136ec.svg>
+                  
+                
+                  
+                    <img alt="2" class="reviews__form-stars-design-item" width="15" height="14" loading="lazy" src=https://static.4kdownload.com/main/img/redesign/star-on.3154f85136ec.svg>
+                  
+                
+                  
+                    <img alt="3" class="reviews__form-stars-design-item" width="15" height="14" loading="lazy" src=https://static.4kdownload.com/main/img/redesign/star-on.3154f85136ec.svg>
+                  
+                
+                  
+                    <img alt="4" class="reviews__form-stars-design-item" width="15" height="14" loading="lazy" src=https://static.4kdownload.com/main/img/redesign/star-on.3154f85136ec.svg>
+                  
+                
+                  
+                    <img alt="5" class="reviews__form-stars-design-item" width="15" height="14" loading="lazy" src=https://static.4kdownload.com/main/img/redesign/star-on.3154f85136ec.svg>
+                  
+                
+                <meta itemprop="bestRating" content="5">
+            </div>
+        </div>
+    
+  </div>
+  <div class="product-reviews__info">
+    <div class="product-reviews__avatar-wrapper">
+      <p class="product-reviews__avatar">A</p>
+    </div>
+    <div class="product-reviews__info-wrapper">
+      <p class="product-reviews__name" itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Aalyaan Zeerak</span></p>
+      <p class="product-reviews__date" data-comment-datetime="2024-03-29T01:16:10+00:00" itemprop="datePublished">29 3월 지점 01:16</p>
+    </div>
+  </div>
+</div>
+
+<div class="product-reviews__item" data-comment-id=80897 itemprop="review" itemscope itemtype="http://schema.org/Review">
+  <div class="product-reviews__review-block">
+    <p class="product-reviews__review-text" itemprop="reviewBody">輕鬆上手 使用簡單方便 無須繁複手續 沒有病毒 沒有廣告</p>
+    
+        <div class="product-reviews__rating-stars" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating" >
+            <div class="product-reviews__rating-stars" data-read-only="true" itemprop="ratingValue" content="5" data-score='5'>
+                <meta itemprop="worstRating" content="1">
+                
+                  
+                    <img alt="1" class="reviews__form-stars-design-item" width="15" height="14" loading="lazy" src=https://static.4kdownload.com/main/img/redesign/star-on.3154f85136ec.svg>
+                  
+                
+                  
+                    <img alt="2" class="reviews__form-stars-design-item" width="15" height="14" loading="lazy" src=https://static.4kdownload.com/main/img/redesign/star-on.3154f85136ec.svg>
+                  
+                
+                  
+                    <img alt="3" class="reviews__form-stars-design-item" width="15" height="14" loading="lazy" src=https://static.4kdownload.com/main/img/redesign/star-on.3154f85136ec.svg>
+                  
+                
+                  
+                    <img alt="4" class="reviews__form-stars-design-item" width="15" height="14" loading="lazy" src=https://static.4kdownload.com/main/img/redesign/star-on.3154f85136ec.svg>
+                  
+                
+                  
+                    <img alt="5" class="reviews__form-stars-design-item" width="15" height="14" loading="lazy" src=https://static.4kdownload.com/main/img/redesign/star-on.3154f85136ec.svg>
+                  
+                
+                <meta itemprop="bestRating" content="5">
+            </div>
+        </div>
+    
+  </div>
+  <div class="product-reviews__info">
+    <div class="product-reviews__avatar-wrapper">
+      <p class="product-reviews__avatar">柳</p>
+    </div>
+    <div class="product-reviews__info-wrapper">
+      <p class="product-reviews__name" itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">柳川楓</span></p>
+      <p class="product-reviews__date" data-comment-datetime="2024-02-14T16:17:40+00:00" itemprop="datePublished">14 2월 지점 16:17</p>
+    </div>
+  </div>
+</div>
+
+<div class="product-reviews__item" data-comment-id=70139 itemprop="review" itemscope itemtype="http://schema.org/Review">
+  <div class="product-reviews__review-block">
+    <p class="product-reviews__review-text" itemprop="reviewBody">ខ្ញុំចូលចិត្តកម្មវិធីនេះសំរាប់ខ្ញូំគឺDownload. Full HD លឿន ហើយគុណភាពរូបភាពវិញគឺអេម ណាស់!</p>
+    
+        <div class="product-reviews__rating-stars" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating" >
+            <div class="product-reviews__rating-stars" data-read-only="true" itemprop="ratingValue" content="5" data-score='5'>
+                <meta itemprop="worstRating" content="1">
+                
+                  
+                    <img alt="1" class="reviews__form-stars-design-item" width="15" height="14" loading="lazy" src=https://static.4kdownload.com/main/img/redesign/star-on.3154f85136ec.svg>
+                  
+                
+                  
+                    <img alt="2" class="reviews__form-stars-design-item" width="15" height="14" loading="lazy" src=https://static.4kdownload.com/main/img/redesign/star-on.3154f85136ec.svg>
+                  
+                
+                  
+                    <img alt="3" class="reviews__form-stars-design-item" width="15" height="14" loading="lazy" src=https://static.4kdownload.com/main/img/redesign/star-on.3154f85136ec.svg>
+                  
+                
+                  
+                    <img alt="4" class="reviews__form-stars-design-item" width="15" height="14" loading="lazy" src=https://static.4kdownload.com/main/img/redesign/star-on.3154f85136ec.svg>
+                  
+                
+                  
+                    <img alt="5" class="reviews__form-stars-design-item" width="15" height="14" loading="lazy" src=https://static.4kdownload.com/main/img/redesign/star-on.3154f85136ec.svg>
+                  
+                
+                <meta itemprop="bestRating" content="5">
+            </div>
+        </div>
+    
+  </div>
+  <div class="product-reviews__info">
+    <div class="product-reviews__avatar-wrapper">
+      <p class="product-reviews__avatar">ប</p>
+    </div>
+    <div class="product-reviews__info-wrapper">
+      <p class="product-reviews__name" itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">បងសីហា</span></p>
+      <p class="product-reviews__date" data-comment-datetime="2022-11-06T21:15:56+00:00" itemprop="datePublished">6 11월 지점 21:15</p>
+    </div>
+  </div>
+</div>
+
+
+        
+
+        <div class="reviews__form-wrapper" data-entry="stogram">
+          <div class="reviews__form-inner-wrapper">
+            
+
+
+<div class="product-price__thanks">
+  <div class="comments-thanks product-price__thanks-block">
+      <a href="#" class="comments-thanks__close">
+          <img class="lazy" data-src="https://static.4kdownload.com/main/img/redesign/ic-cross.acbcd4668eab.svg" class="icon__ic-cross" width="16" height="16" alt="close form icon">
+      </a>
+      <img class="comments-thanks__image product-price__thanks-img" width="134" height="136" src="https://static.4kdownload.com/main/img/redesign/ic-feedback.3e76c2a2e6a6.svg" alt="">
+      <div class="comments-thanks__text-wrapper product-price__thanks-text-wrapper">
+      
+          <h4 class="comments-thanks__title comments-thanks__title--center h2">피드백 주셔서 감사합니다.</h4>
+          <h4 class="comments-thanks__title comments-thanks__error-text h2">죄송합니다. 문제가 발생했습니다.</h4>
+
+          <p class="comments-thanks__text comments-thanks__text--center text text--large">댓글이 곧 여기에 나타날 것입니다. 소셜 네트워크에 저희에 관한 이야기를 퍼뜨려 주세요.</p>
+          <p class="comments-thanks__error-text comments-thanks__error-text-msg text text--large"></p>
+
+          <span class="comments-thanks__socials">
+            
+
+
+
+
+
+
+
+
+    
+
+    <div class="social social-line ">
+        
+
+        
+
+        
+
+            
+                
+            
+
+            
+            
+
+            
+                
+            
+
+            <div data-id="twitter-social-script" class="social__item social__item--twitter  lazy-script">
+                <a href="https://twitter.com/share" class="twitter-share-button" data-via="4kdownload"
+                   data-count="none"
+                   data-size="large"
+                   
+                   >Tweet</a>
+            </div>
+
+            
+            <div class="social__item social__item--wechat" >
+                <img width="43" height="29" src="https://static.4kdownload.com/main/img/redesign/ic-wechat-social-line.5531b0e23042.svg" alt="" loading="lazy"/>
+                <div class="social__wechat-qrcode">
+                    <picture>
+                        <source srcset="https://static.4kdownload.com/main/img/redesign/qr-code-wechat.9e0d7bd7007e.webp" type="image/webp"> 
+                        <img src="https://static.4kdownload.com/main/img/redesign/qr-code-wechat.1bff5c2e2972.jpg" alt="" />
+                    </picture>
+                </div>
+            </div>
+
+            
+            
+            <a href="https://www.reddit.com/r/4kdownloadapps/" class="social__item social__item--reddit" target="_blank" rel="noopener noreferrer">
+                <img width="40" height="28" src="https://static.4kdownload.com/main/img/redesign/ic-reddit-square.42645315a044.svg" alt="Submit to reddit">
+            </a>
+            
+
+            
+            
+            
+    </div>
+
+
+          </span>
+      </div>
+  </div>
+</div>
+
+<form class="reviews__form product-reviews__review-block reviews__form--close" action="/comments/post/" method="post">
+  <div class="reviews__form-input-wrapper">
+    <textarea class="reviews__form-textarea" name="comment" placeholder="코멘트 추가..."></textarea>
+    <span class="reviews__form-error-msg">정확한 텍스트를 입력하세요</span>
+  </div>
+  <div class="reviews__form-input-wrapper reviews__form-show-hide">
+    <input class="reviews__form-input" type="text" name="name" placeholder="귀하의 이름"/>
+    <span class="reviews__form-error-msg">이름을 입력해주세요</span>
+  </div>
+  <div class="reviews__form-input-wrapper reviews__form-show-hide">
+    <input class="reviews__form-input" type="email" name="email" placeholder="귀하의 이메일 주소"/>
+    <span class="reviews__form-error-msg">유효하지 않은 이메일</span>
+  </div>
+  <div class="reviews__form-check-wrapper">
+    <input class="reviews__form-check" type="checkbox" id="check_for_update" name="checkForUpdate" checked />
+    <label class="reviews__form-check-label" for="check_for_update">4K 다운로드 관련 뉴스와 특가 판매와 업데이트를 이메일로 받기 원합니다.</label>
+  </div>
+  <p class="reviews__form-policy">
+    <span>보내기를</span> 선택한 것은 <a href="/ko/privacy" alt="Privacy Policy" target="_blank">개인 정보 정책에</a>동의한 것을 뜻합니다.
+  </p>
+  <div class="reviews__form-bottom">
+    <div class="reviews__form-bottom-rating">
+      <p class="reviews__form-bottom-text">내 평가:</p>
+      <div class="reviews__form-bottom-stars">
+        <img alt="1" class="reviews__form-rating-star" src=https://static.4kdownload.com/main/img/redesign/star-off.bd977696ee31.svg alt="">
+        <img alt="2" class="reviews__form-rating-star" src=https://static.4kdownload.com/main/img/redesign/star-off.bd977696ee31.svg alt="">
+        <img alt="3" class="reviews__form-rating-star" src=https://static.4kdownload.com/main/img/redesign/star-off.bd977696ee31.svg alt="">
+        <img alt="4" class="reviews__form-rating-star" src=https://static.4kdownload.com/main/img/redesign/star-off.bd977696ee31.svg alt="">
+        <img alt="5" class="reviews__form-rating-star" src=https://static.4kdownload.com/main/img/redesign/star-off.bd977696ee31.svg alt="">
+      </div>
+    </div>
+    <button id="submit" class="reviews__form-button" type="submit"><span class="comments-form__load-icon"></span><span>보내기</span></button>
+  </div>
+  <div class="reviews__form-btn-close"><i></i><i></i></div>
+  <div id="captch"></div>
+  
+      
+          <div><input type="hidden" name="content_type" value="main.product" id="id_content_type"></div>
+      
+  
+      
+          <div><input type="hidden" name="object_pk" value="5" id="id_object_pk"></div>
+      
+  
+      
+          <div><input type="hidden" name="timestamp" value="1738711641" id="id_timestamp"></div>
+      
+  
+      
+          <div><input type="hidden" name="security_hash" value="373afe1061a6db4bf56cd6461107a75d935d6e8d" id="id_security_hash"></div>
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+</form>
+            <div class="reviews__form-bottom-stars reviews__form-stars-design">
+              <img alt="1" class="reviews__form-stars-design-item" width="15" height="14" loading="lazy" src=https://static.4kdownload.com/main/img/redesign/star-off.bd977696ee31.svg>
+              <img alt="2" class="reviews__form-stars-design-item" width="15" height="14" loading="lazy" src=https://static.4kdownload.com/main/img/redesign/star-off.bd977696ee31.svg>
+              <img alt="3" class="reviews__form-stars-design-item" width="15" height="14" loading="lazy" src=https://static.4kdownload.com/main/img/redesign/star-off.bd977696ee31.svg>
+              <img alt="4" class="reviews__form-stars-design-item" width="15" height="14" loading="lazy" src=https://static.4kdownload.com/main/img/redesign/star-off.bd977696ee31.svg>
+              <img alt="5" class="reviews__form-stars-design-item" width="15" height="14" loading="lazy" src=https://static.4kdownload.com/main/img/redesign/star-off.bd977696ee31.svg>
+            </div>
+          </div>
+          <div class="product-reviews__info">
+            
+            <div>
+              <p class="product-reviews__name product-reviews__name-form">귀하의 이름</p>
+              <p class="product-reviews__date">오늘</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button data-id="comment-load-script" class="lazy-script product-reviews__button product-reviews__button--stogram">더 읽어 보세요</button>
+  </section>
+
+  
+  
+  
+
+  
+  
+  <section class="products-section">
+    <div class="references">
+      
+        <div class="references__img references__img--producthunt"><img loading="lazy" src="https://static.4kdownload.com/main/img/redesign/references/producthunt.10f8d399dd25.svg" alt="producthunt-logo" /></div>
+        <div class="references__img references__img--greenlight"><img loading="lazy" src="https://static.4kdownload.com/main/img/redesign/references/greenlight.432127ee3d30.svg" alt="greenlight-logo" /></div>
+        <div class="references__img references__img--popsugar"><img loading="lazy" src="https://static.4kdownload.com/main/img/redesign/references/popsugar.d93306f2b02a.svg" alt="popsugar-logo" /></div>
+        <div class="references__img references__img--cultofmac"><img loading="lazy" src="https://static.4kdownload.com/main/img/redesign/references/cultofmac.3ba5dbf20fb2.svg" alt="cultofmac-logo" /></div>
+        <div class="references__img references__img--muo"><img loading="lazy" src="https://static.4kdownload.com/main/img/redesign/references/muo.4ca8aee1f71b.svg" alt="muo-logo" /></div>
+        <div class="references__img references__img--lifehacker"><img loading="lazy" src="https://static.4kdownload.com/main/img/redesign/references/lifehacker.fb545a542438.svg" alt="lifehacker-logo" /></div>
+        <div class="references__img references__img--techadvisor"><img loading="lazy" src="https://static.4kdownload.com/main/img/redesign/references/techadvisor.4c273b30b20c.svg" alt="techadvisor-logo" /></div>
+      
+    </div>
+    <blockquote class="features-list__title references__quote h2">“4K Stogram is an excellent application for power Instagram users. It provides extremely effortless way to access thousands of Instagram photos offline.“</blockquote>
+    <p class="references__quote-author">&mdash; Guidingtech.com</p>
+  </section>
+  
+
+  <section class="products-section products-help">
+    
+    
+      <a href="/ko/help/4#instagram" class="products-help__item" target="_blank" rel="noopener">
+    
+      <img width="60" height="63" src="https://static.4kdownload.com/main/img/redesign-v2/products-page/icons/tutorials.53714903a77f.svg" loading="lazy" class="products-help__item-icon" alt="" />
+      <div class="products-help__item-info">
+        <h3 class="products-help__item-title features-list__title h2">튜토리얼</h3>
+        <p class="products-help__item-description">다양한 동영상 및 오디오 콘텐츠를 다운로드하는 방법에 관한 지침.</p>
+      </div>
+    </a>
+    
+    <a href="/ko/help/4#faq" class="products-help__item" target="_blank">
+      <img width="60" height="63" src="https://static.4kdownload.com/main/img/redesign-v2/products-page/icons/ic_faq.a5af1ca60be5.svg" loading="lazy" class="products-help__item-icon" alt="" />
+      <div class="products-help__item-info">
+        <h3 class="products-help__item-title features-list__title h2">자주 묻는 질문</h3>
+        <p class="products-help__item-description">우리의 동영상 다운로더에 대해 가장 많은 질문에 대한 답변.</p>
+      </div>
+    </a>
+    <a href="https://www.reddit.com/r/4kdownloadapps/" class="products-help__item" target="_blank" rel="noopener noreferrer">
+      <img width="60" height="63" src="https://static.4kdownload.com/main/img/redesign-v2/products-page/icons/feedback.5d5e14a5ff81.svg" loading="lazy" class="products-help__item-icon" alt="" />
+      <div class="products-help__item-info">
+        <h3 class="products-help__item-title features-list__title h2">포럼</h3>
+        <p class="products-help__item-description">우리의 소프트웨어에 대한 사용자 의견, 리뷰, 최신 소식.</p>
+      </div>
+    </a>
+    
+    <div class="products-help__item">
+      <h3 class="features-list__heading product-price__heading h1"><span>4K Stogram</span> 당신의 언어를 말씀하세요</h3>
+      <div class="flags">
+        <div class="flag">
+          <img data-src="https://static.4kdownload.com/main/img/redesign/national-flags/en.7c7657521ed6.svg" class="flag__icon lazy" alt="USA flag icon"><span class="flag__title">English</span>
+        </div>
+        <div class="flag">
+          <img data-src="https://static.4kdownload.com/main/img/redesign/national-flags/de.5dcef5c8aad9.svg" class="flag__icon lazy" alt="Germany flag icon"><span class="flag__title">Deutsch</span>
+        </div>
+        <div class="flag">
+          <img data-src="https://static.4kdownload.com/main/img/redesign/national-flags/fr.e883f7470f84.svg" class="flag__icon lazy" alt="France flag icon"><span class="flag__title">Français</span>
+        </div>
+        <div class="flag">
+          <img data-src="https://static.4kdownload.com/main/img/redesign/national-flags/it.c8be4cbcbcd5.svg" class="flag__icon lazy" alt="Italy flag icon"><span class="flag__title">Italiano</span>
+        </div>
+        <div class="flag">
+          <img data-src="https://static.4kdownload.com/main/img/redesign/national-flags/es.71fb3e43f90b.svg" class="flag__icon lazy" alt="Spain flag icon"><span class="flag__title">Español</span>
+        </div>
+        <div class="flag">
+          <img data-src="https://static.4kdownload.com/main/img/redesign/national-flags/nl.2d9bd43ff3a3.svg" class="flag__icon lazy" alt="Netherlands flag icon"><span class="flag__title">Nederlands</span>
+        </div>
+        <div class="flag">
+          <img data-src="https://static.4kdownload.com/main/img/redesign/national-flags/ru.a3a6bc8a1039.svg" class="flag__icon lazy" alt="Russia flag icon"><span class="flag__title">Русский</span>
+        </div>
+        <div class="flag">
+          <img data-src="https://static.4kdownload.com/main/img/redesign/national-flags/pl.cec4b6924457.svg" class="flag__icon lazy" alt="Poland flag icon"><span class="flag__title">Polski</span>
+        </div>
+        <div class="flag">
+          <img data-src="https://static.4kdownload.com/main/img/redesign/national-flags/ja.c3d98e9adf93.svg" class="flag__icon lazy" alt="Japan flag icon"><span class="flag__title">日本語</span>
+        </div>
+        <div class="flag">
+          <img data-src="https://static.4kdownload.com/main/img/redesign/national-flags/zh-tw.53dfdfce1d2d.svg" class="flag__icon lazy" alt="China flag icon"><span class="flag__title">繁體中文</span>
+        </div>
+        <div class="flag">
+          <img data-src="https://static.4kdownload.com/main/img/redesign/national-flags/ko.506979d0f849.svg" class="flag__icon lazy" alt="South korean flag icon"><span class="flag__title">한국어</span>
+        </div>
+        <div class="flag">
+          <img data-src="https://static.4kdownload.com/main/img/redesign/national-flags/pt-br.2be292903a88.svg" class="flag__icon lazy" alt="Portugal flag icon"><span class="flag__title">Português do Brasil</span>
+        </div>
+        <div class="flag">
+          <img data-src="https://static.4kdownload.com/main/img/redesign/national-flags/zh-cn.75cf4faa19a8.svg" class="flag__icon lazy" alt="China flag icon"><span class="flag__title">简体中文</span>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+  <section class="products-section products-requirements">
+    <div class="products-requirements__item">
+      <img width="40" height="40" src="https://static.4kdownload.com/main/img/redesign-v2/products-page/icons/ic_system.6ba96137d93a.svg" loading="lazy" class="products-requirements__item-icon" alt="시스템 요구 사항" />
+      <p class="products-requirements__item-title">시스템 요구 사항:</p>
+      
+    <p class="products-requirements__item-info" itemprop="operatingSystem">Windows 7 및 상위 버전</p>
+    
+    <p class="products-requirements__item-info" itemprop="operatingSystem">macOS 10.13 및 상위 버전</p>
+    <p class="products-requirements__item-info" itemprop="operatingSystem">Ubuntu 64-비트</p>
+
+    </div>
+    <div class="products-requirements__item" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+      <img width="40" height="40" src="https://static.4kdownload.com/main/img/redesign-v2/products-page/icons/ic_star_rating.481b55b9f027.svg" loading="lazy" class="products-requirements__item-icon" alt="평점" />
+      <p class="products-requirements__item-title">레이팅(<span itemprop="ratingCount">1080</span> 사용자 리뷰 기반으로)</p>
+      <div class="products-requirements__item-info">
+          <div class="product-reviews__rating-stars products-requirements__item-stars js-rating-container">
+              <meta itemprop="worstRating" content="1">
+              
+              <svg class="star-rating-template" width="0" height="0" viewBox="0 0 15 14" style="position: absolute">
+                <defs>
+                  <linearGradient id="partitially-filled-star" x1="0" x2="100%" y1="0" y2="0">
+                    <stop class="star-rating-gradient" stop-color="#FED149"></stop>
+                    <stop class="star-rating-gradient" stop-color="#BACBD6"></stop>
+                  </linearGradient>
+                  
+                  <symbol width="15" height="14" viewBox="0 0 15 14" id="star">
+                    <path d="M7.5 11.609L2.865 14l.885-5.065L0 5.348l5.182-.74L7.5 0l2.318 4.609L15 5.348l-3.75 3.587.885 5.065z" fill-rule="evenodd"/>
+                  </symbol>
+                </defs>
+              </svg>
+              
+              <template id="star-template">
+                <svg width="15" height="14" viewBox="0 0 15 14">
+                  <use xlink:href="#star"></use>
+                </svg>
+              </template>
+          </div>
+          <span>/&nbsp;</span>
+          <span itemprop="ratingValue">4.4</span>
+          <meta itemprop="bestRating" content="5">
+      </div>
+    </div>
+    <div class="products-requirements__item">
+      <img width="40" height="40" src="https://static.4kdownload.com/main/img/redesign-v2/products-page/icons/ic_credit_card.b812dcd2e50b.svg" loading="lazy" class="products-requirements__item-icon" alt="가격 책정" />
+      <p class="products-requirements__item-title">가격 책정:</p>
+      <p class="products-requirements__item-info">무료로 시작하기</p>
+      <span itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+        <meta itemprop="price" content="0">
+        <meta itemprop="priceCurrency" content="USD">
+      </span>
+    </div>
+    <div class="products-requirements__item">
+      <img width="40" height="40" src="https://static.4kdownload.com/main/img/redesign-v2/products-page/icons/ic_info.ffe63f60ea57.svg" loading="lazy" class="products-requirements__item-icon" alt="최신 버전" />
+      <p class="products-requirements__item-title">최신 버전:</p>
+      <p class="products-requirements__item-info"><span itemprop="softwareVersion">4.9.0.4680</span></p>
+      <p class="products-requirements__item-info" itemprop="dateModified" content="2024-05-18">2024년 5월 18일</p>
+    </div>
+  </section>
+
+  <section class="products-section %%products-section--margin">
+    
+
+
+
+
+    
+    <h2 class="products-section__title features-list__heading h1">더 많은 제품에 대해 알아보세요</h2>
+
+
+
+<div class='products  products--promo '>
+    
+        <a class="product" href="/ko/products/videodownloader-1">
+            <img class="lazy" data-src="https://static.4kdownload.com/main/img/icons/products/videodownloaderplus.e1538463172d.svg" width="100" height="100" alt="4K Video Downloader logo" />
+            <span class="product__title product__title--item">4K Video Downloader Plus</span>
+        </a>
+    
+    
+        <a class="product" href="/ko/products/tokkit/8">
+            <img class="lazy" data-src="https://static.4kdownload.com/main/img/icons/products/tokkit.f8fe69e14cf3.svg" width="100" height="100" alt="4K Tokkit logo" />
+            <span class="product__title product__title--item">4K Tokkit</span>
+        </a>
+    
+    
+    
+        <a class="product" href="/ko/products/youtubetomp3-9">
+            <img class="lazy" data-src="https://static.4kdownload.com/main/img/icons/products/youtubetomp3.214e1d125d0c.svg" width="100" height="100" alt="4K YouTube to MP3 logo" />
+            <span class="product__title product__title--item">4K YouTube to MP3</span>
+        </a>
+    
+    
+    <a class="product" href="/ko/products/imagecompressor">
+        <img class="lazy" data-src="https://static.4kdownload.com/main/img/icons/products/imagecompressor.874d28e903f2.svg" width="100" height="100" alt="4K Image Compressor logo" />
+        <span class="product__title product__title--item">4K Image Compressor</span>
+    </a>
+    
+    
+        <a class="product" href="/ko/products/videotomp3/6">
+            <img class="lazy" data-src="https://static.4kdownload.com/main/img/icons/products/videotomp3.1968dc2bf196.svg" width="100" height="100" alt="4K Video to MP3 logo" />
+            <span class="product__title product__title--item">4K Video to MP3</span>
+        </a>
+    
+    
+        <a class="product" href="/ko/products/slideshowmaker">
+            <img class="lazy" data-src="https://static.4kdownload.com/main/img/icons/products/slideshowmaker.d27c5ecf0261.svg" width="100" height="100" alt="4K Slideshow Maker logo" />
+            <span class="product__title product__title--item">4K Slideshow Maker</span>
+        </a>
+    
+</div>
+
+  </section>
+  
+</div>
+<!--video modal window-->
+  
+  
+<!--end of video modal window-->
+
+
+
+
+<div data-remodal-id="thanks-modal" class="thanks-modal modal-window remodal">
+    <a href="#" data-remodal-action="close" class="modal-window__close"> 
+        <img src="https://static.4kdownload.com/main/img/redesign/ic-cross.acbcd4668eab.svg" class="icon__ic-cross" width="16" height="16" alt="reminder window close button" />
+    </a>
+    <img src="https://static.4kdownload.com/main/img/redesign/thanks-image.d837491132a9.svg" class="thanks-modal__image" alt="Illustration of gratitude">
+    <h3 class="thanks-modal__title h2">4k를 선택해 주셔서 감사합니다!</h3>
+    <div class="thanks-modal__subscribe-block">
+        <p class="thanks-modal__text text text--large">구독으로 우리의 특별 제안 상품에 대한 정보를 받아 보세요!</p>
+        <form class="thanks-modal__subscribe-form subscribe input-group js-subscribe js-subscribe-one-step" action="/api/newsletter/subscribe/">
+            <input placeholder="Email" name="email" class="thanks-modal__input form-control input-group__input">
+            <div class="subscribe-agreement-js">
+                <label class="thanks-modal__checkbox agreement-check agreement-checkbox-js">
+                    <input class="agreement-check__input" type="checkbox">
+                    <span class="thanks-modal__checkmark agreement-check__checkmark agreement-check__checkmark--large"></span>
+                    
+                    <p class="agreement-check__text thanks-modal__agreement-text"><strong>전송하기</strong>를 클릭하는 것은 <a href="/ko/privacy">개인정보보호정책</a> 조건에 동의한 것을 의미합니다.</p>
+                </label>
+                <button aria-label="Submit subscribing on product updates" type="submit" disabled class="thanks-modal__subscribe-button subscribe__submit subscribe__submit--send btn btn--disabled btn--primary input-group__btn">
+                    <span class="subscribe__submit-icon"></span>
+                    <span class="subscribe__submit-text" id="text-send">보내기</span>
+                </button>
+            </div>
+        </form>
+    </div>
+    <div class="thanks-modal__social-block">
+        <p class="thanks-modal__text text text--large">소셜 네트워크에서 저희에 대해 입소문을 내주세요</p>
+        
+        
+        
+
+
+
+
+
+
+
+
+    
+
+    <div class="social social-line ">
+        
+
+        
+
+        
+
+            
+                
+            
+
+            
+            
+
+            
+                
+                    
+                
+            
+
+            <div data-id="twitter-social-script" class="social__item social__item--twitter  lazy-script">
+                <a href="https://twitter.com/share" class="twitter-share-button" data-via="4kdownload"
+                   data-count="none"
+                   data-size="large"
+                   data-text="4K Download | 우용한 PC, macOS 및 Linux용 무료 어플리케이션. 사용해보세요!"
+                   >Tweet</a>
+            </div>
+
+            
+            <div class="social__item social__item--wechat" >
+                <img width="43" height="29" src="https://static.4kdownload.com/main/img/redesign/ic-wechat-social-line.5531b0e23042.svg" alt="" loading="lazy"/>
+                <div class="social__wechat-qrcode">
+                    <picture>
+                        <source srcset="https://static.4kdownload.com/main/img/redesign/qr-code-wechat.9e0d7bd7007e.webp" type="image/webp"> 
+                        <img src="https://static.4kdownload.com/main/img/redesign/qr-code-wechat.1bff5c2e2972.jpg" alt="" />
+                    </picture>
+                </div>
+            </div>
+
+            
+            
+            <a href="https://www.reddit.com/r/4kdownloadapps/" class="social__item social__item--reddit" target="_blank" rel="noopener noreferrer">
+                <img width="40" height="28" src="https://static.4kdownload.com/main/img/redesign/ic-reddit-square.42645315a044.svg" alt="Submit to reddit">
+            </a>
+            
+
+            
+            
+            
+    </div>
+
+
+    </div>
+</div>
+
+            </div>
+            
+            <div id="g-recaptcha" style="position: fixed; top:50%; left:50%"></div>
+            <div class="push"></div>
+
+            <!--GDPR notification-->
+            <div class="extra-blocks">
+                
+
+
+<div class="info-message  js-info-message">
+    
+    <h2>4K Stogram 지원이 중단되었습니다</h2>
+    
+    <p>
+        
+            앱은 계속 사용할 수 있지만 더 이상 사용자 지원이나 버그 수정을 제공하지 않습니다.
+        
+        <a class="info-message__more" href="/ko/faq/faq-why-is-stogram-discontinued" target="_blank">더&nbsp;알아보기</a>
+    </p>
+    
+        <a class="info-message__close js-info-message-close" type="button">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.5303 7.53033C17.8232 7.23744 17.8232 6.76256 17.5303 6.46967C17.2374 6.17678 16.7626 6.17678 16.4697 6.46967L12.7071 10.2322C12.3166 10.6228 11.6834 10.6228 11.2929 10.2322L7.53033 6.46967C7.23744 6.17678 6.76256 6.17678 6.46967 6.46967C6.17678 6.76256 6.17678 7.23744 6.46967 7.53033L10.2322 11.2929C10.6228 11.6834 10.6228 12.3166 10.2322 12.7071L6.46967 16.4697C6.17678 16.7626 6.17678 17.2374 6.46967 17.5303C6.76256 17.8232 7.23744 17.8232 7.53033 17.5303L11.2929 13.7678C11.6834 13.3772 12.3166 13.3772 12.7071 13.7678L16.4697 17.5303C16.7626 17.8232 17.2374 17.8232 17.5303 17.5303C17.8232 17.2374 17.8232 16.7626 17.5303 16.4697L13.7678 12.7071C13.3772 12.3166 13.3772 11.6834 13.7678 11.2929L17.5303 7.53033Z" fill="#6E6E73"/>
+            </svg>      
+        </a>
+    
+</div>
+
+                
+
+
+
+
+
+<div class="cookies js-cookies">
+    
+    <div class="cookies__content">
+        
+        <div class="cookies__header-wrapper">
+            <div class="cookies__header-block">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M21.9922 6.9104C22.0527 7.50732 22.2852 8.06653 22.666 8.53174C23.5488 9.61462 24 10.7823 24 12C24 13.2175 23.5488 14.3824 22.666 15.4684C22.3438 15.8601 22.127 16.3234 22.0332 16.817C22.0156 16.9061 22.002 16.9962 21.9922 17.087C21.9219 17.7836 21.7617 18.4187 21.5098 18.9865C21.2578 19.5542 20.9141 20.0548 20.4844 20.485C19.625 21.3456 18.4805 21.8518 17.0859 21.9923C16.752 22.0269 16.4277 22.1147 16.127 22.2526C15.8926 22.3602 15.6719 22.4984 15.4688 22.6654C14.3828 23.5492 13.2168 24 12 24C10.7832 24 9.61523 23.5492 8.53125 22.6652C8.06641 22.2849 7.50781 22.0536 6.91016 21.9921C5.51758 21.8516 4.375 21.3453 3.51562 20.4847C2.6543 19.6243 2.14453 18.48 2.00391 17.0868C1.94531 16.4927 1.71289 15.9307 1.33398 15.4681C0.447266 14.3824 0 13.2175 0 12C0 10.7823 0.447266 9.61462 1.33398 8.53149C1.71289 8.06628 1.94727 7.50732 2.00586 6.91016C2.14648 5.51697 2.6543 4.37549 3.51562 3.51501C4.375 2.65466 5.51758 2.14526 6.91016 2.00476C7.50781 1.94617 8.06641 1.71509 8.53125 1.33459C9.61523 0.447754 10.7832 0 12 0C13.2148 0 14.3828 0.447876 15.4688 1.33484C15.9297 1.71533 16.4922 1.94641 17.0859 2.005C18.4805 2.14551 19.625 2.65466 20.4844 3.51526C21.3457 4.37573 21.8516 5.51721 21.9922 6.9104ZM18.8047 7.31726C18.8047 8.97412 17.4615 10.3173 15.8047 10.3173C14.1478 10.3173 12.8047 8.97412 12.8047 7.31726C12.8047 5.66041 14.1478 4.31726 15.8047 4.31726C17.4615 4.31726 18.8047 5.66041 18.8047 7.31726ZM14.1539 7.31726C14.1539 8.22898 14.893 8.96807 15.8047 8.96807C16.7164 8.96807 17.4555 8.22898 17.4555 7.31726C17.4555 6.40554 16.7164 5.66645 15.8047 5.66645C14.893 5.66645 14.1539 6.40554 14.1539 7.31726ZM16.9446 18.5933C18.2774 18.5933 19.3579 17.5129 19.3579 16.18C19.3579 14.8472 18.2774 13.7667 16.9446 13.7667C15.6117 13.7667 14.5312 14.8472 14.5312 16.18C14.5312 17.5129 15.6117 18.5933 16.9446 18.5933ZM16.9446 17.508C16.2112 17.508 15.6166 16.9134 15.6166 16.18C15.6166 15.4466 16.2112 14.852 16.9446 14.852C17.678 14.852 18.2726 15.4466 18.2726 16.18C18.2726 16.9134 17.678 17.508 16.9446 17.508ZM9.3069 6.7317C9.3069 7.83095 8.41578 8.72206 7.31654 8.72206C6.21729 8.72206 5.32617 7.83095 5.32617 6.7317C5.32617 5.63245 6.21729 4.74133 7.31654 4.74133C8.41578 4.74133 9.3069 5.63245 9.3069 6.7317ZM6.2213 6.7317C6.2213 7.33658 6.71165 7.82694 7.31654 7.82694C7.92142 7.82694 8.41178 7.33658 8.41178 6.7317C8.41178 6.12681 7.92142 5.63646 7.31654 5.63646C6.71165 5.63646 6.2213 6.12681 6.2213 6.7317ZM10.1615 16.8288C9.93209 16.5977 9.55876 16.5964 9.32767 16.8258L8.19435 17.951C7.96326 18.1805 7.96192 18.5538 8.19136 18.7849C8.42079 19.016 8.79412 19.0173 9.02521 18.7879L10.1585 17.6627C10.3896 17.4332 10.391 17.0599 10.1615 16.8288ZM12.0178 12.4647C12.2895 12.6442 12.3643 13.0099 12.1848 13.2816C12.0053 13.5533 11.6395 13.6281 11.3678 13.4486L9.6669 12.325C9.39519 12.1455 9.32044 11.7797 9.49993 11.508C9.67943 11.2363 10.0452 11.1615 10.3169 11.341L12.0178 12.4647ZM4.9707 12.3948C4.53815 12.3948 4.1875 12.7454 4.1875 13.178C4.1875 13.6105 4.53815 13.9612 4.9707 13.9612C5.40325 13.9612 5.75391 13.6105 5.75391 13.178C5.75391 12.7454 5.40325 12.3948 4.9707 12.3948Z" fill="#EEEEEE"/>
+                </svg>
+                
+                <h2 class="cookies__header text--white">쿠키</h2>
+            </div>
+            
+            
+            <p class="cookies__description">마법이 일어나기 위해 우리는 쿠키를 사용합니다. 자세히 알아보려면 <a href="/ko/privacy" target="_blank">개인정보 보호정책</a>을 읽어보세요.</p>
+        </div>
+        <div class="cookies__selection-list">
+            <div class="cookies__selection-element">
+                <div class="cookies__selection-label cookies__selection-label--locked">
+                    <svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.29265 4.80008H6.7054V3C6.7054 2.0576 5.94143 1.29363 4.99902 1.29363C4.05662 1.29363 3.29265 2.0576 3.29265 3V4.80008ZM1.99902 4.80008H1.44662C1.08939 4.80008 0.799805 5.08967 0.799805 5.4469V11.3533C0.799805 11.7105 1.08939 12.0001 1.44662 12.0001H8.55299C8.91022 12.0001 9.1998 11.7105 9.1998 11.3533V5.4469C9.1998 5.08967 8.91022 4.80008 8.55299 4.80008H7.99902V3C7.99902 1.34315 6.65588 0 4.99902 0C3.34217 0 1.99902 1.34315 1.99902 3V4.80008Z" fill="#EEEEEE" fill-opacity="0.5"/>
+                    </svg>
+                </div>
+                <div class="cookies__element-wrapper">
+                    <h3 class="cookies__element-title text--white">중요한</h3>
+                    <p class="cookies__element-description">이러한 쿠키는 탐색 및 인증과 같은 기본 기능을 보장합니다. 이들 없이는 웹사이트가 제대로 작동할 수 없습니다.</p>
+                </div>
+            </div>
+            <div class="cookies__selection-element">
+                <input type="checkbox" class="cookies__checkbox js-cookie-checkbox" id="preference-checkbox" checked />
+                <label for="preference-checkbox" class="cookies__selection-label" tabindex="0">
+                    <svg class="cookies__label-icon" width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.0809659 5.59375L1.46591 4.1804L5.05966 7.72443L12.6662 0.146306L14.0724 1.55966L5.05966 10.5369L0.0809659 5.59375Z" fill="#EEEEEE"/>
+                    </svg>                    
+                </label>
+                <div class="cookies__element-wrapper">
+                    <h3 class="cookies__element-title text--white">환경설정</h3>
+                    <p class="cookies__element-description">선호하는 언어나 지역 등 귀하의 선택에 따라 사이트를 개인화하여 귀하의 경험을 향상시킵니다.</p>
+                </div>
+            </div>
+            <div class="cookies__selection-element">
+                <input type="checkbox" class="cookies__checkbox js-cookie-checkbox" id="analytics-checkbox" checked />
+                <label for="analytics-checkbox" class="cookies__selection-label" tabindex="0">
+                    <svg class="cookies__label-icon" width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.0809659 5.59375L1.46591 4.1804L5.05966 7.72443L12.6662 0.146306L14.0724 1.55966L5.05966 10.5369L0.0809659 5.59375Z" fill="#EEEEEE"/>
+                    </svg>                    
+                </label>
+                <div class="cookies__element-wrapper">
+                    <h3 class="cookies__element-title text--white">애널리틱스</h3>
+                    <p class="cookies__element-description">이는 사이트 트래픽, 사용자 행동 및 성능에 대한 귀중한 통찰력을 제공하여 정보를 바탕으로 개선할 수 있도록 해줍니다.</p>
+                </div>
+            </div>
+            <div class="cookies__selection-element">
+                <input type="checkbox" class="cookies__checkbox js-cookie-checkbox" id="advertisement-checkbox" checked/>
+                <label for="advertisement-checkbox" class="cookies__selection-label" tabindex="0">
+                    <svg class="cookies__label-icon" width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.0809659 5.59375L1.46591 4.1804L5.05966 7.72443L12.6662 0.146306L14.0724 1.55966L5.05966 10.5369L0.0809659 5.59375Z" fill="#EEEEEE"/>
+                    </svg>                    
+                </label>
+                <div class="cookies__element-wrapper">
+                    <h3 class="cookies__element-title text--white">마케팅</h3>
+                    <p class="cookies__element-description">맞춤형 광고를 제공하기 위해 데이터를 수집합니다. 이러한 쿠키를 통해 당사는 귀하에게 관련성 있고 흥미로운 콘텐츠를 제공할 수 있습니다.</p>
+                </div>
+            </div>
+        </div>
+        
+        <button class="cookies__submit-button js-cookies-submit" tabindex="0">
+            
+            <span class="cookies__button-label cookies__button-label--default">OK</span>
+            
+            <span class="cookies__button-label cookies__button-label--demonstrative">선택 항목 허용</span>
+        </button>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+    const gdprUser = false;
+</script>
+
+
+
+
+<script src="https://static.4kdownload.com/CACHE/js/output.32cc8bb3219d.js" defer></script>
+
+
+
+            </div>
+
+
+        
+
+
+
+
+
+
+
+
+      <div class="footer  ">
+        
+          <div class="footer__main">
+          <div class="footer__navs">
+            <div class="footer__col footer__col--navigation">
+              <div class="footer__heading">제품</div>
+                <nav class="nav nav--vertical" aria-label="제품">
+                  <a href="/ko/products/videodownloader-1" class="nav__item footer__nav-item">Video Downloader</a>
+                  <a href="/ko/products/tokkit/8" class="nav__item footer__nav-item">TikTok Downloader</a>
+                  <a href="/ko/products/stogram-3" class="nav__item footer__nav-item">Instagram Downloader</a>
+                  <a href="/ko/products/youtubetomp3-9" class="nav__item footer__nav-item">YouTube to MP3</a>
+                  <a href="/ko/products/imagecompressor" class="nav__item footer__nav-item">Image Compressor</a>
+                  <a href="/ko/products/videotomp3/6" class="nav__item footer__nav-item">Video to MP3</a>
+                  <a href="/ko/products/slideshowmaker" class="nav__item footer__nav-item">Slideshow Maker</a>
+                  <a href="/ko/downloads/9" class="nav__item footer__nav-item">다운로드</a>
+                  
+                    <a href="/ko/faq/faq-how-to-uninstall" class="nav__item footer__nav-item">4K Download 애플리케이션은 어떻게 삭제하나요</a>
+                  
+                </nav>
+            </div>
+            <div class="footer__col footer__col--navigation">
+              <div class="footer__heading">도움말</div>
+                
+                <nav class="nav nav--vertical" aria-label="도움말"><a href="/ko/help/4#howto" class="nav__item footer__nav-item">어떻게</a><a href="/ko/help/4#videos" class="nav__item footer__nav-item">동영상 가이드</a><a href="/ko/help/4#faq" class="nav__item footer__nav-item">FAQ</a><a href="/ko/help/4#troubleshooting" class="nav__item footer__nav-item">문제 해결</a><a href="/ko/retrieve-key/2" class="nav__item footer__nav-item">라이선스 복구</a><a href="/ko/help/4#feedback" class="nav__item footer__nav-item">피드백</a>
+                </nav>
+            </div>
+            <div class="footer__col footer__col--navigation">
+              <div class="footer__heading">법 관련 정보</div>
+                <nav class="nav nav--vertical" aria-label="법 관련 정보"><a href="/ko/agreement/terms-of-use/2" class="nav__item footer__nav-item">약관</a><a href="/ko/agreement/affiliate" class="nav__item footer__nav-item">제휴 계약서</a><a href="/ko/privacy" class="nav__item footer__nav-item">개인정보 정책</a><a href="/ko/refund" class="nav__item footer__nav-item">환불 규정</a>
+                </nav>
+            </div>
+            <div class="footer__col footer__col--navigation">
+              <div class="footer__heading">회사</div>
+                <nav class="nav nav--vertical" aria-label="회사">
+                  <a href="/ko/about/1" class="nav__item footer__nav-item">회사 소개</a>
+                  <a href="/blog/" class="nav__item footer__nav-item">뉴스</a>
+                  <a href="/ko/contacts" class="nav__item footer__nav-item">문의</a>
+                  <a href="/ko/contribute/recommend" class="nav__item footer__nav-item">기여하기</a>
+                  <a href="/ko/affiliate" class="nav__item footer__nav-item">제휴</a>
+                  <a href="/ko/non-profit-and-educational-discount-program" class="nav__item footer__nav-item">비영리 단체와 교육 단체 할인 프로그램</a>
+                </nav>
+            </div>
+            <div class="footer__col footer__col--for-mobile">
+              <div class="footer__col--updates">
+                
+                <div class="footer__heading">제품 업데이트 받기</div>
+                
+
+
+<form class="subscribe input-group js-subscribe input-group--without-shadow" action="/api/newsletter/subscribe/">
+    <div class="form-control-wrap">
+        <input placeholder="이메일" name="email" class="input-with-captcha subscribe__input form-control input-group__input">
+    </div>
+    <button aria-label="Validate email" type="submit" class="subscribe__submit subscribe__submit--next btn btn--primary input-group__btn button--stogram">
+        <span class="subscribe__submit-icon"></span>
+        <span class="subscribe__submit-text" id="text-send">다음</span>
+    </button>
+    <div class="subscribe__agreement subscribe-agreement-js">
+        <label class="subscribe__checkbox agreement-check agreement-checkbox-js">
+                <input class="agreement-check__input" type="checkbox">
+                <span class="agreement-check__checkmark"></span>
+                
+                <p class="agreement-check__text subscribe__agreement-text subscribe__agreement-text--update">4천 다운로드 달성 소식, 특가 및 업데이트 소식을 받아보고 싶습니다.</p>
+        </label>
+        <div class="subscribe__submit-wrapper">
+            <p class="agreement-check__text subscribe__agreement-text subscribe__agreement-text--privacy"><strong>전송하기</strong> 버튼을 눌러서 <a href="/ko/privacy">개인정보보호정책</a>에 동의해 주세요.</p>
+            <button aria-label="Submit subscribing on product updates" type="submit" disabled class="subscribe__submit subscribe__submit--send btn btn--disabled btn--primary input-group__btn button--stogram">
+                <span class="subscribe__submit-icon"></span>
+                <span class="subscribe__submit-text" id="text-send">보내기</span>
+            </button>
+        </div>
+    </div>
+</form>
+              </div>
+            </div>
+          </div>
+          <div class="footer__section">
+            <div class="footer__col footer__col--community">
+              <div class="footer__heading">커뮤니티</div>
+              <div class="community footer__community">
+
+                <a href="https://twitter.com/4kdownload" rel="noopener noreferrer" target="_blank" class="community__item">
+                  <img class="community__item--twitter__logo" src="https://static.4kdownload.com/main/img/redesign/ic-x-grey.3d28e08a8e92.svg" alt="Twitter" />
+                </a>
+
+                <div class="community__item community__item--wechat">
+                  <img class="community__item--wechat__logo" src="https://static.4kdownload.com/main/img/redesign/ic-wechat-footer.2fbee218ccaf.svg" alt="Wechat" />
+                  <div class="community__wechat-qrcode">
+                    <picture>
+                      <source srcset="https://static.4kdownload.com/main/img/redesign/qr-code-wechat.9e0d7bd7007e.webp" type="image/webp"> 
+                      <img src="https://static.4kdownload.com/main/img/redesign/qr-code-wechat.1bff5c2e2972.jpg" alt="" loading="lazy"/>
+                    </picture>
+                  </div>
+                </div>
+
+                <a href="https://www.reddit.com/r/4kdownloadapps/" rel="noopener noreferrer" target="_blank" class="community__item">
+                  <img class="community__item--reddit__logo" src="https://static.4kdownload.com/main/img/redesign/ic-reddit-dark.eb0623b9985b.svg" alt="Reddit" />
+                </a>
+
+                
+
+                <a href="https://www.4kdownload.com/blog" rel="noopener noreferrer" target="_blank" class="community__item">
+                  <img class="community__item--feed__logo" src="https://static.4kdownload.com/main/img/redesign/ic-rss-feed.b2148d5ae4b1.svg" alt="RSS feed" />
+                </a>
+              </div>
+            </div>
+            <div class="footer__col footer__col--updates">
+              
+              <div class="footer__heading footer__heading--light">제품 업데이트 받기</div>
+              
+
+
+<form class="subscribe input-group js-subscribe input-group--without-shadow" action="/api/newsletter/subscribe/">
+    <div class="form-control-wrap">
+        <input placeholder="이메일" name="email" class="input-with-captcha subscribe__input form-control input-group__input">
+    </div>
+    <button aria-label="Validate email" type="submit" class="subscribe__submit subscribe__submit--next btn btn--primary input-group__btn button--stogram">
+        <span class="subscribe__submit-icon"></span>
+        <span class="subscribe__submit-text" id="text-send">다음</span>
+    </button>
+    <div class="subscribe__agreement subscribe-agreement-js">
+        <label class="subscribe__checkbox agreement-check agreement-checkbox-js">
+                <input class="agreement-check__input" type="checkbox">
+                <span class="agreement-check__checkmark"></span>
+                
+                <p class="agreement-check__text subscribe__agreement-text subscribe__agreement-text--update">4천 다운로드 달성 소식, 특가 및 업데이트 소식을 받아보고 싶습니다.</p>
+        </label>
+        <div class="subscribe__submit-wrapper">
+            <p class="agreement-check__text subscribe__agreement-text subscribe__agreement-text--privacy"><strong>전송하기</strong> 버튼을 눌러서 <a href="/ko/privacy">개인정보보호정책</a>에 동의해 주세요.</p>
+            <button aria-label="Submit subscribing on product updates" type="submit" disabled class="subscribe__submit subscribe__submit--send btn btn--disabled btn--primary input-group__btn button--stogram">
+                <span class="subscribe__submit-icon"></span>
+                <span class="subscribe__submit-text" id="text-send">보내기</span>
+            </button>
+        </div>
+    </div>
+</form>
+            </div>
+          </div>
+        </div>
+        
+        <div class="footer__bottom  " >
+          <div class="footer__bottom-left ">
+              <div class="logo footer__logo"><a href="/ko/8" title="Home page">
+            <svg class="icon__logo" width="24px" height="22px">
+                <use xlink:href="#logo"></use>
+            </svg>
+              </a></div>
+            
+            <div class="footer__copyright ">&copy; 2025 InterPromo GMBH. 모든 권리 보유.</div>
+            
+
+
+
+
+
+
+
+
+          </div>
+          <div class="footer__bottom-right">
+            <div class="footer__lang">
+                <select class="lang js-lang flags lang--above">
+                  
+                      
+                      
+                      <option value="en" data-icon="en" data-href="/products/stogram-8" >English</option>
+                      
+                  
+                      
+                      
+                      <option value="de" data-icon="de" data-href="/de/products/stogram-2" >Deutsch</option>
+                      
+                  
+                      
+                      
+                      <option value="fr" data-icon="fr" data-href="/fr/products/stogram-1" >français</option>
+                      
+                  
+                      
+                      
+                      <option value="it" data-icon="it" data-href="/it/products/stogram-1" >italiano</option>
+                      
+                  
+                      
+                      
+                      <option value="es" data-icon="es" data-href="/es/products/stogram-3" >español</option>
+                      
+                  
+                      
+                      
+                      <option value="pt-br" data-icon="pt-br" data-href="/pt-br/products/stogram-2" >Português Brasileiro</option>
+                      
+                  
+                      
+                      
+                      <option value="nl" data-icon="nl" data-href="/nl/products/stogram-3" >Nederlands</option>
+                      
+                  
+                      
+                      
+                      <option value="pl" data-icon="pl" data-href="/pl/products/stogram-1" >polski</option>
+                      
+                  
+                      
+                      
+                      <option value="zh-cn" data-icon="zh-cn" data-href="/zh-cn/products/stogram-5" >简体中文</option>
+                      
+                  
+                      
+                      
+                      <option value="zh-tw" data-icon="zh-tw" data-href="/zh-tw/products/stogram-2" >繁體中文</option>
+                      
+                  
+                      
+                      
+                      <option value="ko" data-icon="ko" data-href="/ko/products/stogram-3" selected>한국어</option>
+                      
+                  
+                      
+                      
+                      <option value="ja" data-icon="ja" data-href="/ja/products/stogram-3" >日本語</option>
+                      
+                  
+                      
+                      
+                      <option value="ru" data-icon="ru" data-href="/ru/products/stogram-2" >Русский</option>
+                      
+                  
+                </select>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js" defer></script>
+
+        <!-- polyfills -->
+        <script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.min.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@3.6.2/dist/fetch.umd.min.js" defer></script>
+        <!-- end of polyfills -->
+        
+        <script src="https://static.4kdownload.com/CACHE/js/output.32f0ee280924.js" defer></script>
+<script src="https://static.4kdownload.com/CACHE/js/output.794141ded13d.js" async></script>
+<script src="https://static.4kdownload.com/CACHE/js/output.bc44c5ffdf25.js" defer></script>
+        
+        <script src="https://static.4kdownload.com/CACHE/js/output.3a9dd03c738f.js" defer></script>
+        
+        
+
+<script src="https://static.4kdownload.com/CACHE/js/output.2ace20617300.js" defer></script>
+
+<script src="https://static.4kdownload.com/CACHE/js/output.5ecd89e2bce8.js" defer></script>
+
+
+<script src="https://static.4kdownload.com/CACHE/js/output.549af796f06b.js" defer></script>
+
+
+
+
+
+
+
+<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&hl=ko&render=explicit" defer></script>
+
+<script src="https://static.4kdownload.com/CACHE/js/output.27bd337a18fd.js" defer></script>
+
+
+        
+
+
+    <script type="text/javascript">
+        window.subscribe_translate = {
+            "Send": "보내기",
+            "Sent": "전송",
+            "Error": "잘못된 이메일"
+        };
+    </script>
+
+        
+        
+        <script type="text/javascript">
+                const tapfAccoutID = '14750-b7b5b4';
+                loadTapfiliateScript('https://script.tapfiliate.com/tapfiliate.js', checkTapfiliate, tapfAccoutID); 
+        </script>
+        
+        
+        
+
+        <script type="text/javascript">
+            window.googleRecaptchaKey = "6LdYl1sUAAAAADRufi0gdLV-DI5V-tCUmRlifKSx";
+            window.useCaptchaInForms = "True";
+        </script>
+        
+
+<script type="text/javascript">
+    document.documentElement.classList.remove("no-js");
+    const remindLinks = Object.freeze({
+      
+        
+        windows:"/ko/remind?product=stogram",
+        
+      
+        
+        osx:"/ko/remind?product=stogram",
+        
+         
+        ubuntu:"/ko/remind?product=stogram"
+        
+    });
+    const applicationsInfo = Object.freeze({
+      
+        
+        windows: {
+          "downloadUrl" : "https://dl.4kdownload.com/app/4kstogram_4.9.0_online.exe?source=website",
+          "targetOC" : "Microsoft Windows 온라인 설치기",
+          "applicationSize" : "0.7 Mb",
+          "logoSrc" : "https://static.4kdownload.com/main/img/redesign-v2/products-page/icons/windows.626d84cbf59f.svg",
+          "fullVersion": "stogram_4.9.0.4680_windows_x86"
+        },
+        
+      
+        
+        osx: {
+          "downloadUrl" : "https://dl.4kdownload.com/app/4kstogram_4.9.0_x64.dmg?source=website",
+          "targetOC" : "맥 OS 10.13 and later 설치 프로그램",
+          "applicationSize" : "113.4 Mb",
+          "logoSrc" : "https://static.4kdownload.com/main/img/redesign-v2/products-page/icons/mac_logo.d8effc8bdd2f.svg",
+          "fullVersion": "stogram_4.9.0.4680_osx_x64"
+        },
+        
+         
+        ubuntu: {
+          "downloadUrl" : "https://dl.4kdownload.com/app/4kstogram_4.9.0-1_amd64.deb?source=website",
+          "targetOC" : "Ubuntu 64-bit 설치 프로그램",
+          "applicationSize" : "81.0 Mb",
+          "logoSrc" : "https://static.4kdownload.com/main/img/redesign-v2/products-page/icons/ubuntu.40bbbec62b7f.svg",
+          "fullVersion": "stogram_4.9.0.4680_ubuntu_x64"
+        }
+        
+    });
+</script>
+
+    
+<script type="text/javascript">
+    $(function(){
+        $(document).ready(function() {
+            var downloadURL = function downloadURL(url) {
+                window.location = url;
+            };
+            function getParameterByName(name, url) {
+                if (!url) url = window.location.href;
+                name = name.replace(/[\[\]]/g, "\\$&");
+                var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                    results = regex.exec(url);
+                if (!results) return null;
+                if (!results[2]) return '';
+                return decodeURIComponent(results[2].replace(/\+/g, " "));
+            }                
+            if (getParameterByName("download") != null) {
+                setTimeout(function(){
+                    dataLayer.push({event: 'app_download', product: 'stogram'});
+                    downloadURL("https://dl.4kdownload.com/app/4kstogram_4.9.0_online.exe?source=website");
+                }, 500);
+            }
+        });
+    });
+</script>
+
+
+  <script type="text/javascript">
+      window.PRODUCT_AVERAGE_RATING = 4.4;
+      window.DISCOUNT_END_DATE = "05 Feb 2025 23:59:59 GMT";
+  </script>
+
+
+        <!-- Social -->
+
+        <script data-id="twitter-social-script" type="text/delayscript">
+        window.twttr = (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0],
+                t = window.twttr || {};
+            if (d.getElementById(id)) return t;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "https://platform.twitter.com/widgets.js";
+            fjs.parentNode.insertBefore(js, fjs);
+
+            t._e = [];
+            t.ready = function(f) {
+                t._e.push(f);
+            };
+
+            return t;
+        }(document, "script", "twitter-wjs"));
+        </script>
+        <!-- End Social -->
+    </body>
+</html>

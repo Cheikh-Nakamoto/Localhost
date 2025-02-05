@@ -1,0 +1,2419 @@
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html class="no-js" lang="en" >
+    <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>How to Reduce PNG Size by a Percentage | 4K Download</title>
+        
+        <meta name="description" content="Learn how to compress PNG images on Mac, Windows, and Linux for free. Reduce the size of your PNG files by a certain percentage."/>
+        <meta name="author" content="InterPromo"/>
+        
+        <meta name="robots" content="index,follow"/>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="telephone=no" name="format-detection">
+        <meta name="deploy-id" content="879636b2">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" media="print" onload="this.media='all'" />
+        
+        <link rel="icon" type="image/x-icon" href="https://static.4kdownload.com/main/img/favicon.14dc87052228.ico">
+        <link rel="icon" type="image/png" sizes="16×16 32x32" href="https://static.4kdownload.com/main/img/favicon.6386ec19bc8e.png">
+        <link rel="icon" type="image/svg+xml" sizes="any" href="https://static.4kdownload.com/main/img/favicon.da3f1b91ff73.svg">
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="https://static.4kdownload.com/main/img/apple-touch-icon.28aaa8fcad5e.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="https://static.4kdownload.com/main/img/apple-touch-icon-120x120.f27fb7940ea2.png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="https://static.4kdownload.com/main/img/apple-touch-icon-152x152.4caeb7964082.png" />
+        <link rel="apple-touch-icon" sizes="167x167" href="https://static.4kdownload.com/main/img/apple-touch-icon-167x167.e7eb821f1ed5.png" />
+
+        <!-- Cookie Consent Mode Initialization -->
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+
+            localStorage.removeItem("cookiesAccepted");
+            localStorage.removeItem("4kConsentMode");
+
+            const consent = localStorage.getItem('4kdownloadConsentMode');
+            if(consent && JSON.parse(consent)) {
+                gtag('consent', 'default', JSON.parse(consent));
+                dataLayer.push({
+                    event: "cookie_consent_update",
+                });
+            } else {
+                gtag('consent', 'default', {
+                    'ad_storage': 'denied',
+                    'ad_user_data': 'denied',
+                    'ad_personalization': 'denied',
+                    'analytics_storage': 'denied',
+                    'functionality_storage': 'denied',
+                    'personalization_storage': 'denied',
+                    'security_storage': 'denied',
+                });
+                localStorage.removeItem('cookieBlockClosed');
+            }
+        </script>
+        <!-- End Cookie Consent Mode Initialization -->
+
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-NW3DZ7T');</script>
+        <!-- End Google Tag Manager -->
+
+        <script>
+            document.createElement('picture')
+        </script>
+
+        
+        
+        <link rel="canonical" href="https://www.4kdownload.com/howto/how-to-reduce-png-size-by-a-percentage" />
+        
+
+        
+    
+    
+    
+    
+
+    
+    
+    
+
+    
+        <meta property="fb:app_id" content="221385841547848" />
+        <meta property="og:url" content="https://www.4kdownload.com/howto/how-to-reduce-png-size-by-a-percentage" />
+        <meta property="og:locale" content="en" />
+        <meta property="og:site_name" content="4K Download" />
+        <meta name="twitter:url" content="https://www.4kdownload.com/howto/how-to-reduce-png-size-by-a-percentage" />
+        
+
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="http://static.4kdownload.com/main/img/share.2902659c2582.jpg" />
+    <meta property="og:image:secure_url" content="https://static.4kdownload.com/main/img/share.2902659c2582.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://static.4kdownload.com/main/img/share.2902659c2582.jpg" />
+    <meta name="twitter:site" content="@4kdownload" />
+    <meta name="twitter:creator" content="@4kdownload">
+
+
+    <meta property="og:title" content="How to Reduce a PNG Image Size by a Percentage" />
+    <meta property="og:image" content="http://static.4kdownload.com/main/img/guide/reduce-png-size-by-a-percentage/share.79d7855296df.png" />
+    <meta property="og:image:secure_url" content="https://static.4kdownload.com/main/img/guide/reduce-png-size-by-a-percentage/share.79d7855296df.png" />
+    <meta property="og:description" content="Learn how to compress PNG images on Mac, Windows, and Linux for free. Reduce the size of your PNG files by a certain percentage." />
+    <meta property="article:section" content="Entertainment" />
+    <meta property="article:tag" content="PNG Image" />
+    <meta property="article:tag" content="Reduce Image" />
+    <meta property="article:tag" content="Reduce PNG Image Size" />
+    <meta name="twitter:title" content="How to Reduce a PNG Image Size by a Percentage" />
+    <meta name="twitter:image" content="https://static.4kdownload.com/main/img/guide/reduce-png-size-by-a-percentage/share.79d7855296df.png" />
+    <meta name="twitter:description" content="Learn how to compress PNG images on Mac, Windows, and Linux for free. Reduce the size of your PNG files by a certain percentage." />
+
+
+        
+            
+                
+                    
+                        <link rel="alternate" hreflang="x-default" href="https://www.4kdownload.com/howto/how-to-reduce-png-size-by-a-percentage" />
+                        <link rel="alternate" hreflang="en" href="https://www.4kdownload.com/howto/how-to-reduce-png-size-by-a-percentage" />
+                    
+                
+            
+                
+                    
+                        <link rel="alternate" hreflang="de" href="https://www.4kdownload.com/de/howto/how-to-reduce-png-size-by-a-percentage" />
+                    
+                
+            
+                
+                    
+                        <link rel="alternate" hreflang="fr" href="https://www.4kdownload.com/fr/howto/how-to-reduce-png-size-by-a-percentage" />
+                    
+                
+            
+                
+                    
+                        <link rel="alternate" hreflang="it" href="https://www.4kdownload.com/it/howto/how-to-reduce-png-size-by-a-percentage" />
+                    
+                
+            
+                
+                    
+                        <link rel="alternate" hreflang="es" href="https://www.4kdownload.com/es/howto/how-to-reduce-png-size-by-a-percentage" />
+                    
+                
+            
+                
+                    
+                        <link rel="alternate" hreflang="pt-br" href="https://www.4kdownload.com/pt-br/howto/how-to-reduce-png-size-by-a-percentage" />
+                    
+                
+            
+                
+                    
+                        <link rel="alternate" hreflang="nl" href="https://www.4kdownload.com/nl/howto/how-to-reduce-png-size-by-a-percentage" />
+                    
+                
+            
+                
+                    
+                        <link rel="alternate" hreflang="pl" href="https://www.4kdownload.com/pl/howto/how-to-reduce-png-size-by-a-percentage" />
+                    
+                
+            
+                
+                    
+                        <link rel="alternate" hreflang="zh-cn" href="https://www.4kdownload.com/zh-cn/howto/how-to-reduce-png-size-by-a-percentage" />
+                    
+                
+            
+                
+                    
+                        <link rel="alternate" hreflang="zh-tw" href="https://www.4kdownload.com/zh-tw/howto/how-to-reduce-png-size-by-a-percentage" />
+                    
+                
+            
+                
+                    
+                        <link rel="alternate" hreflang="ko" href="https://www.4kdownload.com/ko/howto/how-to-reduce-png-size-by-a-percentage" />
+                    
+                
+            
+                
+                    
+                        <link rel="alternate" hreflang="ja" href="https://www.4kdownload.com/ja/howto/how-to-reduce-png-size-by-a-percentage" />
+                    
+                
+            
+                
+                    
+                        <link rel="alternate" hreflang="ru" href="https://www.4kdownload.com/ru/howto/how-to-reduce-png-size-by-a-percentage" />
+                    
+                
+            
+        
+
+        <style type="text/css">/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}mark{background:#ff0;color:#000}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:0}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}fieldset{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}blockquote{margin:0}*{box-sizing:border-box}input:focus,button:focus,textarea:focus{outline:#338fff solid 1px;outline-offset:0}a{text-decoration:none}abbr[title]{border-bottom:none;text-decoration:none}b,strong{font-weight:normal}h2,h4{margin:0}html,body{font-family:"Inter",sans-serif;font-weight:normal;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;overflow-x:hidden;font-size:16px}.page-wrapper{padding-top:60px}.page-wrapper--sale{padding-top:112px}.page-wrapper--full-display{padding-top:0}.disabled{display:none!important}.visually-hidden{position:absolute!important;clip:rect(0 0 0 0);width:1px;height:1px;margin:-1px}.smooth-scroll{scroll-behavior:smooth}.h1{margin-top:0;margin-bottom:0.93em;color:#364962;font-size:42px;line-height:52px;letter-spacing:0.2px;font-weight:normal}.h1--white{color:#f9f9f9}.h1--black{color:#000000}.h1 a{color:#364962}.h2{font-size:32px;font-weight:normal;line-height:1.25;letter-spacing:0.2px;color:#364962}.h2 a{color:#364962}.text{font-weight:300;font-size:14px;color:#364962;opacity:0.8;line-height:1.62;letter-spacing:0.2px}.text a{color:#364962}.text--large{font-size:18px}.text--middle{font-size:16px}.text--safe{max-width:189px!important;margin:0 0 0 38px!important;font-weight:300;font-size:12px;line-height:1.25}.text--white{color:#ffffff}.text--black{color:#000000}.colored-link a{color:#0f73ee}.underline-link a{text-decoration:underline}.btn{padding:14px 44px;background:none;border:none;border-radius:3px;outline:none;font-size:16px;line-height:1.4;color:#fff;white-space:nowrap;transition:all 0.05s;text-align:center;text-decoration:none;cursor:pointer;box-shadow:0 2px 8px 0 rgba(26,0,35,0.08)}.btn:hover{opacity:0.8;box-shadow:0 5px 28px rgba(0,0,0,0.12)}.btn:active{box-shadow:none}@media (max-width:600px){.btn{padding:14px 26px}}.btn--default{border-radius:3px;border:solid 1px rgba(232,232,232,0.6);color:#364962}.btn--transparent{background-color:transparent;border:solid 1px rgba(232,232,232,0.6);color:#ffffff}.btn--disabled{background-color:#bacbd6!important;color:#ffffff!important;box-shadow:none!important;cursor:default}.btn--disabled:hover{opacity:1!important;box-shadow:none!important}.btn--videodownloader{background-color:#5caa00}.btn--videodownloader:active{background-color:#407700}.btn--videodownloaderandroid{background-color:#5caa00}.btn--videodownloaderandroid:active{background-color:#407700}.btn--youtubetomp3{background-color:#3981ff}.btn--videotomp3{background-color:#9c71da}.btn--slideshowmaker{background-color:#e7262f}.btn--stogram{background-color:#ff5c1b}.btn--tokkit{background-color:#f0127d}.btn--imagecompressor{background-color:#3f66ff}.btn--white{background-color:#ffffff}.btn--white:active{background-color:#e6e6e6}.btn--primary{background-color:#0f73ee;line-height:1}.btn--primary:hover{background-color:#338fff;opacity:1}.btn--primary:active{background-color:#0c5cbe}.btn--large{padding:16px 40px;font-size:20px;line-height:24px;mix-blend-mode:normal}.btn--small{padding:12px 20px;line-height:1.18}.btn--block{display:block;width:100%}.btn--remind{margin-top:16px;background-color:#eff7e5}.icon{position:relative;display:inline-block;font-size:0;vertical-align:middle}.btn__icon{display:flex;align-items:center;justify-content:center;width:64px;height:64px;border-radius:50vh;overflow:hidden;margin-right:8px}.btn__icon>img{position:relative;top:-1px}.btn__icon--videodownloader{background:#5cb400}.btn__icon--youtubetomp3{background-color:#3981ff}.btn__icon--videotomp3{background-color:#9c71da}.btn__icon--slideshowmaker{background-color:#e7262f}.btn__icon--stogram{background-color:#ff5c1b}.btn__icon-downloader{margin-left:8px}.form-control{padding:14px 16px;border-radius:3px;background-color:#ffffff;border:solid 1px #e8e8e8;font-size:16px;line-height:1.25;font-weight:300}.form-control::placeholder{opacity:0.5;color:#333333}.form-control:focus{outline:none}.form-control:active{opacity:1}.form-control--error{border-color:#e7262f}.form-control--block{display:block;width:100%}.form-control-wrap{position:relative}.form-control__error{position:absolute;top:65px;left:0;font-size:14px;opacity:0.8;line-height:1.14;color:#e7262f;transform:translateY(-50%)}.input-group{display:flex}.input-group__input{border-top-right-radius:0;border-bottom-right-radius:0}.input-group__btn{border-top-left-radius:0;border-bottom-left-radius:0}.windows{fill:#0871c4}.ubuntu{fill:#dd4814}.btn__text{opacity:1}.btn__text:hover{opacity:1}.lazy{height:0!important;width:0!important}.text-button{background:transparent;padding:0;border:none}.dark-blue-arrow-down{position:relative}.dark-blue-arrow-down:after{content:"";display:inline-block;background-image:url("https://static.4kdownload.com/main/img/redesign/dark-blue-arrow-down.svg?de80a546e2c7");background-repeat:no-repeat;background-size:contain;vertical-align:middle}.extra-blocks{position:fixed;left:1.5rem;bottom:1.5rem;z-index:2147480001}@media (max-width:660px){.extra-blocks{left:0.75rem;bottom:0.75rem;display:flex;flex-direction:column;gap:0.5rem}}@media (max-height:450px){.extra-blocks{bottom:0.75rem}}.page-header{position:fixed;top:0px;left:0;width:100%;height:60px;background-color:#ffffff;box-shadow:0 3px 38px 0 rgba(2,1,8,0.08);z-index:1000;transition:background-color 0.15s cubic-bezier(0,0,0.2,1)}.page-header:hover{background-color:#ffffff}.page-header--scroll{box-shadow:none}.page-header select{visibility:hidden}.page-header--transparent{background-color:#f9f9f9;box-shadow:none}.page-header--transparent:hover{background-color:#f9f9f9}.page-header--short{background-color:#ffffff;box-shadow:0px 10px 20px rgba(0,0,0,0.05);left:50%;margin-left:-512px;max-width:1024px;top:10px;border:0.5px solid #e6e6e6}.page-header--short:hover{background-color:#ffffff}@media (max-width:1280px){.page-header--short{max-width:100%;top:0;left:0;margin-left:0;border:none}}.page-header--top-margin{top:8px}.page-header--sale{height:112px}.page-header--sale.page-header--short{top:-1px}.page-header--no-shadow{box-shadow:none}.page-header__wrap{position:relative;display:flex;justify-content:space-between;align-items:center;width:100%;height:60px;padding:0 70px}.page-header__wrap--compact{max-width:1408px;padding:0 22px;margin:0 auto}@media (max-width:1440px){.page-header__wrap{padding:0 60px}}@media (max-width:1280px){.page-header__wrap{padding:0 50px}}@media (max-width:480px){.page-header__wrap{padding:0 15px}}.page-header__right,.page-header__left{display:flex;align-items:center}.page-header__left{margin-right:1.875rem}@media (max-width:480px){.page-header__left{margin-left:15px}}.page-header__left .nav__item{transition:none}.page-header__nav--pricing{margin-left:auto}@media (max-width:870px){.page-header__nav{display:none!important}}.page-header__logo{margin-right:30px}.page-header__logo a{fill:#0f73ee}@media (max-width:870px){.page-header__logo{position:absolute!important;top:50%;transform:translate(-50%,-50%)}}.page-header__lang .selectric-lang .selectric .label{margin-right:0}.page-header__lang .selectric-lang .selectric .label .lang__icon{margin-right:0}.page-header__lang .selectric-lang .selectric .label .lang__selected{display:none}.page-header__headerOS .selectric-headerOS .selectric .label{margin-right:0;min-width:118.89px}.page-header__headerOS .selectric-headerOS .selectric .label .headerOS__icon{margin-right:0}@media (max-width:768px){.page-header__headerOS .selectric-headerOS .selectric .label{min-width:0}.page-header__headerOS .selectric-headerOS .selectric .label .headerOS__selected{display:none}}.page-header__download{margin-left:auto;opacity:0;display:none;z-index:-10;font-size:17px;letter-spacing:0.4px;transition:opacity 0.15s cubic-bezier(0,0,0.2,1)}.page-header__download--active{opacity:1;z-index:1;display:inline-block}.page-header__download--active:hover{box-shadow:none}@media (max-width:900px){.page-header__download{display:none}}.page-header__right{max-width:168.89px}@media (max-width:870px){.page-header__right{max-width:214.89px}}@media (max-width:768px){.page-header__right{max-width:100%}}.header__icon--store{margin-left:8px;margin-bottom:-3px}.nav{position:relative;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.nav--vertical{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start}.nav--large .nav__item{display:flex;margin-right:30px;font-size:17px;line-height:1.47;letter-spacing:0.4px;opacity:0.6;color:#364962}.nav--large .nav__item:last-child{margin-right:0}.nav--large .nav__item--videodownloader{color:#5cb400}.nav--large .nav__item--videodownloaderplus{color:#5cb400}.nav--large .nav__item--videodownloaderandroid{color:#5cb400}.nav--large .nav__item--youtubetomp3{color:#3981ff}.nav--large .nav__item--imagecompressor{color:#3f66ff}.nav--large .nav__item--videotomp3{color:#9c71da}.nav--large .nav__item--slideshowmaker{color:#e7262f}.nav--large .nav__item--stogram{color:#ff5c1b}.nav--large .nav__item--tokkit{color:#f0127d}.nav--large .nav__button-premium{opacity:1;font-weight:600}.nav--large .nav__button-premium:hover{opacity:1}.nav__item{display:inline-flex;margin-right:20px;opacity:0.8;color:#525f7f;font-size:14px;font-weight:normal;line-height:2;text-decoration:none;transition:opacity 0.15s cubic-bezier(0,0,0.2,1)}.nav__item:hover{opacity:1}.logo{position:relative}.logo--videodownloader a,.logo--videodownloaderplus a,.logo--videodownloaderandroid a{fill:#5cb400}.logo--youtubetomp3 a{fill:#3981ff}.logo--videotomp3 a{fill:#9c71da}.logo--slideshowmaker a{fill:#e7262f}.logo--stogram a{fill:#ff5c1b}.logo--tokkit a{fill:#f0127d}.mobile-menu-trigger{position:relative;display:none;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;margin-right:auto;width:24px;height:16px;cursor:pointer}.mobile-menu-trigger--active .mobile-menu-trigger__item--first{-webkit-transform:rotate(135deg);-ms-transform:rotate(135deg);transform:rotate(135deg);margin:0;top:7px}.mobile-menu-trigger--active .mobile-menu-trigger__item--last{-webkit-transform:rotate(-135deg);-ms-transform:rotate(-135deg);transform:rotate(-135deg);top:7px}.mobile-menu-trigger--active .mobile-menu-trigger__item--second{opacity:0;left:-100%}@media (max-width:870px){.mobile-menu-trigger{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-ordinal-group:4;-ms-flex-order:3;order:3;margin-left:22px}}.mobile-menu-trigger__item{position:absolute;left:0;display:block;width:100%;height:2px;background:#000222;opacity:0.3;-webkit-transition:all 0.2s;-o-transition:all 0.2s;transition:all 0.2s;-webkit-transform:rotate(0);-ms-transform:rotate(0);transform:rotate(0)}.mobile-menu-trigger__item:not(:last-child){margin-bottom:5px}.mobile-menu-trigger__item--first{top:0}.mobile-menu-trigger__item--second{top:7px}.mobile-menu-trigger__item--last{top:14px}.mobile-menu{position:absolute;max-height:0;top:100%;left:0;width:100vw;background-color:#ffffff;overflow-y:hidden;opacity:0;-webkit-transition:all 0.2s;-o-transition:all 0.2s;transition:all 0.2s}.mobile-menu--active{max-height:none;height:100vh;opacity:1;overflow-y:auto;border-top:1px solid #e8e8e8}.mobile-menu__nav{margin-bottom:40px}.mobile-menu__nav .nav__item{width:100%;margin:0;padding:15px}.mobile-menu__nav .nav__item:hover,.mobile-menu__nav .nav__item--active{background-color:#f9f9f9}.mobile-menu__subscribe,.mobile-menu__community{padding-left:15px;padding-right:15px}.mobile-menu__community{margin-bottom:15px}.mobile-menu__community .mobile-menu__heading{margin-bottom:20px}.mobile-menu__subscribe{padding-top:30px;padding-bottom:44px;border-top:1px solid #e8e8e8}.mobile-menu__subscribe .mobile-menu__heading{margin-bottom:10px}.mobile-menu__heading{font-size:16px;font-weight:600;line-height:1.6;color:#364962}.cookies{opacity:0;visibility:hidden;transition:opacity 0.2s ease-out 0.2s,visibility 0.2s ease-out 0.2s}.cookies--shown{opacity:1;visibility:visible;transition:opacity 0.2s ease-out,visibility 0.2s ease-out}.cookies__content{max-width:18rem;padding:0.75rem;border-radius:0.5rem;background:#1c77eb}.cookies__content--center{position:fixed;top:50%;left:50%;bottom:unset;transform:translate(-50%,-50%)}@media (max-width:480px){.cookies__content{min-width:13.75rem;width:100%}}.cookies__header-wrapper{margin-bottom:3.5rem;animation:content-appearance 0.1s ease-in-out}.cookies__header-block{display:flex;align-items:center;justify-content:flex-start}.cookies__header{margin-left:0.25rem;font-weight:600;font-size:1.75rem;line-height:120%}.cookies__description{margin-top:0.25rem;color:#a4c9f7}.cookies__description a{color:#ffffff}.cookies__description a:hover{text-decoration:underline}.cookies__description,.cookies__button-label,.cookies__element-title{font-size:1.25rem;line-height:120%;letter-spacing:0.01em}.cookies__manage-button{padding:0.5rem;pointer-events:none;background:#4992ef}.cookies__submit-button{padding:1.5rem;margin-top:0.25rem;background-color:#ffffff;color:#1c77eb}.cookies__submit-button:hover{background-color:#f3f3f3}.cookies__manage-button,.cookies__submit-button{width:100%;border:none;border-radius:0.375rem}.cookies__manage-button:disabled,.cookies__submit-button:disabled{opacity:0.4;cursor:not-allowed}.cookies__button-label{user-select:none}.cookies__button-label--demonstrative{display:none}.cookies__button-label,.cookies__element-title{font-weight:600}.cookies__selection-element{display:flex;align-items:flex-start;user-select:none}.cookies__selection-list{display:none;flex-direction:column;gap:1.5rem;animation:content-disappearing 0.2s ease-in-out;scrollbar-color:#4992ef #1c77eb;scrollbar-width:thin;align-items:flex-start;user-select:none}@media (max-height:780px){.cookies__selection-list{max-height:15rem;overflow:scroll}}@media (max-height:450px){.cookies__selection-list{max-height:11rem}}.cookies__selection-label{cursor:pointer;display:flex;align-items:center;justify-content:center;min-width:1.5rem;height:1.5rem;border-radius:0.25rem;background-color:#4992ef}.cookies__selection-label--locked{cursor:not-allowed}.cookies__selection-label--full-width{cursor:pointer;display:block;width:100%}.cookies__label-icon,.cookies__checkbox{display:none}.cookies__element-wrapper{display:flex;flex-direction:column;justify-content:start;margin-left:0.5rem;gap:0.125rem}.cookies__element-description{font-size:0.875rem;line-height:120%;letter-spacing:0.01em;color:#a4c9f7}.cookies__element-title,.cookies__element-description{margin:0}#selection-list-display-checkbox:checked ~ .cookies__selection-label--full-width .cookies__button-label--demonstrative,#selection-list-display-checkbox:checked ~ .cookies__submit-button .cookies__button-label--demonstrative{display:block}#selection-list-display-checkbox:checked ~ .cookies__selection-label--full-width .cookies__button-label--default,#selection-list-display-checkbox:checked ~ .cookies__submit-button .cookies__button-label--default{display:none}#selection-list-display-checkbox:checked ~ .cookies__header-wrapper{display:none;animation:content-disappearing 0.1s ease-in-out;margin-bottom:0}#selection-list-display-checkbox:checked ~ .cookies__selection-list{display:flex;animation:content-appearance 0.1s ease-in-out;margin-bottom:2.5rem}.cookies__checkbox:checked ~ .cookies__selection-label .cookies__label-icon{display:block}@keyframes content-appearance{0%{opacity:0;visibility:hidden}100%{opacity:1;visibility:visible}}@keyframes content-disappearing{0%{opacity:1;visibility:visible}100%{opacity:0;visibility:hidden}}.overlay{position:fixed;top:0;left:0;display:block;width:100vw;height:100vh;background-color:rgba(43,46,56,0.9)}.announcement-line{top:0;height:3.25rem;width:100%;z-index:999}.announcement-line__first-img{margin:0 1.25rem}.cross{margin-bottom:4px}.sale-line,.promo-line{background-color:#ff2f2f;display:flex;align-items:center;overflow:hidden;height:52px;width:100%}.sale-line--all{background-color:#ff2f2f}.sale-line--korea{background-color:#ff2f2f}.sale-line--china{background-color:#ff2f2f}.sale-line__text{font-size:2rem;line-height:125%;font-weight:600;margin:0 0.625rem;text-transform:uppercase}@media (hover:hover){.sale-line:hover .part-line{animation-play-state:paused}}.sale-line--hide{display:none}.part-line{display:flex;flex-direction:row;align-items:center;position:absolute;top:0;right:0;user-select:none;white-space:nowrap;height:56px}.part-line--first{transform:translate(-2%,0);animation:marquee-first 60s infinite linear forwards}.part-line--second{transform:translate(98%,0);animation:marquee-second 60s infinite linear forwards}@keyframes marquee-first{0%{transform:translate(-2%,0)}100%{transform:translate(-102%,0)}}@keyframes marquee-second{0%{transform:translate(98%,0)}100%{transform:translate(-2%,0)}}.text--white{color:#ffffff}.text--yellow{color:#f3d037}.promo-line{background:#79c32c}.promo-line__wrapper{display:flex;justify-content:center;align-items:center;gap:0.5rem;height:100%;margin:0 auto;padding:0 0.5rem}@media screen and (max-width:768px){.promo-line__wrapper{gap:0.25rem}}.promo-line__img{display:flex}@media screen and (max-width:768px){.promo-line__img{width:2.5rem;height:2.5rem}}.promo-line__text{font-size:1.25rem;font-weight:600;line-height:120%;letter-spacing:-0.03125rem}.promo-line__text--mobile{display:none}@media screen and (max-width:768px){.promo-line__text--mobile{display:initial}}@media screen and (max-width:768px){.promo-line__text--desktop{display:none}}@media screen and (max-width:768px){.promo-line__text{font-size:1.15rem}}@media screen and (max-width:360px){.promo-line__text{font-size:1rem}}.promo-line__button{height:1.75rem;padding:0.25rem 0.75rem;border:none;border-radius:61.25rem;background:#f9f9f9;color:#000000;font-size:0.75rem;line-height:1rem;letter-spacing:-0.00625rem;flex-shrink:0}.promo-line__button:focus{outline:none}@media screen and (max-width:768px){.promo-line__button{display:none}}.mascot{position:fixed;top:13.5rem;right:3.5rem;z-index:99;animation:inimate__one 2s infinite}@keyframes inimate__one{0%{transform:rotate(0deg)}50%{transform:rotate(3deg)}100%{transform:rotate(0deg)}}.mascot--home{top:13.5rem}.mascot--download{position:absolute;top:13.5rem}@media (max-width:1150px){.mascot{display:none}}.mascot:hover{animation-play-state:paused;cursor:pointer}.page-header__product-menu{margin-right:30px}.product-menu--wrapper{position:relative;cursor:pointer;opacity:0;visibility:hidden}.product-menu--out-delay{transition:opacity 0.2s ease-out 0.2s,visibility 0.2s ease-out 0.2s}.product-menu--items{position:absolute;top:calc(100% + 27px);left:-10px;width:47.7rem!important;padding:0.75rem;border-radius:1.125rem;background-color:#ffffff;-webkit-box-shadow:0 7px 28px 0 rgba(0,0,0,0.07);box-shadow:0 7px 28px 0 rgba(0,0,0,0.07);z-index:-1}.product-menu--items ul,.product-menu--items li{list-style:none;margin:0;font-size:17px;line-height:20px;padding:0}.product-menu--items ul{display:flex;flex-direction:row;flex-wrap:wrap}.product-menu--items li{list-style-type:none;display:block;width:100%}.product-menu--items li:nth-child(odd){max-width:21.75rem}.product-menu--items li:nth-child(even){max-width:24.438rem}.product-menu--items li:hover{background:#f9f9f9;color:#364962;border-radius:0.375rem}.product-menu--items li:hover .product-menu__text{opacity:1}.product-menu--items:before{content:"";position:absolute;top:-8px;left:26px;width:0;height:0;border-style:solid;border-width:0 8.5px 8px 8.5px;border-color:transparent transparent #ffffff transparent}@media (max-width:600px){.product-menu--items{right:-17vw;padding:20px 10px}.product-menu--items:before{right:calc(17vw - 6px)}}.product-menu.product-menu--open .product-menu--items{display:-webkit-box;display:-ms-flexbox;display:flex}.product-menu__item{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;position:relative;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;padding:0.75rem}.product-menu__item:active{background-color:#f3f3f3;border-radius:0.375rem}.product-menu__item--imagecompressor>.product-menu__description{max-width:14.625rem}.product-menu__item--imagecompressor::after{content:url(https://static.4kdownload.com/main/img/icons/products/budges/new-yellow.svg?de80a546e2c7);position:absolute;top:0.75rem;right:0.75rem}.product-menu__description{margin-left:0.5rem}.product-menu__description--right{max-width:19.313rem}.product-menu__description--left{max-width:16.625rem}.product-menu__title{font-size:1.25rem;line-height:120%;font-weight:600;color:#1d1d1f;letter-spacing:-0.0313em;opacity:1;margin:0}.product-menu__subtitle{font-weight:400;color:#6e6e73;opacity:1;margin:0;font-size:0.75rem;line-height:133%;letter-spacing:-0.025em}.product-menu__icon{display:block;background-size:50px 50px;width:50px;height:50px}.product-menu__icon--videodownloader{background-image:url("https://static.4kdownload.com/main/img/icons/products/videodownloaderplus.svg?de80a546e2c7")}.product-menu__icon--imagecompressor{background-image:url("https://static.4kdownload.com/main/img/icons/products/imagecompressor.svg?de80a546e2c7")}.product-menu__icon--videodownloaderandroid{background-image:url("https://static.4kdownload.com/main/img/icons/products/videodownloaderandroid.svg?de80a546e2c7")}.product-menu__icon--tokkit{background-image:url("https://static.4kdownload.com/main/img/icons/products/tokkit.svg?de80a546e2c7")}.product-menu__icon--stogram{background-image:url("https://static.4kdownload.com/main/img/icons/products/stogram.svg?de80a546e2c7")}.product-menu__icon--youtubetomp3{background-image:url("https://static.4kdownload.com/main/img/icons/products/youtubetomp3.svg?de80a546e2c7")}.product-menu__icon--videotomp3{background-image:url("https://static.4kdownload.com/main/img/icons/products/videotomp3.svg?de80a546e2c7")}.product-menu__icon--slideshowmaker{background-image:url("https://static.4kdownload.com/main/img/icons/products/slideshowmaker.svg?de80a546e2c7")}.product-menu__text-wrapper--sale{display:flex;width:84%;justify-content:space-between}.product-menu__text{font-style:normal;font-stretch:normal;letter-spacing:0.4px;opacity:0.8;font-size:14px;font-weight:300;line-height:1.14;text-align:left;color:#525f7f;margin-top:3px;margin-bottom:0;max-width:260px}.product-menu__new{background-color:#f3d037;padding:4px 13px;color:#262626;font-size:1rem;line-height:140%;font-weight:400;letter-spacing:0.2px;margin:auto 0}.product-menu__selected{font-size:17px;font-weight:normal;color:#364962;letter-spacing:0.4px;opacity:0.6;margin-left:10px}.page-header__product-menu:hover .product-menu--wrapper{z-index:9999;opacity:1;visibility:visible;transition:opacity 0.2s ease-out,visibility 0.2s ease-out}.help__blocks{display:-webkit-box;display:-ms-flexbox;display:flex}@media (max-width:900px){.help__blocks{-ms-flex-wrap:wrap;flex-wrap:wrap;max-width:95%}}@media (max-width:560px){.help__blocks{-ms-flex-wrap:nowrap;flex-wrap:nowrap;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;max-width:90.6%;width:100%}}.help__blocks--scroll{position:fixed;width:100%;z-index:999;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;border-top:1px solid #e8e8e8;background-color:#ffffff;background-image:none;padding:0 6.94% 0 7.57%;-webkit-box-shadow:0 7px 28px 0 rgba(0,0,0,0.07);box-shadow:0 7px 28px 0 rgba(0,0,0,0.07)}@media (max-width:960px){.help__blocks--scroll{padding:0 6.46% 0 7.29%}}@media (max-width:900px){.help__blocks--scroll{padding:0;max-width:none}}@media (max-width:587px){.help__blocks--scroll{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;height:60px}}@media (max-width:560px){.help__blocks--scroll{padding:0 4.69%}}.help__blocks--scroll .block__text{display:none}.help__blocks--scroll .block__headline{margin-bottom:0}.help__blocks--scroll .block__icon{-o-object-fit:contain;object-fit:contain}@media (max-width:560px){.help__blocks--scroll .block__icon{margin-right:0!important}}.help__blocks--scroll .block__icon--tutorial{width:20px;height:20px;margin-right:8px}.help__blocks--scroll .block__icon--faq{width:12px;height:19px;margin-right:9px}.help__blocks--scroll .block__icon--feedback{width:21px;height:19px;margin-right:9px}.help__blocks--scroll .block__icon--videos{width:24px;height:17px;margin-right:12px}.help__block{padding-top:30px;padding-left:26px;padding-right:30px;padding-bottom:27px;border-radius:3px;background-color:#ffffff;-webkit-transition:box-shadow 0.15s,-webkit-box-shadow 0.15s;-o-transition:box-shadow 0.15s,-webkit-box-shadow 0.15s;transition:box-shadow 0.15s,-webkit-box-shadow 0.15s}.help__block:hover{-webkit-box-shadow:0 18px 28px 0 rgba(26,0,35,0.08);box-shadow:0 18px 28px 0 rgba(26,0,35,0.08)}@media (max-width:1350px){.help__block{padding-right:26px}}.help__block--navigation{width:308px;min-width:308px;-webkit-box-shadow:1px 2px 3px 0 rgba(0,0,0,0.1);box-shadow:1px 2px 3px 0 rgba(0,0,0,0.1);margin-right:10px;-webkit-box-flex:1;-ms-flex:1;flex:1;border-bottom:0px solid white}@media (max-width:1350px){.help__block--navigation{width:22.42%;min-width:22.42%}}@media (max-width:960px){.help__block--navigation{width:23.13%;min-width:23.13%}}@media (max-width:900px){.help__block--navigation{min-width:46.5%;width:100%}.help__block--navigation:nth-child(-n + 2){margin-bottom:10px}}@media (max-width:560px){.help__block--navigation{max-width:none;margin-bottom:10px}.help__block--navigation:last-child{margin-bottom:0}}.help__block--scroll{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;width:auto;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-flex:0;-ms-flex:none;flex:none;height:59px;border:solid 0px #ffffff;padding:17px 0 17px;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;margin-right:40px;border-bottom:2px solid white;border-radius:0;-webkit-box-shadow:none;box-shadow:none;-webkit-transition:0.2s height,0.2s border-bottom-color ease-out;-o-transition:0.2s height,0.2s border-bottom-color ease-out;transition:0.2s height,0.2s border-bottom-color ease-out;min-width:0}.help__block--scroll .block__icon{opacity:0.6}.help__block--scroll:hover{-webkit-box-shadow:none;box-shadow:none}.help__block--scroll:hover .block__icon,.help__block--scroll:hover .block__title--scroll{opacity:1}.help__block--active{border-bottom:2px solid #0f73ee}.help__block--active .block__icon,.help__block--active .block__title--scroll{opacity:1}.help__block--article:hover .article__nav-title{opacity:1}.help__block--article:last-of-type{margin-right:0}.help__block--current{margin-right:0}@media (max-width:900px){.help__block--current{display:-webkit-box;display:-ms-flexbox;display:flex}}.help__block--current .block__icon{display:none}.help__block--main{width:357px;-webkit-box-shadow:0 -2px 38px 0 rgba(0,0,0,0.05);box-shadow:0 -2px 38px 0 rgba(0,0,0,0.05)}@media (max-width:1350px){.help__block--main{width:321px;padding-right:26px}}@media (max-width:1185px){.help__block--main{width:405px}}@media (max-width:915px){.help__block--main{max-width:300px}}@media (max-width:660px){.help__block--main{max-width:unset;margin:0 auto;margin-bottom:11px}}@media (max-width:587px){.help__block--main{max-width:290px;margin-bottom:11px}.help__block--main:last-child{margin-bottom:0}}.help__block--main:nth-child(-n + 2){margin-bottom:12px}@media (max-width:1350px){.help__block--main:nth-child(-n + 2){margin-bottom:10px}}@media (max-width:915px){.help__block--main:nth-child(-n + 2){margin-bottom:8px}}@media (max-width:587px){.help__block--main:nth-child(-n + 2){margin-bottom:11px}}.block__headline{display:-webkit-box;display:-ms-flexbox;display:flex;margin-bottom:50px}@media (max-width:1350px){.block__headline{margin-bottom:47px}}@media (max-width:1185px){.block__headline{margin-bottom:97px}}@media (max-width:915px){.block__headline{margin-bottom:15px}}.block__headline--navigation{margin-bottom:30px}@media (max-width:560px){.block__headline--navigation{margin-bottom:0}}.block__icon{-o-object-fit:contain;object-fit:contain}.block__icon--tutorial{width:36px;height:38px;margin-right:10px}.block__icon--faq{width:21px;height:36px;margin-right:33px}.block__icon--feedback{width:41px;height:38px;margin-right:13px}.block__icon--videos{width:39px;height:30px;margin-right:15px}.block__title{margin:0}.block__title--navigation{word-break:break-word}@media (max-width:1000px){.block__title--navigation{font-size:26px}}@media (max-width:900px){.block__title--navigation{font-size:32px}}.block__title--scroll{font-size:17px;opacity:0.6;max-width:78px;white-space:nowrap;overflow:hidden;-o-text-overflow:ellipsis;text-overflow:ellipsis}@media (max-width:560px){.block__title--scroll{display:none}}.block__text{font-size:18px;line-height:1.56;opacity:1;margin:0}@media (max-width:560px){.block__text--navigation{display:none}}.article{display:-webkit-box;display:-ms-flexbox;display:flex;margin:60px auto 0;background-color:#ffffff;padding:60px 0 60px 22.7%}.article__info,.article__author{display:flex;align-items:center;gap:0.625rem}.article__info{padding-bottom:1.875rem;border-bottom:1px solid #e8e8e8}.article__author-photo{display:block;object-fit:cover;border-radius:50%}.article__info-text{font-size:0.9375rem;font-weight:600;line-height:1.73;letter-spacing:0.2px;color:#364962}.article__date{font-weight:300;color:#525f7f}@media (max-width:1440px){.article{padding:60px 0 60px 13.68%}}@media (max-width:1280px){.article{padding:60px 30px 60px 10.47%}}@media (max-width:1170px){.article{padding:60px 15px 60px 7.29%}}@media (max-width:860px){.article{padding:30px 6.67% 30px;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center}}@media (max-width:550px){.article{padding:30px 4.69% 30px}}.article__nav{padding:0;margin:0}.article__nav-item{list-style:none;margin-top:25px;display:none}.article__nav-item--active{display:block}.article__nav-item:first-child{margin-top:0}.article__nav-title{opacity:0.6;font-size:17px;line-height:1.47;letter-spacing:0.4px;color:#364962;margin-right:auto;-ms-flex-item-align:center;align-self:center}.article__nav-title--current{opacity:1;height:59px;border:solid 0px #ffffff;padding:17px 0 17px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.article__nav-title--active{opacity:1}.article__nav-arrow{margin-right:11px;-ms-flex-item-align:center;align-self:center}.article__nav-arrow::after{content:"";display:inline-block;width:11px;height:12px;margin-left:15px;-webkit-transform:rotate(270deg);-ms-transform:rotate(270deg);transform:rotate(270deg);background-image:url(https://static.4kdownload.com/main/img/redesign/arrow-down.svg?de80a546e2c7);background-repeat:no-repeat}@media (max-width:900px){.article__nav-arrow::after{margin-left:11px}}.article__chapter-nav{padding:0;display:none}.article__chapter-nav--active{display:block}.article__chapter-nav-item{padding-left:23px;list-style:none;margin-top:25px}.article__chapter-nav-item--active{border-left:2px solid #0f73ee;padding-left:21px}.article__chapter-nav-item--active .article__nav-title{opacity:1}.article__content{max-width:725px;margin-left:90px;word-break:break-word}@media (max-width:1170px){.article__content{max-width:610px;margin-left:19px}}@media (max-width:860px){.article__content{max-width:522px;margin-left:0}}@media (max-width:550px){.article__content{max-width:none}}.article__content .h2__os-heading{font-weight:normal;font-size:26px}.article__content h1{font-size:43px;line-height:1.21;letter-spacing:0.2px;color:#364962;margin:0 0 20px 0;font-weight:normal}@media (max-width:550px){.article__content h1{font-size:32px}}.article__content h2,.article__content h3,.article__content h4{font-weight:600;font-size:18px;color:#364962;letter-spacing:0.2px;line-height:39px;margin-bottom:15px;margin-top:30px}.article__content h2{font-size:2rem}.article__content h3{font-size:1.5rem}.article__content h4{font-size:1.25rem}.article__content p{font-weight:300;color:#364962;letter-spacing:0.2px;font-size:18px;line-height:1.56;margin-top:1.55em;margin-bottom:1.55em}.article__content li{font-weight:300;color:#364962;letter-spacing:0.2px;font-size:18px;line-height:1.56}.article__content li img{margin-right:0.5em}.article__content table{width:100%}.article__content td{padding:8px;border:solid 1px rgba(186,203,214,0.4);font-weight:normal;color:#364962;font-size:18px}.article__content a{color:#0f73ee}.article__content .bold-link{font-weight:600}.article__content .block-product-download{margin:20px 0 30px 0}.article__screenshot_lazy{position:relative;aspect-ratio:auto 1.56666667;background-color:#e7e7e7;overflow:hidden}.article__screenshot_lazy::before{content:"";display:block;position:absolute;left:-150px;top:0;height:100%;width:80%;background:linear-gradient(to right,transparent 0%,#f7f7f7 50%,transparent 100%);animation:load 1s cubic-bezier(0.4,0,0.2,1) infinite}.article__screenshot_lazy.loaded::before{content:none}.article__screenshot_lazy.loaded img{opacity:1}.article__screenshot_lazy img{opacity:0}.article__screenshot img{max-width:100%}.article__screenshot .screenshot--margin-bottom{margin-bottom:1em}@keyframes load{from{left:-300px}to{left:100%}}.article__top-navigation{justify-content:space-between!important;padding:0 70px 0 125px!important;height:60px}@media (max-width:1440px){.article__top-navigation{padding:0 60px 0 115px!important}}@media (max-width:1280px){.article__top-navigation{padding:0 50px 0 105px!important}}@media (max-width:860px){.article__top-navigation{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;padding:0 0 0 50px!important}}@media (max-width:480px){.article__top-navigation{padding:0 0 0 15px!important}}.article__top-navigation-block{-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1}.article__top-navigation-block--current{margin-right:auto;-webkit-box-ordinal-group:1;-ms-flex-order:0;order:0}.article__left-navigation{max-width:230px}@media (max-width:1170px){.article__left-navigation{max-width:19.79%;margin-right:15px}}@media (max-width:860px){.article__left-navigation{display:none}}.article__footer{max-width:725px;margin-left:90px;margin-top:30px}@media (max-width:1280px){.article__footer{margin-left:56px}}@media (max-width:1170px){.article__footer{max-width:610px;margin-left:19px}}@media (max-width:860px){.article__footer{max-width:522px;margin-left:0}}@media (max-width:550px){.article__footer{max-width:none}}.article__footer .block-product-download{margin-top:45px}@media (max-width:550px){.article__footer .block-product-download{margin-top:25px}}.article__social-block{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;padding:40px 0 0 0;border-top:1px solid #e8e8e8}@media (max-width:600px){.article__social-block{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}}@media (max-width:550px){.article__social-block{padding:29px 0 27px}}.article__interview-description{width:100%}@media (max-width:1170px){.article__interview-description{margin-bottom:20px}}.article__interview{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}@media (max-width:1170px){.article__interview{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start;margin-left:80px}}@media (max-width:600px) and (min-width:480px){.article__interview{margin-left:0;margin-top:20px;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center}}@media (max-width:480px){.article__interview{margin-top:20px;margin-left:0}}.article__interview-question{font-size:18px;font-weight:300;line-height:1.56;letter-spacing:0.2px;color:#364962;max-width:250px}@media (max-width:1170px){.article__interview-question{margin-bottom:10px}}@media (max-width:600px) and (min-width:480px){.article__interview-question{margin-bottom:0}}.article__item-container{display:-webkit-box;display:-ms-flexbox;display:flex}.article__item-container--full-width{width:100%;min-width:342px}@media (max-width:480px){.article__item-container--full-width{min-width:100%}}.article__item-container--right{margin-left:20px}@media (max-width:900px){.article__item-container--right{display:none}}.article__screenshot-not_os{margin:20px 0 30px 0}.article__screenshot-not_os img{max-width:100%}.article__screenshot-not_os--zenmate img{width:100%}.article__video-wrapper{position:relative;height:0;padding-bottom:53.38%;overflow:hidden;margin-top:20px}.article__video-wrapper iframe{position:absolute;left:0;top:0;height:100%;width:100%}.article__html-video-wrapper{position:relative;max-width:100%;height:auto;overflow:hidden;margin-top:20px;outline:none}.howto-nav-title{max-width:4.75rem;text-overflow:ellipsis;overflow:hidden;white-space:nowrap}.screenshot{width:100%;height:100%}.block-product-download{display:flex;justify-content:space-between;align-items:center;gap:1.25rem;max-width:45.3125rem;padding:2.125rem 2.125rem 2.125rem 2.5625rem;border:solid 1px #e8e8e8;border-radius:0.25rem;background-color:#ffffff;box-shadow:0 -2px 38px 0 rgba(0,0,0,0.05)}.block-product-download--with-info{flex-wrap:wrap}@media (max-width:960px){.block-product-download--with-info .block-product-download__button{flex-grow:1}}.block-product-download__title{font-size:1.5rem;font-weight:300;margin-left:0.9375rem;margin-right:0.9375rem;color:#364962}.block-product-download__icon{width:3.125rem;height:3.125rem}.block-product-download__button{min-width:9rem;padding:0.9375rem 1.375rem;flex-shrink:0;font-size:1.125rem;line-height:1.11}.block-product-download__button--remind{padding:0.9375rem 1.125rem}@media (max-width:600px){.block-product-download__button{width:100%}}.block-product-download__description{display:flex;align-items:center}.block-product-download a{color:#ffffff}@media (max-width:960px){.block-product-download{max-width:38.125rem}}@media (max-width:860px){.block-product-download{max-width:32.5rem}}@media (max-width:600px){.block-product-download{flex-wrap:wrap;width:100%;padding:1.25rem}}</style>
+        <link rel="preload" href="https://static.4kdownload.com/CACHE/css/output.0611c3a555ca.css" as="style" onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://static.4kdownload.com/CACHE/css/output.0611c3a555ca.css" type="text/css"></noscript>
+        
+        <link rel="preload" href="https://static.4kdownload.com/CACHE/css/output.7759fc681494.css" as="style" onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://static.4kdownload.com/CACHE/css/output.7759fc681494.css" type="text/css"></noscript>
+        
+        
+
+
+<link rel="preload" href="https://static.4kdownload.com/CACHE/css/output.314085527ab3.css" as="style" onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://static.4kdownload.com/CACHE/css/output.314085527ab3.css" type="text/css"></noscript>
+<link rel="preload" href="https://static.4kdownload.com/CACHE/css/output.5c9bfdbe4b44.css" as="style" onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://static.4kdownload.com/CACHE/css/output.5c9bfdbe4b44.css" type="text/css"></noscript>
+
+
+<link rel="preload" href="https://static.4kdownload.com/CACHE/css/output.4f8650bdc0ec.css" as="style" onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://static.4kdownload.com/CACHE/css/output.4f8650bdc0ec.css" type="text/css"></noscript>  
+<link rel="preload" href="https://static.4kdownload.com/CACHE/css/output.48784bf22fea.css" as="style" onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://static.4kdownload.com/CACHE/css/output.48784bf22fea.css" type="text/css"></noscript>
+
+
+
+<link rel="preload" href="https://static.4kdownload.com/CACHE/css/output.4f8650bdc0ec.css" as="style" onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://static.4kdownload.com/CACHE/css/output.4f8650bdc0ec.css" type="text/css"></noscript>  
+<link rel="preload" href="https://static.4kdownload.com/CACHE/css/output.48784bf22fea.css" as="style" onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://static.4kdownload.com/CACHE/css/output.48784bf22fea.css" type="text/css"></noscript>
+
+
+        <script src="https://static.4kdownload.com/main/js/affiliate.05e41b90db35.js"></script>
+
+        
+    </head>
+    <body >
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NW3DZ7T"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <svg xmlns="http://www.w3.org/2000/svg" style="border: 0 !important; clip: rect(0 0 0 0) !important; height: 1px !important; margin: -1px !important; overflow: hidden !important; padding: 0 !important; position: absolute !important; width: 1px !important;" class="root-svg-symbols-element">
+        <symbol id="caret" width="11" height="6" viewBox="0 0 11 6" xmlns="http://www.w3.org/2000/svg"><path d="M.274 1.013L5.061 5.85a.617.617 0 0 0 .878 0l4.787-4.836a.316.316 0 0 0 0-.444l-.44-.444a.309.309 0 0 0-.44 0L5.72 4.295a.309.309 0 0 1-.44 0L1.153.126a.309.309 0 0 0-.44 0L.275.57a.316.316 0 0 0 0 .444" fill="#FFFFFFF" fill-rule="evenodd"/></symbol>
+        <symbol id="logo" width="25" height="22" viewBox="0 0 25 22" xmlns="http://www.w3.org/2000/svg"><path d="M0 21.667h3.6V.4H0zM19.819.4L17.4 15.344h3.156L24 .4zM5.4 21.667H9V11.32H5.4zm5.4 0h3.6V11.32h-3.6zm9.6-2.299c0 1.27-1.075 2.299-2.4 2.299s-2.4-1.03-2.4-2.3c0-1.27 1.075-2.299 2.4-2.299s2.4 1.03 2.4 2.3" fill-rule="evenodd"/></symbol>
+        <symbol id="update" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path id="a" d="M4.995 13.187C4.374 12.186 4 11.049 4 10a6 6 0 0 1 6-6V3a7 7 0 0 0-7 7c0 1.35.504 2.779 1.326 3.992H3V15h3v-3H4.995v1.187zM15 6.682V8h-1V5h3v1h-1.255A7 7 0 0 1 10 17v-1a6 6 0 0 0 5-9.318zm0-.664L15.023 6H15v.018z" fill-rule="evenodd"/></symbol>
+        <symbol id="apple-logo" width="14" height="16" viewBox="0 0 14 16" xmlns="http://www.w3.org/2000/svg"><path class="apple-icon" d="M9.28 2.597c.534-.673.939-1.625.792-2.597-.873.06-1.894.605-2.49 1.316-.543.645-.99 1.603-.816 2.534.956.029 1.941-.53 2.513-1.253zM14 11.74c-.382.832-.566 1.203-1.059 1.94-.686 1.028-1.655 2.309-2.856 2.318-1.066.011-1.341-.682-2.789-.674-1.447.008-1.749.687-2.817.677-1.2-.01-2.118-1.166-2.805-2.194C-.248 10.933-.45 7.56.735 5.766c.843-1.274 2.173-2.019 3.422-2.019 1.271 0 2.071.685 3.124.685 1.021 0 1.643-.687 3.113-.687 1.113 0 2.293.596 3.132 1.623-2.751 1.48-2.306 5.339.474 6.371z" fill-rule="evenodd"/></symbol>
+        <symbol id="windows-logo" viewBox="0 0 79 79" xmlns="http://www.w3.org/2000/svg"><title>77EEF0E5-0BD5-4389-9FED-3A516652DCFC</title><path d="M.5 11.543l31.876-4.327.014 30.652-31.86.18L.5 11.544zM32.361 41.4l.025 30.68-31.86-4.368-.003-26.517 31.838.205zm3.864-34.75L78.49.5v36.978l-42.265.335V6.65zM78.5 41.688L78.49 78.5l-42.265-5.947-.06-30.933 42.335.068z" fill-rule="evenodd" opacity=".897"/></symbol>
+        <symbol id="ubuntu-logo" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg"><title>EFD94688-37A7-4E25-BF1A-C4F3304D48DA</title><path d="M80 40c0 22.09-17.908 40-40 40S0 62.09 0 40 17.908 0 40 0s40 17.909 40 40zm-66.628-5.36A5.365 5.365 0 0 0 8 40.001c0 2.96 2.404 5.36 5.372 5.36 2.965 0 5.37-2.4 5.37-5.36a5.365 5.365 0 0 0-5.37-5.36zM51.716 59a5.35 5.35 0 0 0-1.966 7.319 5.372 5.372 0 0 0 7.334 1.962 5.35 5.35 0 0 0 1.965-7.32 5.376 5.376 0 0 0-7.333-1.96zm-26.68-18.999c0-5.296 2.637-9.976 6.67-12.81L27.78 20.63c-4.698 3.134-8.194 7.924-9.647 13.534A7.512 7.512 0 0 1 20.913 40a7.51 7.51 0 0 1-2.78 5.837c1.45 5.611 4.947 10.401 9.647 13.536l3.927-6.565c-4.034-2.832-6.67-7.511-6.67-12.808zm15.687-15.656c8.195 0 14.919 6.27 15.624 14.267L64 38.5c-.377-5.904-2.961-11.204-6.932-15.102-2.042.77-4.4.652-6.44-.52a7.504 7.504 0 0 1-3.672-5.314 23.439 23.439 0 0 0-6.233-.846c-3.713 0-7.223.87-10.34 2.41l3.732 6.673a15.65 15.65 0 0 1 6.608-1.456zm0 31.311c-2.36 0-4.6-.524-6.607-1.456l-3.732 6.673a23.369 23.369 0 0 0 16.572 1.564 7.51 7.51 0 0 1 3.673-5.314 7.538 7.538 0 0 1 6.44-.52c3.97-3.898 6.554-9.198 6.931-15.102l-7.654-.113c-.704 8-7.428 14.268-15.623 14.268zM51.714 21a5.372 5.372 0 0 0 7.334-1.96 5.352 5.352 0 0 0-1.964-7.32 5.377 5.377 0 0 0-7.336 1.962A5.352 5.352 0 0 0 51.714 21z" fill-rule="evenodd"/></symbol></svg>
+            
+            
+
+
+
+
+<header class="page-header js-header  page-header--scroll  ">
+  
+  <div class="page-header__wrap ">
+    <div class="page-header__left">
+      <div class="logo logo-- page-header__logo">
+        <a href="/-54" title="Home page">
+          <svg class="icon__logo" width="24px" height="22px">
+              <use xlink:href="#logo"></use>
+          </svg>
+        </a>
+      </div>
+      
+      <nav class="nav nav--large page-header__nav" itemscope itemtype="http://schema.org/SiteNavigationElement" aria-label="Products">
+        <div class="page-header__product-menu">
+           <div class="product-menu--wrapper js-product-menu">
+            <div class="product-menu--items">
+              <ul>
+                <li>
+                  <a class="product-menu__item" href="/products/videodownloader-42">
+                    <div class="product-menu__icon product-menu__icon--videodownloader"></div>
+                    <div class="product-menu__description product-menu__description--left"><span class="product-menu__title">4K Video Downloader Plus</span><p class="product-menu__subtitle">Download videos from YouTube and other sites</p></div>
+                  </a>
+                </li>
+                <li>
+                  <a class="product-menu__item product-menu__item--imagecompressor" href="/products/imagecompressor">
+                    <div class="product-menu__icon product-menu__icon--imagecompressor"></div>
+                    <div class="product-menu__description product-menu__description--right"><span class="product-menu__title">4K Image Compressor</span><p class="product-menu__subtitle">Reduce the file size of JPG, PNG and more</p></div>
+                  </a>
+                </li>
+                <li>
+                  <a class="product-menu__item" href="/products/tokkit/17">
+                    <div class="product-menu__icon product-menu__icon--tokkit"></div>
+                    <div class="product-menu__text-wrapper--sale">
+                      <div class="product-menu__description product-menu__description--left"><span class="product-menu__title">4K Tokkit</span><p class="product-menu__subtitle">Download TikTok videos and accounts</p></div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a class="product-menu__item" href="/products/videotomp3/27">
+                    <div class="product-menu__icon product-menu__icon--videotomp3"></div>
+                    <div class="product-menu__description product-menu__description--right"><span class="product-menu__title">4K Video to MP3</span><p class="product-menu__subtitle">Extract audio from video</p></div>
+                  </a>
+                </li>
+                <li>
+                  <a class="product-menu__item" href="/products/stogram-8">
+                    <div class="product-menu__icon product-menu__icon--stogram"></div>
+                    <div class="product-menu__description product-menu__description--left"><span class="product-menu__title">4K Stogram</span><p class="product-menu__subtitle">Download Instagram photos, Stories and Reels</p></div>
+                  </a>
+                </li>
+                <li>
+                  <a class="product-menu__item" href="/products/slideshowmaker/3">
+                    <div class="product-menu__icon product-menu__icon--slideshowmaker"></div>
+                    <div class="product-menu__description product-menu__description--right"><span class="product-menu__title">4K Slideshow Maker</span><p class="product-menu__subtitle">Сreate amazing slideshows</p></div>
+                  </a>
+                </li>
+                <li>
+                  <a class="product-menu__item" href="/products/youtubetomp3-72">
+                    <div class="product-menu__icon product-menu__icon--youtubetomp3"></div>
+                    <div class="product-menu__description product-menu__description--left"><span class="product-menu__title">4K YouTube to MP3</span><p class="product-menu__subtitle">Convert YouTube to MP3</p></div>
+                  </a>
+                </li>
+                <li>
+                  <a class="product-menu__item" href="/products/videodownloaderandroid-41">
+                    <div class="product-menu__icon product-menu__icon--videodownloaderandroid"></div>
+                    <div class="product-menu__description product-menu__description--right"><span class="product-menu__title">4K Video Downloader for Android</span><p class="product-menu__subtitle">Download video and audio on Android devices</p></div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          
+          <a itemprop="url" id="header-nav-products" href="/-54" class="nav__item nav__item--products dark-blue-arrow-down"><span itemprop="name">Products</span></a>
+
+        </div>
+
+        
+        <a itemprop="url" id="header-nav-download" href="/downloads/34" class="nav__item"><span itemprop="name">Download</span></a><a itemprop="url" id="header-nav-help" href="/help/14" class="nav__item"><span itemprop="name">Help</span></a><a itemprop="url" id="header-nav-blog" href="/blog/" class="nav__item"><span itemprop="name">Blog</span></a><a itemprop="url" id="header-nav-store" href="/store/22" class="nav__item"><span itemprop="name">Store</span><img class="header__icon--store" src="https://static.4kdownload.com/main/img/store/store-icon.0e526cee4d6f.svg" width="20" height="20" alt=""/></a>
+      </nav>
+      
+    </div>
+    
+    <div class="page-header__right">
+      <a href="#" class="mobile-menu-trigger js-mobile-menu-trigger" title="Open menu"><span class="mobile-menu-trigger__item mobile-menu-trigger__item--first"></span><span class="mobile-menu-trigger__item mobile-menu-trigger__item--second"></span><span class="mobile-menu-trigger__item mobile-menu-trigger__item--last"></span></a>
+          
+      
+
+      
+      <div class="page-header__lang">
+        <select class="lang js-lang flags">
+          
+              
+              
+              <option value="en" data-icon="en" data-href="/howto/how-to-reduce-png-size-by-a-percentage" selected>English</option>
+              
+          
+              
+              
+              <option value="de" data-icon="de" data-href="/de/howto/how-to-reduce-png-size-by-a-percentage" >Deutsch</option>
+              
+          
+              
+              
+              <option value="fr" data-icon="fr" data-href="/fr/howto/how-to-reduce-png-size-by-a-percentage" >français</option>
+              
+          
+              
+              
+              <option value="it" data-icon="it" data-href="/it/howto/how-to-reduce-png-size-by-a-percentage" >italiano</option>
+              
+          
+              
+              
+              <option value="es" data-icon="es" data-href="/es/howto/how-to-reduce-png-size-by-a-percentage" >español</option>
+              
+          
+              
+              
+              <option value="pt-br" data-icon="pt-br" data-href="/pt-br/howto/how-to-reduce-png-size-by-a-percentage" >Português Brasileiro</option>
+              
+          
+              
+              
+              <option value="nl" data-icon="nl" data-href="/nl/howto/how-to-reduce-png-size-by-a-percentage" >Nederlands</option>
+              
+          
+              
+              
+              <option value="pl" data-icon="pl" data-href="/pl/howto/how-to-reduce-png-size-by-a-percentage" >polski</option>
+              
+          
+              
+              
+              <option value="zh-cn" data-icon="zh-cn" data-href="/zh-cn/howto/how-to-reduce-png-size-by-a-percentage" >简体中文</option>
+              
+          
+              
+              
+              <option value="zh-tw" data-icon="zh-tw" data-href="/zh-tw/howto/how-to-reduce-png-size-by-a-percentage" >繁體中文</option>
+              
+          
+              
+              
+              <option value="ko" data-icon="ko" data-href="/ko/howto/how-to-reduce-png-size-by-a-percentage" >한국어</option>
+              
+          
+              
+              
+              <option value="ja" data-icon="ja" data-href="/ja/howto/how-to-reduce-png-size-by-a-percentage" >日本語</option>
+              
+          
+              
+              
+              <option value="ru" data-icon="ru" data-href="/ru/howto/how-to-reduce-png-size-by-a-percentage" >Русский</option>
+              
+          
+        </select>
+      </div>
+    </div> 
+    <div class="mobile-menu js-mobile-menu">
+        
+        <nav class="nav nav--large nav--vertical mobile-menu__nav" aria-label="Mobile menu">
+          <a href="/-54" class="nav__item">Products</a>
+          <a href="/downloads/34" class="nav__item">Download</a>
+          <a href="/store/22" class="nav__item">Store</a>
+          <a href="/help/14" class="nav__item">Help</a>
+          <a href="/blog/" class="nav__item">Blog</a>
+          
+        </nav>
+      <div class="mobile-menu__community">
+        <div class="mobile-menu__heading">Community</div>
+          <div class="community community--mobile">
+          <a href="https://twitter.com/4kdownload" rel="noopener noreferrer" target="_blank" class="community__item">
+            <img class="icon__ic-twitter" src="https://static.4kdownload.com/main/img/redesign/ic-x-grey.3d28e08a8e92.svg" width="30" height="25" alt="twitter logo">
+          </a>
+          <a href="https://www.reddit.com/r/4kdownloadapps/" rel="noopener noreferrer" target="_blank" class="community__item">
+              <img class="icon__ic-reddit" src="https://static.4kdownload.com/main/img/redesign/ic-reddit-dark.eb0623b9985b.svg" width="26" height="23" alt="reddit logo">
+          </a>
+        </div>
+      </div>
+      <div class="mobile-menu__subscribe">
+        
+        <div class="mobile-menu__heading">Get product updates</div>
+        
+
+
+<form class="subscribe input-group js-subscribe " action="/api/newsletter/subscribe/">
+    <div class="form-control-wrap">
+        <input placeholder="Email" name="email" class="input-with-captcha subscribe__input form-control input-group__input">
+    </div>
+    <button aria-label="Validate email" type="submit" class="subscribe__submit subscribe__submit--next btn btn--primary input-group__btn button--">
+        <span class="subscribe__submit-icon"></span>
+        <span class="subscribe__submit-text" id="text-send">Next</span>
+    </button>
+    <div class="subscribe__agreement subscribe-agreement-js">
+        <label class="subscribe__checkbox agreement-check agreement-checkbox-js">
+                <input class="agreement-check__input" type="checkbox">
+                <span class="agreement-check__checkmark"></span>
+                
+                <p class="agreement-check__text subscribe__agreement-text subscribe__agreement-text--update">I want to receive 4K Download news, special offers and updates.</p>
+        </label>
+        <div class="subscribe__submit-wrapper">
+            <p class="agreement-check__text subscribe__agreement-text subscribe__agreement-text--privacy">By clicking the <strong>Send</strong> button, you agree to our <a href="/privacy/1">Privacy Policy.</a></p>
+            <button aria-label="Submit subscribing on product updates" type="submit" disabled class="subscribe__submit subscribe__submit--send btn btn--disabled btn--primary input-group__btn button--">
+                <span class="subscribe__submit-icon"></span>
+                <span class="subscribe__submit-text" id="text-send">Send</span>
+            </button>
+        </div>
+    </div>
+</form>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+            
+            
+
+            <div class="page-wrapper ">
+                
+
+
+<div class="help__blocks help__blocks--scroll article__top-navigation">
+    <div class="article__item-container article__item-container--full-width">
+        
+        <a href="/help/14#howto" class="help__block help__block--scroll help__block--current">
+            <div class="block__headline">
+                <img class="block__icon block__icon--tutorial" src="https://static.4kdownload.com/main/img/redesign/tutorials.327a139de734.svg" alt="">
+                <div class="article__nav-title article__nav-arrow">Tutorials</div>
+            </div>
+        </a>
+        
+        
+        
+        
+        
+        
+        <span class="article__nav-title article__nav-title--current">Reduce PNG Size by a Percentage</span>
+    </div>
+<div class="article__item-container article__item-container--right">
+  
+  
+  <a href="/help/14#videos" class="help__block help__block--scroll help__block--article ">
+      <div class="block__headline">
+          <img class="block__icon block__icon--videos" src="https://static.4kdownload.com/main/img/redesign/youtube.0e9f74ac8c33.svg" alt="">
+          <div class="article__nav-title howto-nav-title">Videos</div>
+      </div>
+  </a>
+  
+  
+  <a href="/help/14#faq" class="help__block help__block--scroll help__block--article ">
+      <div class="block__headline">
+          <img class="block__icon block__icon--faq" src="https://static.4kdownload.com/main/img/redesign/ic-faq.b4e88ef481e4.svg" alt="">
+          <div class="article__nav-title howto-nav-title">FAQ</div>
+      </div>
+  </a>
+  
+  
+  <a href="/help/14#feedback" class="help__block help__block--scroll help__block--article ">
+      <div class="block__headline">
+          <img class="block__icon block__icon--feedback" src="https://static.4kdownload.com/main/img/redesign/feedback.ea242b9f4a63.svg" alt="">
+          <div class="article__nav-title howto-nav-title">Feedback</div>
+      </div>
+  </a>
+  
+</div>
+</div>
+
+    <section class="article">
+
+
+            <div class="article__left-navigation">
+                <nav>
+                    <ul class="article__nav">
+
+                        <li class="article__nav-item article__nav-item--active">
+                            <a class="article__nav-title " href="/howto/howto-download-youtube-video/3">YouTube</a>
+                            <ul class="article__chapter-nav ">
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-download-youtube-video/3">Download YouTube Video</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-download-youtube-playlist/13">Download YouTube Playlist</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-download-youtube-channel/11">Download YouTube Channel</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-download-youtube-channel-on-android/4">Download a YouTube Channel on Android</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-download-youtube-playlist-on-android/2">Download a YouTube Playlist on Android</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-download-youtube-subtitles/3">Download YouTube Subtitles</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-download-360-degrees-youtube-videos/2">Download 360° YouTube Videos</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-download-youtube-playlist-in-mp3/3">Download YouTube Playlist in MP3</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-convert-youtube-to-mp3/3">Convert YouTube to MP3</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-download-youtube-hd-video/3">Download YouTube HD Video</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-download-youtube-video-with-60-fps/3">Download YouTube Video with 60 fps</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-download-youtube-1080p-or-720p/3">Download 720p or 1080p from YouTube</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-download-2160p-ultra-hd-video-from-youtube/1">Download 2160p Ultra HD Video From YouTube</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-download-8k-video-from-youtube/9">Download 8K Video from YouTube</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-download-youtube-music-playlist-to-iphone-ipod-ipad/5">Download YouTube Music Playlist to iPhone, iPod or iPad</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-create-iphone-ringtone-from-youtube-video/2">Create iPhone Ringtone From YouTube Video</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-use-4k-youtube-to-mp3-as-desktop-youtube-player/1">Use 4K YouTube to MP3 as Desktop YouTube Player</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-download-blocked-youtube-video/4">Download Blocked YouTube Video</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-download-youtube-subscriptions-automatically/3">Download YouTube Subscriptions Automatically</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-download-youtube-search-results">Download YouTube Search Results</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-download-youtube-to-itunes/5">Download YouTube to iTunes</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-download-youtube-videos-on-samsung-galaxy-s10/2">Download YouTube Videos on Samsung Galaxy</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-download-songs-from-youtube/5">Download Songs from YouTube</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-download-youtube-in-mp4/9">Download YouTube in MP4</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-download-youtube-video-in-mkv-format/2">Download YouTube Video in MKV Format</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-download-and-play-youtube-on-hd-tv/3">Download and Play YouTube on HD TV</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-get-youtube-premium-features-for-free/3">Get YouTube Premium Features For Free</a>
+                                </li>
+                                
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/how-to-watch-youtube-videos-offline-on-your-android/3">Watch YouTube videos offline on your Android</a>
+                                </li>
+                                
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/how-to-autoplay-embedded-youtube-videos/2">Autoplay embedded YouTube videos</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/how-to-delete-a-youtube-playlist/3">Delete a YouTube playlist</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/how-to-extract-frames-from-a-youtube-video/2">Extract frames from a YouTube video</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/how-to-insert-a-youtube-video-into-a-powerpoint-presentation/3">Insert a YouTube video into a PowerPoint Presentation</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/how-to-share-a-youtube-playlist/2">Share a YouTube playlist</a>
+                                </li>  
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/how-to-rotate-a-youtube-video/2">Rotate a YouTube Video</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/how-to-make-a-gif-from-a-youtube-video/2">Make a GIF from a YouTube Video</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/how-to-download-age-restricted-youtube-videos/3">Download Age-restricted YouTube Videos</a>
+                                </li>  
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/how-to-loop-a-youtube-video/2">Loop a YouTube Video</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/how-to-download-karaoke-songs-from-youtube/3">Download Karaoke Songs from YouTube</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/how-to-remove-black-bars-from-a-youtube-video/3">Remove Black Bars from a YouTube Video</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-download-liked-youtube-videos/3">Download Liked YouTube Videos</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-download-watch-later-youtube-playlist/1">Download Watch Later YouTube Playlist</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-download-private-youtube-videos/4">Download Private YouTube Videos</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-download-private-youtube-playlists/3">Download Private YouTube Playlists</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-download-youtube-premium-videos/2">Download YouTube Premium Videos</a>
+                                </li>
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-download-youtube-shorts-on-pc/3">Download YouTube Shorts on PC</a>
+                                </li>
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-download-youtube-shorts-on-android/3">Download YouTube Shorts on Android</a>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-auto-download-youtube-playlists/2">Auto-Download YouTube Playlists</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/how-to-download-dubbed-youtube-audio-tracks">Download Dubbed YouTube Audio Tracks</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="article__nav-item article__nav-item--active">
+                            <a class="article__nav-title " href="/howto/getting-started-with-tokkit/2">TikTok</a>
+                            <ul class="article__chapter-nav ">
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/getting-started-with-tokkit/2">Get Started with 4K TokKit</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-backup-a-tiktok-account/2">Back Up a TikTok Account</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-download-videos-from-a-tiktok-hashtag">Download All Videos from a TikTok Hashtag</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-download-videos-from-a-tiktok-account">Download All Videos from a TikTok Account</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-download-videos-from-tiktok/1">Download Videos from TikTok</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-automatically-download-new-tiktok-videos/1">Automatically Download New TikTok Videos</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-download-tiktok-hashtag-challenges">Download TikTok Hashtag Challenges</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-download-individual-tiktok-videos">Download Individual TikTok Videos</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-download-tiktok-videos-from-specific-date-or-time-period">Download TikTok Videos from Specific Date or Time Period</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-watch-tiktok-videos-offline-and-without-ads/2">Watch TikTok Videos Offline and Without Ads</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-download-song-related-tiktok-videos/1">Download Song-Related TikTok Videos</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-download-liked-videos-from-tiktok">Download Liked TikTok Videos</a>
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-download-private-tiktok-accounts">Download Private TikTok Accounts</a>
+                                </li>
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-remove-tiktok-watermark-from-tiktok-video">Remove the TikTok Watermark from a Video</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="article__nav-item article__nav-item--active">
+                            <a class="article__nav-title " href="/howto/howto-download-instagram-photos/1">Instagram</a>
+                            <ul class="article__chapter-nav ">
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-download-instagram-photos/1">Download Instagram Photos</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-download-instagram-stories/1">Download Instagram Stories</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/how-to-download-instagram-photos-by-hashtag">Download Instagram Photos by Hashtag</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/how-to-download-instagram-photos-by-location">Download Instagram Photos by Location</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-download-video-from-instagram/1">Download Video from Instagram</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-save-private-photos-from-instagram">Save Private Instagram Posts</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-view-friends-instagram-feed-as-your-own/1">View Friend's Instagram Feed</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-view-instagram-feed-on-pc">View Instagram Feed on PC, macOS, Linux</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-backup-instagram-account-with-4k-stogram/2">Back Up Your Entire Instagram Account</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/how-to-download-saved-posts-from-instagram/2">Download Saved Posts from Instagram on your computer</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-download-instagram-story-highlights/2">Download Instagram Story Highlights</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/how-to-download-instagram-tagged-posts/2">Download Instagram Tagged Posts</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-download-instagram-reels/1">Download Instagram Reels</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-download-instagram-reels-without-watermark">Download Instagram Reels Without the Watermark</a>
+                                </li>
+
+                            </ul>
+                        </li>
+
+                        <li class="article__nav-item article__nav-item--active">
+                            <a class="article__nav-title" href="/howto/howto-download-vimeo-video/3">Video</a>
+                            <ul class="article__chapter-nav ">
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-download-vimeo-video/3">Download Vimeo Videos</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-download-bitchute-video/10">Download BitChute Videos</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-download-facebook-video/1">Download Facebook Videos</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-download-tumblr-video/5">Download Tumblr Videos</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-download-dailymotion-video-or-audio">Download Dailymotion Videos</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-download-flickr-video/2">Download Flickr Videos</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-download-and-playback-3d-video/1">Download and Playback 3D Videos</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-download-video-from-vine/1">Download Videos from Vine</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-download-streams-from-twitch/9">Download Streams from Twitch</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-download-streams-from-youtube-gaming/1">Download Streams from YouTube Gaming</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-download-4k-video/15">Download 4K Video</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-download-MP4-H264-video">Download an MP4 H.264 Video</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-download-and-watch-videos-on-ipad-air/2">Download and Watch Videos on iPad Air</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-play-video-with-subtitles/2">Play Video with Subtitles</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/how-to-transfer-the-downloaded-video-and-audio-files-to-a-flash-drive/3">Transfer Video and Audio Files to a Flash Drive</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-download-likee-video/7">Download Likee Video</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-download-from-naver-tv">Download Video from Naver TV</a>
+                                </li>
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-download-bilibili-videos/1">Download Videos from Bilibili</a>
+                                </li>
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-download-nicovideo/1">Download Videos from Nico Nico</a>
+                                </li>
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-download-a-rumble-videos/2">Download Rumble Videos</a>
+                                </li>
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-download-xvideos">Download XVideos</a>
+                                </li>
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-download-private-vimeo-videos">Download a Private Vimeo Video</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="article__nav-item article__nav-item--active">
+                            <a class="article__nav-title" href="/howto/howto-download-soundcloud-music/1">Audio</a>
+                            <ul class="article__chapter-nav ">
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-download-soundcloud-music/1">Download SoundCloud Music</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-download-soundcloud-playlists/6">Download SoundCloud Playlists</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-listen-soundcloud-on-smartphone-offline/2">Listen SoundCloud on Smartphone Offline</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-download-audio-book/2">Download Audio Book</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-convert-video-to-mp3/1">Convert Video to MP3</a>
+                                </li>
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-determine-youtube-audio-bitrate/3">Determine YouTube Audio Bitrate</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="article__nav-item article__nav-item--active">
+                            <a class="article__nav-title" href="/howto/howto-make-slideshow/4">Image</a>
+                            <ul class="article__chapter-nav article__chapter-nav--active">
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-make-slideshow/4">Make Slideshow</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/howto/howto-create-photo-slideshow-in-4k-quality">Create Photo Slideshow in 4K Quality</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    
+                                    <a class="article__nav-title" href="/howto/how-to-compress-jpeg">Compress JPG</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    
+                                    <a class="article__nav-title" href="/howto/how-to-compress-png">Compress PNG</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    
+                                    <a class="article__nav-title" href="/howto/how-to-compress-webp">Compress WEBP</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    
+                                    <a class="article__nav-title" href="/howto/howto-compress-heic-image">Compress HEIC</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    
+                                    <a class="article__nav-title" href="/howto/howto-compress-pdf">Compress PDF</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    
+                                    <a class="article__nav-title" href="/howto/how-to-reduce-jpeg-size-by-a-percentage">Reduce JPG Size by a Percentage</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item article__chapter-nav-item--active">
+                                    
+                                    <a class="article__nav-title" href="/howto/how-to-reduce-png-size-by-a-percentage">Reduce PNG Size by a Percentage</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    
+                                    <a class="article__nav-title" href="/howto/how-to-reduce-webp-size-by-a-percentage">Reduce WEBP Size by a Percentage</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    
+                                    <a class="article__nav-title" href="/howto/howto-reduce-heic-size-by-a-percentage">Reduce HEIC Size by a Percentage</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    
+                                    <a class="article__nav-title" href="/howto/how-to-reduce-jpeg-size-in-mb-and-kb">Reduce JPG Size in MB and KB</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    
+                                    <a class="article__nav-title" href="/howto/how-to-reduce-png-size-in-mb-and-kb">Reduce PNG Size in MB and KB</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    
+                                    <a class="article__nav-title" href="/howto/how-to-reduce-webp-size-in-mb-and-kb">Reduce WEBP Size in MB and KB</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    
+                                    <a class="article__nav-title" href="/howto/howto-reduce-heic-size-in-mb-and-kb">Reduce HEIC Size in MB and KB</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    
+                                    <a class="article__nav-title" href="/howto/howto-convert-heic-to-jpg">Convert HEIC to JPG</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    
+                                    <a class="article__nav-title" href="/howto/howto-convert-jfif-to-jpg">Convert JFIF to JPG</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    
+                                    <a class="article__nav-title" href="/howto/howto-convert-raw-to-jpg">Convert RAW to JPG</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    
+                                    <a class="article__nav-title" href="/howto/howto-convert-webp-to-jpg">Convert WEBP to JPG</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    
+                                    <a class="article__nav-title" href="/howto/howto-convert-png-to-jpg">Convert PNG to JPG</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    
+                                    <a class="article__nav-title" href="/howto/howto-convert-bmp-to-jpg">Convert BMP to JPG</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    
+                                    <a class="article__nav-title" href="/howto/howto-convert-heif-to-jpg">Convert HEIF to JPG</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        
+
+                        <li class="article__nav-item ">
+                            <ul class="article__chapter-nav ">
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/faq/faq-what-sites-are-supported/1">What Sites are Supported</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/faq/faq-howto-become-a-beta-tester/1">How to Become a Beta Tester</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/faq/faq-what-is-4k-video/1">What is a 4K Video</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/faq/faq-where-to-get-4k-video">Where Do I Get 4K Videos</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/faq/faq-what-is-youtube-playlist/1">What is a YouTube Playlist</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/faq/faq-how-to-uninstall/1">How Do I Uninstall 4K Download Applications</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/faq/faq-howto-log-into-youtube-in-app/2">How Do I Log In to YouTube Within 4K Download Applications</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/faq/faq-how-to-avoid-legal-problems-when-downloading/2">How Do I Avoid Legal Problems When Downloading</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/faq/faq-is-there-a-mobile-version-of-video-downloader/1">Is there a mobile version of 4K Video Downloader</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/faq/faq-howto-transfer-stogram-database-to-another-pc">How Do I Transfer 4K Stogram Database to Another PC</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/faq/faq-use-the-in-app-browser">How Do I Use the In-App Browser</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/faq/faq-why-is-stogram-discontinued">Why Is 4K Stogram Discontinued</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="article__nav-item ">
+                            <ul class="article__chapter-nav ">
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/troubleshooting/troubleshooting-cant-download-video/9">Can’t Download a Video</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/troubleshooting/troubleshooting-cant-activate-with-license-key/2">Can't Activate My License Key</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/troubleshooting/troubleshooting-cant-find-my-licence-key/2">Can’t Find My License Key</a>
+                                </li>
+                                
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/troubleshooting/troubleshooting-cant-login-to-youtube/3">Can’t Log In to YouTube In-App</a>
+                                </li>
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/troubleshooting/troubleshooting-howto-fix-connection-issues/1">How to Fix Connection Issues in 4K Stogram</a>
+                                </li>
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/troubleshooting/troubleshooting-howto-fix-too-many-requests-error/1">How to Fix the Too Many Requests Error</a>
+                                </li>
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/troubleshooting/troubleshooting-howto-fix-the-sentry-block-and-challenge-errors/1">How to Fix the Sentry Block and Challenge-Related Errors</a>
+                                </li>
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/troubleshooting/troubleshooting-howto-fix-the-logout-issue-in-4k-stogram">How to Fix the Logout Issue in 4K Stogram</a>
+                                </li>
+
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/troubleshooting/troubleshooting-apps-not-running-in-the-background-on-android-fix">Apps Not Running in the Background on Android</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="article__nav-item ">
+                            <a class="article__nav-title" href="/alternatives/jdownloader-vs-4k-video-downloader/2">Alternatives</a>
+                            <ul class="article__chapter-nav ">
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/alternatives/jdownloader-vs-4k-video-downloader/2">jDownloader vs 4K Video Downloader</a>
+                                </li>
+                            </ul>
+
+                            <ul class="article__chapter-nav ">
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/alternatives/ytd-video-downloader-vs-4k-video-downloader">YTD Video Downloader vs 4K Video Downloader</a>
+                                </li>
+                            </ul>
+
+                            <ul class="article__chapter-nav ">
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/alternatives/tubemate-for-android-vs-online-4kdownload-com/2">TubeMate for Android vs online.4kdownload.com</a>
+                                </li>
+                            </ul>
+
+                            <ul class="article__chapter-nav ">
+                                
+                                <li class="article__chapter-nav-item ">
+                                    <a class="article__nav-title" href="/online-downloader-vs-4k-video-downloader">Online Downloader vs. 4K Video Downloader Plus</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="article__nav-item">
+                            <a class="article__nav-title" href="/help/14#feedback" target="_blank">Feedback</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+
+            <div class="navigated-content-holder">
+                <div class="article__content" itemscope itemtype="https://schema.org/HowTo">
+                    
+  <h1 itemprop="name">How to Reduce PNG Size by a Percentage</h1>
+  
+                        <div class="article__info">
+                            <a class="article__author" href="https://www.4kdownload.com/blog/authors/oksana/" target="_blank" rel="author" title="Show all Oksana's entries">
+                                <picture>
+                                    <source type="image/webp" srcset="https://static.4kdownload.com/main/img/blog/authors/Oksana.529a3f1c1143.webp">
+                                    <img class="article__author-photo" src="https://static.4kdownload.com/main/img/blog/authors/Oksana.d30317e6d7de.png" width="31" height="31" alt=""/>
+                                </picture>
+                                <span class="article__info-text">by
+                                    <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Oksana K.</span></span>
+                                </span>
+                            </a>
+                            <span class="article__date article__info-text">on
+                                <abbr itemprop="datePublished" title="2024-02-28T13:39:52+00:00">
+                                    
+                                    
+                                    
+                                    28 Feb 2024
+                                    
+                                    
+                                </abbr>
+                            </span>
+                        </div>
+                    
+
+  
+
+
+  
+  <p itemprop="description">By reducing the file size of PNG images, you can save storage space on your device or server, allowing you to store more files or optimize backups. Smaller PNG file sizes also require less time to upload, which is beneficial when working with slow internet connections or uploading multiple images. If you want to compress your PNG files to a specified size in %, <a href="/products/imagecompressor">4K Image Compressor</a> is the best tool for the task. Just follow the simple steps below.</p>
+
+  <p itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
+    <strong>1.</strong> 
+    
+    <span itemprop="text">Launch <a href="/products/imagecompressor">4K Image Compressor</a>. It’s available for Windows, macOS, and Linux.</span>
+  </p>
+
+  <p itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
+    <strong>2.</strong> 
+    
+    <span itemprop="text">Make sure the <strong>Format</strong> setting is set either to <strong>Same as Input</strong> or <strong>PNG</strong>, unless you want to convert your PNG image to another format.</span>
+  </p>
+
+  
+
+
+
+<picture class="article__screenshot-not_os">
+  <source class="card__image" type="image/webp" srcset="https://static.4kdownload.com/main/img/howto/how-to-reduce-png-size-by-a-percentage/step_2.7f59d37fa42c.webp 1x, https://static.4kdownload.com/main/img/howto/how-to-reduce-png-size-by-a-percentage/step_2@2x.e1268204179a.webp 2x">
+  <source class="card__image" type="image/jpeg" srcset="https://static.4kdownload.com/main/img/howto/how-to-reduce-png-size-by-a-percentage/step_2.ffe9008975da.jpg 1x, https://static.4kdownload.com/main/img/howto/how-to-reduce-png-size-by-a-percentage/step_2@2x.583f204d2884.jpg 2x">
+  <img class="card__image" src="https://static.4kdownload.com/main/img/howto/how-to-reduce-png-size-by-a-percentage/step_2.ffe9008975da.jpg" srcset="https://static.4kdownload.com/main/img/howto/how-to-reduce-png-size-by-a-percentage/step_2.ffe9008975da.jpg 1x, https://static.4kdownload.com/main/img/howto/how-to-reduce-png-size-by-a-percentage/step_2.ffe9008975da.jpg 2x" alt=""/>
+</picture>
+
+  <p itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
+    <strong>3.</strong> 
+    
+    <span itemprop="text">Select the optimization type. Click the <strong>Optimization</strong> section and choose <strong>File Size</strong> from the list.</span>
+  </p>
+  
+
+
+
+<picture class="article__screenshot-not_os">
+  <source class="card__image" type="image/webp" srcset="https://static.4kdownload.com/main/img/howto/how-to-reduce-png-size-by-a-percentage/step_3.9b1704688110.webp 1x, https://static.4kdownload.com/main/img/howto/how-to-reduce-png-size-by-a-percentage/step_3@2x.7aea20b34b04.webp 2x">
+  <source class="card__image" type="image/jpeg" srcset="https://static.4kdownload.com/main/img/howto/how-to-reduce-png-size-by-a-percentage/step_3.e166473de8d6.jpg 1x, https://static.4kdownload.com/main/img/howto/how-to-reduce-png-size-by-a-percentage/step_3@2x.ac5544e51f08.jpg 2x">
+  <img class="card__image" src="https://static.4kdownload.com/main/img/howto/how-to-reduce-png-size-by-a-percentage/step_3.e166473de8d6.jpg" srcset="https://static.4kdownload.com/main/img/howto/how-to-reduce-png-size-by-a-percentage/step_3.e166473de8d6.jpg 1x, https://static.4kdownload.com/main/img/howto/how-to-reduce-png-size-by-a-percentage/step_3.e166473de8d6.jpg 2x" alt=""/>
+</picture>
+
+  <p itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
+    <strong>4.</strong> 
+    
+    <span itemprop="text">Select the compression type. Expand the drop-down menu located to the right of <strong>Optimization</strong> and click <strong>%</strong>.</span>
+  </p>
+  
+
+
+
+<picture class="article__screenshot-not_os">
+  <source class="card__image" type="image/webp" srcset="https://static.4kdownload.com/main/img/howto/how-to-reduce-png-size-by-a-percentage/step_4.8d18b2e3a371.webp 1x, https://static.4kdownload.com/main/img/howto/how-to-reduce-png-size-by-a-percentage/step_4@2x.55b5f6876df8.webp 2x">
+  <source class="card__image" type="image/jpeg" srcset="https://static.4kdownload.com/main/img/howto/how-to-reduce-png-size-by-a-percentage/step_4.35837fb21a26.jpg 1x, https://static.4kdownload.com/main/img/howto/how-to-reduce-png-size-by-a-percentage/step_4@2x.816aac39310b.jpg 2x">
+  <img class="card__image" src="https://static.4kdownload.com/main/img/howto/how-to-reduce-png-size-by-a-percentage/step_4.35837fb21a26.jpg" srcset="https://static.4kdownload.com/main/img/howto/how-to-reduce-png-size-by-a-percentage/step_4.35837fb21a26.jpg 1x, https://static.4kdownload.com/main/img/howto/how-to-reduce-png-size-by-a-percentage/step_4.35837fb21a26.jpg 2x" alt=""/>
+</picture>
+
+  <p itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
+    <strong>5.</strong> 
+    <span itemprop="text">Specify the compression rate. Type a percentage in the designated field.</span>
+  </p>
+  
+
+
+
+<picture class="article__screenshot-not_os">
+  <source class="card__image" type="image/webp" srcset="https://static.4kdownload.com/main/img/howto/how-to-reduce-png-size-by-a-percentage/step_5.5e7ec4b09a3b.webp 1x, https://static.4kdownload.com/main/img/howto/how-to-reduce-png-size-by-a-percentage/step_5@2x.975299e5c28a.webp 2x">
+  <source class="card__image" type="image/jpeg" srcset="https://static.4kdownload.com/main/img/howto/how-to-reduce-png-size-by-a-percentage/step_5.6bfe47cfba66.jpg 1x, https://static.4kdownload.com/main/img/howto/how-to-reduce-png-size-by-a-percentage/step_5@2x.0d9ac07f63d6.jpg 2x">
+  <img class="card__image" src="https://static.4kdownload.com/main/img/howto/how-to-reduce-png-size-by-a-percentage/step_5.6bfe47cfba66.jpg" srcset="https://static.4kdownload.com/main/img/howto/how-to-reduce-png-size-by-a-percentage/step_5.6bfe47cfba66.jpg 1x, https://static.4kdownload.com/main/img/howto/how-to-reduce-png-size-by-a-percentage/step_5.6bfe47cfba66.jpg 2x" alt=""/>
+</picture>
+  <p itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
+    <strong>6.</strong> 
+    
+    <span itemprop="text">Upload your image. Click the <strong>Compress</strong> button in the middle of the application window to select the file, or simply drag and drop the image. Your PNG will be immediately uploaded and compressed.</span>
+  </p>
+  
+
+
+
+<picture class="article__screenshot-not_os">
+  <source class="card__image" type="image/webp" srcset="https://static.4kdownload.com/main/img/howto/how-to-reduce-png-size-by-a-percentage/step_6.a552a1f79380.webp 1x, https://static.4kdownload.com/main/img/howto/how-to-reduce-png-size-by-a-percentage/step_6@2x.bde36507a038.webp 2x">
+  <source class="card__image" type="image/jpeg" srcset="https://static.4kdownload.com/main/img/howto/how-to-reduce-png-size-by-a-percentage/step_6.be46e3615d16.jpg 1x, https://static.4kdownload.com/main/img/howto/how-to-reduce-png-size-by-a-percentage/step_6@2x.9d8fc3c7e7c3.jpg 2x">
+  <img class="card__image" src="https://static.4kdownload.com/main/img/howto/how-to-reduce-png-size-by-a-percentage/step_6.be46e3615d16.jpg" srcset="https://static.4kdownload.com/main/img/howto/how-to-reduce-png-size-by-a-percentage/step_6.be46e3615d16.jpg 1x, https://static.4kdownload.com/main/img/howto/how-to-reduce-png-size-by-a-percentage/step_6.be46e3615d16.jpg 2x" alt=""/>
+</picture>
+  <p itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
+    <strong>7.</strong> 
+    <span itemprop="text">Find the resulting image. Hover the cursor over the compressed image preview and click the folder icon to find the file on your computer.</span>
+  </p>
+  
+
+
+
+<picture class="article__screenshot-not_os">
+  <source class="card__image" type="image/webp" srcset="https://static.4kdownload.com/main/img/howto/how-to-reduce-png-size-by-a-percentage/step_7.48a3aa8399f2.webp 1x, https://static.4kdownload.com/main/img/howto/how-to-reduce-png-size-by-a-percentage/step_7@2x.d4afefc9c673.webp 2x">
+  <source class="card__image" type="image/jpeg" srcset="https://static.4kdownload.com/main/img/howto/how-to-reduce-png-size-by-a-percentage/step_7.c11cdc7478f5.jpg 1x, https://static.4kdownload.com/main/img/howto/how-to-reduce-png-size-by-a-percentage/step_7@2x.e55efd1bb5f8.jpg 2x">
+  <img class="card__image" src="https://static.4kdownload.com/main/img/howto/how-to-reduce-png-size-by-a-percentage/step_7.c11cdc7478f5.jpg" srcset="https://static.4kdownload.com/main/img/howto/how-to-reduce-png-size-by-a-percentage/step_7.c11cdc7478f5.jpg 1x, https://static.4kdownload.com/main/img/howto/how-to-reduce-png-size-by-a-percentage/step_7.c11cdc7478f5.jpg 2x" alt=""/>
+</picture>
+
+
+                </div>
+
+                <div class="article__footer">
+
+                    <div class="article__social-block">
+                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="custom-social">
+    
+
+    <div class="custom-social__items">
+        <a href="https://twitter.com/intent/tweet?url=https://fkd.page.link/uttb&amp;text=How to Reduce PNG Size by a Percentage&amp;via=4kdownload" class="custom-social__item"><img src="https://static.4kdownload.com/main/img/redesign/ic-x-black.ef68cc2f7b3b.svg" alt="Twitter logo" /></a>
+        <a href="https://www.reddit.com/submit?url=https://www.4kdownload.com/howto/how-to-reduce-png-size-by-a-percentage&amp;title=How to Reduce PNG Size by a Percentage" class="custom-social__item"><img src="https://static.4kdownload.com/main/img/redesign/ic-reddit-color.e1a3c96ad46c.svg" alt="Submit to reddit"></a>
+        
+        
+    </div>
+    
+    
+</div>
+
+
+                        <div class="article__interview">
+                                <p class="article__interview-question">Was this article helpful? Please share it with others.</p>
+                        </div>
+                    </div>
+
+                    
+
+                </div>
+            </div>
+    </section>
+
+
+
+
+
+<div data-remodal-id="thanks-modal" class="thanks-modal modal-window remodal">
+    <a href="#" data-remodal-action="close" class="modal-window__close"> 
+        <img src="https://static.4kdownload.com/main/img/redesign/ic-cross.acbcd4668eab.svg" class="icon__ic-cross" width="16" height="16" alt="reminder window close button" />
+    </a>
+    <img src="https://static.4kdownload.com/main/img/redesign/thanks-image.d837491132a9.svg" class="thanks-modal__image" alt="Illustration of gratitude">
+    <h3 class="thanks-modal__title h2">Thank you for choosing 4k!</h3>
+    <div class="thanks-modal__subscribe-block">
+        <p class="thanks-modal__text text text--large">Subscribe to receive the info about our special offers!</p>
+        <form class="thanks-modal__subscribe-form subscribe input-group js-subscribe js-subscribe-one-step" action="/api/newsletter/subscribe/">
+            <input placeholder="Email" name="email" class="thanks-modal__input form-control input-group__input">
+            <div class="subscribe-agreement-js">
+                <label class="thanks-modal__checkbox agreement-check agreement-checkbox-js">
+                    <input class="agreement-check__input" type="checkbox">
+                    <span class="thanks-modal__checkmark agreement-check__checkmark agreement-check__checkmark--large"></span>
+                    
+                    <p class="agreement-check__text thanks-modal__agreement-text">Clicking <strong>Send</strong> means that you agree to our <a href="/privacy/1">Privacy Policy</a> terms.</p>
+                </label>
+                <button aria-label="Submit subscribing on product updates" type="submit" disabled class="thanks-modal__subscribe-button subscribe__submit subscribe__submit--send btn btn--disabled btn--primary input-group__btn">
+                    <span class="subscribe__submit-icon"></span>
+                    <span class="subscribe__submit-text" id="text-send">Send</span>
+                </button>
+            </div>
+        </form>
+    </div>
+    <div class="thanks-modal__social-block">
+        <p class="thanks-modal__text text text--large">Please spread the word about us in social networks</p>
+        
+        
+        
+
+
+
+
+
+
+
+
+    
+
+    <div class="social social-line ">
+        
+
+        
+
+        
+
+            
+                
+            
+
+            
+            
+
+            
+                
+                    
+                
+            
+
+            <div data-id="twitter-social-script" class="social__item social__item--twitter  lazy-script">
+                <a href="https://twitter.com/share" class="twitter-share-button" data-via="4kdownload"
+                   data-count="none"
+                   data-size="large"
+                   data-text="4K Download | Free and useful applications for PC, macOS and Linux. Check it out!"
+                   >Tweet</a>
+            </div>
+
+            
+            <div class="social__item social__item--wechat" >
+                <img width="43" height="29" src="https://static.4kdownload.com/main/img/redesign/ic-wechat-social-line.5531b0e23042.svg" alt="" loading="lazy"/>
+                <div class="social__wechat-qrcode">
+                    <picture>
+                        <source srcset="https://static.4kdownload.com/main/img/redesign/qr-code-wechat.9e0d7bd7007e.webp" type="image/webp"> 
+                        <img src="https://static.4kdownload.com/main/img/redesign/qr-code-wechat.1bff5c2e2972.jpg" alt="" />
+                    </picture>
+                </div>
+            </div>
+
+            
+            
+            <a href="https://www.reddit.com/r/4kdownloadapps/" class="social__item social__item--reddit" target="_blank" rel="noopener noreferrer">
+                <img width="40" height="28" src="https://static.4kdownload.com/main/img/redesign/ic-reddit-square.42645315a044.svg" alt="Submit to reddit">
+            </a>
+            
+
+            
+            
+            
+    </div>
+
+
+    </div>
+</div>
+
+            </div>
+            
+            <div id="g-recaptcha" style="position: fixed; top:50%; left:50%"></div>
+            <div class="push"></div>
+
+            <!--GDPR notification-->
+            <div class="extra-blocks">
+                
+                
+
+
+
+
+
+<div class="cookies js-cookies">
+    
+    <div class="cookies__content">
+        
+        <div class="cookies__header-wrapper">
+            <div class="cookies__header-block">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M21.9922 6.9104C22.0527 7.50732 22.2852 8.06653 22.666 8.53174C23.5488 9.61462 24 10.7823 24 12C24 13.2175 23.5488 14.3824 22.666 15.4684C22.3438 15.8601 22.127 16.3234 22.0332 16.817C22.0156 16.9061 22.002 16.9962 21.9922 17.087C21.9219 17.7836 21.7617 18.4187 21.5098 18.9865C21.2578 19.5542 20.9141 20.0548 20.4844 20.485C19.625 21.3456 18.4805 21.8518 17.0859 21.9923C16.752 22.0269 16.4277 22.1147 16.127 22.2526C15.8926 22.3602 15.6719 22.4984 15.4688 22.6654C14.3828 23.5492 13.2168 24 12 24C10.7832 24 9.61523 23.5492 8.53125 22.6652C8.06641 22.2849 7.50781 22.0536 6.91016 21.9921C5.51758 21.8516 4.375 21.3453 3.51562 20.4847C2.6543 19.6243 2.14453 18.48 2.00391 17.0868C1.94531 16.4927 1.71289 15.9307 1.33398 15.4681C0.447266 14.3824 0 13.2175 0 12C0 10.7823 0.447266 9.61462 1.33398 8.53149C1.71289 8.06628 1.94727 7.50732 2.00586 6.91016C2.14648 5.51697 2.6543 4.37549 3.51562 3.51501C4.375 2.65466 5.51758 2.14526 6.91016 2.00476C7.50781 1.94617 8.06641 1.71509 8.53125 1.33459C9.61523 0.447754 10.7832 0 12 0C13.2148 0 14.3828 0.447876 15.4688 1.33484C15.9297 1.71533 16.4922 1.94641 17.0859 2.005C18.4805 2.14551 19.625 2.65466 20.4844 3.51526C21.3457 4.37573 21.8516 5.51721 21.9922 6.9104ZM18.8047 7.31726C18.8047 8.97412 17.4615 10.3173 15.8047 10.3173C14.1478 10.3173 12.8047 8.97412 12.8047 7.31726C12.8047 5.66041 14.1478 4.31726 15.8047 4.31726C17.4615 4.31726 18.8047 5.66041 18.8047 7.31726ZM14.1539 7.31726C14.1539 8.22898 14.893 8.96807 15.8047 8.96807C16.7164 8.96807 17.4555 8.22898 17.4555 7.31726C17.4555 6.40554 16.7164 5.66645 15.8047 5.66645C14.893 5.66645 14.1539 6.40554 14.1539 7.31726ZM16.9446 18.5933C18.2774 18.5933 19.3579 17.5129 19.3579 16.18C19.3579 14.8472 18.2774 13.7667 16.9446 13.7667C15.6117 13.7667 14.5312 14.8472 14.5312 16.18C14.5312 17.5129 15.6117 18.5933 16.9446 18.5933ZM16.9446 17.508C16.2112 17.508 15.6166 16.9134 15.6166 16.18C15.6166 15.4466 16.2112 14.852 16.9446 14.852C17.678 14.852 18.2726 15.4466 18.2726 16.18C18.2726 16.9134 17.678 17.508 16.9446 17.508ZM9.3069 6.7317C9.3069 7.83095 8.41578 8.72206 7.31654 8.72206C6.21729 8.72206 5.32617 7.83095 5.32617 6.7317C5.32617 5.63245 6.21729 4.74133 7.31654 4.74133C8.41578 4.74133 9.3069 5.63245 9.3069 6.7317ZM6.2213 6.7317C6.2213 7.33658 6.71165 7.82694 7.31654 7.82694C7.92142 7.82694 8.41178 7.33658 8.41178 6.7317C8.41178 6.12681 7.92142 5.63646 7.31654 5.63646C6.71165 5.63646 6.2213 6.12681 6.2213 6.7317ZM10.1615 16.8288C9.93209 16.5977 9.55876 16.5964 9.32767 16.8258L8.19435 17.951C7.96326 18.1805 7.96192 18.5538 8.19136 18.7849C8.42079 19.016 8.79412 19.0173 9.02521 18.7879L10.1585 17.6627C10.3896 17.4332 10.391 17.0599 10.1615 16.8288ZM12.0178 12.4647C12.2895 12.6442 12.3643 13.0099 12.1848 13.2816C12.0053 13.5533 11.6395 13.6281 11.3678 13.4486L9.6669 12.325C9.39519 12.1455 9.32044 11.7797 9.49993 11.508C9.67943 11.2363 10.0452 11.1615 10.3169 11.341L12.0178 12.4647ZM4.9707 12.3948C4.53815 12.3948 4.1875 12.7454 4.1875 13.178C4.1875 13.6105 4.53815 13.9612 4.9707 13.9612C5.40325 13.9612 5.75391 13.6105 5.75391 13.178C5.75391 12.7454 5.40325 12.3948 4.9707 12.3948Z" fill="#EEEEEE"/>
+                </svg>
+                
+                <h2 class="cookies__header text--white">Cookies</h2>
+            </div>
+            
+            
+            <p class="cookies__description">For magic to happen, we use cookies. Read our <a href="/privacy/1" target="_blank">Privacy Policy</a> to learn more.</p>
+        </div>
+        <div class="cookies__selection-list">
+            <div class="cookies__selection-element">
+                <div class="cookies__selection-label cookies__selection-label--locked">
+                    <svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.29265 4.80008H6.7054V3C6.7054 2.0576 5.94143 1.29363 4.99902 1.29363C4.05662 1.29363 3.29265 2.0576 3.29265 3V4.80008ZM1.99902 4.80008H1.44662C1.08939 4.80008 0.799805 5.08967 0.799805 5.4469V11.3533C0.799805 11.7105 1.08939 12.0001 1.44662 12.0001H8.55299C8.91022 12.0001 9.1998 11.7105 9.1998 11.3533V5.4469C9.1998 5.08967 8.91022 4.80008 8.55299 4.80008H7.99902V3C7.99902 1.34315 6.65588 0 4.99902 0C3.34217 0 1.99902 1.34315 1.99902 3V4.80008Z" fill="#EEEEEE" fill-opacity="0.5"/>
+                    </svg>
+                </div>
+                <div class="cookies__element-wrapper">
+                    <h3 class="cookies__element-title text--white">Necessary</h3>
+                    <p class="cookies__element-description">These cookies ensure basic functions such as navigation and authentication. Without them, the website cannot work properly.</p>
+                </div>
+            </div>
+            <div class="cookies__selection-element">
+                <input type="checkbox" class="cookies__checkbox js-cookie-checkbox" id="preference-checkbox" checked />
+                <label for="preference-checkbox" class="cookies__selection-label" tabindex="0">
+                    <svg class="cookies__label-icon" width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.0809659 5.59375L1.46591 4.1804L5.05966 7.72443L12.6662 0.146306L14.0724 1.55966L5.05966 10.5369L0.0809659 5.59375Z" fill="#EEEEEE"/>
+                    </svg>                    
+                </label>
+                <div class="cookies__element-wrapper">
+                    <h3 class="cookies__element-title text--white">Preferences</h3>
+                    <p class="cookies__element-description">They enhance your experience by personalizing the site based on your choices, such as your preferred language or region.</p>
+                </div>
+            </div>
+            <div class="cookies__selection-element">
+                <input type="checkbox" class="cookies__checkbox js-cookie-checkbox" id="analytics-checkbox" checked />
+                <label for="analytics-checkbox" class="cookies__selection-label" tabindex="0">
+                    <svg class="cookies__label-icon" width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.0809659 5.59375L1.46591 4.1804L5.05966 7.72443L12.6662 0.146306L14.0724 1.55966L5.05966 10.5369L0.0809659 5.59375Z" fill="#EEEEEE"/>
+                    </svg>                    
+                </label>
+                <div class="cookies__element-wrapper">
+                    <h3 class="cookies__element-title text--white">Analytics</h3>
+                    <p class="cookies__element-description">They provide valuable insights into site traffic, user behavior, and performance, allowing us to make informed improvements.</p>
+                </div>
+            </div>
+            <div class="cookies__selection-element">
+                <input type="checkbox" class="cookies__checkbox js-cookie-checkbox" id="advertisement-checkbox" checked/>
+                <label for="advertisement-checkbox" class="cookies__selection-label" tabindex="0">
+                    <svg class="cookies__label-icon" width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.0809659 5.59375L1.46591 4.1804L5.05966 7.72443L12.6662 0.146306L14.0724 1.55966L5.05966 10.5369L0.0809659 5.59375Z" fill="#EEEEEE"/>
+                    </svg>                    
+                </label>
+                <div class="cookies__element-wrapper">
+                    <h3 class="cookies__element-title text--white">Marketing</h3>
+                    <p class="cookies__element-description">They gather data to provide customized ads. These cookies enable us to present you with relevant and engaging content.</p>
+                </div>
+            </div>
+        </div>
+        
+        <button class="cookies__submit-button js-cookies-submit" tabindex="0">
+            
+            <span class="cookies__button-label cookies__button-label--default">OK</span>
+            
+            <span class="cookies__button-label cookies__button-label--demonstrative">Allow Selected</span>
+        </button>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+    const gdprUser = false;
+</script>
+
+
+
+
+<script src="https://static.4kdownload.com/CACHE/js/output.32cc8bb3219d.js" defer></script>
+
+
+
+            </div>
+
+
+        
+        
+
+
+
+
+
+      <div class="footer  ">
+        
+          <div class="footer__main">
+          <div class="footer__navs">
+            <div class="footer__col footer__col--navigation">
+              <div class="footer__heading">Products</div>
+                <nav class="nav nav--vertical" aria-label="Products">
+                  <a href="/products/videodownloader-42" class="nav__item footer__nav-item">Video Downloader</a>
+                  <a href="/products/tokkit/17" class="nav__item footer__nav-item">TikTok Downloader</a>
+                  <a href="/products/stogram-8" class="nav__item footer__nav-item">Instagram Downloader</a>
+                  <a href="/products/youtubetomp3-72" class="nav__item footer__nav-item">YouTube to MP3</a>
+                  <a href="/products/imagecompressor" class="nav__item footer__nav-item">Image Compressor</a>
+                  <a href="/products/videotomp3/27" class="nav__item footer__nav-item">Video to MP3</a>
+                  <a href="/products/slideshowmaker/3" class="nav__item footer__nav-item">Slideshow Maker</a>
+                  <a href="/downloads/34" class="nav__item footer__nav-item">Download</a>
+                  
+                </nav>
+            </div>
+            <div class="footer__col footer__col--navigation">
+              <div class="footer__heading">Help</div>
+                
+                <nav class="nav nav--vertical" aria-label="Help"><a href="/help/14#howto" class="nav__item footer__nav-item">How to</a><a href="/help/14#videos" class="nav__item footer__nav-item">Video Guides</a><a href="/help/14#faq" class="nav__item footer__nav-item">FAQ</a><a href="/help/14#troubleshooting" class="nav__item footer__nav-item">Troubleshooting</a><a href="/retrieve-key/2" class="nav__item footer__nav-item">License retrieval</a><a href="/help/14#feedback" class="nav__item footer__nav-item">Feedback</a>
+                </nav>
+            </div>
+            <div class="footer__col footer__col--navigation">
+              <div class="footer__heading">Legal info</div>
+                <nav class="nav nav--vertical" aria-label="Legal info"><a href="/agreement/terms-of-use/8" class="nav__item footer__nav-item">Terms of Use</a><a href="/agreement/affiliate/2" class="nav__item footer__nav-item">Affiliate Agreement</a><a href="/privacy/1" class="nav__item footer__nav-item">Privacy Policy</a><a href="/refund/6" class="nav__item footer__nav-item">Refund Policy</a>
+                </nav>
+            </div>
+            <div class="footer__col footer__col--navigation">
+              <div class="footer__heading">Company</div>
+                <nav class="nav nav--vertical" aria-label="Company">
+                  <a href="/about/1" class="nav__item footer__nav-item">About us</a>
+                  <a href="/blog/" class="nav__item footer__nav-item">News</a>
+                  <a href="/contacts/8" class="nav__item footer__nav-item">Contacts</a>
+                  <a href="/contribute/recommend" class="nav__item footer__nav-item">Contribute</a>
+                  <a href="/affiliate/8" class="nav__item footer__nav-item">Affiliate</a>
+                  <a href="/non-profit-and-educational-discount-program" class="nav__item footer__nav-item">Non-Profit and Educational Discount Program</a>
+                </nav>
+            </div>
+            <div class="footer__col footer__col--for-mobile">
+              <div class="footer__col--updates">
+                
+                <div class="footer__heading">Get product updates</div>
+                
+
+
+<form class="subscribe input-group js-subscribe input-group--without-shadow" action="/api/newsletter/subscribe/">
+    <div class="form-control-wrap">
+        <input placeholder="Email" name="email" class="input-with-captcha subscribe__input form-control input-group__input">
+    </div>
+    <button aria-label="Validate email" type="submit" class="subscribe__submit subscribe__submit--next btn btn--primary input-group__btn button--">
+        <span class="subscribe__submit-icon"></span>
+        <span class="subscribe__submit-text" id="text-send">Next</span>
+    </button>
+    <div class="subscribe__agreement subscribe-agreement-js">
+        <label class="subscribe__checkbox agreement-check agreement-checkbox-js">
+                <input class="agreement-check__input" type="checkbox">
+                <span class="agreement-check__checkmark"></span>
+                
+                <p class="agreement-check__text subscribe__agreement-text subscribe__agreement-text--update">I want to receive 4K Download news, special offers and updates.</p>
+        </label>
+        <div class="subscribe__submit-wrapper">
+            <p class="agreement-check__text subscribe__agreement-text subscribe__agreement-text--privacy">By clicking the <strong>Send</strong> button, you agree to our <a href="/privacy/1">Privacy Policy.</a></p>
+            <button aria-label="Submit subscribing on product updates" type="submit" disabled class="subscribe__submit subscribe__submit--send btn btn--disabled btn--primary input-group__btn button--">
+                <span class="subscribe__submit-icon"></span>
+                <span class="subscribe__submit-text" id="text-send">Send</span>
+            </button>
+        </div>
+    </div>
+</form>
+              </div>
+            </div>
+          </div>
+          <div class="footer__section">
+            <div class="footer__col footer__col--community">
+              <div class="footer__heading">Community</div>
+              <div class="community footer__community">
+
+                <a href="https://twitter.com/4kdownload" rel="noopener noreferrer" target="_blank" class="community__item">
+                  <img class="community__item--twitter__logo" src="https://static.4kdownload.com/main/img/redesign/ic-x-grey.3d28e08a8e92.svg" alt="Twitter" />
+                </a>
+
+                <div class="community__item community__item--wechat">
+                  <img class="community__item--wechat__logo" src="https://static.4kdownload.com/main/img/redesign/ic-wechat-footer.2fbee218ccaf.svg" alt="Wechat" />
+                  <div class="community__wechat-qrcode">
+                    <picture>
+                      <source srcset="https://static.4kdownload.com/main/img/redesign/qr-code-wechat.9e0d7bd7007e.webp" type="image/webp"> 
+                      <img src="https://static.4kdownload.com/main/img/redesign/qr-code-wechat.1bff5c2e2972.jpg" alt="" loading="lazy"/>
+                    </picture>
+                  </div>
+                </div>
+
+                <a href="https://www.reddit.com/r/4kdownloadapps/" rel="noopener noreferrer" target="_blank" class="community__item">
+                  <img class="community__item--reddit__logo" src="https://static.4kdownload.com/main/img/redesign/ic-reddit-dark.eb0623b9985b.svg" alt="Reddit" />
+                </a>
+
+                
+
+                <a href="https://www.4kdownload.com/blog" rel="noopener noreferrer" target="_blank" class="community__item">
+                  <img class="community__item--feed__logo" src="https://static.4kdownload.com/main/img/redesign/ic-rss-feed.b2148d5ae4b1.svg" alt="RSS feed" />
+                </a>
+              </div>
+            </div>
+            <div class="footer__col footer__col--updates">
+              
+              <div class="footer__heading footer__heading--light">Get product updates</div>
+              
+
+
+<form class="subscribe input-group js-subscribe input-group--without-shadow" action="/api/newsletter/subscribe/">
+    <div class="form-control-wrap">
+        <input placeholder="Email" name="email" class="input-with-captcha subscribe__input form-control input-group__input">
+    </div>
+    <button aria-label="Validate email" type="submit" class="subscribe__submit subscribe__submit--next btn btn--primary input-group__btn button--">
+        <span class="subscribe__submit-icon"></span>
+        <span class="subscribe__submit-text" id="text-send">Next</span>
+    </button>
+    <div class="subscribe__agreement subscribe-agreement-js">
+        <label class="subscribe__checkbox agreement-check agreement-checkbox-js">
+                <input class="agreement-check__input" type="checkbox">
+                <span class="agreement-check__checkmark"></span>
+                
+                <p class="agreement-check__text subscribe__agreement-text subscribe__agreement-text--update">I want to receive 4K Download news, special offers and updates.</p>
+        </label>
+        <div class="subscribe__submit-wrapper">
+            <p class="agreement-check__text subscribe__agreement-text subscribe__agreement-text--privacy">By clicking the <strong>Send</strong> button, you agree to our <a href="/privacy/1">Privacy Policy.</a></p>
+            <button aria-label="Submit subscribing on product updates" type="submit" disabled class="subscribe__submit subscribe__submit--send btn btn--disabled btn--primary input-group__btn button--">
+                <span class="subscribe__submit-icon"></span>
+                <span class="subscribe__submit-text" id="text-send">Send</span>
+            </button>
+        </div>
+    </div>
+</form>
+            </div>
+          </div>
+        </div>
+        
+        <div class="footer__bottom  footer__bottom--less-options " >
+          <div class="footer__bottom-left ">
+              <div class="logo footer__logo"><a href="/-54" title="Home page">
+            <svg class="icon__logo" width="24px" height="22px">
+                <use xlink:href="#logo"></use>
+            </svg>
+              </a></div>
+            
+            <div class="footer__copyright ">&copy; 2025 InterPromo GMBH. All rights reserved.</div>
+            
+
+
+
+
+
+
+
+
+          </div>
+          <div class="footer__bottom-right">
+            <div class="footer__lang">
+                <select class="lang js-lang flags lang--above">
+                  
+                      
+                      
+                      <option value="en" data-icon="en" data-href="/howto/how-to-reduce-png-size-by-a-percentage" selected>English</option>
+                      
+                  
+                      
+                      
+                      <option value="de" data-icon="de" data-href="/de/howto/how-to-reduce-png-size-by-a-percentage" >Deutsch</option>
+                      
+                  
+                      
+                      
+                      <option value="fr" data-icon="fr" data-href="/fr/howto/how-to-reduce-png-size-by-a-percentage" >français</option>
+                      
+                  
+                      
+                      
+                      <option value="it" data-icon="it" data-href="/it/howto/how-to-reduce-png-size-by-a-percentage" >italiano</option>
+                      
+                  
+                      
+                      
+                      <option value="es" data-icon="es" data-href="/es/howto/how-to-reduce-png-size-by-a-percentage" >español</option>
+                      
+                  
+                      
+                      
+                      <option value="pt-br" data-icon="pt-br" data-href="/pt-br/howto/how-to-reduce-png-size-by-a-percentage" >Português Brasileiro</option>
+                      
+                  
+                      
+                      
+                      <option value="nl" data-icon="nl" data-href="/nl/howto/how-to-reduce-png-size-by-a-percentage" >Nederlands</option>
+                      
+                  
+                      
+                      
+                      <option value="pl" data-icon="pl" data-href="/pl/howto/how-to-reduce-png-size-by-a-percentage" >polski</option>
+                      
+                  
+                      
+                      
+                      <option value="zh-cn" data-icon="zh-cn" data-href="/zh-cn/howto/how-to-reduce-png-size-by-a-percentage" >简体中文</option>
+                      
+                  
+                      
+                      
+                      <option value="zh-tw" data-icon="zh-tw" data-href="/zh-tw/howto/how-to-reduce-png-size-by-a-percentage" >繁體中文</option>
+                      
+                  
+                      
+                      
+                      <option value="ko" data-icon="ko" data-href="/ko/howto/how-to-reduce-png-size-by-a-percentage" >한국어</option>
+                      
+                  
+                      
+                      
+                      <option value="ja" data-icon="ja" data-href="/ja/howto/how-to-reduce-png-size-by-a-percentage" >日本語</option>
+                      
+                  
+                      
+                      
+                      <option value="ru" data-icon="ru" data-href="/ru/howto/how-to-reduce-png-size-by-a-percentage" >Русский</option>
+                      
+                  
+                </select>
+            </div>
+          </div>
+        </div>
+      </div>
+        
+
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js" defer></script>
+
+        <!-- polyfills -->
+        <script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.min.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@3.6.2/dist/fetch.umd.min.js" defer></script>
+        <!-- end of polyfills -->
+        
+        <script src="https://static.4kdownload.com/CACHE/js/output.32f0ee280924.js" defer></script>
+<script src="https://static.4kdownload.com/CACHE/js/output.794141ded13d.js" async></script>
+<script src="https://static.4kdownload.com/CACHE/js/output.bc44c5ffdf25.js" defer></script>
+        
+        <script src="https://static.4kdownload.com/CACHE/js/output.3a9dd03c738f.js" defer></script>
+        
+        
+
+<script src="https://static.4kdownload.com/CACHE/js/output.aedd6bd231f4.js" defer></script>
+
+
+
+<script src="https://static.4kdownload.com/CACHE/js/output.aedd6bd231f4.js" defer></script>
+
+<script src="https://static.4kdownload.com/main/bundles/vendors.b2785331.js" defer></script>
+<script src="https://static.4kdownload.com/main/bundles/popupDownload.d393a916.js" defer></script>
+<script src="https://static.4kdownload.com/CACHE/js/output.c372ffc4afd0.js" defer></script>
+
+
+
+        
+
+
+    <script type="text/javascript">
+        window.subscribe_translate = {
+            "Send": "Send",
+            "Sent": "Sent",
+            "Error": "Invalid email"
+        };
+    </script>
+
+        
+        
+        <script type="text/javascript">
+                const tapfAccoutID = '14750-b7b5b4';
+                loadTapfiliateScript('https://script.tapfiliate.com/tapfiliate.js', checkTapfiliate, tapfAccoutID); 
+        </script>
+        
+        
+        
+
+        <script type="text/javascript">
+            window.googleRecaptchaKey = "6LdYl1sUAAAAADRufi0gdLV-DI5V-tCUmRlifKSx";
+            window.useCaptchaInForms = "True";
+        </script>
+        
+
+
+
+
+
+<script type="text/javascript">
+    (function() {
+        function loadImage(div) {
+            const img = div.querySelector("img");
+
+            if (img.complete) {
+                div.classList.add("loaded");
+                return;
+            }
+
+            img.addEventListener("load", function() {
+                div.classList.add("loaded");
+            })
+        }
+
+        const lazyImages = document.querySelectorAll(".article__screenshot_lazy");
+
+        lazyImages.forEach(div => {
+            loadImage(div);
+        })
+    })()
+    
+    $(function() {
+        $(document).ready(function () {
+            var product_name = $('.block-product-download__button').attr('data-product-name'),
+                windows_button = {},
+                ubuntu_button  = {},
+                osx_button     = {};
+
+            
+
+                if ( "4K Video Downloader Plus" === product_name ) {
+                    
+                        
+                        windows_button.button_link     = "https://dl.4kdownload.com/app/4kvideodownloaderplus_1.10.5_online.exe?source=website";
+                        windows_button.remind_link     = "/remind/1?product=videodownloaderplus";
+                        windows_button.button_context  = "videodownloaderplus_1.10.5.0171_windows_x86";
+                        
+                    
+                    
+                        osx_button.button_link     = "https://dl.4kdownload.com/app/4kvideodownloaderplus_1.10.5_x64.dmg?source=website";
+                        osx_button.remind_link     = "/remind/1?product=videodownloaderplus";
+                        osx_button.button_context  = "videodownloaderplus_1.10.5.0171_osx_x64";
+                    
+                    
+                        ubuntu_button.button_link     = "https://dl.4kdownload.com/app/4kvideodownloaderplus_1.10.5-1_amd64.deb?source=website";
+                        ubuntu_button.remind_link     = "/remind/1?product=videodownloaderplus";
+                        ubuntu_button.button_context  = "videodownloaderplus_1.10.5.0171_ubuntu_x64";
+                    
+                };
+
+            
+
+                if ( "4K Video Downloader for Android" === product_name ) {
+                    
+                        
+                        windows_button.button_link     = "";
+                        windows_button.remind_link     = "/remind/1?product=videodownloaderandroid";
+                        windows_button.button_context  = "videodownloaderandroid__";
+                        
+                    
+                    
+                        osx_button.button_link     = "";
+                        osx_button.remind_link     = "/remind/1?product=videodownloaderandroid";
+                        osx_button.button_context  = "videodownloaderandroid__";
+                    
+                    
+                        ubuntu_button.button_link     = "";
+                        ubuntu_button.remind_link     = "/remind/1?product=videodownloaderandroid";
+                        ubuntu_button.button_context  = "videodownloaderandroid__";
+                    
+                };
+
+            
+
+                if ( "4K Tokkit" === product_name ) {
+                    
+                        
+                        windows_button.button_link     = "https://dl.4kdownload.com/app/4ktokkit_2.7.4_online.exe?source=website";
+                        windows_button.remind_link     = "/remind/1?product=tokkit";
+                        windows_button.button_context  = "tokkit_2.7.4.0960_windows_x86";
+                        
+                    
+                    
+                        osx_button.button_link     = "https://dl.4kdownload.com/app/4ktokkit_2.7.4_x64.dmg?source=website";
+                        osx_button.remind_link     = "/remind/1?product=tokkit";
+                        osx_button.button_context  = "tokkit_2.7.4.0960_osx_x64";
+                    
+                    
+                        ubuntu_button.button_link     = "https://dl.4kdownload.com/app/4ktokkit_2.7.4-1_amd64.deb?source=website";
+                        ubuntu_button.remind_link     = "/remind/1?product=tokkit";
+                        ubuntu_button.button_context  = "tokkit_2.7.4.0960_ubuntu_x64";
+                    
+                };
+
+            
+
+                if ( "4K Stogram" === product_name ) {
+                    
+                        
+                        windows_button.button_link     = "https://dl.4kdownload.com/app/4kstogram_4.9.0_online.exe?source=website";
+                        windows_button.remind_link     = "/remind/1?product=stogram";
+                        windows_button.button_context  = "stogram_4.9.0.4680_windows_x86";
+                        
+                    
+                    
+                        osx_button.button_link     = "https://dl.4kdownload.com/app/4kstogram_4.9.0_x64.dmg?source=website";
+                        osx_button.remind_link     = "/remind/1?product=stogram";
+                        osx_button.button_context  = "stogram_4.9.0.4680_osx_x64";
+                    
+                    
+                        ubuntu_button.button_link     = "https://dl.4kdownload.com/app/4kstogram_4.9.0-1_amd64.deb?source=website";
+                        ubuntu_button.remind_link     = "/remind/1?product=stogram";
+                        ubuntu_button.button_context  = "stogram_4.9.0.4680_ubuntu_x64";
+                    
+                };
+
+            
+
+                if ( "4K YouTube to MP3" === product_name ) {
+                    
+                        
+                        windows_button.button_link     = "https://dl.4kdownload.com/app/4kyoutubetomp3_5.7.5_online.exe?source=website";
+                        windows_button.remind_link     = "/remind/1?product=youtubetomp3";
+                        windows_button.button_context  = "youtubetomp3_5.7.5.0171_windows_x86";
+                        
+                    
+                    
+                        osx_button.button_link     = "https://dl.4kdownload.com/app/4kyoutubetomp3_5.7.5_x64.dmg?source=website";
+                        osx_button.remind_link     = "/remind/1?product=youtubetomp3";
+                        osx_button.button_context  = "youtubetomp3_5.7.5.0171_osx_x64";
+                    
+                    
+                        ubuntu_button.button_link     = "https://dl.4kdownload.com/app/4kyoutubetomp3_5.7.5-1_amd64.deb?source=website";
+                        ubuntu_button.remind_link     = "/remind/1?product=youtubetomp3";
+                        ubuntu_button.button_context  = "youtubetomp3_5.7.5.0171_ubuntu_x64";
+                    
+                };
+
+            
+
+                if ( "4K Image Compressor" === product_name ) {
+                    
+                        
+                        windows_button.button_link     = "https://dl.4kdownload.com/app/4kimagecompressor_1.5.0_online.exe?source=website";
+                        windows_button.remind_link     = "/remind/1?product=imagecompressor";
+                        windows_button.button_context  = "imagecompressor_1.5.0.0280_windows_x86";
+                        
+                    
+                    
+                        osx_button.button_link     = "https://dl.4kdownload.com/app/4kimagecompressor_1.5.0_x64.dmg?source=website";
+                        osx_button.remind_link     = "/remind/1?product=imagecompressor";
+                        osx_button.button_context  = "imagecompressor_1.5.0.0280_osx_x64";
+                    
+                    
+                        ubuntu_button.button_link     = "https://dl.4kdownload.com/app/4kimagecompressor_1.5.0-1_amd64.deb?source=website";
+                        ubuntu_button.remind_link     = "/remind/1?product=imagecompressor";
+                        ubuntu_button.button_context  = "imagecompressor_1.5.0.0280_ubuntu_x64";
+                    
+                };
+
+            
+
+                if ( "4K Video to MP3" === product_name ) {
+                    
+                        
+                        windows_button.button_link     = "https://dl.4kdownload.com/app/4kvideotomp3_3.0.1_online.exe?source=website";
+                        windows_button.remind_link     = "/remind/1?product=videotomp3";
+                        windows_button.button_context  = "videotomp3_3.0.1.936_windows_x86";
+                        
+                    
+                    
+                        osx_button.button_link     = "https://dl.4kdownload.com/app/4kvideotomp3_3.0.1.dmg?source=website";
+                        osx_button.remind_link     = "/remind/1?product=videotomp3";
+                        osx_button.button_context  = "videotomp3_3.0.1.936_osx_x64";
+                    
+                    
+                        ubuntu_button.button_link     = "https://dl.4kdownload.com/app/4kvideotomp3_3.0.1-1_amd64.deb?source=website";
+                        ubuntu_button.remind_link     = "/remind/1?product=videotomp3";
+                        ubuntu_button.button_context  = "videotomp3_3.0.1.936_ubuntu_x64";
+                    
+                };
+
+            
+
+                if ( "4K Slideshow Maker" === product_name ) {
+                    
+                        
+                        windows_button.button_link     = "https://dl.4kdownload.com/app/4kslideshowmaker_2.0.1_online.exe?source=website";
+                        windows_button.remind_link     = "/remind/1?product=slideshowmaker";
+                        windows_button.button_context  = "slideshowmaker_2.0.1.1055_windows_x86";
+                        
+                    
+                    
+                        osx_button.button_link     = "https://dl.4kdownload.com/app/4kslideshowmaker_2.0.1.dmg?source=website";
+                        osx_button.remind_link     = "/remind/1?product=slideshowmaker";
+                        osx_button.button_context  = "slideshowmaker_2.0.1.1055_osx_x64";
+                    
+                    
+                        ubuntu_button.button_link     = "https://dl.4kdownload.com/app/4kslideshowmaker_2.0.1-1_amd64.deb?source=website";
+                        ubuntu_button.remind_link     = "/remind/1?product=slideshowmaker";
+                        ubuntu_button.button_context  = "slideshowmaker_2.0.1.1055_ubuntu_x64";
+                    
+                };
+
+            
+
+                if ( "4K Video Downloader" === product_name ) {
+                    
+                        
+                        windows_button.button_link     = "https://dl.4kdownload.com/app/4kvideodownloader_4.33.5_online.exe?source=website";
+                        windows_button.remind_link     = "/remind/1?product=videodownloader";
+                        windows_button.button_context  = "videodownloader_4.33.5.0172_windows_x86";
+                        
+                    
+                    
+                        osx_button.button_link     = "https://dl.4kdownload.com/app/4kvideodownloader_4.33.5_x64.dmg?source=website";
+                        osx_button.remind_link     = "/remind/1?product=videodownloader";
+                        osx_button.button_context  = "videodownloader_4.33.5.0172_osx_x64";
+                    
+                    
+                        ubuntu_button.button_link     = "https://dl.4kdownload.com/app/4kvideodownloader_4.33.5-1_amd64.deb?source=website";
+                        ubuntu_button.remind_link     = "/remind/1?product=videodownloader";
+                        ubuntu_button.button_context  = "videodownloader_4.33.5.0172_ubuntu_x64";
+                    
+                };
+
+            
+
+            var user_os = $('.js-headerOS').find(':selected').val();
+
+            var changeHowToButton = function(user_os) {
+
+                var changeButtonData = function(button) {
+                    
+                    //$('a.howto-download-btn img').attr("src", button.button_icon_url).attr("alt", button.button_icon_alt);
+                    //$('a.howto-download-btn span').text(button.button_title);
+                }
+
+                if (user_os === "windows") {
+                    changeButtonData(windows_button);
+                    setCookie("prefer_user_os_arch", 'x86', {'path': '/'});
+                }
+                if (user_os === "osx") {
+                    changeButtonData(osx_button);
+                    setCookie("prefer_user_os_arch", 'x64', {'path': '/'});
+                }
+                if (user_os === "ubuntu") {
+                    changeButtonData(ubuntu_button);
+                    setCookie("prefer_user_os_arch", 'x64', {'path': '/'});
+                }
+            }
+
+            $('.block-product-download__button').each(function(key, value) {
+                if (user_os != $(value).attr('data-target-os')) {
+                    changeHowToButton(user_os);
+                }
+            });
+
+            $('.js-headerOS').change(function () {
+                var os_name = $(this).find(':selected').val();
+
+                //if (!$(this).find(':selected') ) {
+
+                    setCookie("prefer_user_os", os_name, {'path': '/'});
+
+                    /* $('.change-os-btn').each(function(key, value) {
+                        $(value).removeClass('active');
+                    }); */
+
+                    // $(this).addClass('active');
+
+                    if (os_name === "windows") {
+                        changeHowToButton(os_name);
+                    }
+                    if (os_name === "osx") {
+                        changeHowToButton(os_name);
+                    }
+                    if (os_name === "ubuntu") {
+                        changeHowToButton(os_name);
+                    }
+
+                    $('.js-change-screen-os img').each(function (key, value) {
+
+                        if ( !$(this).hasClass(os_name) ) {
+                            $(this).removeClass();
+                            $(this).addClass(os_name).addClass( $(this).attr('data-no-radius') );
+                        }
+
+                        $(this).animate( { opacity: "0" }, 350 );
+
+                        $(this).promise().done(function () {
+                            var src = $(value).attr('src'),
+                                length_main_path = src.split('/').length - 2,
+                                main_path = src.split('/', length_main_path);
+
+                            main_path.push( os_name, src.split('/').pop().split('_')[0] + '_' + os_name + '.png' );
+
+                            var url = main_path.join('/');
+                            var start_time,
+                                is_loaded = false;
+
+                            $.ajax({
+                                url : url,
+                                cache: true,
+                                processData : false,
+                                beforeSend: function () {
+                                    start_time = new Date().getTime();
+                                },
+                            }).done(function(){
+                                $(value).parent().find('.load-gif').remove();
+                                $(value).attr("src", url).animate( { opacity: "1" }, 350 );
+                                is_loaded = true;
+                            });
+
+                            setTimeout(function () {
+                                if ( new Date().getTime() - start_time > 1500 && !is_loaded ) {
+                                    $('<div class="load-gif"></div>').appendTo( $(value).parent() );
+                                }
+                            }, 1500);
+
+                        })
+
+                    });
+                /*} else {
+                    return false;
+                } */
+            });
+        });
+    });
+</script>
+
+
+
+
+
+
+
+<script type="text/javascript">
+    let widgetInfo = Object.freeze({
+        
+        "title": `4K Image Compressor — Optimize Your Images Effortlessly!`,
+        "features": {
+            "compress": "Compress JPEG, PNG, WEBP, and HEIC files",
+            "size": "Reduce images to specific sizes in MB and KB",
+            "percent": "Reduce image size by a specific percentage",
+            "resize": "Resize multiple images at the same time"
+        },
+        
+        "commonTerms": {
+            "buttonTitle": "Try for Free",
+            "featuresTitle": "Supported sites:",
+            "anchorLinkTextOutside": `Looking for`,
+            "anchorLinkTextInside": `Another Version?`
+        },
+        "downloadPage": "/downloads/34#imagecompressor",
+        "product": "imagecompressor"
+    });
+    let osTerms = Object.freeze({
+        "windows_x86": 'Microsoft Windows',
+        "windows_x64": `Microsoft Windows 64-bit`,
+        "osx_x64": `macOS 10.13 and later`,
+        "ubuntu_x86": `Ubuntu 32-bit`,
+        "ubuntu_x64": `Ubuntu 64-bit`
+    });
+    let targetOs = "windows_x86";
+</script>
+
+
+
+        <!-- Social -->
+
+        <script data-id="twitter-social-script" type="text/delayscript">
+        window.twttr = (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0],
+                t = window.twttr || {};
+            if (d.getElementById(id)) return t;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "https://platform.twitter.com/widgets.js";
+            fjs.parentNode.insertBefore(js, fjs);
+
+            t._e = [];
+            t.ready = function(f) {
+                t._e.push(f);
+            };
+
+            return t;
+        }(document, "script", "twitter-wjs"));
+        </script>
+        <!-- End Social -->
+    </body>
+</html>
